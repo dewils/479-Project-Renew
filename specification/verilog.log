@@ -5,8 +5,8 @@ Command arguments:
     datapath.v
     test_divider.v
 
-Tool:	VERILOG-XL	08.20.001-p log file created Mar 28, 2015  21:50:06
-Tool:	VERILOG-XL	08.20.001-p   Mar 28, 2015  21:50:06
+Tool:	VERILOG-XL	08.20.001-p log file created Mar 28, 2015  21:58:25
+Tool:	VERILOG-XL	08.20.001-p   Mar 28, 2015  21:58:25
 
 Copyright (c) 1995-2004 Cadence Design Systems, Inc.  All Rights Reserved.
 Unpublished -- rights reserved under the copyright laws of the United States.
@@ -42,850 +42,90 @@ Compiling source file "test_divider.v"
 Highest level modules:
 test_divider
 
-Dividen:  36, 00100100
-Divisor:   1, 0000001
-Quotient:  36, 00100100
-Remainder: 0000000, Quotient: 01001000, Valid: 0
-Remainder: 1111111, Quotient: 01001000, Valid: 0
-Remainder: 0000000, Quotient: 10010000, Valid: 0
-Remainder: 1111111, Quotient: 10010000, Valid: 0
-Remainder: 0000000, Quotient: 00100000, Valid: 0
-Remainder: 0000000, Quotient: 00100000, Valid: 0
-Remainder: 0000000, Quotient: 01000001, Valid: 0
-Remainder: 1111111, Quotient: 01000001, Valid: 0
-Remainder: 0000000, Quotient: 10000010, Valid: 0
-Remainder: 1111111, Quotient: 10000010, Valid: 0
-Remainder: 0000000, Quotient: 00000100, Valid: 0
-Remainder: 0000000, Quotient: 00000100, Valid: 0
-Remainder: 0000000, Quotient: 00001001, Valid: 0
-Remainder: 1111111, Quotient: 00001001, Valid: 0
-Remainder: 0000000, Quotient: 00010010, Valid: 0
-Remainder: 1111111, Quotient: 00010010, Valid: 0
-Remainder: 0000000, Quotient: 00100100, Valid: 1
 Pass:  36/  1 =  36 rem   0
-Dividen:   9, 00001001
-Divisor:  99, 1100011
-Quotient:   0, 00000000
-Remainder: 0000000, Quotient: 00010010, Valid: 0
-Remainder: 1001110, Quotient: 00010010, Valid: 0
-Remainder: 0000000, Quotient: 00100100, Valid: 0
-Remainder: 1001110, Quotient: 00100100, Valid: 0
-Remainder: 0000000, Quotient: 01001000, Valid: 0
-Remainder: 1001110, Quotient: 01001000, Valid: 0
-Remainder: 0000000, Quotient: 10010000, Valid: 0
-Remainder: 1001110, Quotient: 10010000, Valid: 0
-Remainder: 0000000, Quotient: 00100000, Valid: 0
-Remainder: 1001111, Quotient: 00100000, Valid: 0
-Remainder: 0000001, Quotient: 01000000, Valid: 0
-Remainder: 1001111, Quotient: 01000000, Valid: 0
-Remainder: 0000010, Quotient: 10000000, Valid: 0
-Remainder: 1010000, Quotient: 10000000, Valid: 0
-Remainder: 0000100, Quotient: 00000000, Valid: 0
-Remainder: 1010011, Quotient: 00000000, Valid: 0
-Remainder: 0001001, Quotient: 00000000, Valid: 1
 Pass:   9/ 99 =   0 rem   9
-Dividen:  13, 00001101
-Divisor:  13, 0001101
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 00011010, Valid: 0
-Remainder: 1111001, Quotient: 00011010, Valid: 0
-Remainder: 0000000, Quotient: 00110100, Valid: 0
-Remainder: 1111001, Quotient: 00110100, Valid: 0
-Remainder: 0000000, Quotient: 01101000, Valid: 0
-Remainder: 1111001, Quotient: 01101000, Valid: 0
-Remainder: 0000000, Quotient: 11010000, Valid: 0
-Remainder: 1111001, Quotient: 11010000, Valid: 0
-Remainder: 0000000, Quotient: 10100000, Valid: 0
-Remainder: 1111010, Quotient: 10100000, Valid: 0
-Remainder: 0000001, Quotient: 01000000, Valid: 0
-Remainder: 1111011, Quotient: 01000000, Valid: 0
-Remainder: 0000011, Quotient: 10000000, Valid: 0
-Remainder: 1111100, Quotient: 10000000, Valid: 0
-Remainder: 0000110, Quotient: 00000000, Valid: 0
-Remainder: 0000000, Quotient: 00000000, Valid: 0
-Remainder: 0000000, Quotient: 00000001, Valid: 1
 Pass:  13/ 13 =   1 rem   0
-Dividen: 101, 01100101
-Divisor:  18, 0010010
-Quotient:   5, 00000101
-Remainder: 0000000, Quotient: 11001010, Valid: 0
-Remainder: 1110111, Quotient: 11001010, Valid: 0
-Remainder: 0000000, Quotient: 10010100, Valid: 0
-Remainder: 1110111, Quotient: 10010100, Valid: 0
-Remainder: 0000001, Quotient: 00101000, Valid: 0
-Remainder: 1111000, Quotient: 00101000, Valid: 0
-Remainder: 0000011, Quotient: 01010000, Valid: 0
-Remainder: 1111010, Quotient: 01010000, Valid: 0
-Remainder: 0000110, Quotient: 10100000, Valid: 0
-Remainder: 1111101, Quotient: 10100000, Valid: 0
-Remainder: 0001100, Quotient: 01000000, Valid: 0
-Remainder: 0000011, Quotient: 01000000, Valid: 0
-Remainder: 0000111, Quotient: 10000001, Valid: 0
-Remainder: 1111110, Quotient: 10000001, Valid: 0
-Remainder: 0001110, Quotient: 00000010, Valid: 0
-Remainder: 0000101, Quotient: 00000010, Valid: 0
-Remainder: 0001011, Quotient: 00000101, Valid: 1
 Pass: 101/ 18 =   5 rem  11
-Dividen:   1, 00000001
-Divisor:  13, 0001101
-Quotient:   0, 00000000
-Remainder: 0000000, Quotient: 00000010, Valid: 0
-Remainder: 1111001, Quotient: 00000010, Valid: 0
-Remainder: 0000000, Quotient: 00000100, Valid: 0
-Remainder: 1111001, Quotient: 00000100, Valid: 0
-Remainder: 0000000, Quotient: 00001000, Valid: 0
-Remainder: 1111001, Quotient: 00001000, Valid: 0
-Remainder: 0000000, Quotient: 00010000, Valid: 0
-Remainder: 1111001, Quotient: 00010000, Valid: 0
-Remainder: 0000000, Quotient: 00100000, Valid: 0
-Remainder: 1111001, Quotient: 00100000, Valid: 0
-Remainder: 0000000, Quotient: 01000000, Valid: 0
-Remainder: 1111001, Quotient: 01000000, Valid: 0
-Remainder: 0000000, Quotient: 10000000, Valid: 0
-Remainder: 1111001, Quotient: 10000000, Valid: 0
-Remainder: 0000000, Quotient: 00000000, Valid: 0
-Remainder: 1111010, Quotient: 00000000, Valid: 0
-Remainder: 0000001, Quotient: 00000000, Valid: 1
 Pass:   1/ 13 =   0 rem   1
-Dividen: 118, 01110110
-Divisor:  61, 0111101
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 11101100, Valid: 0
-Remainder: 1100001, Quotient: 11101100, Valid: 0
-Remainder: 0000000, Quotient: 11011000, Valid: 0
-Remainder: 1100010, Quotient: 11011000, Valid: 0
-Remainder: 0000001, Quotient: 10110000, Valid: 0
-Remainder: 1100011, Quotient: 10110000, Valid: 0
-Remainder: 0000011, Quotient: 01100000, Valid: 0
-Remainder: 1100101, Quotient: 01100000, Valid: 0
-Remainder: 0000111, Quotient: 11000000, Valid: 0
-Remainder: 1101000, Quotient: 11000000, Valid: 0
-Remainder: 0001110, Quotient: 10000000, Valid: 0
-Remainder: 1110000, Quotient: 10000000, Valid: 0
-Remainder: 0011101, Quotient: 00000000, Valid: 0
-Remainder: 1111111, Quotient: 00000000, Valid: 0
-Remainder: 0111011, Quotient: 00000000, Valid: 0
-Remainder: 0011100, Quotient: 00000000, Valid: 0
-Remainder: 0111001, Quotient: 00000001, Valid: 1
 Pass: 118/ 61 =   1 rem  57
-Dividen: 237, 11101101
-Divisor:  12, 0001100
-Quotient:  19, 00010011
-Remainder: 0000000, Quotient: 11011010, Valid: 0
-Remainder: 1111010, Quotient: 11011010, Valid: 0
-Remainder: 0000001, Quotient: 10110100, Valid: 0
-Remainder: 1111011, Quotient: 10110100, Valid: 0
-Remainder: 0000011, Quotient: 01101000, Valid: 0
-Remainder: 1111101, Quotient: 01101000, Valid: 0
-Remainder: 0000111, Quotient: 11010000, Valid: 0
-Remainder: 0000001, Quotient: 11010000, Valid: 0
-Remainder: 0000010, Quotient: 10100001, Valid: 0
-Remainder: 1111100, Quotient: 10100001, Valid: 0
-Remainder: 0000101, Quotient: 01000010, Valid: 0
-Remainder: 1111111, Quotient: 01000010, Valid: 0
-Remainder: 0001011, Quotient: 10000100, Valid: 0
-Remainder: 0000101, Quotient: 10000100, Valid: 0
-Remainder: 0001010, Quotient: 00001001, Valid: 0
-Remainder: 0000100, Quotient: 00001001, Valid: 0
-Remainder: 0001001, Quotient: 00010011, Valid: 1
 Pass: 237/ 12 =  19 rem   9
-Dividen: 249, 11111001
-Divisor:  70, 1000110
-Quotient:   3, 00000011
-Remainder: 0000000, Quotient: 11110010, Valid: 0
-Remainder: 1011101, Quotient: 11110010, Valid: 0
-Remainder: 0000001, Quotient: 11100100, Valid: 0
-Remainder: 1011110, Quotient: 11100100, Valid: 0
-Remainder: 0000011, Quotient: 11001000, Valid: 0
-Remainder: 1100000, Quotient: 11001000, Valid: 0
-Remainder: 0000111, Quotient: 10010000, Valid: 0
-Remainder: 1100100, Quotient: 10010000, Valid: 0
-Remainder: 0001111, Quotient: 00100000, Valid: 0
-Remainder: 1101100, Quotient: 00100000, Valid: 0
-Remainder: 0011111, Quotient: 01000000, Valid: 0
-Remainder: 1111100, Quotient: 01000000, Valid: 0
-Remainder: 0111110, Quotient: 10000000, Valid: 0
-Remainder: 0011011, Quotient: 10000000, Valid: 0
-Remainder: 0110110, Quotient: 00000001, Valid: 0
-Remainder: 0010011, Quotient: 00000001, Valid: 0
-Remainder: 0100111, Quotient: 00000011, Valid: 1
 Pass: 249/ 70 =   3 rem  39
-Dividen: 197, 11000101
-Divisor:  42, 0101010
-Quotient:   4, 00000100
-Remainder: 0000000, Quotient: 10001010, Valid: 0
-Remainder: 1101011, Quotient: 10001010, Valid: 0
-Remainder: 0000001, Quotient: 00010100, Valid: 0
-Remainder: 1101100, Quotient: 00010100, Valid: 0
-Remainder: 0000011, Quotient: 00101000, Valid: 0
-Remainder: 1101110, Quotient: 00101000, Valid: 0
-Remainder: 0000110, Quotient: 01010000, Valid: 0
-Remainder: 1110001, Quotient: 01010000, Valid: 0
-Remainder: 0001100, Quotient: 10100000, Valid: 0
-Remainder: 1110111, Quotient: 10100000, Valid: 0
-Remainder: 0011000, Quotient: 01000000, Valid: 0
-Remainder: 0000011, Quotient: 01000000, Valid: 0
-Remainder: 0000111, Quotient: 10000001, Valid: 0
-Remainder: 1110010, Quotient: 10000001, Valid: 0
-Remainder: 0001110, Quotient: 00000010, Valid: 0
-Remainder: 1111001, Quotient: 00000010, Valid: 0
-Remainder: 0011101, Quotient: 00000100, Valid: 1
 Pass: 197/ 42 =   4 rem  29
-Dividen: 229, 11100101
-Divisor: 119, 1110111
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 11001010, Valid: 0
-Remainder: 1000101, Quotient: 11001010, Valid: 0
-Remainder: 0000001, Quotient: 10010100, Valid: 0
-Remainder: 1000110, Quotient: 10010100, Valid: 0
-Remainder: 0000011, Quotient: 00101000, Valid: 0
-Remainder: 1001000, Quotient: 00101000, Valid: 0
-Remainder: 0000111, Quotient: 01010000, Valid: 0
-Remainder: 1001011, Quotient: 01010000, Valid: 0
-Remainder: 0001110, Quotient: 10100000, Valid: 0
-Remainder: 1010010, Quotient: 10100000, Valid: 0
-Remainder: 0011100, Quotient: 01000000, Valid: 0
-Remainder: 1100001, Quotient: 01000000, Valid: 0
-Remainder: 0111001, Quotient: 10000000, Valid: 0
-Remainder: 1111101, Quotient: 10000000, Valid: 0
-Remainder: 1110010, Quotient: 00000000, Valid: 0
-Remainder: 0110111, Quotient: 00000000, Valid: 0
-Remainder: 1101110, Quotient: 00000001, Valid: 1
 Pass: 229/119 =   1 rem 110
-Dividen:  18, 00010010
-Divisor:  15, 0001111
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 00100100, Valid: 0
-Remainder: 1111000, Quotient: 00100100, Valid: 0
-Remainder: 0000000, Quotient: 01001000, Valid: 0
-Remainder: 1111000, Quotient: 01001000, Valid: 0
-Remainder: 0000000, Quotient: 10010000, Valid: 0
-Remainder: 1111000, Quotient: 10010000, Valid: 0
-Remainder: 0000000, Quotient: 00100000, Valid: 0
-Remainder: 1111001, Quotient: 00100000, Valid: 0
-Remainder: 0000001, Quotient: 01000000, Valid: 0
-Remainder: 1111001, Quotient: 01000000, Valid: 0
-Remainder: 0000010, Quotient: 10000000, Valid: 0
-Remainder: 1111010, Quotient: 10000000, Valid: 0
-Remainder: 0000100, Quotient: 00000000, Valid: 0
-Remainder: 1111101, Quotient: 00000000, Valid: 0
-Remainder: 0001001, Quotient: 00000000, Valid: 0
-Remainder: 0000001, Quotient: 00000000, Valid: 0
-Remainder: 0000011, Quotient: 00000001, Valid: 1
 Pass:  18/ 15 =   1 rem   3
-Dividen: 242, 11110010
-Divisor:  78, 1001110
-Quotient:   3, 00000011
-Remainder: 0000000, Quotient: 11100100, Valid: 0
-Remainder: 1011001, Quotient: 11100100, Valid: 0
-Remainder: 0000001, Quotient: 11001000, Valid: 0
-Remainder: 1011010, Quotient: 11001000, Valid: 0
-Remainder: 0000011, Quotient: 10010000, Valid: 0
-Remainder: 1011100, Quotient: 10010000, Valid: 0
-Remainder: 0000111, Quotient: 00100000, Valid: 0
-Remainder: 1100000, Quotient: 00100000, Valid: 0
-Remainder: 0001111, Quotient: 01000000, Valid: 0
-Remainder: 1101000, Quotient: 01000000, Valid: 0
-Remainder: 0011110, Quotient: 10000000, Valid: 0
-Remainder: 1110111, Quotient: 10000000, Valid: 0
-Remainder: 0111100, Quotient: 00000000, Valid: 0
-Remainder: 0010101, Quotient: 00000000, Valid: 0
-Remainder: 0101011, Quotient: 00000001, Valid: 0
-Remainder: 0000100, Quotient: 00000001, Valid: 0
-Remainder: 0001000, Quotient: 00000011, Valid: 1
 Pass: 242/ 78 =   3 rem   8
-Dividen: 232, 11101000
-Divisor:  69, 1000101
-Quotient:   3, 00000011
-Remainder: 0000000, Quotient: 11010000, Valid: 0
-Remainder: 1011110, Quotient: 11010000, Valid: 0
-Remainder: 0000001, Quotient: 10100000, Valid: 0
-Remainder: 1011111, Quotient: 10100000, Valid: 0
-Remainder: 0000011, Quotient: 01000000, Valid: 0
-Remainder: 1100001, Quotient: 01000000, Valid: 0
-Remainder: 0000111, Quotient: 10000000, Valid: 0
-Remainder: 1100100, Quotient: 10000000, Valid: 0
-Remainder: 0001110, Quotient: 00000000, Valid: 0
-Remainder: 1101100, Quotient: 00000000, Valid: 0
-Remainder: 0011101, Quotient: 00000000, Valid: 0
-Remainder: 1111010, Quotient: 00000000, Valid: 0
-Remainder: 0111010, Quotient: 00000000, Valid: 0
-Remainder: 0010111, Quotient: 00000000, Valid: 0
-Remainder: 0101111, Quotient: 00000001, Valid: 0
-Remainder: 0001100, Quotient: 00000001, Valid: 0
-Remainder: 0011001, Quotient: 00000011, Valid: 1
 Pass: 232/ 69 =   3 rem  25
-Dividen:  92, 01011100
-Divisor:  61, 0111101
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 10111000, Valid: 0
-Remainder: 1100001, Quotient: 10111000, Valid: 0
-Remainder: 0000000, Quotient: 01110000, Valid: 0
-Remainder: 1100010, Quotient: 01110000, Valid: 0
-Remainder: 0000001, Quotient: 11100000, Valid: 0
-Remainder: 1100010, Quotient: 11100000, Valid: 0
-Remainder: 0000010, Quotient: 11000000, Valid: 0
-Remainder: 1100100, Quotient: 11000000, Valid: 0
-Remainder: 0000101, Quotient: 10000000, Valid: 0
-Remainder: 1100111, Quotient: 10000000, Valid: 0
-Remainder: 0001011, Quotient: 00000000, Valid: 0
-Remainder: 1101101, Quotient: 00000000, Valid: 0
-Remainder: 0010111, Quotient: 00000000, Valid: 0
-Remainder: 1111000, Quotient: 00000000, Valid: 0
-Remainder: 0101110, Quotient: 00000000, Valid: 0
-Remainder: 0001111, Quotient: 00000000, Valid: 0
-Remainder: 0011111, Quotient: 00000001, Valid: 1
 Pass:  92/ 61 =   1 rem  31
-Dividen:  45, 00101101
-Divisor: 101, 1100101
-Quotient:   0, 00000000
-Remainder: 0000000, Quotient: 01011010, Valid: 0
-Remainder: 1001101, Quotient: 01011010, Valid: 0
-Remainder: 0000000, Quotient: 10110100, Valid: 0
-Remainder: 1001101, Quotient: 10110100, Valid: 0
-Remainder: 0000000, Quotient: 01101000, Valid: 0
-Remainder: 1001110, Quotient: 01101000, Valid: 0
-Remainder: 0000001, Quotient: 11010000, Valid: 0
-Remainder: 1001110, Quotient: 11010000, Valid: 0
-Remainder: 0000010, Quotient: 10100000, Valid: 0
-Remainder: 1010000, Quotient: 10100000, Valid: 0
-Remainder: 0000101, Quotient: 01000000, Valid: 0
-Remainder: 1010011, Quotient: 01000000, Valid: 0
-Remainder: 0001011, Quotient: 10000000, Valid: 0
-Remainder: 1011000, Quotient: 10000000, Valid: 0
-Remainder: 0010110, Quotient: 00000000, Valid: 0
-Remainder: 1100100, Quotient: 00000000, Valid: 0
-Remainder: 0101101, Quotient: 00000000, Valid: 1
 Pass:  45/101 =   0 rem  45
-Dividen:  99, 01100011
-Divisor:  10, 0001010
-Quotient:   9, 00001001
-Remainder: 0000000, Quotient: 11000110, Valid: 0
-Remainder: 1111011, Quotient: 11000110, Valid: 0
-Remainder: 0000000, Quotient: 10001100, Valid: 0
-Remainder: 1111011, Quotient: 10001100, Valid: 0
-Remainder: 0000001, Quotient: 00011000, Valid: 0
-Remainder: 1111100, Quotient: 00011000, Valid: 0
-Remainder: 0000011, Quotient: 00110000, Valid: 0
-Remainder: 1111110, Quotient: 00110000, Valid: 0
-Remainder: 0000110, Quotient: 01100000, Valid: 0
-Remainder: 0000001, Quotient: 01100000, Valid: 0
-Remainder: 0000010, Quotient: 11000001, Valid: 0
-Remainder: 1111101, Quotient: 11000001, Valid: 0
-Remainder: 0000100, Quotient: 10000010, Valid: 0
-Remainder: 1111111, Quotient: 10000010, Valid: 0
-Remainder: 0001001, Quotient: 00000100, Valid: 0
-Remainder: 0000100, Quotient: 00000100, Valid: 0
-Remainder: 0001001, Quotient: 00001001, Valid: 1
 Pass:  99/ 10 =   9 rem   9
-Dividen: 128, 10000000
-Divisor:  32, 0100000
-Quotient:   4, 00000100
-Remainder: 0000000, Quotient: 00000000, Valid: 0
-Remainder: 1110000, Quotient: 00000000, Valid: 0
-Remainder: 0000001, Quotient: 00000000, Valid: 0
-Remainder: 1110001, Quotient: 00000000, Valid: 0
-Remainder: 0000010, Quotient: 00000000, Valid: 0
-Remainder: 1110010, Quotient: 00000000, Valid: 0
-Remainder: 0000100, Quotient: 00000000, Valid: 0
-Remainder: 1110100, Quotient: 00000000, Valid: 0
-Remainder: 0001000, Quotient: 00000000, Valid: 0
-Remainder: 1111000, Quotient: 00000000, Valid: 0
-Remainder: 0010000, Quotient: 00000000, Valid: 0
-Remainder: 0000000, Quotient: 00000000, Valid: 0
-Remainder: 0000000, Quotient: 00000001, Valid: 0
-Remainder: 1110000, Quotient: 00000001, Valid: 0
-Remainder: 0000000, Quotient: 00000010, Valid: 0
-Remainder: 1110000, Quotient: 00000010, Valid: 0
-Remainder: 0000000, Quotient: 00000100, Valid: 1
 Pass: 128/ 32 =   4 rem   0
-Dividen: 170, 10101010
-Divisor:  29, 0011101
-Quotient:   5, 00000101
-Remainder: 0000000, Quotient: 01010100, Valid: 0
-Remainder: 1110010, Quotient: 01010100, Valid: 0
-Remainder: 0000001, Quotient: 10101000, Valid: 0
-Remainder: 1110010, Quotient: 10101000, Valid: 0
-Remainder: 0000010, Quotient: 01010000, Valid: 0
-Remainder: 1110100, Quotient: 01010000, Valid: 0
-Remainder: 0000101, Quotient: 10100000, Valid: 0
-Remainder: 1110110, Quotient: 10100000, Valid: 0
-Remainder: 0001010, Quotient: 01000000, Valid: 0
-Remainder: 1111100, Quotient: 01000000, Valid: 0
-Remainder: 0010101, Quotient: 10000000, Valid: 0
-Remainder: 0000110, Quotient: 10000000, Valid: 0
-Remainder: 0001101, Quotient: 00000001, Valid: 0
-Remainder: 1111111, Quotient: 00000001, Valid: 0
-Remainder: 0011011, Quotient: 00000010, Valid: 0
-Remainder: 0001100, Quotient: 00000010, Valid: 0
-Remainder: 0011001, Quotient: 00000101, Valid: 1
 Pass: 170/ 29 =   5 rem  25
-Dividen: 150, 10010110
-Divisor:  19, 0010011
-Quotient:   7, 00000111
-Remainder: 0000000, Quotient: 00101100, Valid: 0
-Remainder: 1110111, Quotient: 00101100, Valid: 0
-Remainder: 0000001, Quotient: 01011000, Valid: 0
-Remainder: 1110111, Quotient: 01011000, Valid: 0
-Remainder: 0000010, Quotient: 10110000, Valid: 0
-Remainder: 1111000, Quotient: 10110000, Valid: 0
-Remainder: 0000100, Quotient: 01100000, Valid: 0
-Remainder: 1111011, Quotient: 01100000, Valid: 0
-Remainder: 0001001, Quotient: 11000000, Valid: 0
-Remainder: 1111111, Quotient: 11000000, Valid: 0
-Remainder: 0010010, Quotient: 10000000, Valid: 0
-Remainder: 0001001, Quotient: 10000000, Valid: 0
-Remainder: 0010010, Quotient: 00000001, Valid: 0
-Remainder: 0001001, Quotient: 00000001, Valid: 0
-Remainder: 0010010, Quotient: 00000011, Valid: 0
-Remainder: 0001000, Quotient: 00000011, Valid: 0
-Remainder: 0010001, Quotient: 00000111, Valid: 1
 Pass: 150/ 19 =   7 rem  17
-Dividen:  13, 00001101
-Divisor:  83, 1010011
-Quotient:   0, 00000000
-Remainder: 0000000, Quotient: 00011010, Valid: 0
-Remainder: 1010110, Quotient: 00011010, Valid: 0
-Remainder: 0000000, Quotient: 00110100, Valid: 0
-Remainder: 1010110, Quotient: 00110100, Valid: 0
-Remainder: 0000000, Quotient: 01101000, Valid: 0
-Remainder: 1010110, Quotient: 01101000, Valid: 0
-Remainder: 0000000, Quotient: 11010000, Valid: 0
-Remainder: 1010110, Quotient: 11010000, Valid: 0
-Remainder: 0000000, Quotient: 10100000, Valid: 0
-Remainder: 1010111, Quotient: 10100000, Valid: 0
-Remainder: 0000001, Quotient: 01000000, Valid: 0
-Remainder: 1011000, Quotient: 01000000, Valid: 0
-Remainder: 0000011, Quotient: 10000000, Valid: 0
-Remainder: 1011001, Quotient: 10000000, Valid: 0
-Remainder: 0000110, Quotient: 00000000, Valid: 0
-Remainder: 1011101, Quotient: 00000000, Valid: 0
-Remainder: 0001101, Quotient: 00000000, Valid: 1
 Pass:  13/ 83 =   0 rem  13
-Dividen: 107, 01101011
-Divisor:  85, 1010101
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 11010110, Valid: 0
-Remainder: 1010101, Quotient: 11010110, Valid: 0
-Remainder: 0000000, Quotient: 10101100, Valid: 0
-Remainder: 1010110, Quotient: 10101100, Valid: 0
-Remainder: 0000001, Quotient: 01011000, Valid: 0
-Remainder: 1010111, Quotient: 01011000, Valid: 0
-Remainder: 0000011, Quotient: 10110000, Valid: 0
-Remainder: 1011000, Quotient: 10110000, Valid: 0
-Remainder: 0000110, Quotient: 01100000, Valid: 0
-Remainder: 1011100, Quotient: 01100000, Valid: 0
-Remainder: 0001101, Quotient: 11000000, Valid: 0
-Remainder: 1100010, Quotient: 11000000, Valid: 0
-Remainder: 0011010, Quotient: 10000000, Valid: 0
-Remainder: 1110000, Quotient: 10000000, Valid: 0
-Remainder: 0110101, Quotient: 00000000, Valid: 0
-Remainder: 0001011, Quotient: 00000000, Valid: 0
-Remainder: 0010110, Quotient: 00000001, Valid: 1
 Pass: 107/ 85 =   1 rem  22
-Dividen:   2, 00000010
-Divisor:  46, 0101110
-Quotient:   0, 00000000
-Remainder: 0000000, Quotient: 00000100, Valid: 0
-Remainder: 1101001, Quotient: 00000100, Valid: 0
-Remainder: 0000000, Quotient: 00001000, Valid: 0
-Remainder: 1101001, Quotient: 00001000, Valid: 0
-Remainder: 0000000, Quotient: 00010000, Valid: 0
-Remainder: 1101001, Quotient: 00010000, Valid: 0
-Remainder: 0000000, Quotient: 00100000, Valid: 0
-Remainder: 1101001, Quotient: 00100000, Valid: 0
-Remainder: 0000000, Quotient: 01000000, Valid: 0
-Remainder: 1101001, Quotient: 01000000, Valid: 0
-Remainder: 0000000, Quotient: 10000000, Valid: 0
-Remainder: 1101001, Quotient: 10000000, Valid: 0
-Remainder: 0000000, Quotient: 00000000, Valid: 0
-Remainder: 1101001, Quotient: 00000000, Valid: 0
-Remainder: 0000001, Quotient: 00000000, Valid: 0
-Remainder: 1101010, Quotient: 00000000, Valid: 0
-Remainder: 0000010, Quotient: 00000000, Valid: 1
 Pass:   2/ 46 =   0 rem   2
-Dividen:  29, 00011101
-Divisor:  79, 1001111
-Quotient:   0, 00000000
-Remainder: 0000000, Quotient: 00111010, Valid: 0
-Remainder: 1011000, Quotient: 00111010, Valid: 0
-Remainder: 0000000, Quotient: 01110100, Valid: 0
-Remainder: 1011000, Quotient: 01110100, Valid: 0
-Remainder: 0000000, Quotient: 11101000, Valid: 0
-Remainder: 1011000, Quotient: 11101000, Valid: 0
-Remainder: 0000000, Quotient: 11010000, Valid: 0
-Remainder: 1011001, Quotient: 11010000, Valid: 0
-Remainder: 0000001, Quotient: 10100000, Valid: 0
-Remainder: 1011010, Quotient: 10100000, Valid: 0
-Remainder: 0000011, Quotient: 01000000, Valid: 0
-Remainder: 1011100, Quotient: 01000000, Valid: 0
-Remainder: 0000111, Quotient: 10000000, Valid: 0
-Remainder: 1011111, Quotient: 10000000, Valid: 0
-Remainder: 0001110, Quotient: 00000000, Valid: 0
-Remainder: 1100111, Quotient: 00000000, Valid: 0
-Remainder: 0011101, Quotient: 00000000, Valid: 1
 Pass:  29/ 79 =   0 rem  29
-Dividen:  35, 00100011
-Divisor:  10, 0001010
-Quotient:   3, 00000011
-Remainder: 0000000, Quotient: 01000110, Valid: 0
-Remainder: 1111011, Quotient: 01000110, Valid: 0
-Remainder: 0000000, Quotient: 10001100, Valid: 0
-Remainder: 1111011, Quotient: 10001100, Valid: 0
-Remainder: 0000000, Quotient: 00011000, Valid: 0
-Remainder: 1111011, Quotient: 00011000, Valid: 0
-Remainder: 0000001, Quotient: 00110000, Valid: 0
-Remainder: 1111100, Quotient: 00110000, Valid: 0
-Remainder: 0000010, Quotient: 01100000, Valid: 0
-Remainder: 1111101, Quotient: 01100000, Valid: 0
-Remainder: 0000100, Quotient: 11000000, Valid: 0
-Remainder: 1111111, Quotient: 11000000, Valid: 0
-Remainder: 0001000, Quotient: 10000000, Valid: 0
-Remainder: 0000011, Quotient: 10000000, Valid: 0
-Remainder: 0000111, Quotient: 00000001, Valid: 0
-Remainder: 0000010, Quotient: 00000001, Valid: 0
-Remainder: 0000101, Quotient: 00000011, Valid: 1
 Pass:  35/ 10 =   3 rem   5
-Dividen: 202, 11001010
-Divisor:  60, 0111100
-Quotient:   3, 00000011
-Remainder: 0000000, Quotient: 10010100, Valid: 0
-Remainder: 1100010, Quotient: 10010100, Valid: 0
-Remainder: 0000001, Quotient: 00101000, Valid: 0
-Remainder: 1100011, Quotient: 00101000, Valid: 0
-Remainder: 0000011, Quotient: 01010000, Valid: 0
-Remainder: 1100101, Quotient: 01010000, Valid: 0
-Remainder: 0000110, Quotient: 10100000, Valid: 0
-Remainder: 1101000, Quotient: 10100000, Valid: 0
-Remainder: 0001100, Quotient: 01000000, Valid: 0
-Remainder: 1101110, Quotient: 01000000, Valid: 0
-Remainder: 0011001, Quotient: 10000000, Valid: 0
-Remainder: 1111011, Quotient: 10000000, Valid: 0
-Remainder: 0110010, Quotient: 00000000, Valid: 0
-Remainder: 0010100, Quotient: 00000000, Valid: 0
-Remainder: 0101001, Quotient: 00000001, Valid: 0
-Remainder: 0001011, Quotient: 00000001, Valid: 0
-Remainder: 0010110, Quotient: 00000011, Valid: 1
 Pass: 202/ 60 =   3 rem  22
-Dividen: 242, 11110010
-Divisor:  10, 0001010
-Quotient:  24, 00011000
-Remainder: 0000000, Quotient: 11100100, Valid: 0
-Remainder: 1111011, Quotient: 11100100, Valid: 0
-Remainder: 0000001, Quotient: 11001000, Valid: 0
-Remainder: 1111100, Quotient: 11001000, Valid: 0
-Remainder: 0000011, Quotient: 10010000, Valid: 0
-Remainder: 1111110, Quotient: 10010000, Valid: 0
-Remainder: 0000111, Quotient: 00100000, Valid: 0
-Remainder: 0000010, Quotient: 00100000, Valid: 0
-Remainder: 0000101, Quotient: 01000001, Valid: 0
-Remainder: 0000000, Quotient: 01000001, Valid: 0
-Remainder: 0000000, Quotient: 10000011, Valid: 0
-Remainder: 1111011, Quotient: 10000011, Valid: 0
-Remainder: 0000000, Quotient: 00000110, Valid: 0
-Remainder: 1111011, Quotient: 00000110, Valid: 0
-Remainder: 0000001, Quotient: 00001100, Valid: 0
-Remainder: 1111100, Quotient: 00001100, Valid: 0
-Remainder: 0000010, Quotient: 00011000, Valid: 1
 Pass: 242/ 10 =  24 rem   2
-Dividen:  65, 01000001
-Divisor:  88, 1011000
-Quotient:   0, 00000000
-Remainder: 0000000, Quotient: 10000010, Valid: 0
-Remainder: 1010100, Quotient: 10000010, Valid: 0
-Remainder: 0000000, Quotient: 00000100, Valid: 0
-Remainder: 1010100, Quotient: 00000100, Valid: 0
-Remainder: 0000001, Quotient: 00001000, Valid: 0
-Remainder: 1010101, Quotient: 00001000, Valid: 0
-Remainder: 0000010, Quotient: 00010000, Valid: 0
-Remainder: 1010110, Quotient: 00010000, Valid: 0
-Remainder: 0000100, Quotient: 00100000, Valid: 0
-Remainder: 1011000, Quotient: 00100000, Valid: 0
-Remainder: 0001000, Quotient: 01000000, Valid: 0
-Remainder: 1011100, Quotient: 01000000, Valid: 0
-Remainder: 0010000, Quotient: 10000000, Valid: 0
-Remainder: 1100100, Quotient: 10000000, Valid: 0
-Remainder: 0100000, Quotient: 00000000, Valid: 0
-Remainder: 1110100, Quotient: 00000000, Valid: 0
-Remainder: 1000001, Quotient: 00000000, Valid: 1
 Pass:  65/ 88 =   0 rem  65
-Dividen: 120, 01111000
-Divisor:   9, 0001001
-Quotient:  13, 00001101
-Remainder: 0000000, Quotient: 11110000, Valid: 0
-Remainder: 1111011, Quotient: 11110000, Valid: 0
-Remainder: 0000000, Quotient: 11100000, Valid: 0
-Remainder: 1111100, Quotient: 11100000, Valid: 0
-Remainder: 0000001, Quotient: 11000000, Valid: 0
-Remainder: 1111101, Quotient: 11000000, Valid: 0
-Remainder: 0000011, Quotient: 10000000, Valid: 0
-Remainder: 1111111, Quotient: 10000000, Valid: 0
-Remainder: 0000111, Quotient: 00000000, Valid: 0
-Remainder: 0000011, Quotient: 00000000, Valid: 0
-Remainder: 0000110, Quotient: 00000001, Valid: 0
-Remainder: 0000001, Quotient: 00000001, Valid: 0
-Remainder: 0000011, Quotient: 00000011, Valid: 0
-Remainder: 1111110, Quotient: 00000011, Valid: 0
-Remainder: 0000110, Quotient: 00000110, Valid: 0
-Remainder: 0000001, Quotient: 00000110, Valid: 0
-Remainder: 0000011, Quotient: 00001101, Valid: 1
 Pass: 120/  9 =  13 rem   3
-Dividen: 235, 11101011
-Divisor:  54, 0110110
-Quotient:   4, 00000100
-Remainder: 0000000, Quotient: 11010110, Valid: 0
-Remainder: 1100101, Quotient: 11010110, Valid: 0
-Remainder: 0000001, Quotient: 10101100, Valid: 0
-Remainder: 1100110, Quotient: 10101100, Valid: 0
-Remainder: 0000011, Quotient: 01011000, Valid: 0
-Remainder: 1101000, Quotient: 01011000, Valid: 0
-Remainder: 0000111, Quotient: 10110000, Valid: 0
-Remainder: 1101100, Quotient: 10110000, Valid: 0
-Remainder: 0001110, Quotient: 01100000, Valid: 0
-Remainder: 1110011, Quotient: 01100000, Valid: 0
-Remainder: 0011101, Quotient: 11000000, Valid: 0
-Remainder: 0000010, Quotient: 11000000, Valid: 0
-Remainder: 0000100, Quotient: 10000001, Valid: 0
-Remainder: 1101001, Quotient: 10000001, Valid: 0
-Remainder: 0001001, Quotient: 00000010, Valid: 0
-Remainder: 1101110, Quotient: 00000010, Valid: 0
-Remainder: 0010011, Quotient: 00000100, Valid: 1
 Pass: 235/ 54 =   4 rem  19
-Dividen: 198, 11000110
-Divisor:  46, 0101110
-Quotient:   4, 00000100
-Remainder: 0000000, Quotient: 10001100, Valid: 0
-Remainder: 1101001, Quotient: 10001100, Valid: 0
-Remainder: 0000001, Quotient: 00011000, Valid: 0
-Remainder: 1101010, Quotient: 00011000, Valid: 0
-Remainder: 0000011, Quotient: 00110000, Valid: 0
-Remainder: 1101100, Quotient: 00110000, Valid: 0
-Remainder: 0000110, Quotient: 01100000, Valid: 0
-Remainder: 1101111, Quotient: 01100000, Valid: 0
-Remainder: 0001100, Quotient: 11000000, Valid: 0
-Remainder: 1110101, Quotient: 11000000, Valid: 0
-Remainder: 0011000, Quotient: 10000000, Valid: 0
-Remainder: 0000001, Quotient: 10000000, Valid: 0
-Remainder: 0000011, Quotient: 00000001, Valid: 0
-Remainder: 1101100, Quotient: 00000001, Valid: 0
-Remainder: 0000111, Quotient: 00000010, Valid: 0
-Remainder: 1110000, Quotient: 00000010, Valid: 0
-Remainder: 0001110, Quotient: 00000100, Valid: 1
 Pass: 198/ 46 =   4 rem  14
-Dividen: 188, 10111100
-Divisor:  42, 0101010
-Quotient:   4, 00000100
-Remainder: 0000000, Quotient: 01111000, Valid: 0
-Remainder: 1101011, Quotient: 01111000, Valid: 0
-Remainder: 0000001, Quotient: 11110000, Valid: 0
-Remainder: 1101100, Quotient: 11110000, Valid: 0
-Remainder: 0000010, Quotient: 11100000, Valid: 0
-Remainder: 1101101, Quotient: 11100000, Valid: 0
-Remainder: 0000101, Quotient: 11000000, Valid: 0
-Remainder: 1110000, Quotient: 11000000, Valid: 0
-Remainder: 0001011, Quotient: 10000000, Valid: 0
-Remainder: 1110110, Quotient: 10000000, Valid: 0
-Remainder: 0010111, Quotient: 00000000, Valid: 0
-Remainder: 0000010, Quotient: 00000000, Valid: 0
-Remainder: 0000101, Quotient: 00000001, Valid: 0
-Remainder: 1110000, Quotient: 00000001, Valid: 0
-Remainder: 0001010, Quotient: 00000010, Valid: 0
-Remainder: 1110101, Quotient: 00000010, Valid: 0
-Remainder: 0010100, Quotient: 00000100, Valid: 1
 Pass: 188/ 42 =   4 rem  20
-Dividen:  11, 00001011
-Divisor: 113, 1110001
-Quotient:   0, 00000000
-Remainder: 0000000, Quotient: 00010110, Valid: 0
-Remainder: 1000111, Quotient: 00010110, Valid: 0
-Remainder: 0000000, Quotient: 00101100, Valid: 0
-Remainder: 1000111, Quotient: 00101100, Valid: 0
-Remainder: 0000000, Quotient: 01011000, Valid: 0
-Remainder: 1000111, Quotient: 01011000, Valid: 0
-Remainder: 0000000, Quotient: 10110000, Valid: 0
-Remainder: 1000111, Quotient: 10110000, Valid: 0
-Remainder: 0000000, Quotient: 01100000, Valid: 0
-Remainder: 1001000, Quotient: 01100000, Valid: 0
-Remainder: 0000001, Quotient: 11000000, Valid: 0
-Remainder: 1001000, Quotient: 11000000, Valid: 0
-Remainder: 0000010, Quotient: 10000000, Valid: 0
-Remainder: 1001010, Quotient: 10000000, Valid: 0
-Remainder: 0000101, Quotient: 00000000, Valid: 0
-Remainder: 1001101, Quotient: 00000000, Valid: 0
-Remainder: 0001011, Quotient: 00000000, Valid: 1
 Pass:  11/113 =   0 rem  11
-Dividen: 133, 10000101
-Divisor:  79, 1001111
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 00001010, Valid: 0
-Remainder: 1011001, Quotient: 00001010, Valid: 0
-Remainder: 0000001, Quotient: 00010100, Valid: 0
-Remainder: 1011001, Quotient: 00010100, Valid: 0
-Remainder: 0000010, Quotient: 00101000, Valid: 0
-Remainder: 1011010, Quotient: 00101000, Valid: 0
-Remainder: 0000100, Quotient: 01010000, Valid: 0
-Remainder: 1011100, Quotient: 01010000, Valid: 0
-Remainder: 0001000, Quotient: 10100000, Valid: 0
-Remainder: 1100000, Quotient: 10100000, Valid: 0
-Remainder: 0010000, Quotient: 01000000, Valid: 0
-Remainder: 1101001, Quotient: 01000000, Valid: 0
-Remainder: 0100001, Quotient: 10000000, Valid: 0
-Remainder: 1111001, Quotient: 10000000, Valid: 0
-Remainder: 1000010, Quotient: 00000000, Valid: 0
-Remainder: 0011011, Quotient: 00000000, Valid: 0
-Remainder: 0110110, Quotient: 00000001, Valid: 1
 Pass: 133/ 79 =   1 rem  54
-Dividen:  59, 00111011
-Divisor:  58, 0111010
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 01110110, Valid: 0
-Remainder: 1100011, Quotient: 01110110, Valid: 0
-Remainder: 0000000, Quotient: 11101100, Valid: 0
-Remainder: 1100011, Quotient: 11101100, Valid: 0
-Remainder: 0000000, Quotient: 11011000, Valid: 0
-Remainder: 1100011, Quotient: 11011000, Valid: 0
-Remainder: 0000001, Quotient: 10110000, Valid: 0
-Remainder: 1100100, Quotient: 10110000, Valid: 0
-Remainder: 0000011, Quotient: 01100000, Valid: 0
-Remainder: 1100110, Quotient: 01100000, Valid: 0
-Remainder: 0000111, Quotient: 11000000, Valid: 0
-Remainder: 1101010, Quotient: 11000000, Valid: 0
-Remainder: 0001110, Quotient: 10000000, Valid: 0
-Remainder: 1110001, Quotient: 10000000, Valid: 0
-Remainder: 0011101, Quotient: 00000000, Valid: 0
-Remainder: 0000000, Quotient: 00000000, Valid: 0
-Remainder: 0000001, Quotient: 00000001, Valid: 1
 Pass:  59/ 58 =   1 rem   1
-Dividen: 126, 01111110
-Divisor:  21, 0010101
-Quotient:   6, 00000110
-Remainder: 0000000, Quotient: 11111100, Valid: 0
-Remainder: 1110101, Quotient: 11111100, Valid: 0
-Remainder: 0000000, Quotient: 11111000, Valid: 0
-Remainder: 1110110, Quotient: 11111000, Valid: 0
-Remainder: 0000001, Quotient: 11110000, Valid: 0
-Remainder: 1110111, Quotient: 11110000, Valid: 0
-Remainder: 0000011, Quotient: 11100000, Valid: 0
-Remainder: 1111001, Quotient: 11100000, Valid: 0
-Remainder: 0000111, Quotient: 11000000, Valid: 0
-Remainder: 1111101, Quotient: 11000000, Valid: 0
-Remainder: 0001111, Quotient: 10000000, Valid: 0
-Remainder: 0000101, Quotient: 10000000, Valid: 0
-Remainder: 0001010, Quotient: 00000001, Valid: 0
-Remainder: 0000000, Quotient: 00000001, Valid: 0
-Remainder: 0000000, Quotient: 00000011, Valid: 0
-Remainder: 1110101, Quotient: 00000011, Valid: 0
-Remainder: 0000000, Quotient: 00000110, Valid: 1
 Pass: 126/ 21 =   6 rem   0
-Dividen: 241, 11110001
-Divisor:  89, 1011001
-Quotient:   2, 00000010
-Remainder: 0000000, Quotient: 11100010, Valid: 0
-Remainder: 1010100, Quotient: 11100010, Valid: 0
-Remainder: 0000001, Quotient: 11000100, Valid: 0
-Remainder: 1010101, Quotient: 11000100, Valid: 0
-Remainder: 0000011, Quotient: 10001000, Valid: 0
-Remainder: 1010111, Quotient: 10001000, Valid: 0
-Remainder: 0000111, Quotient: 00010000, Valid: 0
-Remainder: 1011011, Quotient: 00010000, Valid: 0
-Remainder: 0001111, Quotient: 00100000, Valid: 0
-Remainder: 1100010, Quotient: 00100000, Valid: 0
-Remainder: 0011110, Quotient: 01000000, Valid: 0
-Remainder: 1110001, Quotient: 01000000, Valid: 0
-Remainder: 0111100, Quotient: 10000000, Valid: 0
-Remainder: 0001111, Quotient: 10000000, Valid: 0
-Remainder: 0011111, Quotient: 00000001, Valid: 0
-Remainder: 1110011, Quotient: 00000001, Valid: 0
-Remainder: 0111111, Quotient: 00000010, Valid: 1
 Pass: 241/ 89 =   2 rem  63
-Dividen:  98, 01100010
-Divisor:  76, 1001100
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 11000100, Valid: 0
-Remainder: 1011010, Quotient: 11000100, Valid: 0
-Remainder: 0000000, Quotient: 10001000, Valid: 0
-Remainder: 1011010, Quotient: 10001000, Valid: 0
-Remainder: 0000001, Quotient: 00010000, Valid: 0
-Remainder: 1011011, Quotient: 00010000, Valid: 0
-Remainder: 0000011, Quotient: 00100000, Valid: 0
-Remainder: 1011101, Quotient: 00100000, Valid: 0
-Remainder: 0000110, Quotient: 01000000, Valid: 0
-Remainder: 1100000, Quotient: 01000000, Valid: 0
-Remainder: 0001100, Quotient: 10000000, Valid: 0
-Remainder: 1100110, Quotient: 10000000, Valid: 0
-Remainder: 0011000, Quotient: 00000000, Valid: 0
-Remainder: 1110010, Quotient: 00000000, Valid: 0
-Remainder: 0110001, Quotient: 00000000, Valid: 0
-Remainder: 0001011, Quotient: 00000000, Valid: 0
-Remainder: 0010110, Quotient: 00000001, Valid: 1
 Pass:  98/ 76 =   1 rem  22
-Dividen: 159, 10011111
-Divisor:  15, 0001111
-Quotient:  10, 00001010
-Remainder: 0000000, Quotient: 00111110, Valid: 0
-Remainder: 1111001, Quotient: 00111110, Valid: 0
-Remainder: 0000001, Quotient: 01111100, Valid: 0
-Remainder: 1111001, Quotient: 01111100, Valid: 0
-Remainder: 0000010, Quotient: 11111000, Valid: 0
-Remainder: 1111010, Quotient: 11111000, Valid: 0
-Remainder: 0000100, Quotient: 11110000, Valid: 0
-Remainder: 1111101, Quotient: 11110000, Valid: 0
-Remainder: 0001001, Quotient: 11100000, Valid: 0
-Remainder: 0000010, Quotient: 11100000, Valid: 0
-Remainder: 0000100, Quotient: 11000001, Valid: 0
-Remainder: 1111101, Quotient: 11000001, Valid: 0
-Remainder: 0001001, Quotient: 10000010, Valid: 0
-Remainder: 0000010, Quotient: 10000010, Valid: 0
-Remainder: 0000100, Quotient: 00000101, Valid: 0
-Remainder: 1111101, Quotient: 00000101, Valid: 0
-Remainder: 0001001, Quotient: 00001010, Valid: 1
 Pass: 159/ 15 =  10 rem   9
-Dividen: 248, 11111000
-Divisor:  55, 0110111
-Quotient:   4, 00000100
-Remainder: 0000000, Quotient: 11110000, Valid: 0
-Remainder: 1100101, Quotient: 11110000, Valid: 0
-Remainder: 0000001, Quotient: 11100000, Valid: 0
-Remainder: 1100110, Quotient: 11100000, Valid: 0
-Remainder: 0000011, Quotient: 11000000, Valid: 0
-Remainder: 1101000, Quotient: 11000000, Valid: 0
-Remainder: 0000111, Quotient: 10000000, Valid: 0
-Remainder: 1101100, Quotient: 10000000, Valid: 0
-Remainder: 0001111, Quotient: 00000000, Valid: 0
-Remainder: 1110100, Quotient: 00000000, Valid: 0
-Remainder: 0011111, Quotient: 00000000, Valid: 0
-Remainder: 0000011, Quotient: 00000000, Valid: 0
-Remainder: 0000111, Quotient: 00000001, Valid: 0
-Remainder: 1101011, Quotient: 00000001, Valid: 0
-Remainder: 0001110, Quotient: 00000010, Valid: 0
-Remainder: 1110010, Quotient: 00000010, Valid: 0
-Remainder: 0011100, Quotient: 00000100, Valid: 1
 Pass: 248/ 55 =   4 rem  28
-Dividen: 159, 10011111
-Divisor:  92, 1011100
-Quotient:   1, 00000001
-Remainder: 0000000, Quotient: 00111110, Valid: 0
-Remainder: 1010010, Quotient: 00111110, Valid: 0
-Remainder: 0000001, Quotient: 01111100, Valid: 0
-Remainder: 1010011, Quotient: 01111100, Valid: 0
-Remainder: 0000010, Quotient: 11111000, Valid: 0
-Remainder: 1010100, Quotient: 11111000, Valid: 0
-Remainder: 0000100, Quotient: 11110000, Valid: 0
-Remainder: 1010110, Quotient: 11110000, Valid: 0
-Remainder: 0001001, Quotient: 11100000, Valid: 0
-Remainder: 1011011, Quotient: 11100000, Valid: 0
-Remainder: 0010011, Quotient: 11000000, Valid: 0
-Remainder: 1100101, Quotient: 11000000, Valid: 0
-Remainder: 0100111, Quotient: 10000000, Valid: 0
-Remainder: 1111001, Quotient: 10000000, Valid: 0
-Remainder: 1001111, Quotient: 00000000, Valid: 0
-Remainder: 0100001, Quotient: 00000000, Valid: 0
-Remainder: 1000011, Quotient: 00000001, Valid: 1
 Pass: 159/ 92 =   1 rem  67
-Number test cases passed:          40
+Pass:  91/  9 =  10 rem   1
+Pass:  73/ 80 =   0 rem  73
+Pass: 215/ 81 =   2 rem  53
+Pass: 150/ 12 =  12 rem   6
+Pass: 194/ 72 =   2 rem  50
+Pass: 119/ 61 =   1 rem  58
+Pass:  18/126 =   0 rem  18
+Pass: 109/ 57 =   1 rem  52
+Pass:  31/ 83 =   0 rem  31
+Pass: 133/120 =   1 rem  13
+Pass:  91/ 73 =   1 rem  18
+Pass:  63/ 42 =   1 rem  21
+Pass:  88/  6 =  14 rem   4
+Pass: 142/ 28 =   5 rem   2
+Pass: 250/ 38 =   6 rem  22
+Pass: 115/ 35 =   3 rem  10
+Pass:  47/ 51 =   0 rem  47
+Pass:  95/ 68 =   1 rem  27
+Pass: 247/ 75 =   3 rem  22
+Pass: 230/ 90 =   2 rem  50
+Pass:  41/109 =   0 rem  41
+Pass: 218/101 =   2 rem  16
+Pass: 181/ 95 =   1 rem  86
+Pass: 121/ 68 =   1 rem  53
+Pass: 208/ 42 =   4 rem  40
+Pass: 171/ 14 =  12 rem   3
+Pass: 220/ 26 =   8 rem  12
+Pass: 253/ 67 =   3 rem  52
+Pass:  86/ 78 =   1 rem   8
+Pass: 103/ 10 =  10 rem   3
+Pass: 182/ 56 =   3 rem  14
+Pass: 121/ 56 =   2 rem   9
+Pass: 148/ 19 =   7 rem  15
+Pass:   4/ 89 =   0 rem   4
+Pass: 219/ 77 =   2 rem  65
+Pass: 217/109 =   1 rem 108
+Pass: 118/ 74 =   1 rem  44
+Pass: 182/ 21 =   8 rem  14
+Pass:  70/  4 =  17 rem   2
+Pass: 247/105 =   2 rem  37
+Number test cases passed:          80
 Number test cases failed:           0
 Good work!
-L62 "test_divider.v": $finish at simulation time 7210000
+L62 "test_divider.v": $finish at simulation time 14410000
 0 simulation events (use +profile or +listcounts option to count)
 CPU time: 0.0 secs to compile + 0.0 secs to link + 0.0 secs in simulation
-End of Tool:	VERILOG-XL	08.20.001-p   Mar 28, 2015  21:50:07
+End of Tool:	VERILOG-XL	08.20.001-p   Mar 28, 2015  21:58:25
