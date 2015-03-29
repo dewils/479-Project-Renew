@@ -46,6 +46,8 @@ reg[15:0] remainder_q;
 reg[6:0] remainder;
 reg[7:0] quotient;
 
+
+// 8-Bit Divisor Register Module
 always @(posedge clk or posedge reset) begin
         if (reset == 1 ) begin
                 // async reset
@@ -58,6 +60,7 @@ always @(posedge clk or posedge reset) begin
         end
 end
 
+// 16-bit 3-to-1 Mux Module
 always @(add or divisor_q or remainder_q) begin
         if (add == 1) begin
                 adder_out <= remainder_q[15:8] + divisor_q; 
@@ -89,6 +92,7 @@ always @(sel or dividendin or adder_out or remainder_q) begin
         endcase
 end
 
+// Shift/No Shift Module
 always @(shift or inbit or mux_out) begin
         if (shift == 1) begin
                 shift_out[15:1] <= mux_out[14:0];
@@ -99,6 +103,7 @@ always @(shift or inbit or mux_out) begin
         end
 end
 
+// 16-Bit Remainder Register
 always @(posedge clk or posedge reset) begin
         if (reset == 1 ) begin
                 // async reset
