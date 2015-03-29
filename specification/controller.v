@@ -89,7 +89,6 @@ always @(curr_state) begin
 			shift <= 1;
 			inbit <= 0;
 			add <= 1'bz;
-			repition_counter = 0;
 		end
 		1: begin
 			load <= 0;
@@ -97,7 +96,6 @@ always @(curr_state) begin
 			shift <= 0;
 			inbit <= 1'bz;
 			add <= 0;
-			repition_counter = repition_counter;
 		end
 		2: begin
 			load <= 0;
@@ -105,7 +103,6 @@ always @(curr_state) begin
 			shift <= 1;
 			inbit <= 0;
 			add <= 1;
-			repition_counter = repition_counter + 1;
 		end
 		3: begin
 			load <= 0;
@@ -113,17 +110,26 @@ always @(curr_state) begin
 			shift <= 1;
 			inbit <= 1;
 			add <= 1'bz;
-			repition_counter = repition_counter + 1;
 		end
 	endcase
 end
 
+always @(posedge clk) begin
+	if (start == 1) begin
+		repition_counter = 0;
+	end
+	else begin
+		repition_counter = repition_counter + 1;
+	end
+end
+
 always @(repition_counter) begin
-	if (repition_counter == 8) begin
+	if (repition_counter == 17) begin
 		valid = 1;
 	end
 	else begin
 		valid = 0;
 	end
 end
+
 endmodule
