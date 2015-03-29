@@ -31,15 +31,15 @@ input sign;
 input clk;
 input reset;
 
-reg[2:0] curr_state;
-reg[2:0] next_state;
+reg[1:0] curr_state;
+reg[1:0] next_state;
 reg load;
 reg[1:0] sel;
 reg shift;
 reg inbit;
 reg add;
 reg valid;
-reg repitiion_counter;
+reg [7:0] repition_counter;
 
 // State Register
 always @(posedge clk or posedge reset)
@@ -53,7 +53,7 @@ begin
 end
 
 // Next State Logic
-always @(curr_state or start) begin
+always @(curr_state or start or sign) begin
 	if (start == 1) begin
 		next_state <= 0;
 	end
@@ -71,23 +71,10 @@ always @(curr_state or start) begin
 				end
 			end
 			2: begin
-				if(valid == 1) begin
-					next_state <= 4;
-				end
-				else begin
-					next_state <= 1;
-				end
+				next_state <= 1;
 			end
 			3: begin
-				if(valid == 1) begin
-					next_state <= 4;
-				end
-				else begin
-					next_state <= 1;
-				end
-			end
-			4: begin
-				next_state <= 4;
+				next_state <= 1;
 			end
 		endcase
 	end
@@ -102,8 +89,7 @@ always @(curr_state) begin
 			shift <= 1;
 			inbit <= 0;
 			add <= 1'bz;
-			valid <= 0;
-			repitiion_counter <= 0;
+			repition_counter = 0;
 		end
 		1: begin
 			load <= 0;
@@ -111,8 +97,7 @@ always @(curr_state) begin
 			shift <= 0;
 			inbit <= 1'bz;
 			add <= 0;
-			valid <= 0;
-			repitiion_counter <= repitiion_counter + 1;
+			repition_counter = repition_counter;
 		end
 		2: begin
 			load <= 0;
@@ -120,12 +105,7 @@ always @(curr_state) begin
 			shift <= 1;
 			inbit <= 0;
 			add <= 1;
-			if(repitiion_counter == 9) begin
-				valid <= 1;
-			end
-			else begin
-				valid <= 0;
-			end
+			repition_counter = repition_counter + 1;
 		end
 		3: begin
 			load <= 0;
@@ -133,22 +113,17 @@ always @(curr_state) begin
 			shift <= 1;
 			inbit <= 1;
 			add <= 1'bz;
-			if(repitiion_counter == 9) begin
-				valid <= 1;
-			end
-			else begin
-				valid <= 0;
-			end
-		end
-		4: begin
-			load <= 0;
-			sel <= 3;
-			shift <= 0;
-			inbit <= 1'bz;
-			add <= 1'bz;
-			valid <= 1;
+			repition_counter = repition_counter + 1;
 		end
 	endcase
 end
 
+always @(repition_counter) begin
+	if (repition_counter == 8) begin
+		valid = 1;
+	end
+	else begin
+		valid = 0;
+	end
+end
 endmodule

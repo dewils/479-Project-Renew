@@ -9,25 +9,39 @@
 //
 
 
-module divider(
-         remainder,
-         quotient,
-	 valid,
-         divisorin,
-         dividendin,
-         start,
-         clk,
-         reset);
+module 	divider(
+		remainder,
+		quotient,
+		valid,
+		load_w,
+		sign_w,
+		sel_w,
+		shift_w,
+		inbit_w,
+		divisorin,
+		dividendin,
+		start,
+		clk,
+		reset);
 
+// Outputs
 output [6:0] remainder;
 output [7:0] quotient;
-output valid;  
+output valid; 
+output load_w;
+output sign_w;
+output sel_w;
+output shift_w;
+output inbit_w;
+
+// Inputs
 input [6:0] divisorin;
 input [7:0] dividendin;
 input start;
 input clk;
 input reset;
 
+// Wires (not sure if I need these, if current configuration doesn't work, use these wires)
 wire load_w;
 wire add_w;
 wire sign_w;

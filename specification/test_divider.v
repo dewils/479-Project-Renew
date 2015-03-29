@@ -14,6 +14,11 @@ module  test_divider;
 wire [6:0] remainder;
 wire [7:0] quotient;
 wire valid;
+wire load_w;
+wire sign_w;
+wire [1:0] sel_w;
+wire shift_w;
+wire inbit_w;
 reg [6:0] divisorin;
 reg [7:0] dividendin;
 reg start;
@@ -28,6 +33,11 @@ divider u0(
          .remainder(remainder),
          .quotient(quotient),
          .valid(valid),
+         .load_w(load_w),
+         .sign_w(sign_w),
+         .sel_w(sel_w),
+         .shift_w(shift_w),
+         .inbit_w(inbit_w),
          .divisorin(divisorin),
          .dividendin(dividendin),
          .start(start),
@@ -101,18 +111,24 @@ task test_divider;
        // need to test for the divide-by-zero case
 
        while(divisorin_copy == 0) divisorin_copy = $random;
+       $display("Dividen: %d, %b", dividendin_copy, dividendin_copy);
+       $display("Divisor: %d, %b", divisorin_copy, divisorin_copy);
+       $display("Quotient: %d, %b", dividendin_copy/divisorin_copy, dividendin_copy/divisorin_copy);
+
 
        dividendin = dividendin_copy;
        divisorin = divisorin_copy;
 
        // Now wait 17 cycles
- 
+
        for(cnt=0; cnt<17; cnt=cnt+1) begin
           @(negedge clk);
+          // $display("Load: %b, Sign: %b, Sel: %b, Shift: %b, Inbit: %b", load_w, sign_w, sel_w, shift_w, inbit_w);
+          $display("Remainder: %b, Quotient: %b, Valid: %b", remainder, quotient, valid);
+
        end
 
        // Print Results for this test case
-
        if (quotient * divisorin_copy + remainder == dividendin_copy) 
        begin
           $display("Pass: %d/%d = %d rem %d",

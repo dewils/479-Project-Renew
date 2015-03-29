@@ -51,43 +51,44 @@ reg[7:0] quotient;
 always @(posedge clk or posedge reset) begin
         if (reset == 1 ) begin
                 // async reset
-                divisor_q <= 0;
+                divisor_q = 0;
         end
         else if (load == 1) begin
                 // load register selected
-                divisor_q[7] <= 1'b0;
-                divisor_q[6:0] <= divisorin;
+                divisor_q[7] = 1'b0;
+                divisor_q[6:0] = divisorin;
         end
+end
+
+// 8-Bit Adder/Subtractor Module
+always @(add or divisor_q or remainder_q) begin
+        if (add == 1) begin
+                adder_out = remainder_q[15:8] + divisor_q; 
+        end
+        else begin
+                adder_out = remainder_q[15:8] + ~divisor_q + 1; 
+        end
+        sign = adder_out[7];
 end
 
 // 16-bit 3-to-1 Mux Module
-always @(add or divisor_q or remainder_q) begin
-        if (add == 1) begin
-                adder_out <= remainder_q[15:8] + divisor_q; 
-        end
-        else begin
-                adder_out <= remainder_q[15:8] - divisor_q; 
-        end
-        sign <= adder_out[7];
-end
-
 always @(sel or dividendin or adder_out or remainder_q) begin
         case(sel)
                 0: begin
-                        mux_out[15:8] <= 8'b00000000;
-                        mux_out[7:0] <= 8'b00000000;
+                        mux_out[15:8] = 8'b00000000;
+                        mux_out[7:0] = 8'b00000000;
                 end
                 1: begin
-                        mux_out[15:8] <= adder_out;
-                        mux_out[7:0] <= remainder_q[7:0];
+                        mux_out[15:8] = adder_out;
+                        mux_out[7:0] = remainder_q[7:0];
                 end
                 2: begin
-                        mux_out[15:8] <= 8'b00000000;
-                        mux_out[7:0] <= dividendin;
+                        mux_out[15:8] = 8'b00000000;
+                        mux_out[7:0] = dividendin;
                 end
                 3: begin
-                        mux_out[15:8] <= remainder_q[15:8];
-                        mux_out[7:0] <= remainder_q[7:0];
+                        mux_out[15:8] = remainder_q[15:8];
+                        mux_out[7:0] = remainder_q[7:0];
                 end
         endcase
 end
@@ -95,11 +96,11 @@ end
 // Shift/No Shift Module
 always @(shift or inbit or mux_out) begin
         if (shift == 1) begin
-                shift_out[15:1] <= mux_out[14:0];
-                shift_out[0] <= inbit;
+                shift_out[15:1] = mux_out[14:0];
+                shift_out[0] = inbit;
         end
         else begin
-                shift_out <= mux_out;
+                shift_out = mux_out;
         end
 end
 
@@ -107,13 +108,13 @@ end
 always @(posedge clk or posedge reset) begin
         if (reset == 1 ) begin
                 // async reset
-                remainder_q <= 0;
+                remainder_q = 0;
         end
         else begin
-                remainder_q <= shift_out;
+                remainder_q = shift_out;
         end
-        remainder <= remainder_q[15:9];
-        quotient <= remainder_q[7:0];
+        remainder = remainder_q[15:9];
+        quotient = remainder_q[7:0];
 end
 
 endmodule
