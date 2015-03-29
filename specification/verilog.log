@@ -1,9 +1,11 @@
 Host command: /CMC/tools/cadence/IUS08.20.024_lnx86/tools/verilog/bin/verilog.exe
 Command arguments:
+    divider.v
     controller.v
+    datapath.v
 
-Tool:	VERILOG-XL	08.20.001-p log file created Mar 28, 2015  18:55:52
-Tool:	VERILOG-XL	08.20.001-p   Mar 28, 2015  18:55:52
+Tool:	VERILOG-XL	08.20.001-p log file created Mar 28, 2015  19:03:04
+Tool:	VERILOG-XL	08.20.001-p   Mar 28, 2015  19:03:04
 
 Copyright (c) 1995-2004 Cadence Design Systems, Inc.  All Rights Reserved.
 Unpublished -- rights reserved under the copyright laws of the United States.
@@ -32,10 +34,12 @@ For technical assistance please contact the Cadence Response Center at
 For more information on Cadence's Verilog-XL product line send email to
 talkv@cadence.com
 
+Compiling source file "divider.v"
 Compiling source file "controller.v"
+Compiling source file "datapath.v"
 Highest level modules:
-controller
+divider
 
 0 simulation events (use +profile or +listcounts option to count)
 CPU time: 0.0 secs to compile + 0.0 secs to link + 0.0 secs in simulation
-End of Tool:	VERILOG-XL	08.20.001-p   Mar 28, 2015  18:55:54
+End of Tool:	VERILOG-XL	08.20.001-p   Mar 28, 2015  19:03:05
