@@ -1,15 +1,27 @@
-|   units: 50   tech: scoms
+|	units: 50	tech: scoms
 
-p	D	vdd	n1	2	4
-p	clk	n1	n2	2	4
-p	n2	vdd	n3	2	4
-p	n3	vdd	n4	2	4
-p	reset_n	vdd	n4	2	4
-
-
+p	D	vdd	n1	2	8
+p	clk	n1	n2	2	8
+p	n2	vdd	n3	2	8
+p	n3	vdd	n4	2	8
+p	reset_n	vdd	n4	2	8
+p	clk_n	n4	n2	2	8
+p	clk_n	n3	n6	2	8
+p	n6	vdd	n7	2	8
+p	reset_n	vdd	n7	2	8
+p	n7	ndd	n9	2	8
+p	clk	n9	n6	2	8
+p	n7	vdd	Q	2	8
 
 n	D	n1	gnd	2	4
 n	clk_n	n1	n2	2	4
 n	n2	n3	gnd	2	4
 n	n3	n4	n5	2	4
 n	reset_n	n5	gnd	2	4
+n	clk	n4	n2	2	4
+n	clk	n3	n6	2	4
+n	n6	n7	n8	2	4
+n	reset_n	n8	gnd	2	4
+n	clk_n	n6	n10	2	4
+n	n7	n10	gnd	2	4
+n	n7	Q	gnd	2	4
