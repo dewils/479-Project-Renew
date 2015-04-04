@@ -1,0 +1,67 @@
+| units: 100 tech: scmos format: MIT
+p D Vdd a_n4_n61# 2 8 -6 -31
+p clk a_n4_n61# a_12_n61# 2 8 10 -31
+p a_12_n61# Vdd a_28_n61# 2 8 26 -31
+p a_28_n61# Vdd a_45_n31# 2 8 43 -31
+p reset_n a_45_n31# Vdd 2 8 53 -31
+p clk_n a_45_n31# a_12_n61# 2 8 69 -31
+p clk_n a_28_n61# a_87_n61# 2 8 85 -31
+p a_87_n61# Vdd a_103_n31# 2 8 101 -31
+p reset_n a_103_n31# Vdd 2 8 111 -31
+p a_103_n31# Vdd a_129_n31# 2 8 127 -31
+p clk a_129_n31# a_87_n61# 2 8 132 -31
+p a_103_n31# Vdd Q 2 8 148 -31
+n D GND a_n4_n61# 2 4 -6 -61
+n clk_n a_n4_n61# a_12_n61# 2 4 10 -61
+n a_12_n61# GND a_28_n61# 2 4 26 -61
+n a_28_n61# GND a_45_n61# 2 4 43 -61
+n reset_n a_45_n61# a_45_n31# 2 4 53 -61
+n clk a_45_n31# a_12_n61# 2 4 69 -61
+n clk a_28_n61# a_87_n61# 2 4 85 -61
+n a_87_n61# GND a_103_n61# 2 4 101 -61
+n reset_n a_103_n61# a_103_n31# 2 4 111 -61
+n a_103_n31# GND a_129_n61# 2 4 127 -61
+n clk_n a_129_n61# a_87_n61# 2 4 132 -61
+n a_103_n31# GND Q 2 4 148 -61
+C Vdd a_n4_n61# 3.9
+C Vdd a_87_n61# 8.2
+C GND Q 2.0
+C Vdd clk 6.2
+C GND a_n4_n61# 4.0
+C GND a_87_n61# 10.3
+C Vdd clk_n 6.2
+C GND clk 6.2
+C GND clk_n 6.2
+C Vdd a_45_n31# 4.3
+C Vdd reset_n 11.1
+C Vdd a_12_n61# 8.2
+C GND a_45_n31# 4.5
+C GND reset_n 11.1
+C GND a_12_n61# 10.7
+C Vdd a_103_n31# 14.4
+C Vdd a_28_n61# 10.3
+C Vdd D 5.6
+C GND a_103_n31# 11.8
+C GND a_28_n61# 8.3
+C GND D 5.6
+R a_129_n61# 36
+R a_103_n61# 53
+R a_45_n61# 53
+C clk_n GND 22.5
+R clk_n 2009
+C clk GND 22.5
+R clk 2009
+R Q 142
+R a_129_n31# 159
+R a_45_n31# 512
+R a_n4_n61# 534
+R a_103_n31# 954
+C reset_n GND 22.5
+R reset_n 2434
+R a_87_n61# 939
+R a_28_n61# 932
+R a_12_n61# 940
+C D GND 11.3
+R D 1193
+R GND 2381
+R Vdd 18075
