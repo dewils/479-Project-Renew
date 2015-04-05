@@ -9,7 +9,7 @@ p	X	vdd	n6	2	8
 p	S1	n6	n7	2	8
 p	D2	vdd	n9	2	8
 p	S1_n	n9	n7	2	8
-p	n7	vdd	Y	2	8
+p	n7	vdd	Y	2	16
 
 n	D0	n3	gnd	2	4
 n	S0_n	n2	n3	2	4
@@ -20,7 +20,7 @@ n	X	n8	gnd	2	4
 n	S1_n	n7	n8	2	4
 n	D2	n10	gnd	2	4
 n	S1	n7	n10	2	4
-n	n7	Y	gnd	2	4
+n	n7	Y	gnd	2	8
 
 C	n1	gnd	6
 C	n2	gnd	6

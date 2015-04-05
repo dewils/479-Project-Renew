@@ -1,0 +1,75 @@
+timestamp 1428265910
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_53_32#" 36 0 53 32 ndiff 12 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_32_32#" 36 0 32 32 ndiff 12 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6_32#" 36 0 -6 32 ndiff 12 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n27_32#" 36 0 -27 32 ndiff 12 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "S1" 453 5872 56 0 p 0 0 0 0 76 80 0 0 0 0 0 0 0 0 0 0 0 0
+node "S1_n" 453 5872 35 0 p 0 0 0 0 76 80 0 0 0 0 0 0 0 0 0 0 0 0
+node "S0" 453 5872 -3 0 p 0 0 0 0 76 80 0 0 0 0 0 0 0 0 0 0 0 0
+node "S0_n" 453 5872 -24 0 p 0 0 0 0 76 80 0 0 0 0 0 0 0 0 0 0 0 0
+node "Y" 120 0 74 32 ndiff 24 20 48 28 0 0 0 0 0 0 0 0 136 92 25 22 0 0
+node "a_53_64#" 159 0 53 64 pdiff 0 0 24 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_32_64#" 159 0 32 64 pdiff 0 0 24 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n6_64#" 159 0 -6 64 pdiff 0 0 24 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n27_64#" 159 0 -27 64 pdiff 0 0 24 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_37_32#" 939 0 37 32 ndiff 40 36 80 52 76 76 0 0 0 0 0 0 350 240 117 82 0 0
+node "S1_n" 453 4920 56 62 p 0 0 0 0 76 80 0 0 0 0 0 0 0 0 0 0 0 0
+node "D2" 1193 10792 51 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
+node "S1" 453 4920 35 62 p 0 0 0 0 76 80 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_15_32#" 525 0 15 32 ndiff 24 20 48 28 76 76 0 0 0 0 0 0 214 148 47 36 0 0
+node "a_n22_32#" 939 0 -22 32 ndiff 40 36 80 52 76 76 0 0 0 0 0 0 350 240 114 80 0 0
+node "S0_n" 453 4920 -3 62 p 0 0 0 0 76 80 0 0 0 0 0 0 0 0 0 0 0 0
+node "D1" 1193 10792 -8 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
+node "S0" 453 4920 -24 62 p 0 0 0 0 76 80 0 0 0 0 0 0 0 0 0 0 0 0
+node "D0" 1193 10792 -29 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
+node "GND" 1903 0 -38 24 pw 120 108 96 96 0 0 0 0 0 0 0 0 680 348 0 0 0 0
+node "Vdd" 12166 0 -38 50 nw 96 96 240 156 0 0 0 0 0 0 0 0 776 396 0 0 3660 304
+cap "Vdd" "Y" 2182
+cap "D1" "GND" 5796
+cap "a_15_32#" "GND" 6658
+cap "GND" "S1_n" 3100
+cap "D2" "GND" 5796
+cap "Vdd" "D1" 5796
+cap "Vdd" "a_15_32#" 6753
+cap "Vdd" "S0_n" 3100
+cap "D0" "GND" 5796
+cap "Vdd" "D2" 5796
+cap "S0_n" "GND" 3100
+cap "Vdd" "S1" 3100
+cap "Vdd" "D0" 5796
+cap "a_n22_32#" "GND" 9011
+cap "Vdd" "S0" 3100
+cap "Vdd" "S1_n" 3100
+cap "S1" "GND" 3100
+cap "GND" "a_37_32#" 9030
+cap "Vdd" "a_n22_32#" 9391
+cap "a_n22_32#" "D1" 114
+cap "Vdd" "a_37_32#" 9429
+cap "Y" "GND" 2125
+cap "D2" "a_37_32#" 114
+cap "GND" "S0" 3100
+device mosfet nfet 72 32 73 33 2 4 "GND" "a_37_32#" 4 0 "GND" 4 0 "Y" 4 0
+device mosfet nfet 56 32 57 33 2 4 "GND" "S1" 4 0 "a_53_32#" 4 0 "a_37_32#" 4 0
+device mosfet nfet 51 32 52 33 2 4 "GND" "D2" 4 0 "GND" 4 0 "a_53_32#" 4 0
+device mosfet nfet 35 32 36 33 2 4 "GND" "S1_n" 4 0 "a_32_32#" 4 0 "a_37_32#" 4 0
+device mosfet nfet 30 32 31 33 2 4 "GND" "a_15_32#" 4 0 "GND" 4 0 "a_32_32#" 4 0
+device mosfet nfet 13 32 14 33 2 4 "GND" "a_n22_32#" 4 0 "GND" 4 0 "a_15_32#" 4 0
+device mosfet nfet -3 32 -2 33 2 4 "GND" "S0" 4 0 "a_n6_32#" 4 0 "a_n22_32#" 4 0
+device mosfet nfet -8 32 -7 33 2 4 "GND" "D1" 4 0 "GND" 4 0 "a_n6_32#" 4 0
+device mosfet nfet -24 32 -23 33 2 4 "GND" "S0_n" 4 0 "a_n27_32#" 4 0 "a_n22_32#" 4 0
+device mosfet nfet -29 32 -28 33 2 4 "GND" "D0" 4 0 "GND" 4 0 "a_n27_32#" 4 0
+device mosfet pfet 72 64 73 65 2 8 "Vdd" "a_37_32#" 4 0 "Vdd" 8 0 "Y" 8 0
+device mosfet pfet 56 64 57 65 2 8 "Vdd" "S1_n" 4 0 "a_53_64#" 8 0 "a_37_32#" 8 0
+device mosfet pfet 51 64 52 65 2 8 "Vdd" "D2" 4 0 "Vdd" 8 0 "a_53_64#" 8 0
+device mosfet pfet 35 64 36 65 2 8 "Vdd" "S1" 4 0 "a_32_64#" 8 0 "a_37_32#" 8 0
+device mosfet pfet 30 64 31 65 2 8 "Vdd" "a_15_32#" 4 0 "Vdd" 8 0 "a_32_64#" 8 0
+device mosfet pfet 13 64 14 65 2 8 "Vdd" "a_n22_32#" 4 0 "Vdd" 8 0 "a_15_32#" 8 0
+device mosfet pfet -3 64 -2 65 2 8 "Vdd" "S0_n" 4 0 "a_n6_64#" 8 0 "a_n22_32#" 8 0
+device mosfet pfet -8 64 -7 65 2 8 "Vdd" "D1" 4 0 "Vdd" 8 0 "a_n6_64#" 8 0
+device mosfet pfet -24 64 -23 65 2 8 "Vdd" "S0" 4 0 "a_n27_64#" 8 0 "a_n22_32#" 8 0
+device mosfet pfet -29 64 -28 65 2 8 "Vdd" "D0" 4 0 "Vdd" 8 0 "a_n27_64#" 8 0

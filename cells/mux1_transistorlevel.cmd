@@ -1,5 +1,5 @@
 stepsize 50
-analyzer Y X S0 S0_n S1 S1_n D0 D1 D2
+analyzer Y S0 S0_n S1 S1_n D0 D1 D2
 vector S0_bus S0 S0_n 
 vector S1_bus S1 S1_n
 vector D D0 D1 D2
