@@ -1,71 +1,69 @@
 | units: 100 tech: scmos format: MIT
-p D0 Vdd a_n27_64# 2 8 -29 64
-p S0 a_n27_64# a_n22_32# 2 8 -24 64
-p D1 Vdd a_n6_64# 2 8 -8 64
-p S0_n a_n6_64# a_n22_32# 2 8 -3 64
-p a_n22_32# Vdd a_15_32# 2 8 13 64
-p a_15_32# Vdd a_32_64# 2 8 30 64
-p S1 a_32_64# a_37_32# 2 8 35 64
-p D2 Vdd a_53_64# 2 8 51 64
-p S1_n a_53_64# a_37_32# 2 8 56 64
-p a_37_32# Vdd Y 2 8 72 64
-n D0 GND a_n27_32# 2 4 -29 32
-n S0_n a_n27_32# a_n22_32# 2 4 -24 32
-n D1 GND a_n6_32# 2 4 -8 32
-n S0 a_n6_32# a_n22_32# 2 4 -3 32
-n a_n22_32# GND a_15_32# 2 4 13 32
-n a_15_32# GND a_32_32# 2 4 30 32
-n S1_n a_32_32# a_37_32# 2 4 35 32
-n D2 GND a_53_32# 2 4 51 32
-n S1 a_53_32# a_37_32# 2 4 56 32
-n a_37_32# GND Y 2 4 72 32
-C Vdd S1 3.1
-C Vdd D0 5.8
-C Vdd a_15_32# 6.8
-C GND S1 3.1
-C GND D0 5.8
-C Vdd Y 2.2
-C GND a_15_32# 6.7
-C Vdd S0_n 3.1
-C GND Y 2.1
-C GND S0_n 3.1
-C Vdd D2 5.8
-C GND D2 5.8
-C Vdd a_37_32# 9.4
+p D0 Vdd a_n27_60# 2 8 -29 60
+p S0 a_n27_60# a_n22_36# 2 8 -24 60
+p D1 Vdd a_n6_60# 2 8 -8 60
+p S0_n a_n6_60# a_n22_36# 2 8 -3 60
+p a_n22_36# Vdd a_15_36# 2 8 13 60
+p a_15_36# Vdd a_32_60# 2 8 30 60
+p S1 a_32_60# a_37_36# 2 8 35 60
+p D2 Vdd a_53_60# 2 8 51 60
+p S1_n a_53_60# a_37_36# 2 8 56 60
+p a_37_36# Vdd Y 2 8 72 60
+n D0 GND a_n27_36# 2 4 -29 36
+n S0_n a_n27_36# a_n22_36# 2 4 -24 36
+n D1 GND a_n6_36# 2 4 -8 36
+n S0 a_n6_36# a_n22_36# 2 4 -3 36
+n a_n22_36# GND a_15_36# 2 4 13 36
+n a_15_36# GND a_32_36# 2 4 30 36
+n S1_n a_32_36# a_37_36# 2 4 35 36
+n D2 GND a_53_36# 2 4 51 36
+n S1 a_53_36# a_37_36# 2 4 56 36
+n a_37_36# GND Y 2 4 72 36
+C GND D2 4.8
+C Vdd a_37_36# 7.7
 C Vdd S0 3.1
-C GND a_37_32# 9.0
-C Vdd S1_n 3.1
+C GND a_37_36# 7.3
 C GND S0 3.1
-C Vdd D1 5.8
-C GND D1 5.8
+C Vdd S1_n 3.1
+C Vdd D1 4.8
+C Vdd a_n22_36# 7.7
+C GND D1 4.8
 C GND S1_n 3.1
-C Vdd a_n22_32# 9.4
-C GND a_n22_32# 9.0
-R a_53_32# 36
-R a_32_32# 36
-R a_n6_32# 36
-R a_n27_32# 36
-C S1 GND 10.8
-R S1 956
-C S1_n GND 10.8
-R S1_n 956
-C S0 GND 10.8
-R S0 956
-C S0_n GND 10.8
-R S0_n 956
+C GND a_n22_36# 7.3
+C Vdd S1 3.1
+C Vdd D0 4.8
+C GND S1 3.1
+C Vdd a_15_36# 5.6
+C GND D0 4.8
+C GND a_15_36# 5.5
+C Vdd S0_n 3.1
+C GND S0_n 3.1
+C Vdd D2 4.8
+R a_53_36# 36
+R a_32_36# 36
+R a_n6_36# 36
+R a_n27_36# 36
+C S1 GND 12.7
+R S1 1052
+C S1_n GND 12.7
+R S1_n 1052
+C S0 GND 12.7
+R S0 1052
+C S0_n GND 12.7
+R S0_n 1052
 R Y 120
-R a_53_64# 159
-R a_32_64# 159
-R a_n6_64# 159
-R a_n27_64# 159
-R a_37_32# 939
-C D2 GND 10.8
+R a_53_60# 159
+R a_32_60# 159
+R a_n6_60# 159
+R a_n27_60# 159
+R a_37_36# 939
+C D2 GND 12.7
 R D2 1193
-R a_15_32# 525
-R a_n22_32# 939
-C D1 GND 10.8
+R a_15_36# 525
+R a_n22_36# 939
+C D1 GND 12.7
 R D1 1193
-C D0 GND 10.8
+C D0 GND 12.7
 R D0 1193
 R GND 1903
-R Vdd 12166
+R Vdd 13734
