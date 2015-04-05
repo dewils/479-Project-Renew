@@ -1,0 +1,34 @@
+|	units: 50	tech: scoms
+
+p 	D0	vdd	n1	2	8
+p	S0	n1	n2	2	8
+p	D1	vdd	n4	2	8
+p	S0_n	n4	n2	2	8
+p	n2	vdd	X	2	8
+p	X	vdd	n6	2	8
+p	S1	n6	n7	2	8
+p	D2	vdd	n9	2	8
+p	S1_n	n9	n7	2	8
+p	n7	vdd	Y	2	8
+
+n	D0	n3	gnd	2	4
+n	S0_n	n2	n3	2	4
+n	D1	n5	gnd	2	4
+n	S0	n2	n5	2	4
+n	n2	X	gnd	2	4
+n	X	n8	gnd	2	4
+n	S1_n	n7	n8	2	4
+n	D2	n10	gnd	2	4
+n	S1	n7	n10	2	4
+n	n7	Y	gnd	2	4
+
+C	n1	gnd	6
+C	n2	gnd	6
+C	n3	gnd	6
+C	n4	gnd	6
+C	n5	gnd	6
+C	n6	gnd	6
+C	n7	gnd	6
+C	n8	gnd	6
+C	n9	gnd	6
+C	n10	gnd	6
