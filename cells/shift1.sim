@@ -1,0 +1,19 @@
+| units: 100 tech: scmos format: MIT
+p shift A B 2 8 4 33
+p noshift inbit B 2 8 20 33
+n noshift A B 2 4 4 15
+n shift inbit B 2 4 20 15
+C GND noshift 3.3
+C Vdd shift 3.1
+C GND shift 3.3
+C Vdd B 3.0
+C Vdd noshift 3.1
+C shift GND 13.9
+R shift 1123
+C noshift GND 13.9
+R noshift 1123
+R inbit 129
+R B 534
+R A 129
+R GND 60
+R Vdd 3949
