@@ -1,0 +1,7 @@
+|	units: 50	tech: scoms
+
+p	shift	A	B	2	8
+p	noshift	inbit	B	2	8
+
+n	noshift	A	B	2	4
+n	shift	inbit	B	2	4
