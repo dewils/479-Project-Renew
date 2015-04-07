@@ -1,10 +1,7 @@
 stepsize 50
-analyzer X Z A B C
+analyzer X Z A B C add_n
 vector in A B C
-set in 000
-s
-set in 000
-s
+l add_n
 set in 000
 s
 set in 001
@@ -21,7 +18,12 @@ set in 110
 s
 set in 111
 s
-set in 000
+h add_n
+set in 001
 s
-set in 000
+set in 011
+s
+set in 101
+s
+set in 111
 s

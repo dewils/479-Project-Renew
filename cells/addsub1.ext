@@ -1,118 +1,115 @@
-timestamp 1428188527
+timestamp 1428379355
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
 scale 1000 1 100
 resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
-node "a_105_34#" 44 0 105 34 ndiff 15 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_100_34#" 44 0 100 34 ndiff 15 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_106_34#" 33 0 106 34 ndiff 20 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_100_34#" 33 0 100 34 ndiff 20 18 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_39_34#" 272 0 39 34 ndiff 100 70 0 0 0 0 0 0 0 0 0 0 135 102 120 84 0 0
 node "a_1_34#" 44 0 1 34 ndiff 15 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n39_34#" 157 0 -39 34 ndiff 55 42 0 0 0 0 0 0 0 0 0 0 90 68 65 48 0 0
-node "Z" 132 0 126 34 ndiff 30 22 60 32 0 0 0 0 0 0 0 0 163 108 25 22 0 0
-node "a_105_72#" 199 0 105 72 pdiff 0 0 30 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "a_100_72#" 199 0 100 72 pdiff 0 0 30 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Z" 132 0 131 34 ndiff 30 22 60 32 0 0 0 0 0 0 0 0 163 108 25 22 0 0
+node "a_106_72#" 149 0 106 72 pdiff 0 0 40 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_100_72#" 149 0 100 72 pdiff 0 0 40 28 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_39_72#" 621 0 39 72 pdiff 0 0 200 100 0 0 0 0 0 0 0 0 195 132 120 84 0 0
-node "X" 133 0 22 34 ndiff 30 22 60 32 0 0 0 0 0 0 0 0 163 108 337 230 0 0
+node "X" 585 4444 22 34 ndiff 30 22 60 32 84 84 0 0 0 0 0 0 207 142 305 208 0 0
 node "a_1_72#" 199 0 1 72 pdiff 0 0 30 26 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_n39_72#" 393 0 -39 72 pdiff 0 0 110 62 0 0 0 0 0 0 0 0 130 88 65 48 0 0
-node "a_83_34#" 991 0 83 34 ndiff 55 42 110 62 82 82 0 0 0 0 0 0 419 282 129 90 0 0
-node "C" 1193 8888 108 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "B" 1193 8888 103 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "A" 1193 8888 98 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "C" 1193 8888 61 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "B" 1193 8888 45 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "A" 1193 8888 37 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n102_34#" 383 0 -102 34 ndiff 80 52 80 36 32 32 0 0 0 0 0 0 249 174 138 96 0 0
+node "a_83_34#" 991 0 83 34 ndiff 55 42 110 62 82 82 0 0 0 0 0 0 419 282 144 100 0 0
 node "a_n15_34#" 1497 0 -15 34 ndiff 50 40 100 60 164 164 0 0 0 0 0 0 516 350 350 242 0 0
-node "B" 1193 8888 4 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "A" 1193 8888 -1 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "C" 1193 8888 -17 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "B" 1193 8888 -33 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "A" 1193 8888 -41 0 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
-node "GND" 3409 0 -50 26 pw 225 180 176 176 0 0 0 0 0 0 0 0 1068 542 0 0 0 0
-node "Vdd" 16011 0 -50 53 nw 176 176 450 270 0 0 0 0 0 0 0 0 1248 632 0 0 6882 446
-cap "Vdd" "C" 6986
-cap "GND" "a_n39_34#" 2863
-cap "A" "X" 114
-cap "C" "a_39_72#" 114
-cap "C" "a_83_34#" 114
-cap "Vdd" "B" 6986
-cap "GND" "C" 5796
-cap "Vdd" "a_83_34#" 12225
-cap "B" "X" 114
-cap "Z" "X" 405
-cap "GND" "B" 5796
-cap "Vdd" "a_n15_34#" 19175
-cap "Vdd" "a_n39_72#" 2863
-cap "GND" "a_83_34#" 8349
-cap "B" "a_n39_34#" 114
-cap "GND" "a_39_34#" 4665
-cap "Vdd" "A" 6986
-cap "B" "a_n15_34#" 114
-cap "GND" "a_n15_34#" 14303
-cap "Vdd" "A" 6986
-cap "GND" "A" 5796
-cap "Vdd" "B" 6986
-cap "C" "X" 114
-cap "GND" "A" 5796
-cap "Vdd" "B" 6986
-cap "Vdd" "X" 2726
-cap "GND" "B" 5796
-cap "Vdd" "C" 6986
-cap "a_n15_34#" "A" 114
-cap "a_39_34#" "B" 114
-cap "a_83_34#" "X" 1215
-cap "GND" "B" 5796
-cap "Vdd" "C" 6986
-cap "B" "a_n39_72#" 114
-cap "GND" "X" 6675
-cap "Vdd" "a_39_72#" 4665
-cap "GND" "C" 5796
-cap "Vdd" "A" 6986
-cap "a_n15_34#" "B" 114
-cap "a_n15_34#" "X" 810
-cap "a_39_34#" "C" 114
-cap "GND" "C" 5796
-cap "Vdd" "A" 6986
-cap "GND" "A" 5796
+node "A" 4522 41145 -42 19 pc 0 0 0 0 770 768 0 0 0 0 0 0 50 38 229 158 0 0
+node "B" 511 0 -83 40 pc 40 26 80 36 74 74 0 0 0 0 0 0 272 184 213 152 0 0
+node "a_n80_34#" 3855 22446 -80 34 ndiff 80 52 160 72 574 570 0 0 0 0 0 0 567 400 608 412 0 0
+node "C" 4163 42122 -17 32 p 0 0 0 0 706 706 0 0 0 0 0 0 16 16 0 0 0 0
+node "add_n" 2079 8888 -104 8 p 0 0 80 36 344 344 0 0 0 0 0 0 86 58 0 0 0 0
+equiv "add_n" "add_n"
+node "GND" 4232 0 -113 26 pw 250 200 224 224 0 0 0 0 0 0 0 0 1376 696 0 0 0 0
+equiv "GND" "GND"
+node "Vdd" 23894 0 -113 58 nw 224 224 500 300 0 0 0 0 0 0 0 0 1576 796 0 0 8128 572
+equiv "Vdd" "Vdd"
+cap "A" "Vdd" 17152
+cap "Z" "GND" 2830
+cap "a_n80_34#" "a_39_34#" 114
+cap "C" "GND" 16434
+cap "a_n102_34#" "add_n" 180
+cap "a_39_72#" "a_n80_34#" 114
+cap "X" "C" 228
+cap "Z" "Vdd" 2182
+cap "Vdd" "C" 17388
+cap "a_n39_72#" "a_n80_34#" 114
+cap "a_39_34#" "GND" 4665
+cap "a_n15_34#" "A" 228
+cap "a_n80_34#" "GND" 31041
+cap "a_83_34#" "A" 114
+cap "X" "a_n80_34#" 228
+cap "B" "add_n" 408
+cap "a_39_72#" "Vdd" 4665
+cap "a_n80_34#" "Vdd" 28546
 cap "a_n15_34#" "C" 114
-cap "A" "X" 114
-cap "A" "a_83_34#" 114
-cap "A" "a_n15_34#" 114
-cap "GND" "A" 5796
-cap "Vdd" "B" 6986
-cap "Vdd" "Z" 3038
-cap "B" "X" 114
-cap "B" "a_83_34#" 114
-cap "GND" "B" 5796
-cap "GND" "Z" 1974
-cap "C" "X" 114
-cap "B" "a_39_72#" 114
-device mosfet nfet 124 34 125 35 2 5 "GND" "a_83_34#" 4 0 "GND" 5 0 "Z" 5 0
-device mosfet nfet 108 34 109 35 2 5 "GND" "C" 4 0 "a_105_34#" 5 0 "a_83_34#" 5 0
-device mosfet nfet 103 34 104 35 2 5 "GND" "B" 4 0 "a_100_34#" 5 0 "a_105_34#" 5 0
+cap "a_83_34#" "C" 114
+cap "a_n39_72#" "Vdd" 2863
+cap "a_n80_34#" "a_n102_34#" 810
+cap "X" "GND" 13965
+cap "A" "add_n" 114
+cap "X" "Vdd" 1974
+cap "a_n15_34#" "a_n80_34#" 228
+cap "a_n102_34#" "GND" 9352
+cap "a_83_34#" "a_n80_34#" 114
+cap "a_n39_34#" "a_n80_34#" 114
+cap "a_n102_34#" "Vdd" 1692
+cap "B" "a_n80_34#" 1215
+cap "a_n15_34#" "GND" 17311
+cap "a_83_34#" "GND" 10464
+cap "a_n39_34#" "GND" 2863
+cap "a_n15_34#" "X" 810
+cap "a_83_34#" "X" 810
+cap "a_n80_34#" "add_n" 360
+cap "a_n15_34#" "Vdd" 16167
+cap "A" "a_n80_34#" 114
+cap "B" "GND" 9147
+cap "a_83_34#" "Vdd" 10395
+cap "B" "Vdd" 7301
+cap "a_39_34#" "C" 114
+cap "a_39_72#" "C" 114
+cap "a_n80_34#" "C" 540
+cap "add_n" "GND" 10506
+cap "A" "GND" 27944
+cap "B" "a_n102_34#" 810
+cap "X" "A" 228
+cap "Vdd" "add_n" 18442
+device mosfet nfet 129 34 130 35 2 5 "GND" "a_83_34#" 4 0 "GND" 5 0 "Z" 5 0
+device mosfet nfet 110 34 111 35 2 5 "GND" "C" 4 0 "a_106_34#" 5 0 "a_83_34#" 5 0
+device mosfet nfet 104 34 105 35 2 5 "GND" "a_n80_34#" 4 0 "a_100_34#" 5 0 "a_106_34#" 5 0
 device mosfet nfet 98 34 99 35 2 5 "GND" "A" 4 0 "GND" 5 0 "a_100_34#" 5 0
 device mosfet nfet 81 34 82 35 2 5 "GND" "a_n15_34#" 4 0 "a_39_34#" 5 0 "a_83_34#" 5 0
 device mosfet nfet 61 34 62 35 2 5 "GND" "C" 4 0 "a_39_34#" 5 0 "GND" 5 0
-device mosfet nfet 45 34 46 35 2 5 "GND" "B" 4 0 "a_39_34#" 5 0 "GND" 5 0
+device mosfet nfet 45 34 46 35 2 5 "GND" "a_n80_34#" 4 0 "a_39_34#" 5 0 "GND" 5 0
 device mosfet nfet 37 34 38 35 2 5 "GND" "A" 4 0 "GND" 5 0 "a_39_34#" 5 0
 device mosfet nfet 20 34 21 35 2 5 "GND" "a_n15_34#" 4 0 "GND" 5 0 "X" 5 0
-device mosfet nfet 4 34 5 35 2 5 "GND" "B" 4 0 "a_1_34#" 5 0 "a_n15_34#" 5 0
+device mosfet nfet 4 34 5 35 2 5 "GND" "a_n80_34#" 4 0 "a_1_34#" 5 0 "a_n15_34#" 5 0
 device mosfet nfet -1 34 0 35 2 5 "GND" "A" 4 0 "GND" 5 0 "a_1_34#" 5 0
 device mosfet nfet -17 34 -16 35 2 5 "GND" "C" 4 0 "a_n39_34#" 5 0 "a_n15_34#" 5 0
-device mosfet nfet -33 34 -32 35 2 5 "GND" "B" 4 0 "a_n39_34#" 5 0 "GND" 5 0
+device mosfet nfet -33 34 -32 35 2 5 "GND" "a_n80_34#" 4 0 "a_n39_34#" 5 0 "GND" 5 0
 device mosfet nfet -41 34 -40 35 2 5 "GND" "A" 4 0 "GND" 5 0 "a_n39_34#" 5 0
-device mosfet pfet 124 72 125 73 2 10 "Vdd" "a_83_34#" 4 0 "Vdd" 10 0 "Z" 10 0
-device mosfet pfet 108 72 109 73 2 10 "Vdd" "C" 4 0 "a_105_72#" 10 0 "a_83_34#" 10 0
-device mosfet pfet 103 72 104 73 2 10 "Vdd" "B" 4 0 "a_100_72#" 10 0 "a_105_72#" 10 0
+device mosfet nfet -60 34 -59 35 2 5 "GND" "a_n102_34#" 4 0 "a_n80_34#" 5 0 "B" 5 0
+device mosfet nfet -82 34 -81 35 2 5 "GND" "B" 4 0 "a_n102_34#" 5 0 "a_n80_34#" 5 0
+device mosfet nfet -104 34 -103 35 2 5 "GND" "add_n" 4 0 "GND" 5 0 "a_n102_34#" 5 0
+device mosfet pfet 129 72 130 73 2 10 "Vdd" "a_83_34#" 4 0 "Vdd" 10 0 "Z" 10 0
+device mosfet pfet 110 72 111 73 2 10 "Vdd" "C" 4 0 "a_106_72#" 10 0 "a_83_34#" 10 0
+device mosfet pfet 104 72 105 73 2 10 "Vdd" "a_n80_34#" 4 0 "a_100_72#" 10 0 "a_106_72#" 10 0
 device mosfet pfet 98 72 99 73 2 10 "Vdd" "A" 4 0 "Vdd" 10 0 "a_100_72#" 10 0
 device mosfet pfet 81 72 82 73 2 10 "Vdd" "a_n15_34#" 4 0 "a_39_72#" 10 0 "a_83_34#" 10 0
 device mosfet pfet 61 72 62 73 2 10 "Vdd" "C" 4 0 "a_39_72#" 10 0 "Vdd" 10 0
-device mosfet pfet 45 72 46 73 2 10 "Vdd" "B" 4 0 "a_39_72#" 10 0 "Vdd" 10 0
+device mosfet pfet 45 72 46 73 2 10 "Vdd" "a_n80_34#" 4 0 "a_39_72#" 10 0 "Vdd" 10 0
 device mosfet pfet 37 72 38 73 2 10 "Vdd" "A" 4 0 "Vdd" 10 0 "a_39_72#" 10 0
 device mosfet pfet 20 72 21 73 2 10 "Vdd" "a_n15_34#" 4 0 "Vdd" 10 0 "X" 10 0
-device mosfet pfet 4 72 5 73 2 10 "Vdd" "B" 4 0 "a_1_72#" 10 0 "a_n15_34#" 10 0
+device mosfet pfet 4 72 5 73 2 10 "Vdd" "a_n80_34#" 4 0 "a_1_72#" 10 0 "a_n15_34#" 10 0
 device mosfet pfet -1 72 0 73 2 10 "Vdd" "A" 4 0 "Vdd" 10 0 "a_1_72#" 10 0
 device mosfet pfet -17 72 -16 73 2 10 "Vdd" "C" 4 0 "a_n39_72#" 10 0 "a_n15_34#" 10 0
-device mosfet pfet -33 72 -32 73 2 10 "Vdd" "B" 4 0 "a_n39_72#" 10 0 "Vdd" 10 0
+device mosfet pfet -33 72 -32 73 2 10 "Vdd" "a_n80_34#" 4 0 "a_n39_72#" 10 0 "Vdd" 10 0
 device mosfet pfet -41 72 -40 73 2 10 "Vdd" "A" 4 0 "Vdd" 10 0 "a_n39_72#" 10 0
+device mosfet pfet -60 72 -59 73 2 10 "Vdd" "add_n" 4 0 "a_n80_34#" 10 0 "B" 10 0
+device mosfet pfet -82 72 -81 73 2 10 "Vdd" "B" 4 0 "add_n" 10 0 "a_n80_34#" 10 0
+device mosfet pfet -104 72 -103 73 2 10 "Vdd" "add_n" 4 0 "Vdd" 10 0 "a_n102_34#" 10 0
