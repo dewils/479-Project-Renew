@@ -1,20 +1,19 @@
 magic
 tech scmos
-timestamp 1428697728
+timestamp 1428705964
 << pwell >>
 rect -109 26 137 58
 << nwell >>
 rect -109 58 137 90
 << polysilicon >>
 rect -104 82 -102 108
-rect -17 100 -7 102
+rect 120 102 122 108
+rect -17 100 122 102
 rect -82 82 -80 84
 rect -60 82 -58 84
 rect -41 82 -39 84
 rect -33 82 -31 93
 rect -17 82 -15 100
-rect 120 102 122 108
-rect -3 100 122 102
 rect -1 82 1 84
 rect 4 82 6 93
 rect 20 82 22 84
@@ -264,6 +263,7 @@ rect 60 42 72 45
 rect -113 26 -109 30
 rect 137 26 141 30
 rect -113 9 -42 12
+rect -38 9 141 12
 << ntransistor >>
 rect -104 34 -102 39
 rect -82 34 -80 39
@@ -302,7 +302,6 @@ rect 110 72 112 82
 rect 129 72 131 82
 << polycontact >>
 rect -33 93 -29 97
-rect -7 99 -3 103
 rect 4 93 8 97
 rect 45 93 49 97
 rect 103 93 107 97
@@ -453,4 +452,5 @@ rlabel metal2 -113 86 -109 90 7 Vdd
 rlabel metal2 -113 26 -109 30 7 GND
 rlabel metal2 137 86 141 90 3 Vdd
 rlabel metal2 137 26 141 30 3 GND
+rlabel metal2 -38 9 141 12 3 A
 << end >>

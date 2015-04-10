@@ -1,4 +1,4 @@
-timestamp 1428698820
+timestamp 1428701418
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
@@ -16,22 +16,22 @@ node "GND" 60 4452 -1 3 pw 0 0 16 16 0 0 0 0 0 0 0 0 176 96 128 80 0 0
 equiv "GND" "GND"
 node "Vdd" 2626 5356 -1 22 nw 16 16 0 0 0 0 0 0 0 0 0 0 192 104 128 80 756 110
 equiv "Vdd" "Vdd"
-cap "GND" "inbit" 987
-cap "GND" "A" 987
-cap "Vdd" "noshift" 4130
-cap "GND" "noshift" 3252
-cap "shift" "B" 294
-cap "B" "inbit" 810
-cap "shift" "inbit" 294
-cap "noshift" "B" 228
-cap "A" "inbit" 405
-cap "shift" "noshift" 114
-cap "Vdd" "B" 2820
-cap "Vdd" "shift" 8890
-cap "GND" "B" 6881
-cap "GND" "shift" 4130
 cap "Vdd" "inbit" 2396
-cap "Vdd" "A" 1551
+cap "shift" "Vdd" 8890
+cap "shift" "noshift" 114
+cap "GND" "noshift" 3252
+cap "B" "inbit" 810
+cap "shift" "B" 294
+cap "GND" "B" 6881
+cap "A" "inbit" 405
+cap "GND" "A" 987
+cap "noshift" "Vdd" 4130
+cap "Vdd" "B" 2820
+cap "A" "Vdd" 1551
+cap "noshift" "B" 228
+cap "shift" "inbit" 294
+cap "GND" "inbit" 987
+cap "GND" "shift" 4130
 device mosfet nfet 20 11 21 12 2 4 "GND" "shift" 4 0 "inbit" 4 0 "B" 4 0
 device mosfet nfet 4 11 5 12 2 4 "GND" "noshift" 4 0 "A" 4 0 "B" 4 0
 device mosfet pfet 20 33 21 34 2 8 "Vdd" "noshift" 4 0 "inbit" 8 0 "B" 8 0

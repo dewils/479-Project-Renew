@@ -33,6 +33,15 @@ n A GND a_100_34# 2 5 98 34
 n a_n80_34# a_100_34# a_106_34# 2 5 104 34
 n C a_106_34# a_83_34# 2 5 110 34
 n a_83_34# GND Z 2 5 129 34
+C Vdd a_39_72# 4.7
+C GND X 14.0
+C GND a_n102_34# 9.4
+C GND Z 2.7
+C Vdd B 7.3
+C GND a_n39_34# 2.9
+C GND B 8.9
+C Vdd A 17.2
+C Vdd a_n39_72# 2.9
 C GND A 27.9
 C Vdd a_n15_34# 16.2
 C GND a_n15_34# 17.3
@@ -45,15 +54,6 @@ C Vdd add_n 18.4
 C GND a_39_34# 4.7
 C GND a_n80_34# 31.0
 C GND add_n 10.5
-C GND X 14.0
-C Vdd a_39_72# 4.7
-C GND a_n102_34# 9.4
-C GND Z 2.7
-C Vdd B 7.3
-C Vdd A 17.2
-C GND a_n39_34# 2.9
-C GND B 8.9
-C Vdd a_n39_72# 2.9
 R a_106_34# 33
 R a_100_34# 33
 R a_39_34# 272
@@ -70,13 +70,13 @@ R a_n39_72# 393
 R a_n102_34# 383
 R a_83_34# 991
 R a_n15_34# 1497
-C A GND 41.1
-R A 4522
+C A GND 51.2
+R A 4524
 R B 511
 C a_n80_34# GND 22.4
 R a_n80_34# 3855
-C C GND 42.1
-R C 4163
+C C GND 41.5
+R C 4164
 C add_n GND 8.9
 R add_n 2079
 R GND 3993
