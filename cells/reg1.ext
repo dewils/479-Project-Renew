@@ -1,4 +1,4 @@
-timestamp 1428385943
+timestamp 1428692844
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
@@ -7,71 +7,71 @@ resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
 node "a_129_n61#" 36 0 129 -61 ndiff 12 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_103_n61#" 53 0 103 -61 ndiff 32 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_45_n61#" 53 0 45 -61 ndiff 32 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-node "Q" 142 0 150 -61 ndiff 40 28 80 36 0 0 0 0 0 0 0 0 130 88 25 22 0 0
+node "Q" 142 359 150 -61 ndiff 40 28 80 36 0 0 0 0 0 0 0 0 130 88 25 22 0 0
 node "a_129_n31#" 159 0 129 -31 pdiff 0 0 24 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "a_45_n31#" 512 0 45 -31 pdiff 40 36 104 58 0 0 0 0 0 0 0 0 276 192 72 52 0 0
-node "clk" 3627 43476 10 -92 p 0 0 0 0 608 612 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk" 3627 50932 10 -92 p 0 0 0 0 608 612 0 0 0 0 0 0 0 0 0 0 0 0
 equiv "clk" "clk"
 equiv "clk" "clk"
 node "a_103_n31#" 954 0 103 -31 pdiff 20 18 64 32 152 152 0 0 0 0 0 0 338 244 247 178 0 0
 node "a_87_n61#" 939 0 87 -61 ndiff 40 36 80 52 76 76 0 0 0 0 0 0 336 230 205 146 0 0
-node "reset_n" 812 6134 110 -76 pc 0 0 0 0 152 148 0 0 0 0 0 0 128 96 0 0 0 0
+node "reset_n" 812 9146 110 -76 pc 0 0 0 0 152 148 0 0 0 0 0 0 128 96 0 0 0 0
 equiv "reset_n" "reset_n"
 node "a_28_n61#" 932 0 28 -61 ndiff 44 38 88 54 76 76 0 0 0 0 0 0 336 230 214 152 0 0
-node "reset_n" 812 5852 52 -76 pc 0 0 0 0 152 148 0 0 0 0 0 0 128 96 0 0 0 0
+node "reset_n" 812 8864 52 -76 pc 0 0 0 0 152 148 0 0 0 0 0 0 128 96 0 0 0 0
 equiv "reset_n" "reset_n"
 node "a_12_n61#" 940 0 12 -61 ndiff 40 36 80 52 76 76 0 0 0 0 0 0 336 230 244 172 0 0
 node "a_n5_n61#" 527 0 -5 -61 ndiff 44 38 88 54 0 0 0 0 0 0 0 0 260 176 44 34 0 0
-node "clk_n" 2722 33638 9 -76 pc 0 0 0 0 472 468 0 0 0 0 0 0 192 144 366 248 0 0
+node "clk_n" 2722 40784 9 -76 pc 0 0 0 0 472 468 0 0 0 0 0 0 192 144 366 248 0 0
 equiv "clk_n" "clk_n"
-node "clk" 489 4444 10 -33 p 0 0 0 0 82 86 0 0 0 0 0 0 0 0 0 0 0 0
-node "D" 405 0 -9 -54 pc 0 0 0 0 76 76 0 0 0 0 0 0 80 56 31 26 0 0
-node "GND" 2381 0 -16 -74 pw 120 108 128 128 0 0 0 0 0 0 0 0 952 484 0 0 0 0
+node "clk" 489 5634 10 -33 p 0 0 0 0 82 86 0 0 0 0 0 0 0 0 0 0 0 0
+node "D" 405 228 -9 -54 pc 0 0 0 0 76 76 0 0 0 0 0 0 80 56 31 26 0 0
+node "GND" 2381 2488 -12 -69 pw 120 108 128 128 0 0 0 0 0 0 0 0 920 468 64 48 0 0
 equiv "GND" "GND"
-node "Vdd" 15224 0 -16 -46 nw 128 128 320 208 0 0 0 0 0 0 0 0 1144 580 0 0 6480 432
+node "Vdd" 16598 2488 -12 -46 nw 128 128 320 208 0 0 0 0 0 0 0 0 1112 564 64 48 5332 406
 equiv "Vdd" "Vdd"
-cap "a_28_n61#" "Vdd" 11519
-cap "D" "Vdd" 5203
-cap "Vdd" "a_12_n61#" 9208
-cap "reset_n" "a_45_n31#" 114
-cap "reset_n" "clk_n" 405
+cap "a_87_n61#" "GND" 8770
+cap "a_12_n61#" "GND" 9451
 cap "GND" "a_103_n31#" 9507
-cap "a_87_n61#" "reset_n" 114
-cap "GND" "Q" 1655
-cap "clk" "clk_n" 294
-cap "clk" "reset_n" 180
-cap "Vdd" "clk_n" 19292
-cap "Vdd" "reset_n" 7540
-cap "a_28_n61#" "a_45_n31#" 810
-cap "clk" "a_87_n61#" 180
-cap "reset_n" "a_28_n61#" 114
-cap "GND" "a_45_n31#" 3102
-cap "reset_n" "GND" 6588
-cap "a_87_n61#" "Vdd" 9490
-cap "a_12_n61#" "a_45_n31#" 810
-cap "reset_n" "a_12_n61#" 114
-cap "a_103_n31#" "reset_n" 228
-cap "clk" "Vdd" 7224
-cap "GND" "a_n5_n61#" 3102
-cap "a_103_n31#" "a_87_n61#" 1350
-cap "a_103_n31#" "clk" 114
-cap "GND" "a_28_n61#" 7080
-cap "GND" "D" 4166
-cap "reset_n" "clk_n" 585
-cap "a_103_n31#" "Vdd" 16595
-cap "a_28_n61#" "a_12_n61#" 1350
-cap "GND" "a_12_n61#" 9451
-cap "clk" "Vdd" 4290
-cap "Q" "Vdd" 2370
+cap "Vdd" "clk_n" 15722
+cap "clk_n" "reset_n" 585
+cap "a_12_n61#" "a_28_n61#" 1350
+cap "GND" "clk_n" 8182
+cap "Vdd" "clk" 6034
 cap "reset_n" "clk" 180
+cap "GND" "clk" 13818
 cap "Vdd" "a_45_n31#" 5700
-cap "reset_n" "Vdd" 7540
-cap "GND" "clk_n" 11758
-cap "GND" "reset_n" 6588
+cap "reset_n" "a_45_n31#" 114
+cap "a_87_n61#" "a_103_n31#" 1350
+cap "Q" "Vdd" 2115
+cap "GND" "a_45_n31#" 3102
+cap "reset_n" "Vdd" 6034
+cap "Q" "GND" 1551
 cap "a_12_n61#" "clk_n" 180
-cap "GND" "a_87_n61#" 8770
-cap "Vdd" "a_n5_n61#" 4834
-cap "GND" "clk" 20084
+cap "a_n5_n61#" "Vdd" 4834
+cap "reset_n" "GND" 5082
+cap "a_28_n61#" "a_45_n31#" 810
+cap "a_n5_n61#" "GND" 3102
+cap "a_87_n61#" "clk" 180
+cap "a_103_n31#" "clk" 114
+cap "Vdd" "reset_n" 6034
+cap "a_12_n61#" "a_45_n31#" 810
+cap "clk_n" "clk" 294
+cap "GND" "reset_n" 5082
+cap "clk" "Vdd" 3100
+cap "a_87_n61#" "reset_n" 114
+cap "Vdd" "a_28_n61#" 11519
+cap "reset_n" "a_103_n31#" 228
+cap "reset_n" "a_28_n61#" 114
+cap "GND" "a_28_n61#" 7080
+cap "reset_n" "clk_n" 405
+cap "D" "Vdd" 4975
+cap "a_87_n61#" "Vdd" 9490
+cap "a_12_n61#" "Vdd" 9208
+cap "D" "GND" 4166
+cap "reset_n" "clk" 180
+cap "a_12_n61#" "reset_n" 114
+cap "Vdd" "a_103_n31#" 16595
 device mosfet nfet 148 -61 149 -60 2 4 "GND" "a_103_n31#" 4 0 "GND" 4 0 "Q" 4 0
 device mosfet nfet 132 -61 133 -60 2 4 "GND" "clk_n" 4 0 "a_129_n61#" 4 0 "a_87_n61#" 4 0
 device mosfet nfet 127 -61 128 -60 2 4 "GND" "a_103_n31#" 4 0 "GND" 4 0 "a_129_n61#" 4 0

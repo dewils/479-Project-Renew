@@ -1,33 +1,38 @@
-timestamp 1428294818
+timestamp 1428698820
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
 scale 1000 1 100
 resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
-node "shift" 525 7062 20 -23 p 0 0 0 0 88 92 0 0 0 0 0 0 0 0 0 0 0 0
-node "noshift" 525 7062 4 -23 p 0 0 0 0 88 92 0 0 0 0 0 0 0 0 0 0 0 0
-node "inbit" 129 0 15 15 ndc 20 18 40 26 0 0 0 0 0 0 0 0 94 64 73 54 0 0
-node "B" 534 0 6 15 ndiff 40 36 80 52 0 0 0 0 0 0 0 0 188 128 77 56 0 0
-node "A" 129 0 -1 15 ndc 20 18 40 26 0 0 0 0 0 0 0 0 94 64 25 22 0 0
-node "noshift" 549 6824 20 31 p 0 0 0 0 92 96 0 0 0 0 0 0 0 0 0 0 0 0
-node "shift" 549 6824 4 31 p 0 0 0 0 92 96 0 0 0 0 0 0 0 0 0 0 0 0
-node "GND" 60 0 -5 6 pw 0 0 16 16 0 0 0 0 0 0 0 0 144 80 0 0 0 0
-node "Vdd" 3949 0 -5 26 nw 16 16 0 0 0 0 0 0 0 0 0 0 144 80 0 0 828 118
-cap "noshift" "inbit" 38
+node "inbit" 130 7268 15 11 ndc 20 18 40 26 0 0 0 0 0 0 0 0 257 178 86 62 0 0
+node "B" 536 8402 6 11 ndiff 40 36 80 52 0 0 0 0 0 0 0 0 371 260 251 176 0 0
+equiv "B" "B"
+node "A" 129 758 -1 11 ndc 20 18 40 26 0 0 0 0 0 0 0 0 106 72 46 36 0 0
+node "noshift" 1803 32306 4 -5 p 0 0 0 0 326 318 0 0 0 0 0 0 85 66 71 52 0 0
+equiv "noshift" "noshift"
+node "shift" 1575 16980 4 -23 p 0 0 0 0 264 268 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "shift" "shift"
+node "GND" 60 4452 -1 3 pw 0 0 16 16 0 0 0 0 0 0 0 0 176 96 128 80 0 0
+equiv "GND" "GND"
+node "Vdd" 2626 5356 -1 22 nw 16 16 0 0 0 0 0 0 0 0 0 0 192 104 128 80 756 110
+equiv "Vdd" "Vdd"
+cap "GND" "inbit" 987
 cap "GND" "A" 987
-cap "Vdd" "A" 1346
-cap "GND" "inbit" 1878
-cap "inbit" "Vdd" 987
-cap "GND" "B" 1974
-cap "Vdd" "B" 2996
-cap "inbit" "A" 405
-cap "shift" "Vdd" 3100
-cap "Vdd" "noshift" 3100
-cap "inbit" "B" 810
-cap "GND" "shift" 3338
-cap "noshift" "GND" 3338
-cap "B" "noshift" 38
-device mosfet nfet 20 15 21 16 2 4 "GND" "shift" 4 0 "inbit" 4 0 "B" 4 0
-device mosfet nfet 4 15 5 16 2 4 "GND" "noshift" 4 0 "A" 4 0 "B" 4 0
+cap "Vdd" "noshift" 4130
+cap "GND" "noshift" 3252
+cap "shift" "B" 294
+cap "B" "inbit" 810
+cap "shift" "inbit" 294
+cap "noshift" "B" 228
+cap "A" "inbit" 405
+cap "shift" "noshift" 114
+cap "Vdd" "B" 2820
+cap "Vdd" "shift" 8890
+cap "GND" "B" 6881
+cap "GND" "shift" 4130
+cap "Vdd" "inbit" 2396
+cap "Vdd" "A" 1551
+device mosfet nfet 20 11 21 12 2 4 "GND" "shift" 4 0 "inbit" 4 0 "B" 4 0
+device mosfet nfet 4 11 5 12 2 4 "GND" "noshift" 4 0 "A" 4 0 "B" 4 0
 device mosfet pfet 20 33 21 34 2 8 "Vdd" "noshift" 4 0 "inbit" 8 0 "B" 8 0
 device mosfet pfet 4 33 5 34 2 8 "Vdd" "shift" 4 0 "A" 8 0 "B" 8 0
