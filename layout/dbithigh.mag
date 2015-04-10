@@ -1,0 +1,24 @@
+magic
+tech scmos
+timestamp 1428707110
+use ../cells/reg1  reg1_0
+timestamp 1428700440
+transform 1 0 16 0 1 129
+box -16 -92 164 8
+use ../cells/addsub1  addsub1_0
+timestamp 1428705964
+transform 1 0 297 0 1 29
+box -113 8 141 108
+use ../cells/mux1  mux1_0
+timestamp 1428701072
+transform 1 0 513 0 1 35
+box -71 2 64 102
+use ../cells/shift1  shift1_0
+timestamp 1428701418
+transform 1 0 593 0 1 60
+box -12 -23 40 77
+use ../cells/reg1  reg1_1
+timestamp 1428700440
+transform 1 0 653 0 1 129
+box -16 -92 164 8
+<< end >>
