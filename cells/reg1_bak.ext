@@ -1,0 +1,96 @@
+timestamp 1428136113
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_129_n61#" 36 0 129 -61 ndiff 12 14 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_103_n61#" 53 0 103 -61 ndiff 32 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_45_n61#" 53 0 45 -61 ndiff 32 24 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk_n" 465 6110 132 -94 p 0 0 0 0 78 82 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk" 465 6110 85 -94 p 0 0 0 0 78 82 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk" 465 6110 69 -94 p 0 0 0 0 78 82 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk_n" 465 6110 10 -94 p 0 0 0 0 78 82 0 0 0 0 0 0 0 0 0 0 0 0
+node "Q" 142 0 150 -61 ndiff 40 28 80 36 0 0 0 0 0 0 0 0 130 88 25 22 0 0
+node "a_129_n31#" 159 0 129 -31 pdiff 0 0 24 22 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_45_n31#" 512 0 45 -31 pdiff 40 36 104 58 0 0 0 0 0 0 0 0 276 192 72 52 0 0
+node "a_n4_n61#" 534 0 -4 -61 ndiff 40 36 80 52 0 0 0 0 0 0 0 0 260 176 44 34 0 0
+node "clk" 465 5158 132 -33 p 0 0 0 0 78 82 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_103_n31#" 954 0 103 -31 pdiff 20 18 64 32 152 152 0 0 0 0 0 0 338 244 247 178 0 0
+node "reset_n" 1193 11268 111 -94 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "reset_n" "reset_n"
+node "a_87_n61#" 939 0 87 -61 ndiff 40 36 80 52 76 76 0 0 0 0 0 0 336 230 205 146 0 0
+node "clk_n" 465 5158 85 -33 p 0 0 0 0 78 82 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk_n" 465 5158 69 -33 p 0 0 0 0 78 82 0 0 0 0 0 0 0 0 0 0 0 0
+node "reset_n" 1193 11268 53 -94 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "reset_n" "reset_n"
+node "a_28_n61#" 932 0 28 -61 ndiff 44 38 88 54 76 76 0 0 0 0 0 0 336 230 214 152 0 0
+node "a_12_n61#" 940 0 12 -61 ndiff 40 36 80 52 76 76 0 0 0 0 0 0 336 230 244 172 0 0
+node "clk" 465 5158 10 -33 p 0 0 0 0 78 82 0 0 0 0 0 0 0 0 0 0 0 0
+node "D" 1193 11268 -6 -94 p 0 0 0 0 200 204 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "D" "D"
+node "GND" 2381 0 -14 -69 pw 120 108 128 128 0 0 0 0 0 0 0 0 904 460 0 0 0 0
+equiv "GND" "GND"
+node "Vdd" 18075 0 -14 -44 nw 128 128 320 208 0 0 0 0 0 0 0 0 1096 556 0 0 5162 414
+equiv "Vdd" "Vdd"
+cap "a_45_n31#" "reset_n" 114
+cap "a_87_n61#" "Vdd" 8228
+cap "clk_n" "GND" 3100
+cap "Vdd" "a_12_n61#" 8228
+cap "a_87_n61#" "GND" 10314
+cap "GND" "a_12_n61#" 10713
+cap "a_12_n61#" "a_28_n61#" 1350
+cap "a_n4_n61#" "Vdd" 3930
+cap "a_87_n61#" "a_103_n31#" 1350
+cap "clk" "GND" 3100
+cap "a_n4_n61#" "GND" 4006
+cap "Vdd" "a_28_n61#" 10295
+cap "a_45_n31#" "a_12_n61#" 810
+cap "Vdd" "clk" 3100
+cap "a_103_n31#" "Vdd" 14373
+cap "GND" "a_28_n61#" 8304
+cap "a_103_n31#" "GND" 11843
+cap "a_45_n31#" "Vdd" 4344
+cap "clk_n" "Vdd" 3100
+cap "clk_n" "Vdd" 3100
+cap "a_45_n31#" "GND" 4458
+cap "clk" "Vdd" 3100
+cap "a_45_n31#" "a_28_n61#" 810
+cap "a_87_n61#" "reset_n" 114
+cap "clk_n" "GND" 3100
+cap "reset_n" "a_12_n61#" 114
+cap "Vdd" "reset_n" 5558
+cap "Vdd" "D" 5558
+cap "GND" "reset_n" 5558
+cap "Q" "Vdd" 1984
+cap "reset_n" "Vdd" 5558
+cap "GND" "D" 5558
+cap "a_103_n31#" "reset_n" 228
+cap "Q" "GND" 2041
+cap "reset_n" "GND" 5558
+cap "reset_n" "a_28_n61#" 114
+cap "clk" "GND" 3100
+device mosfet nfet 148 -61 149 -60 2 4 "GND" "a_103_n31#" 4 0 "GND" 4 0 "Q" 4 0
+device mosfet nfet 132 -61 133 -60 2 4 "GND" "clk_n" 4 0 "a_129_n61#" 4 0 "a_87_n61#" 4 0
+device mosfet nfet 127 -61 128 -60 2 4 "GND" "a_103_n31#" 4 0 "GND" 4 0 "a_129_n61#" 4 0
+device mosfet nfet 111 -61 112 -60 2 4 "GND" "reset_n" 4 0 "a_103_n61#" 4 0 "a_103_n31#" 4 0
+device mosfet nfet 101 -61 102 -60 2 4 "GND" "a_87_n61#" 4 0 "GND" 4 0 "a_103_n61#" 4 0
+device mosfet nfet 85 -61 86 -60 2 4 "GND" "clk" 4 0 "a_28_n61#" 4 0 "a_87_n61#" 4 0
+device mosfet nfet 69 -61 70 -60 2 4 "GND" "clk" 4 0 "a_45_n31#" 4 0 "a_12_n61#" 4 0
+device mosfet nfet 53 -61 54 -60 2 4 "GND" "reset_n" 4 0 "a_45_n61#" 4 0 "a_45_n31#" 4 0
+device mosfet nfet 43 -61 44 -60 2 4 "GND" "a_28_n61#" 4 0 "GND" 4 0 "a_45_n61#" 4 0
+device mosfet nfet 26 -61 27 -60 2 4 "GND" "a_12_n61#" 4 0 "GND" 4 0 "a_28_n61#" 4 0
+device mosfet nfet 10 -61 11 -60 2 4 "GND" "clk_n" 4 0 "a_n4_n61#" 4 0 "a_12_n61#" 4 0
+device mosfet nfet -6 -61 -5 -60 2 4 "GND" "D" 4 0 "GND" 4 0 "a_n4_n61#" 4 0
+device mosfet pfet 148 -31 149 -30 2 8 "Vdd" "a_103_n31#" 4 0 "Vdd" 8 0 "Q" 8 0
+device mosfet pfet 132 -31 133 -30 2 8 "Vdd" "clk" 4 0 "a_129_n31#" 8 0 "a_87_n61#" 8 0
+device mosfet pfet 127 -31 128 -30 2 8 "Vdd" "a_103_n31#" 4 0 "Vdd" 8 0 "a_129_n31#" 8 0
+device mosfet pfet 111 -31 112 -30 2 8 "Vdd" "reset_n" 4 0 "a_103_n31#" 8 0 "Vdd" 8 0
+device mosfet pfet 101 -31 102 -30 2 8 "Vdd" "a_87_n61#" 4 0 "Vdd" 8 0 "a_103_n31#" 8 0
+device mosfet pfet 85 -31 86 -30 2 8 "Vdd" "clk_n" 4 0 "a_28_n61#" 8 0 "a_87_n61#" 8 0
+device mosfet pfet 69 -31 70 -30 2 8 "Vdd" "clk_n" 4 0 "a_45_n31#" 8 0 "a_12_n61#" 8 0
+device mosfet pfet 53 -31 54 -30 2 8 "Vdd" "reset_n" 4 0 "a_45_n31#" 8 0 "Vdd" 8 0
+device mosfet pfet 43 -31 44 -30 2 8 "Vdd" "a_28_n61#" 4 0 "Vdd" 8 0 "a_45_n31#" 8 0
+device mosfet pfet 26 -31 27 -30 2 8 "Vdd" "a_12_n61#" 4 0 "Vdd" 8 0 "a_28_n61#" 8 0
+device mosfet pfet 10 -31 11 -30 2 8 "Vdd" "clk" 4 0 "a_n4_n61#" 8 0 "a_12_n61#" 8 0
+device mosfet pfet -6 -31 -5 -30 2 8 "Vdd" "D" 4 0 "Vdd" 8 0 "a_n4_n61#" 8 0
