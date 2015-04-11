@@ -1,0 +1,54 @@
+timestamp 1428735392
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use ../cells/mux1 mux1_0 1 0 71 0 1 -2
+use ../cells/shift1 shift1_0 1 0 151 0 1 23
+use ../cells/reg1 reg1_0 1 0 211 0 1 92
+node "m2_371_18#" 0 684 371 18 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 32 0 0
+node "m2_191_18#" 0 304 191 18 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "m2_135_18#" 0 304 135 18 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "m2_135_41#" 0 228 135 41 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0
+node "m2_375_78#" 0 380 375 78 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 24 0 0
+node "m2_191_78#" 0 304 191 78 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "m2_135_78#" 0 76 135 78 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "m1_191_40#" 0 2209 191 40 v 0 0 0 0 0 0 0 0 0 0 0 0 47 36 32 32 0 0
+node "m1_135_2#" 7 48329 135 2 v 0 0 0 0 0 0 0 0 0 0 0 0 451 314 1540 1052 0 0
+cap "m2_375_78#" "m1_135_2#" 540
+cap "m2_371_18#" "m1_135_2#" 540
+cap "m2_135_78#" "m1_135_2#" 540
+cap "shift1_0/B" "mux1_0/D2" 405
+cap "shift1_0/noshift" "mux1_0/D1" 114
+cap "shift1_0/shift" "mux1_0/D2" 114
+cap "mux1_0/D1" "shift1_0/inbit" 405
+cap "shift1_0/shift" "mux1_0/D1" 114
+cap "shift1_0/noshift" "mux1_0/D2" 664
+cap "reg1_0/clk_n" "m1_135_2#" 405
+cap "reg1_0/clk" "m1_135_2#" 114
+cap "m1_135_2#" "reg1_0/reset_n" 405
+cap "reg1_0/clk_n" "m1_135_2#" 2972
+cap "m1_135_2#" "reg1_0/clk" 114
+cap "reg1_0/reset_n" "m1_135_2#" 405
+cap "m1_135_2#" "reg1_0/reset_n" 405
+cap "reg1_0/reset_n" "m1_135_2#" 405
+cap "m1_135_2#" "reg1_0/clk" 114
+cap "reg1_0/clk" "m1_135_2#" 114
+merge "reg1_0/Vdd" "shift1_0/Vdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+merge "shift1_0/Vdd" "mux1_0/Vdd"
+merge "mux1_0/Vdd" "m2_135_78#"
+merge "m2_135_78#" "m2_191_78#"
+merge "m2_191_78#" "m2_375_78#"
+merge "shift1_0/A" "mux1_0/Y" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "mux1_0/Y" "m2_135_41#"
+merge "reg1_0/GND" "shift1_0/GND" -304 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0
+merge "shift1_0/GND" "mux1_0/GND"
+merge "mux1_0/GND" "m2_135_18#"
+merge "m2_135_18#" "m2_191_18#"
+merge "m2_191_18#" "m2_371_18#"
+merge "reg1_0/D" "shift1_0/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "shift1_0/B" "m1_191_40#"
+merge "reg1_0/Q" "mux1_0/D2" -21466 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 -1058 -732 0 0
+merge "mux1_0/D2" "mux1_0/D1"
+merge "mux1_0/D1" "m1_135_2#"

@@ -1,0 +1,44 @@
+magic
+tech scmos
+timestamp 1428735392
+<< metal1 >>
+rect 135 53 138 86
+rect 376 49 379 86
+rect 191 44 194 49
+rect 136 6 139 10
+rect 376 6 379 45
+<< metal2 >>
+rect 139 86 375 89
+rect 135 78 139 82
+rect 191 78 195 82
+rect 375 78 383 82
+rect 375 45 376 48
+rect 380 45 383 48
+rect 135 41 139 44
+rect 135 18 139 22
+rect 191 18 195 22
+rect 371 18 383 22
+rect 139 2 375 5
+<< m2contact >>
+rect 135 86 139 90
+rect 375 86 379 90
+rect 135 49 139 53
+rect 191 49 195 53
+rect 376 45 380 49
+rect 191 40 195 44
+rect 135 10 139 14
+rect 135 2 139 6
+rect 375 2 379 6
+use ../cells/mux1  mux1_0
+timestamp 1428701072
+transform 1 0 71 0 1 -2
+box -71 2 64 102
+use ../cells/shift1  shift1_0
+timestamp 1428701418
+transform 1 0 151 0 1 23
+box -12 -23 40 77
+use ../cells/reg1  reg1_0
+timestamp 1428700440
+transform 1 0 211 0 1 92
+box -16 -92 164 8
+<< end >>
