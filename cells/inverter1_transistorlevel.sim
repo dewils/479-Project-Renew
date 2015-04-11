@@ -1,0 +1,5 @@
+|	units: 50	tech: scoms
+
+p	in	vdd	out	2	8
+
+n	in	out	gnd	2	4

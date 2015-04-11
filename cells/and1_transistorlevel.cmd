@@ -1,9 +1,18 @@
 stepsize 50
-analyzer Out In
-w Out
-l In
+analyzer Y A B
+w A B Y
+l A
+l B
 s
-h In
+l A
+h B
 s
-l in
+h A
+l B
+s
+h A
+h B
+s
+l A
+l B
 s

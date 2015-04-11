@@ -1,5 +1,10 @@
 |	units: 50	tech: scoms
 
-p	in	vdd	out	2	8
+p	A	vdd	n1	2	8
+p	B	vdd	n1	2	8
+p	n1	vdd	Y	2	8
 
-n	in	out	gnd	2	4
+
+n	A	n1	n2	2	4
+n	B	n2	gnd	2	4
+n	n1	Y	gnd	2	4
