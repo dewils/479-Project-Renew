@@ -1,4 +1,4 @@
-stepsize 50
+stepsize 1000
 analyzer B A shift inbit
 vector op shift_n shift
 w  B inbit A shift

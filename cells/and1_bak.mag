@@ -1,19 +1,19 @@
 magic
 tech scmos
-timestamp 1428870201
+timestamp 1428803059
 << pwell >>
-rect 4 -14 41 7
+rect 4 -14 41 8
 << nwell >>
-rect 4 7 41 35
+rect 4 8 41 35
 << polysilicon >>
-rect 9 27 11 47
-rect 17 27 19 29
+rect 9 27 11 48
+rect 17 27 19 48
 rect 33 27 35 29
 rect 9 -2 11 19
 rect 17 -2 19 19
 rect 33 16 35 19
 rect 33 -2 35 2
-rect 9 -8 11 -6
+rect 9 -25 11 -6
 rect 17 -25 19 -6
 rect 33 -8 35 -6
 << ndiffusion >>
@@ -30,8 +30,6 @@ rect 19 19 20 27
 rect 32 19 33 27
 rect 35 19 37 27
 << metal1 >>
-rect 12 47 13 51
-rect -3 17 0 47
 rect 4 35 8 39
 rect 37 35 41 39
 rect 4 31 12 35
@@ -42,7 +40,6 @@ rect 20 27 24 31
 rect 28 27 32 31
 rect 13 10 16 19
 rect 31 11 34 12
-rect -3 -25 0 5
 rect 21 -2 24 6
 rect 31 6 34 7
 rect 38 11 41 19
@@ -54,19 +51,14 @@ rect 16 -14 28 -10
 rect 32 -14 41 -10
 rect 4 -17 8 -14
 rect 37 -17 41 -14
-rect 15 -29 16 -25
 << metal2 >>
-rect 1 47 13 50
-rect -7 39 4 43
-rect 41 39 46 43
-rect -7 13 -3 16
-rect -7 6 -3 9
+rect -4 39 4 43
+rect 41 39 49 43
 rect 16 7 20 10
 rect 24 7 30 10
-rect 42 7 46 10
-rect -7 -21 4 -17
-rect 41 -21 46 -17
-rect 1 -28 11 -25
+rect 42 7 49 10
+rect -4 -21 4 -17
+rect 41 -21 49 -17
 << ntransistor >>
 rect 9 -6 11 -2
 rect 17 -6 19 -2
@@ -76,10 +68,8 @@ rect 9 19 11 27
 rect 17 19 19 27
 rect 33 19 35 27
 << polycontact >>
-rect 8 47 12 51
 rect 31 12 35 16
 rect 31 2 35 6
-rect 16 -29 20 -25
 << ndcontact >>
 rect 4 -6 8 -2
 rect 20 -6 24 -2
@@ -92,20 +82,14 @@ rect 20 19 24 27
 rect 28 19 32 27
 rect 37 19 41 27
 << m2contact >>
-rect -3 47 1 51
-rect 13 47 17 51
 rect 4 39 8 43
 rect 37 39 41 43
-rect -3 13 1 17
-rect -3 5 1 9
 rect 12 6 16 10
 rect 20 6 24 10
 rect 30 7 34 11
 rect 38 7 42 11
 rect 4 -21 8 -17
 rect 37 -21 41 -17
-rect -3 -29 1 -25
-rect 11 -29 15 -25
 << psubstratepcontact >>
 rect 12 -14 16 -10
 rect 28 -14 32 -10
@@ -113,11 +97,13 @@ rect 28 -14 32 -10
 rect 12 31 16 35
 rect 28 31 32 35
 << labels >>
-rlabel metal2 41 39 46 43 3 Vdd
-rlabel metal2 42 7 46 10 3 Y
-rlabel metal2 41 -21 46 -17 3 GND
-rlabel metal2 -7 13 -3 16 7 A
-rlabel metal2 -7 39 4 43 7 Vdd
-rlabel metal2 -7 6 -3 9 7 B
-rlabel metal2 -7 -21 4 -17 7 GND
+rlabel metal2 -4 39 4 43 7 Vdd
+rlabel polysilicon 9 27 11 48 1 A
+rlabel polysilicon 17 27 19 48 1 B
+rlabel metal2 41 39 49 43 3 Vdd
+rlabel metal2 42 7 49 10 3 Y
+rlabel metal2 41 -21 49 -17 3 GND
+rlabel metal2 -4 -21 4 -17 7 GND
+rlabel polysilicon 9 -25 11 -6 5 A
+rlabel polysilicon 17 -25 19 -6 5 B
 << end >>

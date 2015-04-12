@@ -5,20 +5,20 @@ p a_11_19# Vdd Y 2 8 33 19
 n A GND a_11_n6# 2 4 9 -6
 n B a_11_n6# a_11_19# 2 4 17 -6
 n a_11_19# GND Y 2 4 33 -6
-C Vdd B 5.1
-C GND B 4.8
-C Vdd a_11_19# 6.4
-C GND a_11_19# 6.0
-C Vdd A 5.1
-C GND A 4.8
+C Vdd B 3.8
+C Vdd a_11_19# 7.2
+C GND B 5.1
+C GND a_11_19# 5.3
+C Vdd A 5.9
+C GND A 3.1
 R a_11_n6# 40
 R Y 120
 R a_11_19# 530
-C B GND 6.0
-R B 871
-C A GND 6.0
-R A 871
-C GND GND 3.8
+C B GND 11.8
+R B 692
+C A GND 11.9
+R A 704
+C GND GND 3.6
 R GND 506
-C Vdd GND 4.2
-R Vdd 4221
+C Vdd GND 4.0
+R Vdd 4098
