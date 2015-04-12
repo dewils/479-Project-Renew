@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1428864319
+timestamp 1428836409
 << pwell >>
 rect -109 26 137 55
 << nwell >>
@@ -138,8 +138,6 @@ rect 4 97 7 102
 rect 45 97 48 101
 rect 103 97 106 102
 rect 141 98 144 108
-rect -130 22 -127 53
-rect -123 15 -120 53
 rect -116 8 -113 94
 rect -101 93 -100 97
 rect -13 93 -12 97
@@ -251,7 +249,7 @@ rect -112 94 -100 97
 rect -8 93 66 96
 rect 70 93 115 96
 rect 119 94 141 97
-rect -134 86 -109 90
+rect -120 86 -109 90
 rect 137 86 155 90
 rect -34 65 -23 68
 rect 44 65 56 68
@@ -261,8 +259,7 @@ rect 11 58 78 61
 rect 90 60 113 63
 rect 117 60 126 63
 rect 138 57 155 60
-rect -134 53 -131 56
-rect -119 53 -84 56
+rect -120 53 -84 56
 rect -72 53 -68 56
 rect -64 55 -24 56
 rect -64 53 -28 55
@@ -274,15 +271,13 @@ rect -86 45 -60 48
 rect -34 43 -23 46
 rect 44 42 56 45
 rect 60 42 72 45
-rect -134 26 -109 30
+rect -120 26 -109 30
 rect 137 26 155 30
-rect -127 19 -37 22
+rect -120 19 -37 22
 rect -33 19 3 22
 rect 7 19 41 22
 rect 45 19 102 22
 rect 106 19 155 22
-rect -134 11 -123 14
-rect -119 11 155 14
 << ntransistor >>
 rect -104 34 -102 39
 rect -82 34 -80 39
@@ -403,10 +398,6 @@ rect 3 102 7 106
 rect -116 94 -112 98
 rect 44 101 48 105
 rect 103 102 107 106
-rect -131 53 -127 57
-rect -131 18 -127 22
-rect -123 53 -119 57
-rect -123 11 -119 15
 rect -100 93 -96 97
 rect -12 93 -8 97
 rect 66 93 70 97
@@ -480,6 +471,10 @@ rect 85 86 89 90
 rect 120 86 124 90
 << labels >>
 rlabel metal1 -116 98 -113 108 1 add_n
+rlabel metal2 -120 86 -109 90 7 Vdd
+rlabel metal2 -120 53 -84 56 7 B
+rlabel metal2 -120 26 -109 30 7 GND
+rlabel metal2 -120 19 -37 22 7 A
 rlabel metal1 141 98 144 108 1 C
 rlabel metal1 141 8 144 49 5 X
 rlabel metal1 -116 8 -113 94 5 add_n
@@ -487,9 +482,4 @@ rlabel metal2 106 19 155 22 3 A
 rlabel metal2 137 26 155 30 3 GND
 rlabel metal2 138 57 155 60 3 Z
 rlabel metal2 137 86 155 90 3 Vdd
-rlabel metal2 -134 53 -131 56 7 A
-rlabel metal2 -134 86 -109 90 7 Vdd
-rlabel metal2 -134 26 -109 30 7 GND
-rlabel metal2 -134 11 -123 14 7 B
-rlabel metal2 -119 11 155 14 3 B
 << end >>
