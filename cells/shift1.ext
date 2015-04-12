@@ -1,39 +1,51 @@
-timestamp 1428868416
+timestamp 1428878022
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
 scale 1000 1 100
 resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
-node "inbit" 130 9158 15 11 ndc 20 18 40 26 0 0 0 0 0 0 0 0 296 204 89 64 0 0
-node "B" 536 10911 6 11 ndiff 40 36 80 52 0 0 0 0 0 0 0 0 392 274 260 182 0 0
+node "B" 131 12500 56 11 ndiff 20 18 40 26 0 0 0 0 0 0 0 0 277 196 289 202 0 0
 equiv "B" "B"
-node "A" 129 684 -1 11 ndc 20 18 40 26 0 0 0 0 0 0 0 0 106 72 70 52 0 0
-node "shift_n" 1350 34668 4 0 p 0 0 0 0 234 234 0 0 0 0 0 0 340 234 74 54 0 0
+node "inbit" 130 9158 15 11 ndc 20 18 40 26 0 0 0 0 0 0 0 0 296 204 89 64 0 0
+node "A" 129 912 -1 11 ndc 20 18 40 26 0 0 0 0 0 0 0 0 106 72 91 66 0 0
+node "a_40_11#" 536 0 40 11 ndiff 20 18 40 26 88 82 0 0 0 0 0 0 142 98 44 30 0 0
+node "a_6_11#" 941 0 6 11 ndiff 40 36 80 52 88 82 0 0 0 0 0 0 248 170 102 72 0 0
+node "shift_n" 1350 28645 4 0 p 0 0 0 0 234 234 0 0 0 0 0 0 348 238 122 86 0 0
 equiv "shift_n" "shift_n"
-node "shift" 872 20693 3 62 pc 0 0 0 0 154 154 0 0 0 0 0 0 340 234 89 64 0 0
+node "shift" 872 20978 3 62 pc 0 0 0 0 154 154 0 0 0 0 0 0 340 234 113 80 0 0
 equiv "shift" "shift"
-node "GND" 60 4684 -1 3 pw 0 0 16 16 0 0 0 0 0 0 0 0 176 96 176 104 0 0
+node "GND" 749 5136 -1 3 pw 40 36 48 48 0 0 0 0 0 0 0 0 376 196 180 106 0 0
 equiv "GND" "GND"
-node "Vdd" 2626 5812 -1 22 nw 16 16 0 0 0 0 0 0 0 0 0 0 192 104 176 104 756 110
+node "Vdd" 6394 5888 -1 22 nw 48 48 80 52 0 0 0 0 0 0 0 0 424 220 180 106 1674 178
 equiv "Vdd" "Vdd"
-cap "B" "GND" 2514
-cap "shift_n" "B" 699
-cap "Vdd" "B" 3427
-cap "shift" "B" 180
-cap "shift_n" "GND" 3880
-cap "inbit" "B" 810
-cap "shift" "GND" 4442
-cap "shift_n" "Vdd" 4908
-cap "inbit" "GND" 1650
-cap "shift_n" "inbit" 38
-cap "GND" "A" 987
+cap "shift_n" "inbit" 443
+cap "Vdd" "B" 1551
+cap "shift_n" "GND" 8402
+cap "GND" "B" 1527
 cap "shift" "Vdd" 8150
-cap "inbit" "Vdd" 1809
 cap "shift" "inbit" 585
-cap "Vdd" "A" 1739
+cap "A" "Vdd" 1739
+cap "shift" "GND" 4442
+cap "A" "inbit" 810
+cap "shift" "shift_n" 405
+cap "A" "GND" 987
+cap "shift_n" "A" 405
+cap "Vdd" "a_6_11#" 9154
+cap "a_6_11#" "inbit" 810
+cap "GND" "a_6_11#" 5191
+cap "shift_n" "a_6_11#" 294
 cap "shift" "A" 405
-cap "inbit" "A" 810
-device mosfet nfet 20 11 21 12 2 4 "GND" "shift" 4 0 "inbit" 4 0 "B" 4 0
-device mosfet nfet 4 11 5 12 2 4 "GND" "shift_n" 4 0 "A" 4 0 "B" 4 0
-device mosfet pfet 20 33 21 34 2 8 "Vdd" "shift_n" 4 0 "inbit" 8 0 "B" 8 0
-device mosfet pfet 4 33 5 34 2 8 "Vdd" "shift" 4 0 "A" 8 0 "B" 8 0
+cap "shift" "a_6_11#" 180
+cap "a_40_11#" "Vdd" 7466
+cap "a_40_11#" "GND" 4204
+cap "Vdd" "inbit" 1809
+cap "GND" "inbit" 1650
+cap "shift_n" "Vdd" 7526
+device mosfet nfet 54 11 55 12 2 4 "GND" "a_40_11#" 4 0 "GND" 4 0 "B" 4 0
+device mosfet nfet 38 11 39 12 2 4 "GND" "a_6_11#" 4 0 "GND" 4 0 "a_40_11#" 4 0
+device mosfet nfet 20 11 21 12 2 4 "GND" "shift" 4 0 "inbit" 4 0 "a_6_11#" 4 0
+device mosfet nfet 4 11 5 12 2 4 "GND" "shift_n" 4 0 "A" 4 0 "a_6_11#" 4 0
+device mosfet pfet 54 33 55 34 2 8 "Vdd" "a_40_11#" 4 0 "Vdd" 8 0 "B" 8 0
+device mosfet pfet 38 33 39 34 2 8 "Vdd" "a_6_11#" 4 0 "Vdd" 8 0 "a_40_11#" 8 0
+device mosfet pfet 20 33 21 34 2 8 "Vdd" "shift_n" 4 0 "inbit" 8 0 "a_6_11#" 8 0
+device mosfet pfet 4 33 5 34 2 8 "Vdd" "shift" 4 0 "A" 8 0 "a_6_11#" 8 0

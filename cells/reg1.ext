@@ -26,43 +26,43 @@ node "GND" 2381 3400 -12 -69 pw 120 108 128 128 0 0 0 0 0 0 0 0 920 468 148 90 0
 equiv "GND" "GND"
 node "Vdd" 19272 3400 -12 -41 nw 128 128 320 208 0 0 0 0 0 0 0 0 1112 564 148 90 4472 396
 equiv "Vdd" "Vdd"
-cap "Vdd" "reset_n" 8720
-cap "a_103_n31#" "a_87_n61#" 1350
 cap "reset_n" "clk_n" 405
-cap "GND" "reset_n" 24584
-cap "Vdd" "a_28_n61#" 8724
-cap "GND" "a_28_n61#" 9574
-cap "Q" "reset_n" 405
-cap "clk" "D" 405
-cap "Vdd" "a_12_n61#" 6657
-cap "GND" "a_12_n61#" 12059
-cap "reset_n" "a_87_n61#" 474
-cap "Vdd" "a_n5_n61#" 2820
-cap "GND" "a_n5_n61#" 5116
-cap "reset_n" "a_103_n31#" 114
-cap "clk" "reset_n" 405
-cap "a_45_n31#" "reset_n" 474
-cap "Vdd" "clk_n" 6740
-cap "a_28_n61#" "a_45_n31#" 810
-cap "GND" "clk_n" 6740
-cap "Vdd" "Q" 1410
+cap "clk_n" "GND" 6740
+cap "reset_n" "Q" 405
 cap "GND" "Q" 2256
+cap "D" "GND" 5050
 cap "a_12_n61#" "a_45_n31#" 810
-cap "a_28_n61#" "reset_n" 294
-cap "Vdd" "a_87_n61#" 6959
-cap "GND" "a_87_n61#" 11019
-cap "Vdd" "D" 4091
-cap "a_12_n61#" "reset_n" 294
-cap "D" "clk_n" 405
-cap "GND" "D" 5050
-cap "a_28_n61#" "a_12_n61#" 1350
-cap "Vdd" "a_103_n31#" 12084
-cap "Vdd" "clk" 6740
-cap "clk" "clk_n" 2025
-cap "GND" "a_103_n31#" 13649
-cap "GND" "clk" 6740
+cap "reset_n" "GND" 24584
+cap "a_103_n31#" "Vdd" 12084
+cap "reset_n" "a_28_n61#" 294
+cap "GND" "a_28_n61#" 9574
+cap "a_12_n61#" "Vdd" 6657
+cap "a_103_n31#" "a_87_n61#" 1350
+cap "a_n5_n61#" "Vdd" 2820
 cap "Vdd" "a_45_n31#" 3102
+cap "clk" "Vdd" 6740
+cap "reset_n" "a_103_n31#" 114
+cap "GND" "a_103_n31#" 13649
+cap "a_87_n61#" "Vdd" 6959
+cap "a_12_n61#" "reset_n" 294
+cap "clk" "clk_n" 2025
+cap "a_12_n61#" "GND" 12059
+cap "a_12_n61#" "a_28_n61#" 1350
+cap "a_n5_n61#" "GND" 5116
+cap "clk" "D" 405
+cap "clk_n" "Vdd" 6740
+cap "Vdd" "Q" 1410
+cap "D" "Vdd" 4091
+cap "reset_n" "a_45_n31#" 474
 cap "GND" "a_45_n31#" 5136
+cap "a_28_n61#" "a_45_n31#" 810
+cap "reset_n" "clk" 405
+cap "clk" "GND" 6740
+cap "reset_n" "Vdd" 8720
+cap "D" "clk_n" 405
+cap "a_28_n61#" "Vdd" 8724
+cap "reset_n" "a_87_n61#" 474
+cap "GND" "a_87_n61#" 11019
 device mosfet nfet 148 -61 149 -60 2 4 "GND" "a_103_n31#" 4 0 "GND" 4 0 "Q" 4 0
 device mosfet nfet 132 -61 133 -60 2 4 "GND" "clk_n" 4 0 "a_129_n61#" 4 0 "a_87_n61#" 4 0
 device mosfet nfet 127 -61 128 -60 2 4 "GND" "a_103_n31#" 4 0 "GND" 4 0 "a_129_n61#" 4 0

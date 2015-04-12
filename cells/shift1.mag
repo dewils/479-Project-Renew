@@ -1,13 +1,15 @@
 magic
 tech scmos
-timestamp 1428868416
+timestamp 1428878261
 << pwell >>
-rect -1 3 27 22
+rect -1 3 61 22
 << nwell >>
-rect -1 22 27 49
+rect -1 22 61 49
 << polysilicon >>
 rect 4 41 6 62
 rect 20 41 22 62
+rect 38 41 40 43
+rect 54 41 56 43
 rect 4 24 6 33
 rect 20 32 22 33
 rect 20 30 30 32
@@ -17,107 +19,161 @@ rect 20 15 22 22
 rect 4 2 6 11
 rect 20 9 22 11
 rect 28 2 30 30
+rect 38 25 40 33
+rect 54 25 56 33
+rect 37 21 40 25
+rect 53 21 56 25
+rect 38 15 40 21
+rect 54 15 56 21
+rect 38 9 40 11
+rect 54 9 56 11
 rect 4 0 30 2
 << ndiffusion >>
 rect 3 11 4 15
 rect 6 11 7 15
 rect 19 11 20 15
 rect 22 11 23 15
+rect 37 11 38 15
+rect 40 11 41 15
+rect 53 11 54 15
+rect 56 11 57 15
 << pdiffusion >>
 rect 3 33 4 41
 rect 6 33 7 41
 rect 19 33 20 41
 rect 22 33 23 41
+rect 37 33 38 41
+rect 40 33 41 41
+rect 53 33 54 41
+rect 56 33 57 41
 << metal1 >>
-rect -15 67 -12 77
-rect -15 -23 -12 63
+rect -22 67 -19 77
+rect -22 -23 -19 63
+rect -15 74 -12 77
+rect -15 -23 -12 70
 rect -8 19 -5 77
-rect 38 70 41 77
-rect 19 66 23 67
+rect 19 66 23 69
 rect 7 62 8 66
 rect -1 49 3 55
-rect 23 49 27 55
+rect 57 49 61 55
 rect -1 45 11 49
-rect 15 45 27 49
-rect -1 27 2 33
+rect 15 45 33 49
+rect 37 45 49 49
+rect 53 45 61 49
+rect 33 41 37 45
+rect 49 41 53 45
+rect -1 29 2 33
 rect 8 29 11 33
-rect -1 15 2 23
+rect -1 15 2 25
 rect 8 15 11 25
 rect 15 20 18 33
 rect 24 29 27 33
+rect 42 30 45 33
 rect 15 15 18 16
 rect 24 15 27 25
+rect 33 25 37 26
+rect 42 15 45 26
+rect 49 25 53 26
+rect 58 25 61 33
+rect 58 15 61 21
+rect 33 7 37 11
+rect 49 7 53 11
 rect -1 3 11 7
-rect 15 3 27 7
+rect 15 3 33 7
+rect 37 3 49 7
+rect 53 3 61 7
 rect -1 -1 3 3
-rect 23 -1 27 3
-rect 31 -9 34 25
+rect 57 -1 61 3
+rect 65 -9 68 22
 rect -8 -23 -5 -13
-rect 38 -23 41 66
 << metal2 >>
-rect 23 67 37 70
-rect -11 63 8 66
-rect -19 55 -1 59
-rect 27 55 45 59
-rect -19 23 -1 26
+rect -11 70 19 73
+rect -19 63 8 66
+rect -26 55 -1 59
+rect 61 55 73 59
+rect -26 25 -1 28
 rect 11 26 23 29
-rect 27 26 31 29
-rect 35 26 45 29
+rect 27 26 33 29
+rect 46 26 49 30
+rect 62 22 65 25
+rect 69 22 73 25
 rect -5 16 14 19
-rect -19 -5 -1 -1
-rect 27 -5 45 -1
-rect -4 -12 30 -9
+rect -26 -5 -1 -1
+rect 61 -5 73 -1
+rect -4 -12 64 -9
 << ntransistor >>
 rect 4 11 6 15
 rect 20 11 22 15
+rect 38 11 40 15
+rect 54 11 56 15
 << ptransistor >>
 rect 4 33 6 41
 rect 20 33 22 41
+rect 38 33 40 41
+rect 54 33 56 41
 << polycontact >>
 rect 3 62 7 66
 rect 19 62 23 66
+rect 33 21 37 25
+rect 49 21 53 25
 << ndcontact >>
 rect -1 11 3 15
 rect 7 11 11 15
 rect 15 11 19 15
 rect 23 11 27 15
+rect 33 11 37 15
+rect 41 11 45 15
+rect 49 11 53 15
+rect 57 11 61 15
 << pdcontact >>
 rect -1 33 3 41
 rect 7 33 11 41
 rect 15 33 19 41
 rect 23 33 27 41
+rect 33 33 37 41
+rect 41 33 45 41
+rect 49 33 53 41
+rect 57 33 61 41
 << m2contact >>
-rect -15 63 -11 67
-rect 19 67 23 71
-rect 37 66 41 70
+rect -23 63 -19 67
+rect -15 70 -11 74
+rect 19 69 23 73
 rect 8 62 12 66
 rect -1 55 3 59
-rect 23 55 27 59
+rect 57 55 61 59
 rect -9 15 -5 19
-rect -1 23 3 27
+rect -1 25 3 29
 rect 7 25 11 29
 rect 23 25 27 29
 rect 14 16 18 20
-rect 31 25 35 29
+rect 33 26 37 30
+rect 42 26 46 30
+rect 49 26 53 30
+rect 58 21 62 25
+rect 65 22 69 26
 rect -1 -5 3 -1
-rect 23 -5 27 -1
+rect 57 -5 61 -1
 rect -8 -13 -4 -9
-rect 30 -13 34 -9
+rect 64 -13 68 -9
 << psubstratepcontact >>
 rect 11 3 15 7
+rect 33 3 37 7
+rect 49 3 53 7
 << nsubstratencontact >>
 rect 11 45 15 49
+rect 33 45 37 49
+rect 49 45 53 49
 << labels >>
-rlabel metal2 -19 55 -1 59 7 Vdd
-rlabel metal2 -19 -5 -1 -1 7 GND
-rlabel metal2 -19 23 -1 26 7 A
-rlabel metal2 27 55 45 59 3 Vdd
-rlabel metal2 35 26 45 29 3 B
-rlabel metal2 27 -5 45 -1 3 GND
-rlabel metal1 -15 67 -12 77 1 shift
-rlabel metal1 38 70 41 77 1 shift_n
-rlabel metal1 -15 -23 -12 63 5 shift
-rlabel metal1 -8 -23 -5 -13 5 B
-rlabel metal1 38 -23 41 66 5 shift_n
+rlabel metal1 -22 67 -19 77 1 shift
+rlabel metal1 -15 74 -12 77 1 shift_n
 rlabel metal1 -8 19 -5 77 1 inbit
+rlabel metal2 -26 55 -1 59 7 Vdd
+rlabel metal2 -26 25 -1 28 7 A
+rlabel metal2 -26 -5 -1 -1 7 GND
+rlabel metal1 -22 -23 -19 63 5 shift
+rlabel metal1 -15 -23 -12 70 5 shift_n
+rlabel metal2 61 55 73 59 3 Vdd
+rlabel metal2 69 22 73 25 3 B
+rlabel metal2 61 -5 73 -1 3 GND
+rlabel metal1 -8 -23 -5 -13 5 B
 << end >>
