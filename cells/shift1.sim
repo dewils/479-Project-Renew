@@ -3,13 +3,13 @@ p shift A B 2 8 4 33
 p noshift inbit B 2 8 20 33
 n noshift A B 2 4 4 11
 n shift inbit B 2 4 20 11
-C Vdd noshift 4.1
 C GND noshift 3.3
 C Vdd shift 8.9
 C GND shift 4.1
 C Vdd B 2.8
-C Vdd inbit 2.4
 C GND B 6.9
+C Vdd inbit 2.4
+C Vdd noshift 4.1
 C inbit GND 7.3
 R inbit 130
 C B GND 8.4

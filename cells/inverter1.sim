@@ -4,7 +4,9 @@ n In GND Out 2 4 7 26
 C Vdd In 3.8
 C GND In 3.8
 R Out 129
-C In GND 4.1
-R In 644
+C In GND 8.4
+R In 859
+C GND GND 3.5
 R GND 93
+C Vdd GND 3.5
 R Vdd 4508

@@ -1,4 +1,4 @@
-timestamp 1428705964
+timestamp 1428736404
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
@@ -19,7 +19,7 @@ node "a_n39_72#" 393 0 -39 72 pdiff 0 0 110 62 0 0 0 0 0 0 0 0 130 88 65 48 0 0
 node "a_n102_34#" 383 0 -102 34 ndiff 80 52 80 36 32 32 0 0 0 0 0 0 249 174 138 96 0 0
 node "a_83_34#" 991 0 83 34 ndiff 55 42 110 62 82 82 0 0 0 0 0 0 419 282 144 100 0 0
 node "a_n15_34#" 1497 0 -15 34 ndiff 50 40 100 60 164 164 0 0 0 0 0 0 516 350 350 242 0 0
-node "A" 4524 51234 -42 19 pc 0 0 0 0 770 768 0 0 0 0 0 0 50 38 766 516 0 0
+node "A" 4524 50811 -42 19 pc 0 0 0 0 770 768 0 0 0 0 0 0 41 32 766 516 0 0
 equiv "A" "A"
 node "B" 511 228 -83 40 pc 40 26 80 36 74 74 0 0 0 0 0 0 272 184 213 152 0 0
 node "a_n80_34#" 3855 22446 -80 34 ndiff 80 52 160 72 574 570 0 0 0 0 0 0 567 400 608 412 0 0
@@ -30,56 +30,56 @@ node "GND" 3993 608 -109 26 pw 250 200 208 208 0 0 0 0 0 0 0 0 1344 680 64 48 0 
 equiv "GND" "GND"
 node "Vdd" 23161 608 -109 58 nw 208 208 500 300 0 0 0 0 0 0 0 0 1544 780 64 48 7872 556
 equiv "Vdd" "Vdd"
-cap "Vdd" "a_83_34#" 10395
-cap "a_83_34#" "A" 114
+cap "a_n102_34#" "add_n" 180
+cap "GND" "add_n" 10506
 cap "a_83_34#" "C" 114
-cap "add_n" "GND" 10506
-cap "Vdd" "X" 1974
-cap "A" "X" 342
-cap "C" "X" 228
-cap "GND" "A" 27944
-cap "a_83_34#" "a_n80_34#" 114
-cap "GND" "a_n39_34#" 2863
-cap "GND" "C" 16434
-cap "add_n" "Vdd" 18442
-cap "add_n" "A" 114
-cap "a_n80_34#" "X" 228
-cap "GND" "B" 8919
-cap "GND" "a_n80_34#" 31041
-cap "Vdd" "A" 17152
-cap "Vdd" "C" 17388
-cap "add_n" "B" 408
-cap "add_n" "a_n80_34#" 360
-cap "Vdd" "B" 7301
-cap "a_n15_34#" "X" 810
-cap "Vdd" "a_n80_34#" 28546
-cap "Vdd" "a_n39_72#" 2863
-cap "a_n102_34#" "GND" 9352
+cap "X" "a_n15_34#" 810
+cap "X" "GND" 13965
+cap "a_83_34#" "Vdd" 10395
+cap "a_39_34#" "GND" 4665
 cap "A" "a_n80_34#" 114
-cap "GND" "a_n15_34#" 17311
-cap "a_n39_34#" "a_n80_34#" 114
-cap "a_n80_34#" "C" 540
-cap "add_n" "a_n102_34#" 180
-cap "B" "a_n80_34#" 1215
-cap "Vdd" "a_n102_34#" 1692
-cap "Vdd" "a_39_72#" 4665
-cap "a_n39_72#" "a_n80_34#" 114
-cap "Vdd" "a_n15_34#" 16167
-cap "GND" "a_39_34#" 4665
-cap "a_n15_34#" "A" 228
-cap "a_39_72#" "C" 114
 cap "a_n15_34#" "C" 114
-cap "a_n102_34#" "B" 810
-cap "a_n102_34#" "a_n80_34#" 810
+cap "A" "add_n" 114
+cap "C" "GND" 16434
+cap "a_n15_34#" "Vdd" 16167
+cap "a_n102_34#" "Vdd" 1692
+cap "X" "A" 342
+cap "a_n80_34#" "B" 1215
+cap "a_n39_34#" "GND" 2863
+cap "a_83_34#" "GND" 10464
+cap "B" "add_n" 408
+cap "A" "Vdd" 17152
 cap "a_n80_34#" "a_39_72#" 114
-cap "a_n15_34#" "a_n80_34#" 228
-cap "GND" "Z" 2679
-cap "a_39_34#" "C" 114
-cap "a_83_34#" "X" 810
-cap "GND" "a_83_34#" 10464
+cap "a_n15_34#" "GND" 17311
+cap "a_n102_34#" "GND" 9352
+cap "A" "a_83_34#" 114
+cap "Z" "Vdd" 1974
+cap "a_n80_34#" "add_n" 360
+cap "X" "a_n80_34#" 228
+cap "B" "Vdd" 7301
+cap "a_n39_72#" "a_n80_34#" 114
 cap "a_39_34#" "a_n80_34#" 114
-cap "Vdd" "Z" 1974
-cap "GND" "X" 13965
+cap "A" "a_n15_34#" 228
+cap "a_39_72#" "C" 114
+cap "A" "GND" 27944
+cap "a_n80_34#" "C" 540
+cap "a_39_72#" "Vdd" 4665
+cap "a_n80_34#" "Vdd" 28546
+cap "Z" "GND" 2679
+cap "X" "C" 228
+cap "add_n" "Vdd" 18442
+cap "a_39_34#" "C" 114
+cap "a_n80_34#" "a_n39_34#" 114
+cap "a_n102_34#" "B" 810
+cap "B" "GND" 8919
+cap "a_n80_34#" "a_83_34#" 114
+cap "X" "Vdd" 1974
+cap "a_n39_72#" "Vdd" 2863
+cap "C" "Vdd" 17388
+cap "X" "a_83_34#" 810
+cap "a_n15_34#" "a_n80_34#" 228
+cap "a_n102_34#" "a_n80_34#" 810
+cap "a_n80_34#" "GND" 31041
 device mosfet nfet 129 34 130 35 2 5 "GND" "a_83_34#" 4 0 "GND" 5 0 "Z" 5 0
 device mosfet nfet 110 34 111 35 2 5 "GND" "C" 4 0 "a_106_34#" 5 0 "a_83_34#" 5 0
 device mosfet nfet 104 34 105 35 2 5 "GND" "a_n80_34#" 4 0 "a_100_34#" 5 0 "a_106_34#" 5 0

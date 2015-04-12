@@ -23,46 +23,47 @@ n reset_n a_103_n61# a_103_n31# 2 4 111 -61
 n a_103_n31# GND a_129_n61# 2 4 127 -61
 n clk_n a_129_n61# a_87_n61# 2 4 132 -61
 n a_103_n31# GND Q 2 4 148 -61
-C GND D 4.3
-C w_n12_n45# clk 4.6
-C GND a_103_n31# 10.7
-C GND a_28_n61# 7.7
-C w_n12_n45# reset_n 7.3
-C GND clk_n 8.4
-C w_n12_n45# a_n5_n61# 4.4
-C w_n12_n45# a_45_n31# 5.0
-C GND clk 14.1
-C w_n12_n45# a_87_n61# 8.2
-C GND reset_n 10.6
-C w_n12_n45# a_12_n61# 7.9
-C GND a_n5_n61# 3.6
-C GND a_45_n31# 3.8
-C w_n12_n45# D 4.2
-C GND a_87_n61# 9.4
-C w_n12_n45# a_103_n31# 14.2
-C w_n12_n45# a_28_n61# 10.3
-C GND a_12_n61# 10.1
-C w_n12_n45# clk_n 9.1
+C Vdd reset_n 8.7
+C Vdd clk 6.7
+C Vdd a_45_n31# 3.1
+C Vdd a_87_n61# 7.0
+C GND reset_n 24.6
+C GND clk 6.7
+C GND a_45_n31# 5.1
+C clk clk_n 2.0
+C GND a_87_n61# 11.0
+C Vdd D 4.1
+C Vdd a_103_n31# 12.1
+C GND D 5.0
+C Vdd a_12_n61# 6.7
+C GND a_103_n31# 13.6
+C GND a_12_n61# 12.1
+C Vdd clk_n 6.7
+C Vdd a_n5_n61# 2.8
+C Vdd a_28_n61# 8.7
+C GND clk_n 6.7
+C GND Q 2.3
+C GND a_n5_n61# 5.1
+C GND a_28_n61# 9.6
 R a_129_n61# 36
 R a_103_n61# 53
 R a_45_n61# 53
 R Q 142
 R a_129_n31# 159
 R a_45_n31# 512
-C clk GND 60.4
-R clk 4164
+R a_n5_n61# 527
 R a_103_n31# 954
 R a_87_n61# 939
-C reset_n GND 21.8
-R reset_n 1673
 R a_28_n61# 932
 R a_12_n61# 940
-R a_n5_n61# 527
-C clk_n GND 46.5
-R clk_n 2722
 R D 405
-C Vdd GND 32.2
-R Vdd 2695
-C GND GND 2.5
+C reset_n GND 27.8
+R reset_n 1984
+C clk_n GND 46.4
+R clk_n 1246
+C clk GND 40.9
+R clk 1245
+C GND GND 3.4
 R GND 2381
-R w_n12_n45# 19591
+C Vdd GND 3.4
+R Vdd 19272

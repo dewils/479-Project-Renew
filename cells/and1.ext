@@ -1,4 +1,4 @@
-timestamp 1428790241
+timestamp 1428803059
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
@@ -7,23 +7,23 @@ resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
 node "a_11_n6#" 40 0 11 -6 ndiff 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "Y" 120 587 35 -6 ndiff 24 20 48 28 0 0 0 0 0 0 0 0 115 78 37 30 0 0
 node "a_11_19#" 530 0 11 19 pdiff 20 18 48 28 78 78 0 0 0 0 0 0 185 134 78 56 0 0
-node "B" 883 6270 17 -26 p 0 0 0 0 148 152 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 871 6032 17 -25 p 0 0 0 0 146 150 0 0 0 0 0 0 0 0 0 0 0 0
 equiv "B" "B"
-node "A" 883 6270 9 -26 p 0 0 0 0 148 152 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 871 6032 9 -25 p 0 0 0 0 146 150 0 0 0 0 0 0 0 0 0 0 0 0
 equiv "A" "A"
-node "GND" 506 4224 4 -14 pw 40 36 32 32 0 0 0 0 0 0 0 0 276 146 96 64 0 0
+node "GND" 506 3848 4 -14 pw 40 36 32 32 0 0 0 0 0 0 0 0 268 142 96 64 0 0
 equiv "GND" "GND"
 node "Vdd" 4221 4224 4 8 nw 32 32 120 78 0 0 0 0 0 0 0 0 356 186 96 64 999 128
 equiv "Vdd" "Vdd"
-cap "B" "GND" 4844
-cap "B" "Vdd" 5082
 cap "Y" "GND" 1410
-cap "a_11_19#" "GND" 6013
-cap "a_11_19#" "B" 114
-cap "A" "GND" 4844
-cap "Vdd" "Y" 1551
+cap "Vdd" "A" 5082
 cap "a_11_19#" "Vdd" 6444
-cap "A" "Vdd" 5082
+cap "Y" "Vdd" 1551
+cap "GND" "B" 4844
+cap "a_11_19#" "B" 114
+cap "Vdd" "B" 5082
+cap "GND" "A" 4844
+cap "a_11_19#" "GND" 6013
 device mosfet nfet 33 -6 34 -5 2 4 "GND" "a_11_19#" 4 0 "GND" 4 0 "Y" 4 0
 device mosfet nfet 17 -6 18 -5 2 4 "GND" "B" 4 0 "a_11_n6#" 4 0 "a_11_19#" 4 0
 device mosfet nfet 9 -6 10 -5 2 4 "GND" "A" 4 0 "GND" 4 0 "a_11_n6#" 4 0
