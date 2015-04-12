@@ -1,5 +1,5 @@
 stepsize 1000
-
+analyzer Y S0 S1 D0 D1 D2
 vector S0_bus S0 S0_n 
 vector S1_bus S1 S1_n
 vector D D0 D1 D2
@@ -43,4 +43,4 @@ s
 set S0_bus 10
 set S1_bus 10
 s
-exit
+
