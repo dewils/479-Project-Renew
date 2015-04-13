@@ -1,54 +1,77 @@
-timestamp 1428735392
+timestamp 1428883144
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
 scale 1000 1 100
 resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
-use ../cells/mux1 mux1_0 1 0 71 0 1 -2
-use ../cells/shift1 shift1_0 1 0 151 0 1 23
-use ../cells/reg1 reg1_0 1 0 211 0 1 92
-node "m2_371_18#" 0 684 371 18 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 32 0 0
-node "m2_191_18#" 0 304 191 18 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
-node "m2_135_18#" 0 304 135 18 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
-node "m2_135_41#" 0 228 135 41 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0
-node "m2_375_78#" 0 380 375 78 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 24 0 0
-node "m2_191_78#" 0 304 191 78 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
-node "m2_135_78#" 0 76 135 78 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
-node "m1_191_40#" 0 2209 191 40 v 0 0 0 0 0 0 0 0 0 0 0 0 47 36 32 32 0 0
-node "m1_135_2#" 7 48329 135 2 v 0 0 0 0 0 0 0 0 0 0 0 0 451 314 1540 1052 0 0
-cap "m2_375_78#" "m1_135_2#" 540
-cap "m2_371_18#" "m1_135_2#" 540
-cap "m2_135_78#" "m1_135_2#" 540
-cap "shift1_0/B" "mux1_0/D2" 405
-cap "shift1_0/noshift" "mux1_0/D1" 114
-cap "shift1_0/shift" "mux1_0/D2" 114
-cap "mux1_0/D1" "shift1_0/inbit" 405
-cap "shift1_0/shift" "mux1_0/D1" 114
-cap "shift1_0/noshift" "mux1_0/D2" 664
-cap "reg1_0/clk_n" "m1_135_2#" 405
-cap "reg1_0/clk" "m1_135_2#" 114
-cap "m1_135_2#" "reg1_0/reset_n" 405
-cap "reg1_0/clk_n" "m1_135_2#" 2972
-cap "m1_135_2#" "reg1_0/clk" 114
-cap "reg1_0/reset_n" "m1_135_2#" 405
-cap "m1_135_2#" "reg1_0/reset_n" 405
-cap "reg1_0/reset_n" "m1_135_2#" 405
-cap "m1_135_2#" "reg1_0/clk" 114
-cap "reg1_0/clk" "m1_135_2#" 114
-merge "reg1_0/Vdd" "shift1_0/Vdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
+use ../cells/mux1 mux1_0 1 0 64 0 1 -29
+use ../cells/shift1 shift1_0 1 0 181 0 1 -4
+use ../cells/reg1 reg1_0 1 0 288 0 1 65
+node "GND" 0 380 459 -9 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 24 0 0
+node "m2_254_n9#" 0 304 254 -9 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "m2_151_n9#" 0 304 151 -9 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "GND" 0 304 -19 -9 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "m2_254_18#" 0 532 254 18 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 22 0 0
+node "m2_151_15#" 0 684 151 15 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 26 0 0
+node "dividendin" 0 228 -19 29 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0
+node "Vdd" 0 608 459 51 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32 24 0 0
+node "m2_254_51#" 0 304 254 51 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "m2_151_51#" 0 304 151 51 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "Vdd" 0 304 -19 51 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "reset_n" 0 1269 452 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "clk" 0 1269 269 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "clk_n" 0 1269 262 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "outbit" 0 1269 173 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "shift_n" 0 1269 166 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "shift" 0 1269 159 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "S1_n" 0 1269 136 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "S1" 0 1269 129 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "S0_n" 0 1269 3 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "S0" 0 1269 -4 -36 m1 0 0 0 0 0 0 0 0 0 0 0 0 27 24 0 0 0 0
+node "quotient" 4 25660 459 -32 v 0 0 0 0 0 0 0 0 0 0 0 0 170 118 1016 688 0 0
+node "reset_n" 0 564 452 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "clk" 0 564 269 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "clk_n" 0 564 262 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "inbit" 0 564 173 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "shift_n" 0 564 166 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "shift" 0 564 159 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "S1_n" 0 564 136 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "S1" 0 564 129 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "S0_n" 0 564 3 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+node "S0" 0 564 -4 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+cap "quotient" "GND" 540
+cap "reset_n" "quotient" 405
+cap "quotient" "shift" 405
+cap "quotient" "clk_n" 405
+cap "quotient" "shift_n" 405
+cap "quotient" "outbit" 405
+cap "quotient" "clk" 405
+merge "shift1_0/shift_n" "shift_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "mux1_0/S1_n" "S1_n" -11844 0 0 0 0 0 0 0 0 0 0 0 0 -252 -186 0 0 0 0
+merge "mux1_0/S0" "S0" -11844 0 0 0 0 0 0 0 0 0 0 0 0 -252 -186 0 0 0 0
+merge "reg1_0/Vdd" "shift1_0/Vdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 0 0
 merge "shift1_0/Vdd" "mux1_0/Vdd"
-merge "mux1_0/Vdd" "m2_135_78#"
-merge "m2_135_78#" "m2_191_78#"
-merge "m2_191_78#" "m2_375_78#"
+merge "mux1_0/Vdd" "Vdd"
+merge "Vdd" "m2_151_51#"
+merge "m2_151_51#" "m2_254_51#"
+merge "mux1_0/S1" "S1" -11844 0 0 0 0 0 0 0 0 0 0 0 0 -252 -186 0 0 0 0
 merge "shift1_0/A" "mux1_0/Y" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
-merge "mux1_0/Y" "m2_135_41#"
-merge "reg1_0/GND" "shift1_0/GND" -304 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -16 0 0
-merge "shift1_0/GND" "mux1_0/GND"
-merge "mux1_0/GND" "m2_135_18#"
-merge "m2_135_18#" "m2_191_18#"
-merge "m2_191_18#" "m2_371_18#"
+merge "mux1_0/Y" "m2_151_15#"
+merge "mux1_0/D0" "dividendin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
 merge "reg1_0/D" "shift1_0/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
-merge "shift1_0/B" "m1_191_40#"
-merge "reg1_0/Q" "mux1_0/D2" -21466 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 -1058 -732 0 0
+merge "shift1_0/B" "outbit"
+merge "outbit" "m2_254_18#"
+merge "mux1_0/S0_n" "S0_n" -11844 0 0 0 0 0 0 0 0 0 0 0 0 -252 -186 0 0 0 0
+merge "reg1_0/GND" "shift1_0/GND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 0 0
+merge "shift1_0/GND" "mux1_0/GND"
+merge "mux1_0/GND" "GND"
+merge "GND" "m2_151_n9#"
+merge "m2_151_n9#" "m2_254_n9#"
+merge "reg1_0/reset_n" "reset_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "reg1_0/Q" "mux1_0/D2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 0 0
 merge "mux1_0/D2" "mux1_0/D1"
-merge "mux1_0/D1" "m1_135_2#"
+merge "mux1_0/D1" "quotient"
+merge "reg1_0/clk_n" "clk_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "shift1_0/inbit" "inbit" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "reg1_0/clk" "clk" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "shift1_0/shift" "shift" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0

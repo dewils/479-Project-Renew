@@ -1,0 +1,225 @@
+timestamp 1428819836
+version 7.5
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+use ../cells/inverter1 inverter1_1 1 0 457 0 1 1613
+use ../cells/inverter1 inverter1_2 1 0 526 0 1 1613
+use ../cells/inverter1 inverter1_3 1 0 590 0 1 1613
+use ../cells/inverter1 inverter1_4 1 0 656 0 1 1613
+use ../cells/and1 and1_0 1 0 4 0 1 839
+use ../cells/inverter1 inverter1_0 1 0 98 0 1 813
+use dbitlow dbitlow_0[0:0:383][0:7:100] 1 0 442 0 1 800
+node "dividendin_7" 4 25650 -24 811 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1398 938 0 0
+node "m2_116_818#" 2 24776 116 818 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1304 660 0 0
+node "m2_53_818#" 0 2812 53 818 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172 94 0 0
+node "quotient_7" 0 1026 825 845 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 58 0 0
+node "m2_116_878#" 2 24776 116 878 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1304 660 0 0
+node "m2_53_878#" 0 3268 53 878 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172 94 0 0
+node "dividendin_6" 4 26106 -24 911 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1398 938 0 0
+node "quotient_6" 0 969 825 945 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0
+node "dividendin_5" 4 26106 -24 1011 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1398 938 0 0
+node "quotient_5" 0 1026 825 1045 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 58 0 0
+node "dividendin_4" 4 26106 -24 1111 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1398 938 0 0
+node "quotient_4" 0 969 825 1145 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0
+node "dividendin_3" 4 26106 -24 1211 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1398 938 0 0
+node "quotient_3" 0 1026 825 1245 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 58 0 0
+node "dividendin_2" 4 26106 -24 1311 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1398 938 0 0
+node "quotient_2" 0 969 825 1345 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75 56 0 0
+node "dividendin_1" 4 26106 -24 1411 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1398 938 0 0
+node "quotient_1" 0 1026 825 1445 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 58 0 0
+node "dividendin_0" 4 26106 -24 1511 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1398 938 0 0
+node "quotient_0" 0 1026 825 1545 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 78 58 0 0
+node "m2_608_1618#" 0 3268 608 1618 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 184 100 0 0
+node "m2_544_1618#" 0 2888 544 1618 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 176 96 0 0
+node "m2_475_1618#" 0 3496 475 1618 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 196 106 0 0
+node "m2_608_1678#" 0 3496 608 1678 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 184 100 0 0
+node "m2_544_1678#" 0 3116 544 1678 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 176 96 0 0
+node "m2_475_1678#" 0 3724 475 1678 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 196 106 0 0
+node "Vdd" 13 185476 838 800 m1 0 0 0 0 0 0 0 0 0 0 0 0 3576 1796 1216 680 0 0
+node "m1_69_800#" 1 4522 69 800 m1 0 0 0 0 0 0 0 0 0 0 0 0 50 44 191 132 0 0
+node "m1_85_800#" 1 8297 85 800 m1 0 0 0 0 0 0 0 0 0 0 0 0 151 106 94 68 0 0
+node "GND" 13 179776 826 800 m1 0 0 0 0 0 0 0 0 0 0 0 0 3576 1796 784 464 0 0
+node "m1_721_1645#" 1 9323 721 1645 v 0 0 0 0 0 0 0 0 0 0 0 0 151 106 157 110 0 0
+node "reset_n" 2 16903 706 1600 m1 0 0 0 0 0 0 0 0 0 0 0 0 311 218 191 132 0 0
+node "inbit" 2 13254 585 1600 m1 0 0 0 0 0 0 0 0 0 0 0 0 282 194 0 0 0 0
+node "Vdd" 35 437796 -4 800 m1 0 0 0 0 0 0 0 0 0 0 0 0 3576 1796 14340 7242 0 0
+node "GND" 35 443268 -16 800 m1 0 0 0 0 0 0 0 0 0 0 0 0 3576 1796 14772 7458 0 0
+node "a_192_800#" 2708 54978 192 800 pc 0 0 0 0 462 462 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_26_800#" 1623 39994 26 800 p 0 0 0 0 280 280 0 0 0 0 0 0 158 110 16 16 0 0
+node "a_20_887#" 24 1904 20 887 pc 0 0 0 0 16 16 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_12_887#" 24 1904 12 887 pc 0 0 0 0 16 16 0 0 0 0 0 0 16 16 0 0 0 0
+node "a_663_1600#" 1622 32688 663 1600 p 0 0 0 0 272 276 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_612_1600#" 25 9001 612 1600 pc 0 0 0 0 16 16 0 0 0 0 0 0 167 114 16 16 0 0
+node "a_597_1600#" 167 3652 597 1600 p 0 0 0 0 28 32 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_548_1600#" 25 9001 548 1600 pc 0 0 0 0 16 16 0 0 0 0 0 0 167 114 16 16 0 0
+node "a_533_1600#" 167 3652 533 1600 p 0 0 0 0 28 32 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_479_1600#" 25 9001 479 1600 pc 0 0 0 0 16 16 0 0 0 0 0 0 167 114 16 16 0 0
+node "a_464_1600#" 167 3652 464 1600 p 0 0 0 0 28 32 0 0 0 0 0 0 0 0 0 0 0 0
+node "clk" 24 2468 662 1686 pc 0 0 0 0 16 16 0 0 0 0 0 0 28 24 0 0 0 0
+node "shift" 24 2468 596 1686 pc 0 0 0 0 16 16 0 0 0 0 0 0 28 24 0 0 0 0
+node "sel_1" 24 2468 532 1686 pc 0 0 0 0 16 16 0 0 0 0 0 0 28 24 0 0 0 0
+node "sel_0" 24 2468 463 1686 pc 0 0 0 0 16 16 0 0 0 0 0 0 28 24 0 0 0 0
+cap "Vdd" "quotient_4" 540
+cap "m1_85_800#" "m2_53_818#" 540
+cap "Vdd" "dividendin_3" 540
+cap "quotient_2" "GND" 540
+cap "GND" "dividendin_2" 540
+cap "GND" "quotient_7" 540
+cap "Vdd" "quotient_6" 540
+cap "GND" "Vdd" 6480
+cap "dividendin_6" "Vdd" 540
+cap "dividendin_7" "a_26_800#" 519
+cap "dividendin_5" "GND" 540
+cap "m1_69_800#" "a_26_800#" 474
+cap "reset_n" "m1_721_1645#" 810
+cap "quotient_2" "Vdd" 540
+cap "GND" "quotient_3" 540
+cap "dividendin_0" "GND" 540
+cap "m1_721_1645#" "a_663_1600#" 180
+cap "Vdd" "quotient_7" 540
+cap "a_548_1600#" "m2_544_1618#" 540
+cap "Vdd" "GND" 6480
+cap "quotient_0" "GND" 540
+cap "dividendin_1" "Vdd" 540
+cap "quotient_5" "GND" 540
+cap "Vdd" "quotient_3" 540
+cap "GND" "dividendin_3" 540
+cap "dividendin_4" "Vdd" 540
+cap "dividendin_7" "Vdd" 540
+cap "m1_85_800#" "a_26_800#" 180
+cap "reset_n" "GND" 540
+cap "inbit" "m2_544_1618#" 540
+cap "m2_53_818#" "a_26_800#" 540
+cap "dividendin_6" "GND" 540
+cap "Vdd" "quotient_0" 540
+cap "Vdd" "quotient_5" 540
+cap "dividendin_7" "m1_85_800#" 405
+cap "quotient_1" "GND" 540
+cap "m1_69_800#" "m1_85_800#" 405
+cap "Vdd" "dividendin_2" 540
+cap "reset_n" "Vdd" 540
+cap "dividendin_5" "Vdd" 540
+cap "GND" "quotient_4" 540
+cap "dividendin_1" "GND" 540
+cap "a_479_1600#" "m2_475_1618#" 540
+cap "Vdd" "quotient_1" 540
+cap "m2_544_1678#" "inbit" 540
+cap "dividendin_0" "Vdd" 540
+cap "m1_721_1645#" "GND" 540
+cap "dividendin_4" "GND" 540
+cap "dividendin_7" "GND" 540
+cap "m2_608_1618#" "a_612_1600#" 540
+cap "quotient_6" "GND" 540
+cap "reset_n" "a_663_1600#" 360
+cap "inverter1_0/Out" "inverter1_0/In" 114
+cap "inverter1_0/GND" "inverter1_0/Out" 266
+cap "inverter1_0/Vdd" "inverter1_0/Out" 133
+merge "inverter1_4/Vdd" "inverter1_3/Vdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0
+merge "inverter1_3/Vdd" "inverter1_2/Vdd"
+merge "inverter1_2/Vdd" "inverter1_1/Vdd"
+merge "inverter1_1/Vdd" "dbitlow_0[7]/reg1_0/Vdd"
+merge "dbitlow_0[7]/reg1_0/Vdd" "dbitlow_0[7]/mux1_0/Vdd"
+merge "dbitlow_0[7]/mux1_0/Vdd" "dbitlow_0[6]/m2_375_78#"
+merge "dbitlow_0[6]/m2_375_78#" "dbitlow_0[6]/mux1_0/Vdd"
+merge "dbitlow_0[6]/mux1_0/Vdd" "dbitlow_0[5]/m2_375_78#"
+merge "dbitlow_0[5]/m2_375_78#" "dbitlow_0[5]/mux1_0/Vdd"
+merge "dbitlow_0[5]/mux1_0/Vdd" "dbitlow_0[4]/m2_375_78#"
+merge "dbitlow_0[4]/m2_375_78#" "dbitlow_0[4]/mux1_0/Vdd"
+merge "dbitlow_0[4]/mux1_0/Vdd" "dbitlow_0[3]/m2_375_78#"
+merge "dbitlow_0[3]/m2_375_78#" "dbitlow_0[3]/mux1_0/Vdd"
+merge "dbitlow_0[3]/mux1_0/Vdd" "dbitlow_0[2]/m2_375_78#"
+merge "dbitlow_0[2]/m2_375_78#" "dbitlow_0[2]/mux1_0/Vdd"
+merge "dbitlow_0[2]/mux1_0/Vdd" "dbitlow_0[1]/m2_375_78#"
+merge "dbitlow_0[1]/m2_375_78#" "dbitlow_0[1]/mux1_0/Vdd"
+merge "dbitlow_0[1]/mux1_0/Vdd" "dbitlow_0[0]/m2_375_78#"
+merge "dbitlow_0[0]/m2_375_78#" "dbitlow_0[0]/mux1_0/Vdd"
+merge "dbitlow_0[0]/mux1_0/Vdd" "inverter1_0/Vdd"
+merge "inverter1_0/Vdd" "and1_0/Vdd"
+merge "and1_0/Vdd" "Vdd"
+merge "Vdd" "m2_53_878#"
+merge "m2_53_878#" "m2_116_878#"
+merge "m2_116_878#" "m2_475_1678#"
+merge "m2_475_1678#" "m2_544_1678#"
+merge "m2_544_1678#" "m2_608_1678#"
+merge "inverter1_4/Out" "dbitlow_0[7]/reg1_0/clk_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 -6 0 0
+merge "dbitlow_0[7]/reg1_0/clk_n" "m1_721_1645#"
+merge "dbitlow_0[7]/reg1_0/Q" "quotient_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[7]/reg1_0/reset_n" "reset_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 0 0 0 0
+merge "dbitlow_0[0]/mux1_0/D0" "dividendin_7" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "inverter1_4/In" "clk" -29820 0 0 0 0 -100 -324 0 0 0 0 0 0 0 0 0 0 0 0
+merge "clk" "dbitlow_0[7]/reg1_0/clk"
+merge "dbitlow_0[7]/reg1_0/clk" "a_663_1600#"
+merge "inverter1_4/GND" "inverter1_3/GND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0
+merge "inverter1_3/GND" "inverter1_2/GND"
+merge "inverter1_2/GND" "inverter1_1/GND"
+merge "inverter1_1/GND" "dbitlow_0[7]/reg1_0/GND"
+merge "dbitlow_0[7]/reg1_0/GND" "dbitlow_0[7]/mux1_0/GND"
+merge "dbitlow_0[7]/mux1_0/GND" "dbitlow_0[6]/m2_371_18#"
+merge "dbitlow_0[6]/m2_371_18#" "dbitlow_0[6]/mux1_0/GND"
+merge "dbitlow_0[6]/mux1_0/GND" "dbitlow_0[5]/m2_371_18#"
+merge "dbitlow_0[5]/m2_371_18#" "dbitlow_0[5]/mux1_0/GND"
+merge "dbitlow_0[5]/mux1_0/GND" "dbitlow_0[4]/m2_371_18#"
+merge "dbitlow_0[4]/m2_371_18#" "dbitlow_0[4]/mux1_0/GND"
+merge "dbitlow_0[4]/mux1_0/GND" "dbitlow_0[3]/m2_371_18#"
+merge "dbitlow_0[3]/m2_371_18#" "dbitlow_0[3]/mux1_0/GND"
+merge "dbitlow_0[3]/mux1_0/GND" "dbitlow_0[2]/m2_371_18#"
+merge "dbitlow_0[2]/m2_371_18#" "dbitlow_0[2]/mux1_0/GND"
+merge "dbitlow_0[2]/mux1_0/GND" "dbitlow_0[1]/m2_371_18#"
+merge "dbitlow_0[1]/m2_371_18#" "dbitlow_0[1]/mux1_0/GND"
+merge "dbitlow_0[1]/mux1_0/GND" "dbitlow_0[0]/m2_371_18#"
+merge "dbitlow_0[0]/m2_371_18#" "dbitlow_0[0]/mux1_0/GND"
+merge "dbitlow_0[0]/mux1_0/GND" "inverter1_0/GND"
+merge "inverter1_0/GND" "and1_0/GND"
+merge "and1_0/GND" "GND"
+merge "GND" "m2_53_818#"
+merge "m2_53_818#" "m2_116_818#"
+merge "m2_116_818#" "m2_475_1618#"
+merge "m2_475_1618#" "m2_544_1618#"
+merge "m2_544_1618#" "m2_608_1618#"
+merge "inverter1_1/Out" "dbitlow_0[7]/mux1_0/S0_n" -640 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[7]/mux1_0/S0_n" "a_479_1600#"
+merge "inverter1_2/In" "sel_1" -1280 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sel_1" "dbitlow_0[7]/mux1_0/S1"
+merge "dbitlow_0[7]/mux1_0/S1" "a_533_1600#"
+merge "dbitlow_0[1]/mux1_0/D0" "dividendin_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "inverter1_1/In" "sel_0" -1280 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sel_0" "dbitlow_0[7]/mux1_0/S0"
+merge "dbitlow_0[7]/mux1_0/S0" "a_464_1600#"
+merge "inverter1_0/In" "and1_0/Y" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "and1_0/Y" "a_26_800#"
+merge "dbitlow_0[0]/m1_135_2#" "quotient_7" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[2]/mux1_0/D0" "dividendin_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[1]/m1_135_2#" "quotient_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "inverter1_2/Out" "dbitlow_0[7]/mux1_0/S1_n" -640 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[7]/mux1_0/S1_n" "a_548_1600#"
+merge "inverter1_0/Out" "m1_85_800#" -855 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 -18 0 0
+merge "dbitlow_0[3]/mux1_0/D0" "dividendin_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[7]/shift1_0/inbit" "inbit" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "dbitlow_0[2]/m1_135_2#" "quotient_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[4]/mux1_0/D0" "dividendin_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[7]/mux1_0/D0" "dividendin_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "inverter1_3/In" "shift" -1280 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0 0 0
+merge "shift" "dbitlow_0[7]/shift1_0/shift"
+merge "dbitlow_0[7]/shift1_0/shift" "a_597_1600#"
+merge "dbitlow_0[3]/m1_135_2#" "quotient_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[6]/mux1_0/D0" "dividendin_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "inverter1_3/Out" "dbitlow_0[7]/shift1_0/noshift" -640 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[7]/shift1_0/noshift" "a_612_1600#"
+merge "dbitlow_0[5]/mux1_0/D0" "dividendin_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[4]/m1_135_2#" "quotient_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "and1_0/A" "a_12_887#" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and1_0/B" "a_20_887#" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dbitlow_0[5]/m1_135_2#" "quotient_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[6]/m1_135_2#" "quotient_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[1:7]/mux1_0/S1_n" "dbitlow_0[0:6]/mux1_0/S1_n" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dbitlow_0[1:7]/reg1_0/reset_n" "dbitlow_0[0:6]/reg1_0/reset_n" -282 0 0 0 0 0 0 0 0 0 0 0 0 -6 -22 0 0 0 0
+merge "dbitlow_0[1:7]/mux1_0/S0_n" "dbitlow_0[0:6]/mux1_0/S0_n" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dbitlow_0[1:7]/mux1_0/S0" "dbitlow_0[0:6]/mux1_0/S0" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dbitlow_0[1:7]/reg1_0/clk_n" "dbitlow_0[0:6]/reg1_0/clk_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbitlow_0[1:7]/mux1_0/S1" "dbitlow_0[0:6]/mux1_0/S1" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dbitlow_0[1:7]/shift1_0/B" "dbitlow_0[0:6]/shift1_0/inbit" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbitlow_0[1:7]/reg1_0/clk" "dbitlow_0[0:6]/reg1_0/clk" -1436 0 0 0 0 -4 -16 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dbitlow_0[1:7]/shift1_0/shift" "dbitlow_0[0:6]/shift1_0/shift" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dbitlow_0[1:7]/shift1_0/noshift" "dbitlow_0[0:6]/shift1_0/noshift" -320 0 0 0 0 0 -4 0 0 0 0 0 0 0 0 0 0 0 0

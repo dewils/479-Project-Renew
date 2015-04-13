@@ -25,16 +25,16 @@ node "m1_453_39#" 0 2437 453 39 v 0 0 0 0 0 0 0 0 0 0 0 0 28 24 75 54 0 0
 node "m1_459_67#" 0 752 459 67 m1 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0 0 0
 node "m1_577_39#" 3 22667 577 39 v 0 0 0 0 0 0 0 0 0 0 0 0 190 136 787 540 0 0
 node "m1_633_77#" 0 2209 633 77 v 0 0 0 0 0 0 0 0 0 0 0 0 47 36 32 32 0 0
-cap "m1_577_39#" "m2_817_55#" 540
-cap "addsub1_0/GND" "mux1_0/w_n54_28#" 752
-cap "shift1_0/B" "mux1_0/D2" 405
-cap "shift1_0/shift" "mux1_0/D2" 114
-cap "m1_577_39#" "reg1_1/clk" 114
+cap "m2_817_55#" "m1_577_39#" 540
+cap "mux1_0/w_n54_28#" "addsub1_0/GND" 752
+cap "mux1_0/D2" "shift1_0/shift" 114
+cap "mux1_0/D2" "shift1_0/B" 405
 cap "m1_577_39#" "shift1_0/noshift" 844
+cap "m1_577_39#" "reg1_1/clk" 114
 cap "reg1_1/reset_n" "m1_577_39#" 405
-cap "reg1_1/reset_n" "m1_577_39#" 405
-cap "reg1_1/clk_n" "m1_577_39#" 405
-cap "reg1_1/clk" "m1_577_39#" 114
+cap "m1_577_39#" "reg1_1/reset_n" 405
+cap "m1_577_39#" "reg1_1/clk_n" 405
+cap "m1_577_39#" "reg1_1/clk" 114
 merge "reg1_1/GND" "shift1_0/GND" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0
 merge "shift1_0/GND" "mux1_0/GND"
 merge "mux1_0/GND" "mux1_0/D0"

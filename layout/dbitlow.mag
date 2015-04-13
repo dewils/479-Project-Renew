@@ -1,44 +1,83 @@
 magic
 tech scmos
-timestamp 1428735392
+timestamp 1428883144
 << metal1 >>
-rect 135 53 138 86
-rect 376 49 379 86
-rect 191 44 194 49
-rect 136 6 139 10
-rect 376 6 379 45
+rect -4 73 -1 77
+rect 3 73 6 77
+rect 129 73 132 77
+rect 136 73 139 77
+rect 159 73 162 77
+rect 166 73 169 77
+rect 173 73 176 77
+rect 262 73 265 77
+rect 269 73 272 77
+rect 452 73 455 77
+rect -4 -36 -1 -27
+rect 3 -36 6 -27
+rect 129 -36 132 -27
+rect 136 -36 139 -27
+rect 159 -36 162 -27
+rect 166 -36 169 -27
+rect 173 -36 176 -27
+rect 262 -36 265 -27
+rect 269 -36 272 -27
+rect 452 -36 455 -27
+rect 459 -28 462 18
 << metal2 >>
-rect 139 86 375 89
-rect 135 78 139 82
-rect 191 78 195 82
-rect 375 78 383 82
-rect 375 45 376 48
-rect 380 45 383 48
-rect 135 41 139 44
-rect 135 18 139 22
-rect 191 18 195 22
-rect 371 18 383 22
-rect 139 2 375 5
+rect -19 51 -15 55
+rect 151 51 155 55
+rect 254 51 258 55
+rect 459 51 467 55
+rect -19 29 -15 32
+rect 151 15 155 24
+rect 254 18 258 25
+rect 463 18 467 21
+rect -19 -9 -15 -5
+rect 151 -9 155 -5
+rect 254 -9 258 -5
+rect 459 -9 467 -5
+rect 151 -29 154 -13
+rect 151 -32 459 -29
 << m2contact >>
-rect 135 86 139 90
-rect 375 86 379 90
-rect 135 49 139 53
-rect 191 49 195 53
-rect 376 45 380 49
-rect 191 40 195 44
-rect 135 10 139 14
-rect 135 2 139 6
-rect 375 2 379 6
+rect 459 18 463 22
+rect 459 -32 463 -28
 use ../cells/mux1  mux1_0
-timestamp 1428701072
-transform 1 0 71 0 1 -2
-box -71 2 64 102
+timestamp 1428877062
+transform 1 0 64 0 1 -29
+box -79 2 87 102
 use ../cells/shift1  shift1_0
-timestamp 1428701418
-transform 1 0 151 0 1 23
-box -12 -23 40 77
+timestamp 1428878261
+transform 1 0 181 0 1 -4
+box -26 -23 73 77
 use ../cells/reg1  reg1_0
-timestamp 1428700440
-transform 1 0 211 0 1 92
-box -16 -92 164 8
+timestamp 1428832769
+transform 1 0 288 0 1 65
+box -30 -92 171 8
+<< labels >>
+rlabel metal2 -19 51 -15 55 7 Vdd
+rlabel metal2 -19 29 -15 32 7 dividendin
+rlabel metal2 -19 -9 -15 -5 7 GND
+rlabel metal1 -4 73 -1 77 1 S0
+rlabel metal1 -4 -36 -1 -27 5 S0
+rlabel metal1 3 -36 6 -27 5 S0_n
+rlabel metal1 129 73 132 77 1 S1
+rlabel metal1 136 73 139 77 1 S1_n
+rlabel metal1 129 -36 132 -27 5 S1
+rlabel metal1 136 -36 139 -27 5 S1_n
+rlabel metal1 3 73 6 77 1 S0_n
+rlabel metal1 159 73 162 77 1 shift
+rlabel metal1 166 73 169 77 1 shift_n
+rlabel metal1 173 73 176 77 1 inbit
+rlabel metal1 159 -36 162 -27 5 shift
+rlabel metal1 166 -36 169 -27 5 shift_n
+rlabel metal1 173 -36 176 -27 5 outbit
+rlabel metal1 262 73 265 77 1 clk_n
+rlabel metal1 269 73 272 77 1 clk
+rlabel metal1 262 -36 265 -27 5 clk_n
+rlabel metal1 269 -36 272 -27 5 clk
+rlabel metal1 452 73 455 77 1 reset_n
+rlabel metal1 452 -36 455 -27 5 reset_n
+rlabel metal2 459 51 467 55 3 Vdd
+rlabel metal2 463 18 467 21 3 quotient
+rlabel metal2 459 -9 467 -5 3 GND
 << end >>
