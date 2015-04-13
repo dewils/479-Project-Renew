@@ -13,15 +13,15 @@ node "GND" 506 3620 4 -14 pw 40 36 32 32 0 0 0 0 0 0 0 0 268 142 96 64 0 0
 equiv "GND" "GND"
 node "Vdd" 4098 3996 4 7 nw 32 32 120 78 0 0 0 0 0 0 0 0 356 186 96 64 1036 130
 equiv "Vdd" "Vdd"
-cap "Vdd" "B" 3812
-cap "Vdd" "A" 5860
-cap "Y" "GND" 1269
-cap "a_11_19#" "Vdd" 7160
-cap "B" "GND" 5146
 cap "GND" "A" 3098
-cap "a_11_19#" "GND" 5297
+cap "GND" "B" 5146
 cap "a_11_19#" "B" 114
-cap "Y" "Vdd" 1692
+cap "Vdd" "A" 5860
+cap "a_11_19#" "GND" 5297
+cap "GND" "Y" 1269
+cap "Vdd" "B" 3812
+cap "a_11_19#" "Vdd" 7160
+cap "Vdd" "Y" 1692
 device mosfet nfet 33 -6 34 -5 2 4 "GND" "a_11_19#" 4 0 "GND" 4 0 "Y" 4 0
 device mosfet nfet 17 -6 18 -5 2 4 "GND" "B" 4 0 "a_11_n6#" 4 0 "a_11_19#" 4 0
 device mosfet nfet 9 -6 10 -5 2 4 "GND" "A" 4 0 "GND" 4 0 "a_11_n6#" 4 0

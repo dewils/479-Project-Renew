@@ -1,18 +1,834 @@
 | units: 100 tech: scmos format: MIT
-p outbit Vdd dbitlow_0[0]/reg1_0/a_n5_n61# 2 8 300 70
+p dbithigh_0[0]/reg1_1/D Vdd dbithigh_0[0]/reg1_1/a_n5_n61# 2 8 300 -850
+p clk dbithigh_0[0]/reg1_1/a_n5_n61# dbithigh_0[0]/reg1_1/a_12_n61# 2 8 317 -850
+p dbithigh_0[0]/reg1_1/a_12_n61# Vdd dbithigh_0[0]/reg1_1/a_28_n61# 2 8 333 -850
+p dbithigh_0[0]/reg1_1/a_28_n61# Vdd dbithigh_0[0]/reg1_1/a_45_n31# 2 8 350 -850
+p reset_n dbithigh_0[0]/reg1_1/a_45_n31# Vdd 2 8 360 -850
+p inverter1_4/Y dbithigh_0[0]/reg1_1/a_45_n31# dbithigh_0[0]/reg1_1/a_12_n61# 2 8 376 -850
+p inverter1_4/Y dbithigh_0[0]/reg1_1/a_28_n61# dbithigh_0[0]/reg1_1/a_87_n61# 2 8 392 -850
+p dbithigh_0[0]/reg1_1/a_87_n61# Vdd dbithigh_0[0]/reg1_1/a_103_n31# 2 8 408 -850
+p reset_n dbithigh_0[0]/reg1_1/a_103_n31# Vdd 2 8 418 -850
+p dbithigh_0[0]/reg1_1/a_103_n31# Vdd dbithigh_0[0]/reg1_1/a_129_n31# 2 8 434 -850
+p clk dbithigh_0[0]/reg1_1/a_129_n31# dbithigh_0[0]/reg1_1/a_87_n61# 2 8 439 -850
+p dbithigh_0[0]/reg1_1/a_103_n31# Vdd remainder_6 2 8 455 -850
+n dbithigh_0[0]/reg1_1/D GND dbithigh_0[0]/reg1_1/a_n5_n61# 2 4 300 -880
+n inverter1_4/Y dbithigh_0[0]/reg1_1/a_n5_n61# dbithigh_0[0]/reg1_1/a_12_n61# 2 4 317 -880
+n dbithigh_0[0]/reg1_1/a_12_n61# GND dbithigh_0[0]/reg1_1/a_28_n61# 2 4 333 -880
+n dbithigh_0[0]/reg1_1/a_28_n61# GND dbithigh_0[0]/reg1_1/a_45_n61# 2 4 350 -880
+n reset_n dbithigh_0[0]/reg1_1/a_45_n61# dbithigh_0[0]/reg1_1/a_45_n31# 2 4 360 -880
+n clk dbithigh_0[0]/reg1_1/a_45_n31# dbithigh_0[0]/reg1_1/a_12_n61# 2 4 376 -880
+n clk dbithigh_0[0]/reg1_1/a_28_n61# dbithigh_0[0]/reg1_1/a_87_n61# 2 4 392 -880
+n dbithigh_0[0]/reg1_1/a_87_n61# GND dbithigh_0[0]/reg1_1/a_103_n61# 2 4 408 -880
+n reset_n dbithigh_0[0]/reg1_1/a_103_n61# dbithigh_0[0]/reg1_1/a_103_n31# 2 4 418 -880
+n dbithigh_0[0]/reg1_1/a_103_n31# GND dbithigh_0[0]/reg1_1/a_129_n61# 2 4 434 -880
+n inverter1_4/Y dbithigh_0[0]/reg1_1/a_129_n61# dbithigh_0[0]/reg1_1/a_87_n61# 2 4 439 -880
+n dbithigh_0[0]/reg1_1/a_103_n31# GND remainder_6 2 4 455 -880
+p dbithigh_0[0]/shift1_0/a_6_11# Vdd dbithigh_0[0]/shift1_0/a_40_11# 2 8 238 -855
+p dbithigh_0[0]/shift1_0/a_40_11# Vdd dbithigh_0[0]/reg1_1/D 2 8 254 -855
+n inverter1_2/Y dbithigh_0[0]/outbit dbithigh_0[0]/shift1_0/a_6_11# 2 4 204 -877
+n shift dbithigh_0[0]/inbit dbithigh_0[0]/shift1_0/a_6_11# 2 4 220 -877
+n dbithigh_0[0]/shift1_0/a_6_11# GND dbithigh_0[0]/shift1_0/a_40_11# 2 4 238 -877
+n dbithigh_0[0]/shift1_0/a_40_11# GND dbithigh_0[0]/reg1_1/D 2 4 254 -877
+p S0 GND dbithigh_0[0]/mux1_0/a_n47_36# 2 8 34 -850
+p inverter1_0/Y remainder_6 dbithigh_0[0]/mux1_0/a_n47_36# 2 8 50 -850
+p dbithigh_0[0]/mux1_0/a_n47_36# Vdd dbithigh_0[0]/mux1_0/a_n15_36# 2 8 66 -850
+n inverter1_0/Y GND dbithigh_0[0]/mux1_0/a_n47_36# 2 4 34 -877
+n S0 remainder_6 dbithigh_0[0]/mux1_0/a_n47_36# 2 4 50 -877
+n dbithigh_0[0]/mux1_0/a_n47_36# GND dbithigh_0[0]/mux1_0/a_n15_36# 2 4 66 -877
+p sign Vdd dbithigh_0[0]/mux1_0/a_3_36# 2 8 84 -850
+n sign GND dbithigh_0[0]/mux1_0/a_3_36# 2 4 84 -877
+p S1 dbithigh_0[0]/mux1_0/a_n15_36# dbithigh_0[0]/mux1_0/a_22_36# 2 8 103 -850
+p inverter1_1/Y dbithigh_0[0]/mux1_0/a_3_36# dbithigh_0[0]/mux1_0/a_22_36# 2 8 119 -850
+p dbithigh_0[0]/mux1_0/a_22_36# Vdd dbithigh_0[0]/outbit 2 8 135 -850
+n inverter1_1/Y dbithigh_0[0]/mux1_0/a_n15_36# dbithigh_0[0]/mux1_0/a_22_36# 2 4 103 -877
+n S1 dbithigh_0[0]/mux1_0/a_3_36# dbithigh_0[0]/mux1_0/a_22_36# 2 4 119 -877
+n dbithigh_0[0]/mux1_0/a_22_36# GND dbithigh_0[0]/outbit 2 4 135 -877
+p add_n Vdd dbithigh_0[0]/addsub1_0/a_n102_34# 2 10 -259 -847
+p remainder_6 add_n dbithigh_0[0]/addsub1_0/a_n80_34# 2 10 -237 -847
+p add_n dbithigh_0[0]/addsub1_0/a_n80_34# remainder_6 2 10 -215 -847
+p dbithigh_0[0]/reg1_0/Q Vdd dbithigh_0[0]/addsub1_0/a_n39_72# 2 10 -196 -847
+p dbithigh_0[0]/addsub1_0/a_n80_34# dbithigh_0[0]/addsub1_0/a_n39_72# Vdd 2 10 -188 -847
+p dbithigh_0[1]/X dbithigh_0[0]/addsub1_0/a_n39_72# dbithigh_0[0]/addsub1_0/a_n15_34# 2 10 -172 -847
+p dbithigh_0[0]/reg1_0/Q Vdd dbithigh_0[0]/addsub1_0/a_1_72# 2 10 -156 -847
+p dbithigh_0[0]/addsub1_0/a_n80_34# dbithigh_0[0]/addsub1_0/a_1_72# dbithigh_0[0]/addsub1_0/a_n15_34# 2 10 -151 -847
+p dbithigh_0[0]/addsub1_0/a_n15_34# Vdd dbithigh_0[0]/X 2 10 -135 -847
+p dbithigh_0[0]/reg1_0/Q Vdd dbithigh_0[0]/addsub1_0/a_39_72# 2 10 -118 -847
+p dbithigh_0[0]/addsub1_0/a_n80_34# dbithigh_0[0]/addsub1_0/a_39_72# Vdd 2 10 -110 -847
+p dbithigh_0[1]/X dbithigh_0[0]/addsub1_0/a_39_72# Vdd 2 10 -94 -847
+p dbithigh_0[0]/addsub1_0/a_n15_34# dbithigh_0[0]/addsub1_0/a_39_72# dbithigh_0[0]/addsub1_0/a_83_34# 2 10 -74 -847
+p dbithigh_0[0]/reg1_0/Q Vdd dbithigh_0[0]/addsub1_0/a_100_72# 2 10 -57 -847
+p dbithigh_0[0]/addsub1_0/a_n80_34# dbithigh_0[0]/addsub1_0/a_100_72# dbithigh_0[0]/addsub1_0/a_106_72# 2 10 -51 -847
+p dbithigh_0[1]/X dbithigh_0[0]/addsub1_0/a_106_72# dbithigh_0[0]/addsub1_0/a_83_34# 2 10 -45 -847
+p dbithigh_0[0]/addsub1_0/a_83_34# Vdd sign 2 10 -26 -847
+n add_n GND dbithigh_0[0]/addsub1_0/a_n102_34# 2 5 -259 -885
+n remainder_6 dbithigh_0[0]/addsub1_0/a_n102_34# dbithigh_0[0]/addsub1_0/a_n80_34# 2 5 -237 -885
+n dbithigh_0[0]/addsub1_0/a_n102_34# dbithigh_0[0]/addsub1_0/a_n80_34# remainder_6 2 5 -215 -885
+n dbithigh_0[0]/reg1_0/Q GND dbithigh_0[0]/addsub1_0/a_n39_34# 2 5 -196 -885
+n dbithigh_0[0]/addsub1_0/a_n80_34# dbithigh_0[0]/addsub1_0/a_n39_34# GND 2 5 -188 -885
+n dbithigh_0[1]/X dbithigh_0[0]/addsub1_0/a_n39_34# dbithigh_0[0]/addsub1_0/a_n15_34# 2 5 -172 -885
+n dbithigh_0[0]/reg1_0/Q GND dbithigh_0[0]/addsub1_0/a_1_34# 2 5 -156 -885
+n dbithigh_0[0]/addsub1_0/a_n80_34# dbithigh_0[0]/addsub1_0/a_1_34# dbithigh_0[0]/addsub1_0/a_n15_34# 2 5 -151 -885
+n dbithigh_0[0]/addsub1_0/a_n15_34# GND dbithigh_0[0]/X 2 5 -135 -885
+n dbithigh_0[0]/reg1_0/Q GND dbithigh_0[0]/addsub1_0/a_39_34# 2 5 -118 -885
+n dbithigh_0[0]/addsub1_0/a_n80_34# dbithigh_0[0]/addsub1_0/a_39_34# GND 2 5 -110 -885
+n dbithigh_0[1]/X dbithigh_0[0]/addsub1_0/a_39_34# GND 2 5 -94 -885
+n dbithigh_0[0]/addsub1_0/a_n15_34# dbithigh_0[0]/addsub1_0/a_39_34# dbithigh_0[0]/addsub1_0/a_83_34# 2 5 -74 -885
+n dbithigh_0[0]/reg1_0/Q GND dbithigh_0[0]/addsub1_0/a_100_34# 2 5 -57 -885
+n dbithigh_0[0]/addsub1_0/a_n80_34# dbithigh_0[0]/addsub1_0/a_100_34# dbithigh_0[0]/addsub1_0/a_106_34# 2 5 -51 -885
+n dbithigh_0[1]/X dbithigh_0[0]/addsub1_0/a_106_34# dbithigh_0[0]/addsub1_0/a_83_34# 2 5 -45 -885
+n dbithigh_0[0]/addsub1_0/a_83_34# GND sign 2 5 -26 -885
+p GND Vdd dbithigh_0[0]/reg1_0/a_n5_n61# 2 8 -471 -850
+p clk dbithigh_0[0]/reg1_0/a_n5_n61# dbithigh_0[0]/reg1_0/a_12_n61# 2 8 -454 -850
+p dbithigh_0[0]/reg1_0/a_12_n61# Vdd dbithigh_0[0]/reg1_0/a_28_n61# 2 8 -438 -850
+p dbithigh_0[0]/reg1_0/a_28_n61# Vdd dbithigh_0[0]/reg1_0/a_45_n31# 2 8 -421 -850
+p reset_n dbithigh_0[0]/reg1_0/a_45_n31# Vdd 2 8 -411 -850
+p inverter1_4/Y dbithigh_0[0]/reg1_0/a_45_n31# dbithigh_0[0]/reg1_0/a_12_n61# 2 8 -395 -850
+p inverter1_4/Y dbithigh_0[0]/reg1_0/a_28_n61# dbithigh_0[0]/reg1_0/a_87_n61# 2 8 -379 -850
+p dbithigh_0[0]/reg1_0/a_87_n61# Vdd dbithigh_0[0]/reg1_0/a_103_n31# 2 8 -363 -850
+p reset_n dbithigh_0[0]/reg1_0/a_103_n31# Vdd 2 8 -353 -850
+p dbithigh_0[0]/reg1_0/a_103_n31# Vdd dbithigh_0[0]/reg1_0/a_129_n31# 2 8 -337 -850
+p clk dbithigh_0[0]/reg1_0/a_129_n31# dbithigh_0[0]/reg1_0/a_87_n61# 2 8 -332 -850
+p dbithigh_0[0]/reg1_0/a_103_n31# Vdd dbithigh_0[0]/reg1_0/Q 2 8 -316 -850
+n GND GND dbithigh_0[0]/reg1_0/a_n5_n61# 2 4 -471 -880
+n inverter1_4/Y dbithigh_0[0]/reg1_0/a_n5_n61# dbithigh_0[0]/reg1_0/a_12_n61# 2 4 -454 -880
+n dbithigh_0[0]/reg1_0/a_12_n61# GND dbithigh_0[0]/reg1_0/a_28_n61# 2 4 -438 -880
+n dbithigh_0[0]/reg1_0/a_28_n61# GND dbithigh_0[0]/reg1_0/a_45_n61# 2 4 -421 -880
+n reset_n dbithigh_0[0]/reg1_0/a_45_n61# dbithigh_0[0]/reg1_0/a_45_n31# 2 4 -411 -880
+n clk dbithigh_0[0]/reg1_0/a_45_n31# dbithigh_0[0]/reg1_0/a_12_n61# 2 4 -395 -880
+n clk dbithigh_0[0]/reg1_0/a_28_n61# dbithigh_0[0]/reg1_0/a_87_n61# 2 4 -379 -880
+n dbithigh_0[0]/reg1_0/a_87_n61# GND dbithigh_0[0]/reg1_0/a_103_n61# 2 4 -363 -880
+n reset_n dbithigh_0[0]/reg1_0/a_103_n61# dbithigh_0[0]/reg1_0/a_103_n31# 2 4 -353 -880
+n dbithigh_0[0]/reg1_0/a_103_n31# GND dbithigh_0[0]/reg1_0/a_129_n61# 2 4 -337 -880
+n inverter1_4/Y dbithigh_0[0]/reg1_0/a_129_n61# dbithigh_0[0]/reg1_0/a_87_n61# 2 4 -332 -880
+n dbithigh_0[0]/reg1_0/a_103_n31# GND dbithigh_0[0]/reg1_0/Q 2 4 -316 -880
+p dbithigh_0[1]/reg1_1/D Vdd dbithigh_0[1]/reg1_1/a_n5_n61# 2 8 300 -737
+p clk dbithigh_0[1]/reg1_1/a_n5_n61# dbithigh_0[1]/reg1_1/a_12_n61# 2 8 317 -737
+p dbithigh_0[1]/reg1_1/a_12_n61# Vdd dbithigh_0[1]/reg1_1/a_28_n61# 2 8 333 -737
+p dbithigh_0[1]/reg1_1/a_28_n61# Vdd dbithigh_0[1]/reg1_1/a_45_n31# 2 8 350 -737
+p reset_n dbithigh_0[1]/reg1_1/a_45_n31# Vdd 2 8 360 -737
+p inverter1_4/Y dbithigh_0[1]/reg1_1/a_45_n31# dbithigh_0[1]/reg1_1/a_12_n61# 2 8 376 -737
+p inverter1_4/Y dbithigh_0[1]/reg1_1/a_28_n61# dbithigh_0[1]/reg1_1/a_87_n61# 2 8 392 -737
+p dbithigh_0[1]/reg1_1/a_87_n61# Vdd dbithigh_0[1]/reg1_1/a_103_n31# 2 8 408 -737
+p reset_n dbithigh_0[1]/reg1_1/a_103_n31# Vdd 2 8 418 -737
+p dbithigh_0[1]/reg1_1/a_103_n31# Vdd dbithigh_0[1]/reg1_1/a_129_n31# 2 8 434 -737
+p clk dbithigh_0[1]/reg1_1/a_129_n31# dbithigh_0[1]/reg1_1/a_87_n61# 2 8 439 -737
+p dbithigh_0[1]/reg1_1/a_103_n31# Vdd remainder_5 2 8 455 -737
+n dbithigh_0[1]/reg1_1/D GND dbithigh_0[1]/reg1_1/a_n5_n61# 2 4 300 -767
+n inverter1_4/Y dbithigh_0[1]/reg1_1/a_n5_n61# dbithigh_0[1]/reg1_1/a_12_n61# 2 4 317 -767
+n dbithigh_0[1]/reg1_1/a_12_n61# GND dbithigh_0[1]/reg1_1/a_28_n61# 2 4 333 -767
+n dbithigh_0[1]/reg1_1/a_28_n61# GND dbithigh_0[1]/reg1_1/a_45_n61# 2 4 350 -767
+n reset_n dbithigh_0[1]/reg1_1/a_45_n61# dbithigh_0[1]/reg1_1/a_45_n31# 2 4 360 -767
+n clk dbithigh_0[1]/reg1_1/a_45_n31# dbithigh_0[1]/reg1_1/a_12_n61# 2 4 376 -767
+n clk dbithigh_0[1]/reg1_1/a_28_n61# dbithigh_0[1]/reg1_1/a_87_n61# 2 4 392 -767
+n dbithigh_0[1]/reg1_1/a_87_n61# GND dbithigh_0[1]/reg1_1/a_103_n61# 2 4 408 -767
+n reset_n dbithigh_0[1]/reg1_1/a_103_n61# dbithigh_0[1]/reg1_1/a_103_n31# 2 4 418 -767
+n dbithigh_0[1]/reg1_1/a_103_n31# GND dbithigh_0[1]/reg1_1/a_129_n61# 2 4 434 -767
+n inverter1_4/Y dbithigh_0[1]/reg1_1/a_129_n61# dbithigh_0[1]/reg1_1/a_87_n61# 2 4 439 -767
+n dbithigh_0[1]/reg1_1/a_103_n31# GND remainder_5 2 4 455 -767
+p dbithigh_0[1]/shift1_0/a_6_11# Vdd dbithigh_0[1]/shift1_0/a_40_11# 2 8 238 -742
+p dbithigh_0[1]/shift1_0/a_40_11# Vdd dbithigh_0[1]/reg1_1/D 2 8 254 -742
+n inverter1_2/Y dbithigh_0[0]/inbit dbithigh_0[1]/shift1_0/a_6_11# 2 4 204 -764
+n shift dbithigh_0[1]/inbit dbithigh_0[1]/shift1_0/a_6_11# 2 4 220 -764
+n dbithigh_0[1]/shift1_0/a_6_11# GND dbithigh_0[1]/shift1_0/a_40_11# 2 4 238 -764
+n dbithigh_0[1]/shift1_0/a_40_11# GND dbithigh_0[1]/reg1_1/D 2 4 254 -764
+p S0 GND dbithigh_0[1]/mux1_0/a_n47_36# 2 8 34 -737
+p inverter1_0/Y remainder_5 dbithigh_0[1]/mux1_0/a_n47_36# 2 8 50 -737
+p dbithigh_0[1]/mux1_0/a_n47_36# Vdd dbithigh_0[1]/mux1_0/a_n15_36# 2 8 66 -737
+n inverter1_0/Y GND dbithigh_0[1]/mux1_0/a_n47_36# 2 4 34 -764
+n S0 remainder_5 dbithigh_0[1]/mux1_0/a_n47_36# 2 4 50 -764
+n dbithigh_0[1]/mux1_0/a_n47_36# GND dbithigh_0[1]/mux1_0/a_n15_36# 2 4 66 -764
+p dbithigh_0[1]/mux1_0/D1 Vdd dbithigh_0[1]/mux1_0/a_3_36# 2 8 84 -737
+n dbithigh_0[1]/mux1_0/D1 GND dbithigh_0[1]/mux1_0/a_3_36# 2 4 84 -764
+p S1 dbithigh_0[1]/mux1_0/a_n15_36# dbithigh_0[1]/mux1_0/a_22_36# 2 8 103 -737
+p inverter1_1/Y dbithigh_0[1]/mux1_0/a_3_36# dbithigh_0[1]/mux1_0/a_22_36# 2 8 119 -737
+p dbithigh_0[1]/mux1_0/a_22_36# Vdd dbithigh_0[0]/inbit 2 8 135 -737
+n inverter1_1/Y dbithigh_0[1]/mux1_0/a_n15_36# dbithigh_0[1]/mux1_0/a_22_36# 2 4 103 -764
+n S1 dbithigh_0[1]/mux1_0/a_3_36# dbithigh_0[1]/mux1_0/a_22_36# 2 4 119 -764
+n dbithigh_0[1]/mux1_0/a_22_36# GND dbithigh_0[0]/inbit 2 4 135 -764
+p add_n Vdd dbithigh_0[1]/addsub1_0/a_n102_34# 2 10 -259 -734
+p remainder_5 add_n dbithigh_0[1]/addsub1_0/a_n80_34# 2 10 -237 -734
+p add_n dbithigh_0[1]/addsub1_0/a_n80_34# remainder_5 2 10 -215 -734
+p dbithigh_0[1]/reg1_0/Q Vdd dbithigh_0[1]/addsub1_0/a_n39_72# 2 10 -196 -734
+p dbithigh_0[1]/addsub1_0/a_n80_34# dbithigh_0[1]/addsub1_0/a_n39_72# Vdd 2 10 -188 -734
+p dbithigh_0[2]/X dbithigh_0[1]/addsub1_0/a_n39_72# dbithigh_0[1]/addsub1_0/a_n15_34# 2 10 -172 -734
+p dbithigh_0[1]/reg1_0/Q Vdd dbithigh_0[1]/addsub1_0/a_1_72# 2 10 -156 -734
+p dbithigh_0[1]/addsub1_0/a_n80_34# dbithigh_0[1]/addsub1_0/a_1_72# dbithigh_0[1]/addsub1_0/a_n15_34# 2 10 -151 -734
+p dbithigh_0[1]/addsub1_0/a_n15_34# Vdd dbithigh_0[1]/X 2 10 -135 -734
+p dbithigh_0[1]/reg1_0/Q Vdd dbithigh_0[1]/addsub1_0/a_39_72# 2 10 -118 -734
+p dbithigh_0[1]/addsub1_0/a_n80_34# dbithigh_0[1]/addsub1_0/a_39_72# Vdd 2 10 -110 -734
+p dbithigh_0[2]/X dbithigh_0[1]/addsub1_0/a_39_72# Vdd 2 10 -94 -734
+p dbithigh_0[1]/addsub1_0/a_n15_34# dbithigh_0[1]/addsub1_0/a_39_72# dbithigh_0[1]/addsub1_0/a_83_34# 2 10 -74 -734
+p dbithigh_0[1]/reg1_0/Q Vdd dbithigh_0[1]/addsub1_0/a_100_72# 2 10 -57 -734
+p dbithigh_0[1]/addsub1_0/a_n80_34# dbithigh_0[1]/addsub1_0/a_100_72# dbithigh_0[1]/addsub1_0/a_106_72# 2 10 -51 -734
+p dbithigh_0[2]/X dbithigh_0[1]/addsub1_0/a_106_72# dbithigh_0[1]/addsub1_0/a_83_34# 2 10 -45 -734
+p dbithigh_0[1]/addsub1_0/a_83_34# Vdd dbithigh_0[1]/mux1_0/D1 2 10 -26 -734
+n add_n GND dbithigh_0[1]/addsub1_0/a_n102_34# 2 5 -259 -772
+n remainder_5 dbithigh_0[1]/addsub1_0/a_n102_34# dbithigh_0[1]/addsub1_0/a_n80_34# 2 5 -237 -772
+n dbithigh_0[1]/addsub1_0/a_n102_34# dbithigh_0[1]/addsub1_0/a_n80_34# remainder_5 2 5 -215 -772
+n dbithigh_0[1]/reg1_0/Q GND dbithigh_0[1]/addsub1_0/a_n39_34# 2 5 -196 -772
+n dbithigh_0[1]/addsub1_0/a_n80_34# dbithigh_0[1]/addsub1_0/a_n39_34# GND 2 5 -188 -772
+n dbithigh_0[2]/X dbithigh_0[1]/addsub1_0/a_n39_34# dbithigh_0[1]/addsub1_0/a_n15_34# 2 5 -172 -772
+n dbithigh_0[1]/reg1_0/Q GND dbithigh_0[1]/addsub1_0/a_1_34# 2 5 -156 -772
+n dbithigh_0[1]/addsub1_0/a_n80_34# dbithigh_0[1]/addsub1_0/a_1_34# dbithigh_0[1]/addsub1_0/a_n15_34# 2 5 -151 -772
+n dbithigh_0[1]/addsub1_0/a_n15_34# GND dbithigh_0[1]/X 2 5 -135 -772
+n dbithigh_0[1]/reg1_0/Q GND dbithigh_0[1]/addsub1_0/a_39_34# 2 5 -118 -772
+n dbithigh_0[1]/addsub1_0/a_n80_34# dbithigh_0[1]/addsub1_0/a_39_34# GND 2 5 -110 -772
+n dbithigh_0[2]/X dbithigh_0[1]/addsub1_0/a_39_34# GND 2 5 -94 -772
+n dbithigh_0[1]/addsub1_0/a_n15_34# dbithigh_0[1]/addsub1_0/a_39_34# dbithigh_0[1]/addsub1_0/a_83_34# 2 5 -74 -772
+n dbithigh_0[1]/reg1_0/Q GND dbithigh_0[1]/addsub1_0/a_100_34# 2 5 -57 -772
+n dbithigh_0[1]/addsub1_0/a_n80_34# dbithigh_0[1]/addsub1_0/a_100_34# dbithigh_0[1]/addsub1_0/a_106_34# 2 5 -51 -772
+n dbithigh_0[2]/X dbithigh_0[1]/addsub1_0/a_106_34# dbithigh_0[1]/addsub1_0/a_83_34# 2 5 -45 -772
+n dbithigh_0[1]/addsub1_0/a_83_34# GND dbithigh_0[1]/mux1_0/D1 2 5 -26 -772
+p divisorin_6 Vdd dbithigh_0[1]/reg1_0/a_n5_n61# 2 8 -471 -737
+p clk dbithigh_0[1]/reg1_0/a_n5_n61# dbithigh_0[1]/reg1_0/a_12_n61# 2 8 -454 -737
+p dbithigh_0[1]/reg1_0/a_12_n61# Vdd dbithigh_0[1]/reg1_0/a_28_n61# 2 8 -438 -737
+p dbithigh_0[1]/reg1_0/a_28_n61# Vdd dbithigh_0[1]/reg1_0/a_45_n31# 2 8 -421 -737
+p reset_n dbithigh_0[1]/reg1_0/a_45_n31# Vdd 2 8 -411 -737
+p inverter1_4/Y dbithigh_0[1]/reg1_0/a_45_n31# dbithigh_0[1]/reg1_0/a_12_n61# 2 8 -395 -737
+p inverter1_4/Y dbithigh_0[1]/reg1_0/a_28_n61# dbithigh_0[1]/reg1_0/a_87_n61# 2 8 -379 -737
+p dbithigh_0[1]/reg1_0/a_87_n61# Vdd dbithigh_0[1]/reg1_0/a_103_n31# 2 8 -363 -737
+p reset_n dbithigh_0[1]/reg1_0/a_103_n31# Vdd 2 8 -353 -737
+p dbithigh_0[1]/reg1_0/a_103_n31# Vdd dbithigh_0[1]/reg1_0/a_129_n31# 2 8 -337 -737
+p clk dbithigh_0[1]/reg1_0/a_129_n31# dbithigh_0[1]/reg1_0/a_87_n61# 2 8 -332 -737
+p dbithigh_0[1]/reg1_0/a_103_n31# Vdd dbithigh_0[1]/reg1_0/Q 2 8 -316 -737
+n divisorin_6 GND dbithigh_0[1]/reg1_0/a_n5_n61# 2 4 -471 -767
+n inverter1_4/Y dbithigh_0[1]/reg1_0/a_n5_n61# dbithigh_0[1]/reg1_0/a_12_n61# 2 4 -454 -767
+n dbithigh_0[1]/reg1_0/a_12_n61# GND dbithigh_0[1]/reg1_0/a_28_n61# 2 4 -438 -767
+n dbithigh_0[1]/reg1_0/a_28_n61# GND dbithigh_0[1]/reg1_0/a_45_n61# 2 4 -421 -767
+n reset_n dbithigh_0[1]/reg1_0/a_45_n61# dbithigh_0[1]/reg1_0/a_45_n31# 2 4 -411 -767
+n clk dbithigh_0[1]/reg1_0/a_45_n31# dbithigh_0[1]/reg1_0/a_12_n61# 2 4 -395 -767
+n clk dbithigh_0[1]/reg1_0/a_28_n61# dbithigh_0[1]/reg1_0/a_87_n61# 2 4 -379 -767
+n dbithigh_0[1]/reg1_0/a_87_n61# GND dbithigh_0[1]/reg1_0/a_103_n61# 2 4 -363 -767
+n reset_n dbithigh_0[1]/reg1_0/a_103_n61# dbithigh_0[1]/reg1_0/a_103_n31# 2 4 -353 -767
+n dbithigh_0[1]/reg1_0/a_103_n31# GND dbithigh_0[1]/reg1_0/a_129_n61# 2 4 -337 -767
+n inverter1_4/Y dbithigh_0[1]/reg1_0/a_129_n61# dbithigh_0[1]/reg1_0/a_87_n61# 2 4 -332 -767
+n dbithigh_0[1]/reg1_0/a_103_n31# GND dbithigh_0[1]/reg1_0/Q 2 4 -316 -767
+p dbithigh_0[2]/reg1_1/D Vdd dbithigh_0[2]/reg1_1/a_n5_n61# 2 8 300 -624
+p clk dbithigh_0[2]/reg1_1/a_n5_n61# dbithigh_0[2]/reg1_1/a_12_n61# 2 8 317 -624
+p dbithigh_0[2]/reg1_1/a_12_n61# Vdd dbithigh_0[2]/reg1_1/a_28_n61# 2 8 333 -624
+p dbithigh_0[2]/reg1_1/a_28_n61# Vdd dbithigh_0[2]/reg1_1/a_45_n31# 2 8 350 -624
+p reset_n dbithigh_0[2]/reg1_1/a_45_n31# Vdd 2 8 360 -624
+p inverter1_4/Y dbithigh_0[2]/reg1_1/a_45_n31# dbithigh_0[2]/reg1_1/a_12_n61# 2 8 376 -624
+p inverter1_4/Y dbithigh_0[2]/reg1_1/a_28_n61# dbithigh_0[2]/reg1_1/a_87_n61# 2 8 392 -624
+p dbithigh_0[2]/reg1_1/a_87_n61# Vdd dbithigh_0[2]/reg1_1/a_103_n31# 2 8 408 -624
+p reset_n dbithigh_0[2]/reg1_1/a_103_n31# Vdd 2 8 418 -624
+p dbithigh_0[2]/reg1_1/a_103_n31# Vdd dbithigh_0[2]/reg1_1/a_129_n31# 2 8 434 -624
+p clk dbithigh_0[2]/reg1_1/a_129_n31# dbithigh_0[2]/reg1_1/a_87_n61# 2 8 439 -624
+p dbithigh_0[2]/reg1_1/a_103_n31# Vdd remainder_4 2 8 455 -624
+n dbithigh_0[2]/reg1_1/D GND dbithigh_0[2]/reg1_1/a_n5_n61# 2 4 300 -654
+n inverter1_4/Y dbithigh_0[2]/reg1_1/a_n5_n61# dbithigh_0[2]/reg1_1/a_12_n61# 2 4 317 -654
+n dbithigh_0[2]/reg1_1/a_12_n61# GND dbithigh_0[2]/reg1_1/a_28_n61# 2 4 333 -654
+n dbithigh_0[2]/reg1_1/a_28_n61# GND dbithigh_0[2]/reg1_1/a_45_n61# 2 4 350 -654
+n reset_n dbithigh_0[2]/reg1_1/a_45_n61# dbithigh_0[2]/reg1_1/a_45_n31# 2 4 360 -654
+n clk dbithigh_0[2]/reg1_1/a_45_n31# dbithigh_0[2]/reg1_1/a_12_n61# 2 4 376 -654
+n clk dbithigh_0[2]/reg1_1/a_28_n61# dbithigh_0[2]/reg1_1/a_87_n61# 2 4 392 -654
+n dbithigh_0[2]/reg1_1/a_87_n61# GND dbithigh_0[2]/reg1_1/a_103_n61# 2 4 408 -654
+n reset_n dbithigh_0[2]/reg1_1/a_103_n61# dbithigh_0[2]/reg1_1/a_103_n31# 2 4 418 -654
+n dbithigh_0[2]/reg1_1/a_103_n31# GND dbithigh_0[2]/reg1_1/a_129_n61# 2 4 434 -654
+n inverter1_4/Y dbithigh_0[2]/reg1_1/a_129_n61# dbithigh_0[2]/reg1_1/a_87_n61# 2 4 439 -654
+n dbithigh_0[2]/reg1_1/a_103_n31# GND remainder_4 2 4 455 -654
+p dbithigh_0[2]/shift1_0/a_6_11# Vdd dbithigh_0[2]/shift1_0/a_40_11# 2 8 238 -629
+p dbithigh_0[2]/shift1_0/a_40_11# Vdd dbithigh_0[2]/reg1_1/D 2 8 254 -629
+n inverter1_2/Y dbithigh_0[1]/inbit dbithigh_0[2]/shift1_0/a_6_11# 2 4 204 -651
+n shift dbithigh_0[2]/inbit dbithigh_0[2]/shift1_0/a_6_11# 2 4 220 -651
+n dbithigh_0[2]/shift1_0/a_6_11# GND dbithigh_0[2]/shift1_0/a_40_11# 2 4 238 -651
+n dbithigh_0[2]/shift1_0/a_40_11# GND dbithigh_0[2]/reg1_1/D 2 4 254 -651
+p S0 GND dbithigh_0[2]/mux1_0/a_n47_36# 2 8 34 -624
+p inverter1_0/Y remainder_4 dbithigh_0[2]/mux1_0/a_n47_36# 2 8 50 -624
+p dbithigh_0[2]/mux1_0/a_n47_36# Vdd dbithigh_0[2]/mux1_0/a_n15_36# 2 8 66 -624
+n inverter1_0/Y GND dbithigh_0[2]/mux1_0/a_n47_36# 2 4 34 -651
+n S0 remainder_4 dbithigh_0[2]/mux1_0/a_n47_36# 2 4 50 -651
+n dbithigh_0[2]/mux1_0/a_n47_36# GND dbithigh_0[2]/mux1_0/a_n15_36# 2 4 66 -651
+p dbithigh_0[2]/mux1_0/D1 Vdd dbithigh_0[2]/mux1_0/a_3_36# 2 8 84 -624
+n dbithigh_0[2]/mux1_0/D1 GND dbithigh_0[2]/mux1_0/a_3_36# 2 4 84 -651
+p S1 dbithigh_0[2]/mux1_0/a_n15_36# dbithigh_0[2]/mux1_0/a_22_36# 2 8 103 -624
+p inverter1_1/Y dbithigh_0[2]/mux1_0/a_3_36# dbithigh_0[2]/mux1_0/a_22_36# 2 8 119 -624
+p dbithigh_0[2]/mux1_0/a_22_36# Vdd dbithigh_0[1]/inbit 2 8 135 -624
+n inverter1_1/Y dbithigh_0[2]/mux1_0/a_n15_36# dbithigh_0[2]/mux1_0/a_22_36# 2 4 103 -651
+n S1 dbithigh_0[2]/mux1_0/a_3_36# dbithigh_0[2]/mux1_0/a_22_36# 2 4 119 -651
+n dbithigh_0[2]/mux1_0/a_22_36# GND dbithigh_0[1]/inbit 2 4 135 -651
+p add_n Vdd dbithigh_0[2]/addsub1_0/a_n102_34# 2 10 -259 -621
+p remainder_4 add_n dbithigh_0[2]/addsub1_0/a_n80_34# 2 10 -237 -621
+p add_n dbithigh_0[2]/addsub1_0/a_n80_34# remainder_4 2 10 -215 -621
+p dbithigh_0[2]/reg1_0/Q Vdd dbithigh_0[2]/addsub1_0/a_n39_72# 2 10 -196 -621
+p dbithigh_0[2]/addsub1_0/a_n80_34# dbithigh_0[2]/addsub1_0/a_n39_72# Vdd 2 10 -188 -621
+p dbithigh_0[3]/X dbithigh_0[2]/addsub1_0/a_n39_72# dbithigh_0[2]/addsub1_0/a_n15_34# 2 10 -172 -621
+p dbithigh_0[2]/reg1_0/Q Vdd dbithigh_0[2]/addsub1_0/a_1_72# 2 10 -156 -621
+p dbithigh_0[2]/addsub1_0/a_n80_34# dbithigh_0[2]/addsub1_0/a_1_72# dbithigh_0[2]/addsub1_0/a_n15_34# 2 10 -151 -621
+p dbithigh_0[2]/addsub1_0/a_n15_34# Vdd dbithigh_0[2]/X 2 10 -135 -621
+p dbithigh_0[2]/reg1_0/Q Vdd dbithigh_0[2]/addsub1_0/a_39_72# 2 10 -118 -621
+p dbithigh_0[2]/addsub1_0/a_n80_34# dbithigh_0[2]/addsub1_0/a_39_72# Vdd 2 10 -110 -621
+p dbithigh_0[3]/X dbithigh_0[2]/addsub1_0/a_39_72# Vdd 2 10 -94 -621
+p dbithigh_0[2]/addsub1_0/a_n15_34# dbithigh_0[2]/addsub1_0/a_39_72# dbithigh_0[2]/addsub1_0/a_83_34# 2 10 -74 -621
+p dbithigh_0[2]/reg1_0/Q Vdd dbithigh_0[2]/addsub1_0/a_100_72# 2 10 -57 -621
+p dbithigh_0[2]/addsub1_0/a_n80_34# dbithigh_0[2]/addsub1_0/a_100_72# dbithigh_0[2]/addsub1_0/a_106_72# 2 10 -51 -621
+p dbithigh_0[3]/X dbithigh_0[2]/addsub1_0/a_106_72# dbithigh_0[2]/addsub1_0/a_83_34# 2 10 -45 -621
+p dbithigh_0[2]/addsub1_0/a_83_34# Vdd dbithigh_0[2]/mux1_0/D1 2 10 -26 -621
+n add_n GND dbithigh_0[2]/addsub1_0/a_n102_34# 2 5 -259 -659
+n remainder_4 dbithigh_0[2]/addsub1_0/a_n102_34# dbithigh_0[2]/addsub1_0/a_n80_34# 2 5 -237 -659
+n dbithigh_0[2]/addsub1_0/a_n102_34# dbithigh_0[2]/addsub1_0/a_n80_34# remainder_4 2 5 -215 -659
+n dbithigh_0[2]/reg1_0/Q GND dbithigh_0[2]/addsub1_0/a_n39_34# 2 5 -196 -659
+n dbithigh_0[2]/addsub1_0/a_n80_34# dbithigh_0[2]/addsub1_0/a_n39_34# GND 2 5 -188 -659
+n dbithigh_0[3]/X dbithigh_0[2]/addsub1_0/a_n39_34# dbithigh_0[2]/addsub1_0/a_n15_34# 2 5 -172 -659
+n dbithigh_0[2]/reg1_0/Q GND dbithigh_0[2]/addsub1_0/a_1_34# 2 5 -156 -659
+n dbithigh_0[2]/addsub1_0/a_n80_34# dbithigh_0[2]/addsub1_0/a_1_34# dbithigh_0[2]/addsub1_0/a_n15_34# 2 5 -151 -659
+n dbithigh_0[2]/addsub1_0/a_n15_34# GND dbithigh_0[2]/X 2 5 -135 -659
+n dbithigh_0[2]/reg1_0/Q GND dbithigh_0[2]/addsub1_0/a_39_34# 2 5 -118 -659
+n dbithigh_0[2]/addsub1_0/a_n80_34# dbithigh_0[2]/addsub1_0/a_39_34# GND 2 5 -110 -659
+n dbithigh_0[3]/X dbithigh_0[2]/addsub1_0/a_39_34# GND 2 5 -94 -659
+n dbithigh_0[2]/addsub1_0/a_n15_34# dbithigh_0[2]/addsub1_0/a_39_34# dbithigh_0[2]/addsub1_0/a_83_34# 2 5 -74 -659
+n dbithigh_0[2]/reg1_0/Q GND dbithigh_0[2]/addsub1_0/a_100_34# 2 5 -57 -659
+n dbithigh_0[2]/addsub1_0/a_n80_34# dbithigh_0[2]/addsub1_0/a_100_34# dbithigh_0[2]/addsub1_0/a_106_34# 2 5 -51 -659
+n dbithigh_0[3]/X dbithigh_0[2]/addsub1_0/a_106_34# dbithigh_0[2]/addsub1_0/a_83_34# 2 5 -45 -659
+n dbithigh_0[2]/addsub1_0/a_83_34# GND dbithigh_0[2]/mux1_0/D1 2 5 -26 -659
+p divisorin_5 Vdd dbithigh_0[2]/reg1_0/a_n5_n61# 2 8 -471 -624
+p clk dbithigh_0[2]/reg1_0/a_n5_n61# dbithigh_0[2]/reg1_0/a_12_n61# 2 8 -454 -624
+p dbithigh_0[2]/reg1_0/a_12_n61# Vdd dbithigh_0[2]/reg1_0/a_28_n61# 2 8 -438 -624
+p dbithigh_0[2]/reg1_0/a_28_n61# Vdd dbithigh_0[2]/reg1_0/a_45_n31# 2 8 -421 -624
+p reset_n dbithigh_0[2]/reg1_0/a_45_n31# Vdd 2 8 -411 -624
+p inverter1_4/Y dbithigh_0[2]/reg1_0/a_45_n31# dbithigh_0[2]/reg1_0/a_12_n61# 2 8 -395 -624
+p inverter1_4/Y dbithigh_0[2]/reg1_0/a_28_n61# dbithigh_0[2]/reg1_0/a_87_n61# 2 8 -379 -624
+p dbithigh_0[2]/reg1_0/a_87_n61# Vdd dbithigh_0[2]/reg1_0/a_103_n31# 2 8 -363 -624
+p reset_n dbithigh_0[2]/reg1_0/a_103_n31# Vdd 2 8 -353 -624
+p dbithigh_0[2]/reg1_0/a_103_n31# Vdd dbithigh_0[2]/reg1_0/a_129_n31# 2 8 -337 -624
+p clk dbithigh_0[2]/reg1_0/a_129_n31# dbithigh_0[2]/reg1_0/a_87_n61# 2 8 -332 -624
+p dbithigh_0[2]/reg1_0/a_103_n31# Vdd dbithigh_0[2]/reg1_0/Q 2 8 -316 -624
+n divisorin_5 GND dbithigh_0[2]/reg1_0/a_n5_n61# 2 4 -471 -654
+n inverter1_4/Y dbithigh_0[2]/reg1_0/a_n5_n61# dbithigh_0[2]/reg1_0/a_12_n61# 2 4 -454 -654
+n dbithigh_0[2]/reg1_0/a_12_n61# GND dbithigh_0[2]/reg1_0/a_28_n61# 2 4 -438 -654
+n dbithigh_0[2]/reg1_0/a_28_n61# GND dbithigh_0[2]/reg1_0/a_45_n61# 2 4 -421 -654
+n reset_n dbithigh_0[2]/reg1_0/a_45_n61# dbithigh_0[2]/reg1_0/a_45_n31# 2 4 -411 -654
+n clk dbithigh_0[2]/reg1_0/a_45_n31# dbithigh_0[2]/reg1_0/a_12_n61# 2 4 -395 -654
+n clk dbithigh_0[2]/reg1_0/a_28_n61# dbithigh_0[2]/reg1_0/a_87_n61# 2 4 -379 -654
+n dbithigh_0[2]/reg1_0/a_87_n61# GND dbithigh_0[2]/reg1_0/a_103_n61# 2 4 -363 -654
+n reset_n dbithigh_0[2]/reg1_0/a_103_n61# dbithigh_0[2]/reg1_0/a_103_n31# 2 4 -353 -654
+n dbithigh_0[2]/reg1_0/a_103_n31# GND dbithigh_0[2]/reg1_0/a_129_n61# 2 4 -337 -654
+n inverter1_4/Y dbithigh_0[2]/reg1_0/a_129_n61# dbithigh_0[2]/reg1_0/a_87_n61# 2 4 -332 -654
+n dbithigh_0[2]/reg1_0/a_103_n31# GND dbithigh_0[2]/reg1_0/Q 2 4 -316 -654
+p dbithigh_0[3]/reg1_1/D Vdd dbithigh_0[3]/reg1_1/a_n5_n61# 2 8 300 -511
+p clk dbithigh_0[3]/reg1_1/a_n5_n61# dbithigh_0[3]/reg1_1/a_12_n61# 2 8 317 -511
+p dbithigh_0[3]/reg1_1/a_12_n61# Vdd dbithigh_0[3]/reg1_1/a_28_n61# 2 8 333 -511
+p dbithigh_0[3]/reg1_1/a_28_n61# Vdd dbithigh_0[3]/reg1_1/a_45_n31# 2 8 350 -511
+p reset_n dbithigh_0[3]/reg1_1/a_45_n31# Vdd 2 8 360 -511
+p inverter1_4/Y dbithigh_0[3]/reg1_1/a_45_n31# dbithigh_0[3]/reg1_1/a_12_n61# 2 8 376 -511
+p inverter1_4/Y dbithigh_0[3]/reg1_1/a_28_n61# dbithigh_0[3]/reg1_1/a_87_n61# 2 8 392 -511
+p dbithigh_0[3]/reg1_1/a_87_n61# Vdd dbithigh_0[3]/reg1_1/a_103_n31# 2 8 408 -511
+p reset_n dbithigh_0[3]/reg1_1/a_103_n31# Vdd 2 8 418 -511
+p dbithigh_0[3]/reg1_1/a_103_n31# Vdd dbithigh_0[3]/reg1_1/a_129_n31# 2 8 434 -511
+p clk dbithigh_0[3]/reg1_1/a_129_n31# dbithigh_0[3]/reg1_1/a_87_n61# 2 8 439 -511
+p dbithigh_0[3]/reg1_1/a_103_n31# Vdd remainder_3 2 8 455 -511
+n dbithigh_0[3]/reg1_1/D GND dbithigh_0[3]/reg1_1/a_n5_n61# 2 4 300 -541
+n inverter1_4/Y dbithigh_0[3]/reg1_1/a_n5_n61# dbithigh_0[3]/reg1_1/a_12_n61# 2 4 317 -541
+n dbithigh_0[3]/reg1_1/a_12_n61# GND dbithigh_0[3]/reg1_1/a_28_n61# 2 4 333 -541
+n dbithigh_0[3]/reg1_1/a_28_n61# GND dbithigh_0[3]/reg1_1/a_45_n61# 2 4 350 -541
+n reset_n dbithigh_0[3]/reg1_1/a_45_n61# dbithigh_0[3]/reg1_1/a_45_n31# 2 4 360 -541
+n clk dbithigh_0[3]/reg1_1/a_45_n31# dbithigh_0[3]/reg1_1/a_12_n61# 2 4 376 -541
+n clk dbithigh_0[3]/reg1_1/a_28_n61# dbithigh_0[3]/reg1_1/a_87_n61# 2 4 392 -541
+n dbithigh_0[3]/reg1_1/a_87_n61# GND dbithigh_0[3]/reg1_1/a_103_n61# 2 4 408 -541
+n reset_n dbithigh_0[3]/reg1_1/a_103_n61# dbithigh_0[3]/reg1_1/a_103_n31# 2 4 418 -541
+n dbithigh_0[3]/reg1_1/a_103_n31# GND dbithigh_0[3]/reg1_1/a_129_n61# 2 4 434 -541
+n inverter1_4/Y dbithigh_0[3]/reg1_1/a_129_n61# dbithigh_0[3]/reg1_1/a_87_n61# 2 4 439 -541
+n dbithigh_0[3]/reg1_1/a_103_n31# GND remainder_3 2 4 455 -541
+p dbithigh_0[3]/shift1_0/a_6_11# Vdd dbithigh_0[3]/shift1_0/a_40_11# 2 8 238 -516
+p dbithigh_0[3]/shift1_0/a_40_11# Vdd dbithigh_0[3]/reg1_1/D 2 8 254 -516
+n inverter1_2/Y dbithigh_0[2]/inbit dbithigh_0[3]/shift1_0/a_6_11# 2 4 204 -538
+n shift dbithigh_0[3]/inbit dbithigh_0[3]/shift1_0/a_6_11# 2 4 220 -538
+n dbithigh_0[3]/shift1_0/a_6_11# GND dbithigh_0[3]/shift1_0/a_40_11# 2 4 238 -538
+n dbithigh_0[3]/shift1_0/a_40_11# GND dbithigh_0[3]/reg1_1/D 2 4 254 -538
+p S0 GND dbithigh_0[3]/mux1_0/a_n47_36# 2 8 34 -511
+p inverter1_0/Y remainder_3 dbithigh_0[3]/mux1_0/a_n47_36# 2 8 50 -511
+p dbithigh_0[3]/mux1_0/a_n47_36# Vdd dbithigh_0[3]/mux1_0/a_n15_36# 2 8 66 -511
+n inverter1_0/Y GND dbithigh_0[3]/mux1_0/a_n47_36# 2 4 34 -538
+n S0 remainder_3 dbithigh_0[3]/mux1_0/a_n47_36# 2 4 50 -538
+n dbithigh_0[3]/mux1_0/a_n47_36# GND dbithigh_0[3]/mux1_0/a_n15_36# 2 4 66 -538
+p dbithigh_0[3]/mux1_0/D1 Vdd dbithigh_0[3]/mux1_0/a_3_36# 2 8 84 -511
+n dbithigh_0[3]/mux1_0/D1 GND dbithigh_0[3]/mux1_0/a_3_36# 2 4 84 -538
+p S1 dbithigh_0[3]/mux1_0/a_n15_36# dbithigh_0[3]/mux1_0/a_22_36# 2 8 103 -511
+p inverter1_1/Y dbithigh_0[3]/mux1_0/a_3_36# dbithigh_0[3]/mux1_0/a_22_36# 2 8 119 -511
+p dbithigh_0[3]/mux1_0/a_22_36# Vdd dbithigh_0[2]/inbit 2 8 135 -511
+n inverter1_1/Y dbithigh_0[3]/mux1_0/a_n15_36# dbithigh_0[3]/mux1_0/a_22_36# 2 4 103 -538
+n S1 dbithigh_0[3]/mux1_0/a_3_36# dbithigh_0[3]/mux1_0/a_22_36# 2 4 119 -538
+n dbithigh_0[3]/mux1_0/a_22_36# GND dbithigh_0[2]/inbit 2 4 135 -538
+p add_n Vdd dbithigh_0[3]/addsub1_0/a_n102_34# 2 10 -259 -508
+p remainder_3 add_n dbithigh_0[3]/addsub1_0/a_n80_34# 2 10 -237 -508
+p add_n dbithigh_0[3]/addsub1_0/a_n80_34# remainder_3 2 10 -215 -508
+p dbithigh_0[3]/reg1_0/Q Vdd dbithigh_0[3]/addsub1_0/a_n39_72# 2 10 -196 -508
+p dbithigh_0[3]/addsub1_0/a_n80_34# dbithigh_0[3]/addsub1_0/a_n39_72# Vdd 2 10 -188 -508
+p dbithigh_0[4]/X dbithigh_0[3]/addsub1_0/a_n39_72# dbithigh_0[3]/addsub1_0/a_n15_34# 2 10 -172 -508
+p dbithigh_0[3]/reg1_0/Q Vdd dbithigh_0[3]/addsub1_0/a_1_72# 2 10 -156 -508
+p dbithigh_0[3]/addsub1_0/a_n80_34# dbithigh_0[3]/addsub1_0/a_1_72# dbithigh_0[3]/addsub1_0/a_n15_34# 2 10 -151 -508
+p dbithigh_0[3]/addsub1_0/a_n15_34# Vdd dbithigh_0[3]/X 2 10 -135 -508
+p dbithigh_0[3]/reg1_0/Q Vdd dbithigh_0[3]/addsub1_0/a_39_72# 2 10 -118 -508
+p dbithigh_0[3]/addsub1_0/a_n80_34# dbithigh_0[3]/addsub1_0/a_39_72# Vdd 2 10 -110 -508
+p dbithigh_0[4]/X dbithigh_0[3]/addsub1_0/a_39_72# Vdd 2 10 -94 -508
+p dbithigh_0[3]/addsub1_0/a_n15_34# dbithigh_0[3]/addsub1_0/a_39_72# dbithigh_0[3]/addsub1_0/a_83_34# 2 10 -74 -508
+p dbithigh_0[3]/reg1_0/Q Vdd dbithigh_0[3]/addsub1_0/a_100_72# 2 10 -57 -508
+p dbithigh_0[3]/addsub1_0/a_n80_34# dbithigh_0[3]/addsub1_0/a_100_72# dbithigh_0[3]/addsub1_0/a_106_72# 2 10 -51 -508
+p dbithigh_0[4]/X dbithigh_0[3]/addsub1_0/a_106_72# dbithigh_0[3]/addsub1_0/a_83_34# 2 10 -45 -508
+p dbithigh_0[3]/addsub1_0/a_83_34# Vdd dbithigh_0[3]/mux1_0/D1 2 10 -26 -508
+n add_n GND dbithigh_0[3]/addsub1_0/a_n102_34# 2 5 -259 -546
+n remainder_3 dbithigh_0[3]/addsub1_0/a_n102_34# dbithigh_0[3]/addsub1_0/a_n80_34# 2 5 -237 -546
+n dbithigh_0[3]/addsub1_0/a_n102_34# dbithigh_0[3]/addsub1_0/a_n80_34# remainder_3 2 5 -215 -546
+n dbithigh_0[3]/reg1_0/Q GND dbithigh_0[3]/addsub1_0/a_n39_34# 2 5 -196 -546
+n dbithigh_0[3]/addsub1_0/a_n80_34# dbithigh_0[3]/addsub1_0/a_n39_34# GND 2 5 -188 -546
+n dbithigh_0[4]/X dbithigh_0[3]/addsub1_0/a_n39_34# dbithigh_0[3]/addsub1_0/a_n15_34# 2 5 -172 -546
+n dbithigh_0[3]/reg1_0/Q GND dbithigh_0[3]/addsub1_0/a_1_34# 2 5 -156 -546
+n dbithigh_0[3]/addsub1_0/a_n80_34# dbithigh_0[3]/addsub1_0/a_1_34# dbithigh_0[3]/addsub1_0/a_n15_34# 2 5 -151 -546
+n dbithigh_0[3]/addsub1_0/a_n15_34# GND dbithigh_0[3]/X 2 5 -135 -546
+n dbithigh_0[3]/reg1_0/Q GND dbithigh_0[3]/addsub1_0/a_39_34# 2 5 -118 -546
+n dbithigh_0[3]/addsub1_0/a_n80_34# dbithigh_0[3]/addsub1_0/a_39_34# GND 2 5 -110 -546
+n dbithigh_0[4]/X dbithigh_0[3]/addsub1_0/a_39_34# GND 2 5 -94 -546
+n dbithigh_0[3]/addsub1_0/a_n15_34# dbithigh_0[3]/addsub1_0/a_39_34# dbithigh_0[3]/addsub1_0/a_83_34# 2 5 -74 -546
+n dbithigh_0[3]/reg1_0/Q GND dbithigh_0[3]/addsub1_0/a_100_34# 2 5 -57 -546
+n dbithigh_0[3]/addsub1_0/a_n80_34# dbithigh_0[3]/addsub1_0/a_100_34# dbithigh_0[3]/addsub1_0/a_106_34# 2 5 -51 -546
+n dbithigh_0[4]/X dbithigh_0[3]/addsub1_0/a_106_34# dbithigh_0[3]/addsub1_0/a_83_34# 2 5 -45 -546
+n dbithigh_0[3]/addsub1_0/a_83_34# GND dbithigh_0[3]/mux1_0/D1 2 5 -26 -546
+p divisorin_4 Vdd dbithigh_0[3]/reg1_0/a_n5_n61# 2 8 -471 -511
+p clk dbithigh_0[3]/reg1_0/a_n5_n61# dbithigh_0[3]/reg1_0/a_12_n61# 2 8 -454 -511
+p dbithigh_0[3]/reg1_0/a_12_n61# Vdd dbithigh_0[3]/reg1_0/a_28_n61# 2 8 -438 -511
+p dbithigh_0[3]/reg1_0/a_28_n61# Vdd dbithigh_0[3]/reg1_0/a_45_n31# 2 8 -421 -511
+p reset_n dbithigh_0[3]/reg1_0/a_45_n31# Vdd 2 8 -411 -511
+p inverter1_4/Y dbithigh_0[3]/reg1_0/a_45_n31# dbithigh_0[3]/reg1_0/a_12_n61# 2 8 -395 -511
+p inverter1_4/Y dbithigh_0[3]/reg1_0/a_28_n61# dbithigh_0[3]/reg1_0/a_87_n61# 2 8 -379 -511
+p dbithigh_0[3]/reg1_0/a_87_n61# Vdd dbithigh_0[3]/reg1_0/a_103_n31# 2 8 -363 -511
+p reset_n dbithigh_0[3]/reg1_0/a_103_n31# Vdd 2 8 -353 -511
+p dbithigh_0[3]/reg1_0/a_103_n31# Vdd dbithigh_0[3]/reg1_0/a_129_n31# 2 8 -337 -511
+p clk dbithigh_0[3]/reg1_0/a_129_n31# dbithigh_0[3]/reg1_0/a_87_n61# 2 8 -332 -511
+p dbithigh_0[3]/reg1_0/a_103_n31# Vdd dbithigh_0[3]/reg1_0/Q 2 8 -316 -511
+n divisorin_4 GND dbithigh_0[3]/reg1_0/a_n5_n61# 2 4 -471 -541
+n inverter1_4/Y dbithigh_0[3]/reg1_0/a_n5_n61# dbithigh_0[3]/reg1_0/a_12_n61# 2 4 -454 -541
+n dbithigh_0[3]/reg1_0/a_12_n61# GND dbithigh_0[3]/reg1_0/a_28_n61# 2 4 -438 -541
+n dbithigh_0[3]/reg1_0/a_28_n61# GND dbithigh_0[3]/reg1_0/a_45_n61# 2 4 -421 -541
+n reset_n dbithigh_0[3]/reg1_0/a_45_n61# dbithigh_0[3]/reg1_0/a_45_n31# 2 4 -411 -541
+n clk dbithigh_0[3]/reg1_0/a_45_n31# dbithigh_0[3]/reg1_0/a_12_n61# 2 4 -395 -541
+n clk dbithigh_0[3]/reg1_0/a_28_n61# dbithigh_0[3]/reg1_0/a_87_n61# 2 4 -379 -541
+n dbithigh_0[3]/reg1_0/a_87_n61# GND dbithigh_0[3]/reg1_0/a_103_n61# 2 4 -363 -541
+n reset_n dbithigh_0[3]/reg1_0/a_103_n61# dbithigh_0[3]/reg1_0/a_103_n31# 2 4 -353 -541
+n dbithigh_0[3]/reg1_0/a_103_n31# GND dbithigh_0[3]/reg1_0/a_129_n61# 2 4 -337 -541
+n inverter1_4/Y dbithigh_0[3]/reg1_0/a_129_n61# dbithigh_0[3]/reg1_0/a_87_n61# 2 4 -332 -541
+n dbithigh_0[3]/reg1_0/a_103_n31# GND dbithigh_0[3]/reg1_0/Q 2 4 -316 -541
+p dbithigh_0[4]/reg1_1/D Vdd dbithigh_0[4]/reg1_1/a_n5_n61# 2 8 300 -398
+p clk dbithigh_0[4]/reg1_1/a_n5_n61# dbithigh_0[4]/reg1_1/a_12_n61# 2 8 317 -398
+p dbithigh_0[4]/reg1_1/a_12_n61# Vdd dbithigh_0[4]/reg1_1/a_28_n61# 2 8 333 -398
+p dbithigh_0[4]/reg1_1/a_28_n61# Vdd dbithigh_0[4]/reg1_1/a_45_n31# 2 8 350 -398
+p reset_n dbithigh_0[4]/reg1_1/a_45_n31# Vdd 2 8 360 -398
+p inverter1_4/Y dbithigh_0[4]/reg1_1/a_45_n31# dbithigh_0[4]/reg1_1/a_12_n61# 2 8 376 -398
+p inverter1_4/Y dbithigh_0[4]/reg1_1/a_28_n61# dbithigh_0[4]/reg1_1/a_87_n61# 2 8 392 -398
+p dbithigh_0[4]/reg1_1/a_87_n61# Vdd dbithigh_0[4]/reg1_1/a_103_n31# 2 8 408 -398
+p reset_n dbithigh_0[4]/reg1_1/a_103_n31# Vdd 2 8 418 -398
+p dbithigh_0[4]/reg1_1/a_103_n31# Vdd dbithigh_0[4]/reg1_1/a_129_n31# 2 8 434 -398
+p clk dbithigh_0[4]/reg1_1/a_129_n31# dbithigh_0[4]/reg1_1/a_87_n61# 2 8 439 -398
+p dbithigh_0[4]/reg1_1/a_103_n31# Vdd remainder_2 2 8 455 -398
+n dbithigh_0[4]/reg1_1/D GND dbithigh_0[4]/reg1_1/a_n5_n61# 2 4 300 -428
+n inverter1_4/Y dbithigh_0[4]/reg1_1/a_n5_n61# dbithigh_0[4]/reg1_1/a_12_n61# 2 4 317 -428
+n dbithigh_0[4]/reg1_1/a_12_n61# GND dbithigh_0[4]/reg1_1/a_28_n61# 2 4 333 -428
+n dbithigh_0[4]/reg1_1/a_28_n61# GND dbithigh_0[4]/reg1_1/a_45_n61# 2 4 350 -428
+n reset_n dbithigh_0[4]/reg1_1/a_45_n61# dbithigh_0[4]/reg1_1/a_45_n31# 2 4 360 -428
+n clk dbithigh_0[4]/reg1_1/a_45_n31# dbithigh_0[4]/reg1_1/a_12_n61# 2 4 376 -428
+n clk dbithigh_0[4]/reg1_1/a_28_n61# dbithigh_0[4]/reg1_1/a_87_n61# 2 4 392 -428
+n dbithigh_0[4]/reg1_1/a_87_n61# GND dbithigh_0[4]/reg1_1/a_103_n61# 2 4 408 -428
+n reset_n dbithigh_0[4]/reg1_1/a_103_n61# dbithigh_0[4]/reg1_1/a_103_n31# 2 4 418 -428
+n dbithigh_0[4]/reg1_1/a_103_n31# GND dbithigh_0[4]/reg1_1/a_129_n61# 2 4 434 -428
+n inverter1_4/Y dbithigh_0[4]/reg1_1/a_129_n61# dbithigh_0[4]/reg1_1/a_87_n61# 2 4 439 -428
+n dbithigh_0[4]/reg1_1/a_103_n31# GND remainder_2 2 4 455 -428
+p dbithigh_0[4]/shift1_0/a_6_11# Vdd dbithigh_0[4]/shift1_0/a_40_11# 2 8 238 -403
+p dbithigh_0[4]/shift1_0/a_40_11# Vdd dbithigh_0[4]/reg1_1/D 2 8 254 -403
+n inverter1_2/Y dbithigh_0[3]/inbit dbithigh_0[4]/shift1_0/a_6_11# 2 4 204 -425
+n shift dbithigh_0[4]/inbit dbithigh_0[4]/shift1_0/a_6_11# 2 4 220 -425
+n dbithigh_0[4]/shift1_0/a_6_11# GND dbithigh_0[4]/shift1_0/a_40_11# 2 4 238 -425
+n dbithigh_0[4]/shift1_0/a_40_11# GND dbithigh_0[4]/reg1_1/D 2 4 254 -425
+p S0 GND dbithigh_0[4]/mux1_0/a_n47_36# 2 8 34 -398
+p inverter1_0/Y remainder_2 dbithigh_0[4]/mux1_0/a_n47_36# 2 8 50 -398
+p dbithigh_0[4]/mux1_0/a_n47_36# Vdd dbithigh_0[4]/mux1_0/a_n15_36# 2 8 66 -398
+n inverter1_0/Y GND dbithigh_0[4]/mux1_0/a_n47_36# 2 4 34 -425
+n S0 remainder_2 dbithigh_0[4]/mux1_0/a_n47_36# 2 4 50 -425
+n dbithigh_0[4]/mux1_0/a_n47_36# GND dbithigh_0[4]/mux1_0/a_n15_36# 2 4 66 -425
+p dbithigh_0[4]/mux1_0/D1 Vdd dbithigh_0[4]/mux1_0/a_3_36# 2 8 84 -398
+n dbithigh_0[4]/mux1_0/D1 GND dbithigh_0[4]/mux1_0/a_3_36# 2 4 84 -425
+p S1 dbithigh_0[4]/mux1_0/a_n15_36# dbithigh_0[4]/mux1_0/a_22_36# 2 8 103 -398
+p inverter1_1/Y dbithigh_0[4]/mux1_0/a_3_36# dbithigh_0[4]/mux1_0/a_22_36# 2 8 119 -398
+p dbithigh_0[4]/mux1_0/a_22_36# Vdd dbithigh_0[3]/inbit 2 8 135 -398
+n inverter1_1/Y dbithigh_0[4]/mux1_0/a_n15_36# dbithigh_0[4]/mux1_0/a_22_36# 2 4 103 -425
+n S1 dbithigh_0[4]/mux1_0/a_3_36# dbithigh_0[4]/mux1_0/a_22_36# 2 4 119 -425
+n dbithigh_0[4]/mux1_0/a_22_36# GND dbithigh_0[3]/inbit 2 4 135 -425
+p add_n Vdd dbithigh_0[4]/addsub1_0/a_n102_34# 2 10 -259 -395
+p remainder_2 add_n dbithigh_0[4]/addsub1_0/a_n80_34# 2 10 -237 -395
+p add_n dbithigh_0[4]/addsub1_0/a_n80_34# remainder_2 2 10 -215 -395
+p dbithigh_0[4]/reg1_0/Q Vdd dbithigh_0[4]/addsub1_0/a_n39_72# 2 10 -196 -395
+p dbithigh_0[4]/addsub1_0/a_n80_34# dbithigh_0[4]/addsub1_0/a_n39_72# Vdd 2 10 -188 -395
+p dbithigh_0[5]/X dbithigh_0[4]/addsub1_0/a_n39_72# dbithigh_0[4]/addsub1_0/a_n15_34# 2 10 -172 -395
+p dbithigh_0[4]/reg1_0/Q Vdd dbithigh_0[4]/addsub1_0/a_1_72# 2 10 -156 -395
+p dbithigh_0[4]/addsub1_0/a_n80_34# dbithigh_0[4]/addsub1_0/a_1_72# dbithigh_0[4]/addsub1_0/a_n15_34# 2 10 -151 -395
+p dbithigh_0[4]/addsub1_0/a_n15_34# Vdd dbithigh_0[4]/X 2 10 -135 -395
+p dbithigh_0[4]/reg1_0/Q Vdd dbithigh_0[4]/addsub1_0/a_39_72# 2 10 -118 -395
+p dbithigh_0[4]/addsub1_0/a_n80_34# dbithigh_0[4]/addsub1_0/a_39_72# Vdd 2 10 -110 -395
+p dbithigh_0[5]/X dbithigh_0[4]/addsub1_0/a_39_72# Vdd 2 10 -94 -395
+p dbithigh_0[4]/addsub1_0/a_n15_34# dbithigh_0[4]/addsub1_0/a_39_72# dbithigh_0[4]/addsub1_0/a_83_34# 2 10 -74 -395
+p dbithigh_0[4]/reg1_0/Q Vdd dbithigh_0[4]/addsub1_0/a_100_72# 2 10 -57 -395
+p dbithigh_0[4]/addsub1_0/a_n80_34# dbithigh_0[4]/addsub1_0/a_100_72# dbithigh_0[4]/addsub1_0/a_106_72# 2 10 -51 -395
+p dbithigh_0[5]/X dbithigh_0[4]/addsub1_0/a_106_72# dbithigh_0[4]/addsub1_0/a_83_34# 2 10 -45 -395
+p dbithigh_0[4]/addsub1_0/a_83_34# Vdd dbithigh_0[4]/mux1_0/D1 2 10 -26 -395
+n add_n GND dbithigh_0[4]/addsub1_0/a_n102_34# 2 5 -259 -433
+n remainder_2 dbithigh_0[4]/addsub1_0/a_n102_34# dbithigh_0[4]/addsub1_0/a_n80_34# 2 5 -237 -433
+n dbithigh_0[4]/addsub1_0/a_n102_34# dbithigh_0[4]/addsub1_0/a_n80_34# remainder_2 2 5 -215 -433
+n dbithigh_0[4]/reg1_0/Q GND dbithigh_0[4]/addsub1_0/a_n39_34# 2 5 -196 -433
+n dbithigh_0[4]/addsub1_0/a_n80_34# dbithigh_0[4]/addsub1_0/a_n39_34# GND 2 5 -188 -433
+n dbithigh_0[5]/X dbithigh_0[4]/addsub1_0/a_n39_34# dbithigh_0[4]/addsub1_0/a_n15_34# 2 5 -172 -433
+n dbithigh_0[4]/reg1_0/Q GND dbithigh_0[4]/addsub1_0/a_1_34# 2 5 -156 -433
+n dbithigh_0[4]/addsub1_0/a_n80_34# dbithigh_0[4]/addsub1_0/a_1_34# dbithigh_0[4]/addsub1_0/a_n15_34# 2 5 -151 -433
+n dbithigh_0[4]/addsub1_0/a_n15_34# GND dbithigh_0[4]/X 2 5 -135 -433
+n dbithigh_0[4]/reg1_0/Q GND dbithigh_0[4]/addsub1_0/a_39_34# 2 5 -118 -433
+n dbithigh_0[4]/addsub1_0/a_n80_34# dbithigh_0[4]/addsub1_0/a_39_34# GND 2 5 -110 -433
+n dbithigh_0[5]/X dbithigh_0[4]/addsub1_0/a_39_34# GND 2 5 -94 -433
+n dbithigh_0[4]/addsub1_0/a_n15_34# dbithigh_0[4]/addsub1_0/a_39_34# dbithigh_0[4]/addsub1_0/a_83_34# 2 5 -74 -433
+n dbithigh_0[4]/reg1_0/Q GND dbithigh_0[4]/addsub1_0/a_100_34# 2 5 -57 -433
+n dbithigh_0[4]/addsub1_0/a_n80_34# dbithigh_0[4]/addsub1_0/a_100_34# dbithigh_0[4]/addsub1_0/a_106_34# 2 5 -51 -433
+n dbithigh_0[5]/X dbithigh_0[4]/addsub1_0/a_106_34# dbithigh_0[4]/addsub1_0/a_83_34# 2 5 -45 -433
+n dbithigh_0[4]/addsub1_0/a_83_34# GND dbithigh_0[4]/mux1_0/D1 2 5 -26 -433
+p divisorin_3 Vdd dbithigh_0[4]/reg1_0/a_n5_n61# 2 8 -471 -398
+p clk dbithigh_0[4]/reg1_0/a_n5_n61# dbithigh_0[4]/reg1_0/a_12_n61# 2 8 -454 -398
+p dbithigh_0[4]/reg1_0/a_12_n61# Vdd dbithigh_0[4]/reg1_0/a_28_n61# 2 8 -438 -398
+p dbithigh_0[4]/reg1_0/a_28_n61# Vdd dbithigh_0[4]/reg1_0/a_45_n31# 2 8 -421 -398
+p reset_n dbithigh_0[4]/reg1_0/a_45_n31# Vdd 2 8 -411 -398
+p inverter1_4/Y dbithigh_0[4]/reg1_0/a_45_n31# dbithigh_0[4]/reg1_0/a_12_n61# 2 8 -395 -398
+p inverter1_4/Y dbithigh_0[4]/reg1_0/a_28_n61# dbithigh_0[4]/reg1_0/a_87_n61# 2 8 -379 -398
+p dbithigh_0[4]/reg1_0/a_87_n61# Vdd dbithigh_0[4]/reg1_0/a_103_n31# 2 8 -363 -398
+p reset_n dbithigh_0[4]/reg1_0/a_103_n31# Vdd 2 8 -353 -398
+p dbithigh_0[4]/reg1_0/a_103_n31# Vdd dbithigh_0[4]/reg1_0/a_129_n31# 2 8 -337 -398
+p clk dbithigh_0[4]/reg1_0/a_129_n31# dbithigh_0[4]/reg1_0/a_87_n61# 2 8 -332 -398
+p dbithigh_0[4]/reg1_0/a_103_n31# Vdd dbithigh_0[4]/reg1_0/Q 2 8 -316 -398
+n divisorin_3 GND dbithigh_0[4]/reg1_0/a_n5_n61# 2 4 -471 -428
+n inverter1_4/Y dbithigh_0[4]/reg1_0/a_n5_n61# dbithigh_0[4]/reg1_0/a_12_n61# 2 4 -454 -428
+n dbithigh_0[4]/reg1_0/a_12_n61# GND dbithigh_0[4]/reg1_0/a_28_n61# 2 4 -438 -428
+n dbithigh_0[4]/reg1_0/a_28_n61# GND dbithigh_0[4]/reg1_0/a_45_n61# 2 4 -421 -428
+n reset_n dbithigh_0[4]/reg1_0/a_45_n61# dbithigh_0[4]/reg1_0/a_45_n31# 2 4 -411 -428
+n clk dbithigh_0[4]/reg1_0/a_45_n31# dbithigh_0[4]/reg1_0/a_12_n61# 2 4 -395 -428
+n clk dbithigh_0[4]/reg1_0/a_28_n61# dbithigh_0[4]/reg1_0/a_87_n61# 2 4 -379 -428
+n dbithigh_0[4]/reg1_0/a_87_n61# GND dbithigh_0[4]/reg1_0/a_103_n61# 2 4 -363 -428
+n reset_n dbithigh_0[4]/reg1_0/a_103_n61# dbithigh_0[4]/reg1_0/a_103_n31# 2 4 -353 -428
+n dbithigh_0[4]/reg1_0/a_103_n31# GND dbithigh_0[4]/reg1_0/a_129_n61# 2 4 -337 -428
+n inverter1_4/Y dbithigh_0[4]/reg1_0/a_129_n61# dbithigh_0[4]/reg1_0/a_87_n61# 2 4 -332 -428
+n dbithigh_0[4]/reg1_0/a_103_n31# GND dbithigh_0[4]/reg1_0/Q 2 4 -316 -428
+p dbithigh_0[5]/reg1_1/D Vdd dbithigh_0[5]/reg1_1/a_n5_n61# 2 8 300 -285
+p clk dbithigh_0[5]/reg1_1/a_n5_n61# dbithigh_0[5]/reg1_1/a_12_n61# 2 8 317 -285
+p dbithigh_0[5]/reg1_1/a_12_n61# Vdd dbithigh_0[5]/reg1_1/a_28_n61# 2 8 333 -285
+p dbithigh_0[5]/reg1_1/a_28_n61# Vdd dbithigh_0[5]/reg1_1/a_45_n31# 2 8 350 -285
+p reset_n dbithigh_0[5]/reg1_1/a_45_n31# Vdd 2 8 360 -285
+p inverter1_4/Y dbithigh_0[5]/reg1_1/a_45_n31# dbithigh_0[5]/reg1_1/a_12_n61# 2 8 376 -285
+p inverter1_4/Y dbithigh_0[5]/reg1_1/a_28_n61# dbithigh_0[5]/reg1_1/a_87_n61# 2 8 392 -285
+p dbithigh_0[5]/reg1_1/a_87_n61# Vdd dbithigh_0[5]/reg1_1/a_103_n31# 2 8 408 -285
+p reset_n dbithigh_0[5]/reg1_1/a_103_n31# Vdd 2 8 418 -285
+p dbithigh_0[5]/reg1_1/a_103_n31# Vdd dbithigh_0[5]/reg1_1/a_129_n31# 2 8 434 -285
+p clk dbithigh_0[5]/reg1_1/a_129_n31# dbithigh_0[5]/reg1_1/a_87_n61# 2 8 439 -285
+p dbithigh_0[5]/reg1_1/a_103_n31# Vdd remainder_1 2 8 455 -285
+n dbithigh_0[5]/reg1_1/D GND dbithigh_0[5]/reg1_1/a_n5_n61# 2 4 300 -315
+n inverter1_4/Y dbithigh_0[5]/reg1_1/a_n5_n61# dbithigh_0[5]/reg1_1/a_12_n61# 2 4 317 -315
+n dbithigh_0[5]/reg1_1/a_12_n61# GND dbithigh_0[5]/reg1_1/a_28_n61# 2 4 333 -315
+n dbithigh_0[5]/reg1_1/a_28_n61# GND dbithigh_0[5]/reg1_1/a_45_n61# 2 4 350 -315
+n reset_n dbithigh_0[5]/reg1_1/a_45_n61# dbithigh_0[5]/reg1_1/a_45_n31# 2 4 360 -315
+n clk dbithigh_0[5]/reg1_1/a_45_n31# dbithigh_0[5]/reg1_1/a_12_n61# 2 4 376 -315
+n clk dbithigh_0[5]/reg1_1/a_28_n61# dbithigh_0[5]/reg1_1/a_87_n61# 2 4 392 -315
+n dbithigh_0[5]/reg1_1/a_87_n61# GND dbithigh_0[5]/reg1_1/a_103_n61# 2 4 408 -315
+n reset_n dbithigh_0[5]/reg1_1/a_103_n61# dbithigh_0[5]/reg1_1/a_103_n31# 2 4 418 -315
+n dbithigh_0[5]/reg1_1/a_103_n31# GND dbithigh_0[5]/reg1_1/a_129_n61# 2 4 434 -315
+n inverter1_4/Y dbithigh_0[5]/reg1_1/a_129_n61# dbithigh_0[5]/reg1_1/a_87_n61# 2 4 439 -315
+n dbithigh_0[5]/reg1_1/a_103_n31# GND remainder_1 2 4 455 -315
+p dbithigh_0[5]/shift1_0/a_6_11# Vdd dbithigh_0[5]/shift1_0/a_40_11# 2 8 238 -290
+p dbithigh_0[5]/shift1_0/a_40_11# Vdd dbithigh_0[5]/reg1_1/D 2 8 254 -290
+n inverter1_2/Y dbithigh_0[4]/inbit dbithigh_0[5]/shift1_0/a_6_11# 2 4 204 -312
+n shift dbithigh_0[5]/inbit dbithigh_0[5]/shift1_0/a_6_11# 2 4 220 -312
+n dbithigh_0[5]/shift1_0/a_6_11# GND dbithigh_0[5]/shift1_0/a_40_11# 2 4 238 -312
+n dbithigh_0[5]/shift1_0/a_40_11# GND dbithigh_0[5]/reg1_1/D 2 4 254 -312
+p S0 GND dbithigh_0[5]/mux1_0/a_n47_36# 2 8 34 -285
+p inverter1_0/Y remainder_1 dbithigh_0[5]/mux1_0/a_n47_36# 2 8 50 -285
+p dbithigh_0[5]/mux1_0/a_n47_36# Vdd dbithigh_0[5]/mux1_0/a_n15_36# 2 8 66 -285
+n inverter1_0/Y GND dbithigh_0[5]/mux1_0/a_n47_36# 2 4 34 -312
+n S0 remainder_1 dbithigh_0[5]/mux1_0/a_n47_36# 2 4 50 -312
+n dbithigh_0[5]/mux1_0/a_n47_36# GND dbithigh_0[5]/mux1_0/a_n15_36# 2 4 66 -312
+p dbithigh_0[5]/mux1_0/D1 Vdd dbithigh_0[5]/mux1_0/a_3_36# 2 8 84 -285
+n dbithigh_0[5]/mux1_0/D1 GND dbithigh_0[5]/mux1_0/a_3_36# 2 4 84 -312
+p S1 dbithigh_0[5]/mux1_0/a_n15_36# dbithigh_0[5]/mux1_0/a_22_36# 2 8 103 -285
+p inverter1_1/Y dbithigh_0[5]/mux1_0/a_3_36# dbithigh_0[5]/mux1_0/a_22_36# 2 8 119 -285
+p dbithigh_0[5]/mux1_0/a_22_36# Vdd dbithigh_0[4]/inbit 2 8 135 -285
+n inverter1_1/Y dbithigh_0[5]/mux1_0/a_n15_36# dbithigh_0[5]/mux1_0/a_22_36# 2 4 103 -312
+n S1 dbithigh_0[5]/mux1_0/a_3_36# dbithigh_0[5]/mux1_0/a_22_36# 2 4 119 -312
+n dbithigh_0[5]/mux1_0/a_22_36# GND dbithigh_0[4]/inbit 2 4 135 -312
+p add_n Vdd dbithigh_0[5]/addsub1_0/a_n102_34# 2 10 -259 -282
+p remainder_1 add_n dbithigh_0[5]/addsub1_0/a_n80_34# 2 10 -237 -282
+p add_n dbithigh_0[5]/addsub1_0/a_n80_34# remainder_1 2 10 -215 -282
+p dbithigh_0[5]/reg1_0/Q Vdd dbithigh_0[5]/addsub1_0/a_n39_72# 2 10 -196 -282
+p dbithigh_0[5]/addsub1_0/a_n80_34# dbithigh_0[5]/addsub1_0/a_n39_72# Vdd 2 10 -188 -282
+p dbithigh_0[6]/X dbithigh_0[5]/addsub1_0/a_n39_72# dbithigh_0[5]/addsub1_0/a_n15_34# 2 10 -172 -282
+p dbithigh_0[5]/reg1_0/Q Vdd dbithigh_0[5]/addsub1_0/a_1_72# 2 10 -156 -282
+p dbithigh_0[5]/addsub1_0/a_n80_34# dbithigh_0[5]/addsub1_0/a_1_72# dbithigh_0[5]/addsub1_0/a_n15_34# 2 10 -151 -282
+p dbithigh_0[5]/addsub1_0/a_n15_34# Vdd dbithigh_0[5]/X 2 10 -135 -282
+p dbithigh_0[5]/reg1_0/Q Vdd dbithigh_0[5]/addsub1_0/a_39_72# 2 10 -118 -282
+p dbithigh_0[5]/addsub1_0/a_n80_34# dbithigh_0[5]/addsub1_0/a_39_72# Vdd 2 10 -110 -282
+p dbithigh_0[6]/X dbithigh_0[5]/addsub1_0/a_39_72# Vdd 2 10 -94 -282
+p dbithigh_0[5]/addsub1_0/a_n15_34# dbithigh_0[5]/addsub1_0/a_39_72# dbithigh_0[5]/addsub1_0/a_83_34# 2 10 -74 -282
+p dbithigh_0[5]/reg1_0/Q Vdd dbithigh_0[5]/addsub1_0/a_100_72# 2 10 -57 -282
+p dbithigh_0[5]/addsub1_0/a_n80_34# dbithigh_0[5]/addsub1_0/a_100_72# dbithigh_0[5]/addsub1_0/a_106_72# 2 10 -51 -282
+p dbithigh_0[6]/X dbithigh_0[5]/addsub1_0/a_106_72# dbithigh_0[5]/addsub1_0/a_83_34# 2 10 -45 -282
+p dbithigh_0[5]/addsub1_0/a_83_34# Vdd dbithigh_0[5]/mux1_0/D1 2 10 -26 -282
+n add_n GND dbithigh_0[5]/addsub1_0/a_n102_34# 2 5 -259 -320
+n remainder_1 dbithigh_0[5]/addsub1_0/a_n102_34# dbithigh_0[5]/addsub1_0/a_n80_34# 2 5 -237 -320
+n dbithigh_0[5]/addsub1_0/a_n102_34# dbithigh_0[5]/addsub1_0/a_n80_34# remainder_1 2 5 -215 -320
+n dbithigh_0[5]/reg1_0/Q GND dbithigh_0[5]/addsub1_0/a_n39_34# 2 5 -196 -320
+n dbithigh_0[5]/addsub1_0/a_n80_34# dbithigh_0[5]/addsub1_0/a_n39_34# GND 2 5 -188 -320
+n dbithigh_0[6]/X dbithigh_0[5]/addsub1_0/a_n39_34# dbithigh_0[5]/addsub1_0/a_n15_34# 2 5 -172 -320
+n dbithigh_0[5]/reg1_0/Q GND dbithigh_0[5]/addsub1_0/a_1_34# 2 5 -156 -320
+n dbithigh_0[5]/addsub1_0/a_n80_34# dbithigh_0[5]/addsub1_0/a_1_34# dbithigh_0[5]/addsub1_0/a_n15_34# 2 5 -151 -320
+n dbithigh_0[5]/addsub1_0/a_n15_34# GND dbithigh_0[5]/X 2 5 -135 -320
+n dbithigh_0[5]/reg1_0/Q GND dbithigh_0[5]/addsub1_0/a_39_34# 2 5 -118 -320
+n dbithigh_0[5]/addsub1_0/a_n80_34# dbithigh_0[5]/addsub1_0/a_39_34# GND 2 5 -110 -320
+n dbithigh_0[6]/X dbithigh_0[5]/addsub1_0/a_39_34# GND 2 5 -94 -320
+n dbithigh_0[5]/addsub1_0/a_n15_34# dbithigh_0[5]/addsub1_0/a_39_34# dbithigh_0[5]/addsub1_0/a_83_34# 2 5 -74 -320
+n dbithigh_0[5]/reg1_0/Q GND dbithigh_0[5]/addsub1_0/a_100_34# 2 5 -57 -320
+n dbithigh_0[5]/addsub1_0/a_n80_34# dbithigh_0[5]/addsub1_0/a_100_34# dbithigh_0[5]/addsub1_0/a_106_34# 2 5 -51 -320
+n dbithigh_0[6]/X dbithigh_0[5]/addsub1_0/a_106_34# dbithigh_0[5]/addsub1_0/a_83_34# 2 5 -45 -320
+n dbithigh_0[5]/addsub1_0/a_83_34# GND dbithigh_0[5]/mux1_0/D1 2 5 -26 -320
+p divisorin_2 Vdd dbithigh_0[5]/reg1_0/a_n5_n61# 2 8 -471 -285
+p clk dbithigh_0[5]/reg1_0/a_n5_n61# dbithigh_0[5]/reg1_0/a_12_n61# 2 8 -454 -285
+p dbithigh_0[5]/reg1_0/a_12_n61# Vdd dbithigh_0[5]/reg1_0/a_28_n61# 2 8 -438 -285
+p dbithigh_0[5]/reg1_0/a_28_n61# Vdd dbithigh_0[5]/reg1_0/a_45_n31# 2 8 -421 -285
+p reset_n dbithigh_0[5]/reg1_0/a_45_n31# Vdd 2 8 -411 -285
+p inverter1_4/Y dbithigh_0[5]/reg1_0/a_45_n31# dbithigh_0[5]/reg1_0/a_12_n61# 2 8 -395 -285
+p inverter1_4/Y dbithigh_0[5]/reg1_0/a_28_n61# dbithigh_0[5]/reg1_0/a_87_n61# 2 8 -379 -285
+p dbithigh_0[5]/reg1_0/a_87_n61# Vdd dbithigh_0[5]/reg1_0/a_103_n31# 2 8 -363 -285
+p reset_n dbithigh_0[5]/reg1_0/a_103_n31# Vdd 2 8 -353 -285
+p dbithigh_0[5]/reg1_0/a_103_n31# Vdd dbithigh_0[5]/reg1_0/a_129_n31# 2 8 -337 -285
+p clk dbithigh_0[5]/reg1_0/a_129_n31# dbithigh_0[5]/reg1_0/a_87_n61# 2 8 -332 -285
+p dbithigh_0[5]/reg1_0/a_103_n31# Vdd dbithigh_0[5]/reg1_0/Q 2 8 -316 -285
+n divisorin_2 GND dbithigh_0[5]/reg1_0/a_n5_n61# 2 4 -471 -315
+n inverter1_4/Y dbithigh_0[5]/reg1_0/a_n5_n61# dbithigh_0[5]/reg1_0/a_12_n61# 2 4 -454 -315
+n dbithigh_0[5]/reg1_0/a_12_n61# GND dbithigh_0[5]/reg1_0/a_28_n61# 2 4 -438 -315
+n dbithigh_0[5]/reg1_0/a_28_n61# GND dbithigh_0[5]/reg1_0/a_45_n61# 2 4 -421 -315
+n reset_n dbithigh_0[5]/reg1_0/a_45_n61# dbithigh_0[5]/reg1_0/a_45_n31# 2 4 -411 -315
+n clk dbithigh_0[5]/reg1_0/a_45_n31# dbithigh_0[5]/reg1_0/a_12_n61# 2 4 -395 -315
+n clk dbithigh_0[5]/reg1_0/a_28_n61# dbithigh_0[5]/reg1_0/a_87_n61# 2 4 -379 -315
+n dbithigh_0[5]/reg1_0/a_87_n61# GND dbithigh_0[5]/reg1_0/a_103_n61# 2 4 -363 -315
+n reset_n dbithigh_0[5]/reg1_0/a_103_n61# dbithigh_0[5]/reg1_0/a_103_n31# 2 4 -353 -315
+n dbithigh_0[5]/reg1_0/a_103_n31# GND dbithigh_0[5]/reg1_0/a_129_n61# 2 4 -337 -315
+n inverter1_4/Y dbithigh_0[5]/reg1_0/a_129_n61# dbithigh_0[5]/reg1_0/a_87_n61# 2 4 -332 -315
+n dbithigh_0[5]/reg1_0/a_103_n31# GND dbithigh_0[5]/reg1_0/Q 2 4 -316 -315
+p dbithigh_0[6]/reg1_1/D Vdd dbithigh_0[6]/reg1_1/a_n5_n61# 2 8 300 -172
+p clk dbithigh_0[6]/reg1_1/a_n5_n61# dbithigh_0[6]/reg1_1/a_12_n61# 2 8 317 -172
+p dbithigh_0[6]/reg1_1/a_12_n61# Vdd dbithigh_0[6]/reg1_1/a_28_n61# 2 8 333 -172
+p dbithigh_0[6]/reg1_1/a_28_n61# Vdd dbithigh_0[6]/reg1_1/a_45_n31# 2 8 350 -172
+p reset_n dbithigh_0[6]/reg1_1/a_45_n31# Vdd 2 8 360 -172
+p inverter1_4/Y dbithigh_0[6]/reg1_1/a_45_n31# dbithigh_0[6]/reg1_1/a_12_n61# 2 8 376 -172
+p inverter1_4/Y dbithigh_0[6]/reg1_1/a_28_n61# dbithigh_0[6]/reg1_1/a_87_n61# 2 8 392 -172
+p dbithigh_0[6]/reg1_1/a_87_n61# Vdd dbithigh_0[6]/reg1_1/a_103_n31# 2 8 408 -172
+p reset_n dbithigh_0[6]/reg1_1/a_103_n31# Vdd 2 8 418 -172
+p dbithigh_0[6]/reg1_1/a_103_n31# Vdd dbithigh_0[6]/reg1_1/a_129_n31# 2 8 434 -172
+p clk dbithigh_0[6]/reg1_1/a_129_n31# dbithigh_0[6]/reg1_1/a_87_n61# 2 8 439 -172
+p dbithigh_0[6]/reg1_1/a_103_n31# Vdd remainder_0 2 8 455 -172
+n dbithigh_0[6]/reg1_1/D GND dbithigh_0[6]/reg1_1/a_n5_n61# 2 4 300 -202
+n inverter1_4/Y dbithigh_0[6]/reg1_1/a_n5_n61# dbithigh_0[6]/reg1_1/a_12_n61# 2 4 317 -202
+n dbithigh_0[6]/reg1_1/a_12_n61# GND dbithigh_0[6]/reg1_1/a_28_n61# 2 4 333 -202
+n dbithigh_0[6]/reg1_1/a_28_n61# GND dbithigh_0[6]/reg1_1/a_45_n61# 2 4 350 -202
+n reset_n dbithigh_0[6]/reg1_1/a_45_n61# dbithigh_0[6]/reg1_1/a_45_n31# 2 4 360 -202
+n clk dbithigh_0[6]/reg1_1/a_45_n31# dbithigh_0[6]/reg1_1/a_12_n61# 2 4 376 -202
+n clk dbithigh_0[6]/reg1_1/a_28_n61# dbithigh_0[6]/reg1_1/a_87_n61# 2 4 392 -202
+n dbithigh_0[6]/reg1_1/a_87_n61# GND dbithigh_0[6]/reg1_1/a_103_n61# 2 4 408 -202
+n reset_n dbithigh_0[6]/reg1_1/a_103_n61# dbithigh_0[6]/reg1_1/a_103_n31# 2 4 418 -202
+n dbithigh_0[6]/reg1_1/a_103_n31# GND dbithigh_0[6]/reg1_1/a_129_n61# 2 4 434 -202
+n inverter1_4/Y dbithigh_0[6]/reg1_1/a_129_n61# dbithigh_0[6]/reg1_1/a_87_n61# 2 4 439 -202
+n dbithigh_0[6]/reg1_1/a_103_n31# GND remainder_0 2 4 455 -202
+p dbithigh_0[6]/shift1_0/a_6_11# Vdd dbithigh_0[6]/shift1_0/a_40_11# 2 8 238 -177
+p dbithigh_0[6]/shift1_0/a_40_11# Vdd dbithigh_0[6]/reg1_1/D 2 8 254 -177
+n inverter1_2/Y dbithigh_0[5]/inbit dbithigh_0[6]/shift1_0/a_6_11# 2 4 204 -199
+n shift dbithigh_0[6]/inbit dbithigh_0[6]/shift1_0/a_6_11# 2 4 220 -199
+n dbithigh_0[6]/shift1_0/a_6_11# GND dbithigh_0[6]/shift1_0/a_40_11# 2 4 238 -199
+n dbithigh_0[6]/shift1_0/a_40_11# GND dbithigh_0[6]/reg1_1/D 2 4 254 -199
+p S0 GND dbithigh_0[6]/mux1_0/a_n47_36# 2 8 34 -172
+p inverter1_0/Y remainder_0 dbithigh_0[6]/mux1_0/a_n47_36# 2 8 50 -172
+p dbithigh_0[6]/mux1_0/a_n47_36# Vdd dbithigh_0[6]/mux1_0/a_n15_36# 2 8 66 -172
+n inverter1_0/Y GND dbithigh_0[6]/mux1_0/a_n47_36# 2 4 34 -199
+n S0 remainder_0 dbithigh_0[6]/mux1_0/a_n47_36# 2 4 50 -199
+n dbithigh_0[6]/mux1_0/a_n47_36# GND dbithigh_0[6]/mux1_0/a_n15_36# 2 4 66 -199
+p dbithigh_0[6]/mux1_0/D1 Vdd dbithigh_0[6]/mux1_0/a_3_36# 2 8 84 -172
+n dbithigh_0[6]/mux1_0/D1 GND dbithigh_0[6]/mux1_0/a_3_36# 2 4 84 -199
+p S1 dbithigh_0[6]/mux1_0/a_n15_36# dbithigh_0[6]/mux1_0/a_22_36# 2 8 103 -172
+p inverter1_1/Y dbithigh_0[6]/mux1_0/a_3_36# dbithigh_0[6]/mux1_0/a_22_36# 2 8 119 -172
+p dbithigh_0[6]/mux1_0/a_22_36# Vdd dbithigh_0[5]/inbit 2 8 135 -172
+n inverter1_1/Y dbithigh_0[6]/mux1_0/a_n15_36# dbithigh_0[6]/mux1_0/a_22_36# 2 4 103 -199
+n S1 dbithigh_0[6]/mux1_0/a_3_36# dbithigh_0[6]/mux1_0/a_22_36# 2 4 119 -199
+n dbithigh_0[6]/mux1_0/a_22_36# GND dbithigh_0[5]/inbit 2 4 135 -199
+p add_n Vdd dbithigh_0[6]/addsub1_0/a_n102_34# 2 10 -259 -169
+p remainder_0 add_n dbithigh_0[6]/addsub1_0/a_n80_34# 2 10 -237 -169
+p add_n dbithigh_0[6]/addsub1_0/a_n80_34# remainder_0 2 10 -215 -169
+p dbithigh_0[6]/reg1_0/Q Vdd dbithigh_0[6]/addsub1_0/a_n39_72# 2 10 -196 -169
+p dbithigh_0[6]/addsub1_0/a_n80_34# dbithigh_0[6]/addsub1_0/a_n39_72# Vdd 2 10 -188 -169
+p dbithigh_0[7]/X dbithigh_0[6]/addsub1_0/a_n39_72# dbithigh_0[6]/addsub1_0/a_n15_34# 2 10 -172 -169
+p dbithigh_0[6]/reg1_0/Q Vdd dbithigh_0[6]/addsub1_0/a_1_72# 2 10 -156 -169
+p dbithigh_0[6]/addsub1_0/a_n80_34# dbithigh_0[6]/addsub1_0/a_1_72# dbithigh_0[6]/addsub1_0/a_n15_34# 2 10 -151 -169
+p dbithigh_0[6]/addsub1_0/a_n15_34# Vdd dbithigh_0[6]/X 2 10 -135 -169
+p dbithigh_0[6]/reg1_0/Q Vdd dbithigh_0[6]/addsub1_0/a_39_72# 2 10 -118 -169
+p dbithigh_0[6]/addsub1_0/a_n80_34# dbithigh_0[6]/addsub1_0/a_39_72# Vdd 2 10 -110 -169
+p dbithigh_0[7]/X dbithigh_0[6]/addsub1_0/a_39_72# Vdd 2 10 -94 -169
+p dbithigh_0[6]/addsub1_0/a_n15_34# dbithigh_0[6]/addsub1_0/a_39_72# dbithigh_0[6]/addsub1_0/a_83_34# 2 10 -74 -169
+p dbithigh_0[6]/reg1_0/Q Vdd dbithigh_0[6]/addsub1_0/a_100_72# 2 10 -57 -169
+p dbithigh_0[6]/addsub1_0/a_n80_34# dbithigh_0[6]/addsub1_0/a_100_72# dbithigh_0[6]/addsub1_0/a_106_72# 2 10 -51 -169
+p dbithigh_0[7]/X dbithigh_0[6]/addsub1_0/a_106_72# dbithigh_0[6]/addsub1_0/a_83_34# 2 10 -45 -169
+p dbithigh_0[6]/addsub1_0/a_83_34# Vdd dbithigh_0[6]/mux1_0/D1 2 10 -26 -169
+n add_n GND dbithigh_0[6]/addsub1_0/a_n102_34# 2 5 -259 -207
+n remainder_0 dbithigh_0[6]/addsub1_0/a_n102_34# dbithigh_0[6]/addsub1_0/a_n80_34# 2 5 -237 -207
+n dbithigh_0[6]/addsub1_0/a_n102_34# dbithigh_0[6]/addsub1_0/a_n80_34# remainder_0 2 5 -215 -207
+n dbithigh_0[6]/reg1_0/Q GND dbithigh_0[6]/addsub1_0/a_n39_34# 2 5 -196 -207
+n dbithigh_0[6]/addsub1_0/a_n80_34# dbithigh_0[6]/addsub1_0/a_n39_34# GND 2 5 -188 -207
+n dbithigh_0[7]/X dbithigh_0[6]/addsub1_0/a_n39_34# dbithigh_0[6]/addsub1_0/a_n15_34# 2 5 -172 -207
+n dbithigh_0[6]/reg1_0/Q GND dbithigh_0[6]/addsub1_0/a_1_34# 2 5 -156 -207
+n dbithigh_0[6]/addsub1_0/a_n80_34# dbithigh_0[6]/addsub1_0/a_1_34# dbithigh_0[6]/addsub1_0/a_n15_34# 2 5 -151 -207
+n dbithigh_0[6]/addsub1_0/a_n15_34# GND dbithigh_0[6]/X 2 5 -135 -207
+n dbithigh_0[6]/reg1_0/Q GND dbithigh_0[6]/addsub1_0/a_39_34# 2 5 -118 -207
+n dbithigh_0[6]/addsub1_0/a_n80_34# dbithigh_0[6]/addsub1_0/a_39_34# GND 2 5 -110 -207
+n dbithigh_0[7]/X dbithigh_0[6]/addsub1_0/a_39_34# GND 2 5 -94 -207
+n dbithigh_0[6]/addsub1_0/a_n15_34# dbithigh_0[6]/addsub1_0/a_39_34# dbithigh_0[6]/addsub1_0/a_83_34# 2 5 -74 -207
+n dbithigh_0[6]/reg1_0/Q GND dbithigh_0[6]/addsub1_0/a_100_34# 2 5 -57 -207
+n dbithigh_0[6]/addsub1_0/a_n80_34# dbithigh_0[6]/addsub1_0/a_100_34# dbithigh_0[6]/addsub1_0/a_106_34# 2 5 -51 -207
+n dbithigh_0[7]/X dbithigh_0[6]/addsub1_0/a_106_34# dbithigh_0[6]/addsub1_0/a_83_34# 2 5 -45 -207
+n dbithigh_0[6]/addsub1_0/a_83_34# GND dbithigh_0[6]/mux1_0/D1 2 5 -26 -207
+p divisorin_1 Vdd dbithigh_0[6]/reg1_0/a_n5_n61# 2 8 -471 -172
+p clk dbithigh_0[6]/reg1_0/a_n5_n61# dbithigh_0[6]/reg1_0/a_12_n61# 2 8 -454 -172
+p dbithigh_0[6]/reg1_0/a_12_n61# Vdd dbithigh_0[6]/reg1_0/a_28_n61# 2 8 -438 -172
+p dbithigh_0[6]/reg1_0/a_28_n61# Vdd dbithigh_0[6]/reg1_0/a_45_n31# 2 8 -421 -172
+p reset_n dbithigh_0[6]/reg1_0/a_45_n31# Vdd 2 8 -411 -172
+p inverter1_4/Y dbithigh_0[6]/reg1_0/a_45_n31# dbithigh_0[6]/reg1_0/a_12_n61# 2 8 -395 -172
+p inverter1_4/Y dbithigh_0[6]/reg1_0/a_28_n61# dbithigh_0[6]/reg1_0/a_87_n61# 2 8 -379 -172
+p dbithigh_0[6]/reg1_0/a_87_n61# Vdd dbithigh_0[6]/reg1_0/a_103_n31# 2 8 -363 -172
+p reset_n dbithigh_0[6]/reg1_0/a_103_n31# Vdd 2 8 -353 -172
+p dbithigh_0[6]/reg1_0/a_103_n31# Vdd dbithigh_0[6]/reg1_0/a_129_n31# 2 8 -337 -172
+p clk dbithigh_0[6]/reg1_0/a_129_n31# dbithigh_0[6]/reg1_0/a_87_n61# 2 8 -332 -172
+p dbithigh_0[6]/reg1_0/a_103_n31# Vdd dbithigh_0[6]/reg1_0/Q 2 8 -316 -172
+n divisorin_1 GND dbithigh_0[6]/reg1_0/a_n5_n61# 2 4 -471 -202
+n inverter1_4/Y dbithigh_0[6]/reg1_0/a_n5_n61# dbithigh_0[6]/reg1_0/a_12_n61# 2 4 -454 -202
+n dbithigh_0[6]/reg1_0/a_12_n61# GND dbithigh_0[6]/reg1_0/a_28_n61# 2 4 -438 -202
+n dbithigh_0[6]/reg1_0/a_28_n61# GND dbithigh_0[6]/reg1_0/a_45_n61# 2 4 -421 -202
+n reset_n dbithigh_0[6]/reg1_0/a_45_n61# dbithigh_0[6]/reg1_0/a_45_n31# 2 4 -411 -202
+n clk dbithigh_0[6]/reg1_0/a_45_n31# dbithigh_0[6]/reg1_0/a_12_n61# 2 4 -395 -202
+n clk dbithigh_0[6]/reg1_0/a_28_n61# dbithigh_0[6]/reg1_0/a_87_n61# 2 4 -379 -202
+n dbithigh_0[6]/reg1_0/a_87_n61# GND dbithigh_0[6]/reg1_0/a_103_n61# 2 4 -363 -202
+n reset_n dbithigh_0[6]/reg1_0/a_103_n61# dbithigh_0[6]/reg1_0/a_103_n31# 2 4 -353 -202
+n dbithigh_0[6]/reg1_0/a_103_n31# GND dbithigh_0[6]/reg1_0/a_129_n61# 2 4 -337 -202
+n inverter1_4/Y dbithigh_0[6]/reg1_0/a_129_n61# dbithigh_0[6]/reg1_0/a_87_n61# 2 4 -332 -202
+n dbithigh_0[6]/reg1_0/a_103_n31# GND dbithigh_0[6]/reg1_0/Q 2 4 -316 -202
+p dbithigh_0[7]/reg1_1/D Vdd dbithigh_0[7]/reg1_1/a_n5_n61# 2 8 300 -59
+p clk dbithigh_0[7]/reg1_1/a_n5_n61# dbithigh_0[7]/reg1_1/a_12_n61# 2 8 317 -59
+p dbithigh_0[7]/reg1_1/a_12_n61# Vdd dbithigh_0[7]/reg1_1/a_28_n61# 2 8 333 -59
+p dbithigh_0[7]/reg1_1/a_28_n61# Vdd dbithigh_0[7]/reg1_1/a_45_n31# 2 8 350 -59
+p reset_n dbithigh_0[7]/reg1_1/a_45_n31# Vdd 2 8 360 -59
+p inverter1_4/Y dbithigh_0[7]/reg1_1/a_45_n31# dbithigh_0[7]/reg1_1/a_12_n61# 2 8 376 -59
+p inverter1_4/Y dbithigh_0[7]/reg1_1/a_28_n61# dbithigh_0[7]/reg1_1/a_87_n61# 2 8 392 -59
+p dbithigh_0[7]/reg1_1/a_87_n61# Vdd dbithigh_0[7]/reg1_1/a_103_n31# 2 8 408 -59
+p reset_n dbithigh_0[7]/reg1_1/a_103_n31# Vdd 2 8 418 -59
+p dbithigh_0[7]/reg1_1/a_103_n31# Vdd dbithigh_0[7]/reg1_1/a_129_n31# 2 8 434 -59
+p clk dbithigh_0[7]/reg1_1/a_129_n31# dbithigh_0[7]/reg1_1/a_87_n61# 2 8 439 -59
+p dbithigh_0[7]/reg1_1/a_103_n31# Vdd dbithigh_0[7]/remainder 2 8 455 -59
+n dbithigh_0[7]/reg1_1/D GND dbithigh_0[7]/reg1_1/a_n5_n61# 2 4 300 -89
+n inverter1_4/Y dbithigh_0[7]/reg1_1/a_n5_n61# dbithigh_0[7]/reg1_1/a_12_n61# 2 4 317 -89
+n dbithigh_0[7]/reg1_1/a_12_n61# GND dbithigh_0[7]/reg1_1/a_28_n61# 2 4 333 -89
+n dbithigh_0[7]/reg1_1/a_28_n61# GND dbithigh_0[7]/reg1_1/a_45_n61# 2 4 350 -89
+n reset_n dbithigh_0[7]/reg1_1/a_45_n61# dbithigh_0[7]/reg1_1/a_45_n31# 2 4 360 -89
+n clk dbithigh_0[7]/reg1_1/a_45_n31# dbithigh_0[7]/reg1_1/a_12_n61# 2 4 376 -89
+n clk dbithigh_0[7]/reg1_1/a_28_n61# dbithigh_0[7]/reg1_1/a_87_n61# 2 4 392 -89
+n dbithigh_0[7]/reg1_1/a_87_n61# GND dbithigh_0[7]/reg1_1/a_103_n61# 2 4 408 -89
+n reset_n dbithigh_0[7]/reg1_1/a_103_n61# dbithigh_0[7]/reg1_1/a_103_n31# 2 4 418 -89
+n dbithigh_0[7]/reg1_1/a_103_n31# GND dbithigh_0[7]/reg1_1/a_129_n61# 2 4 434 -89
+n inverter1_4/Y dbithigh_0[7]/reg1_1/a_129_n61# dbithigh_0[7]/reg1_1/a_87_n61# 2 4 439 -89
+n dbithigh_0[7]/reg1_1/a_103_n31# GND dbithigh_0[7]/remainder 2 4 455 -89
+p dbithigh_0[7]/shift1_0/a_6_11# Vdd dbithigh_0[7]/shift1_0/a_40_11# 2 8 238 -64
+p dbithigh_0[7]/shift1_0/a_40_11# Vdd dbithigh_0[7]/reg1_1/D 2 8 254 -64
+n inverter1_2/Y dbithigh_0[6]/inbit dbithigh_0[7]/shift1_0/a_6_11# 2 4 204 -86
+n shift dbitlow_0[0]/outbit dbithigh_0[7]/shift1_0/a_6_11# 2 4 220 -86
+n dbithigh_0[7]/shift1_0/a_6_11# GND dbithigh_0[7]/shift1_0/a_40_11# 2 4 238 -86
+n dbithigh_0[7]/shift1_0/a_40_11# GND dbithigh_0[7]/reg1_1/D 2 4 254 -86
+p S0 GND dbithigh_0[7]/mux1_0/a_n47_36# 2 8 34 -59
+p inverter1_0/Y dbithigh_0[7]/remainder dbithigh_0[7]/mux1_0/a_n47_36# 2 8 50 -59
+p dbithigh_0[7]/mux1_0/a_n47_36# Vdd dbithigh_0[7]/mux1_0/a_n15_36# 2 8 66 -59
+n inverter1_0/Y GND dbithigh_0[7]/mux1_0/a_n47_36# 2 4 34 -86
+n S0 dbithigh_0[7]/remainder dbithigh_0[7]/mux1_0/a_n47_36# 2 4 50 -86
+n dbithigh_0[7]/mux1_0/a_n47_36# GND dbithigh_0[7]/mux1_0/a_n15_36# 2 4 66 -86
+p dbithigh_0[7]/mux1_0/D1 Vdd dbithigh_0[7]/mux1_0/a_3_36# 2 8 84 -59
+n dbithigh_0[7]/mux1_0/D1 GND dbithigh_0[7]/mux1_0/a_3_36# 2 4 84 -86
+p S1 dbithigh_0[7]/mux1_0/a_n15_36# dbithigh_0[7]/mux1_0/a_22_36# 2 8 103 -59
+p inverter1_1/Y dbithigh_0[7]/mux1_0/a_3_36# dbithigh_0[7]/mux1_0/a_22_36# 2 8 119 -59
+p dbithigh_0[7]/mux1_0/a_22_36# Vdd dbithigh_0[6]/inbit 2 8 135 -59
+n inverter1_1/Y dbithigh_0[7]/mux1_0/a_n15_36# dbithigh_0[7]/mux1_0/a_22_36# 2 4 103 -86
+n S1 dbithigh_0[7]/mux1_0/a_3_36# dbithigh_0[7]/mux1_0/a_22_36# 2 4 119 -86
+n dbithigh_0[7]/mux1_0/a_22_36# GND dbithigh_0[6]/inbit 2 4 135 -86
+p add_n Vdd dbithigh_0[7]/addsub1_0/a_n102_34# 2 10 -259 -56
+p dbithigh_0[7]/remainder add_n dbithigh_0[7]/addsub1_0/a_n80_34# 2 10 -237 -56
+p add_n dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/remainder 2 10 -215 -56
+p dbithigh_0[7]/reg1_0/Q Vdd dbithigh_0[7]/addsub1_0/a_n39_72# 2 10 -196 -56
+p dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/addsub1_0/a_n39_72# Vdd 2 10 -188 -56
+p add_n dbithigh_0[7]/addsub1_0/a_n39_72# dbithigh_0[7]/addsub1_0/a_n15_34# 2 10 -172 -56
+p dbithigh_0[7]/reg1_0/Q Vdd dbithigh_0[7]/addsub1_0/a_1_72# 2 10 -156 -56
+p dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/addsub1_0/a_1_72# dbithigh_0[7]/addsub1_0/a_n15_34# 2 10 -151 -56
+p dbithigh_0[7]/addsub1_0/a_n15_34# Vdd dbithigh_0[7]/X 2 10 -135 -56
+p dbithigh_0[7]/reg1_0/Q Vdd dbithigh_0[7]/addsub1_0/a_39_72# 2 10 -118 -56
+p dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/addsub1_0/a_39_72# Vdd 2 10 -110 -56
+p add_n dbithigh_0[7]/addsub1_0/a_39_72# Vdd 2 10 -94 -56
+p dbithigh_0[7]/addsub1_0/a_n15_34# dbithigh_0[7]/addsub1_0/a_39_72# dbithigh_0[7]/addsub1_0/a_83_34# 2 10 -74 -56
+p dbithigh_0[7]/reg1_0/Q Vdd dbithigh_0[7]/addsub1_0/a_100_72# 2 10 -57 -56
+p dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/addsub1_0/a_100_72# dbithigh_0[7]/addsub1_0/a_106_72# 2 10 -51 -56
+p add_n dbithigh_0[7]/addsub1_0/a_106_72# dbithigh_0[7]/addsub1_0/a_83_34# 2 10 -45 -56
+p dbithigh_0[7]/addsub1_0/a_83_34# Vdd dbithigh_0[7]/mux1_0/D1 2 10 -26 -56
+n add_n GND dbithigh_0[7]/addsub1_0/a_n102_34# 2 5 -259 -94
+n dbithigh_0[7]/remainder dbithigh_0[7]/addsub1_0/a_n102_34# dbithigh_0[7]/addsub1_0/a_n80_34# 2 5 -237 -94
+n dbithigh_0[7]/addsub1_0/a_n102_34# dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/remainder 2 5 -215 -94
+n dbithigh_0[7]/reg1_0/Q GND dbithigh_0[7]/addsub1_0/a_n39_34# 2 5 -196 -94
+n dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/addsub1_0/a_n39_34# GND 2 5 -188 -94
+n add_n dbithigh_0[7]/addsub1_0/a_n39_34# dbithigh_0[7]/addsub1_0/a_n15_34# 2 5 -172 -94
+n dbithigh_0[7]/reg1_0/Q GND dbithigh_0[7]/addsub1_0/a_1_34# 2 5 -156 -94
+n dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/addsub1_0/a_1_34# dbithigh_0[7]/addsub1_0/a_n15_34# 2 5 -151 -94
+n dbithigh_0[7]/addsub1_0/a_n15_34# GND dbithigh_0[7]/X 2 5 -135 -94
+n dbithigh_0[7]/reg1_0/Q GND dbithigh_0[7]/addsub1_0/a_39_34# 2 5 -118 -94
+n dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/addsub1_0/a_39_34# GND 2 5 -110 -94
+n add_n dbithigh_0[7]/addsub1_0/a_39_34# GND 2 5 -94 -94
+n dbithigh_0[7]/addsub1_0/a_n15_34# dbithigh_0[7]/addsub1_0/a_39_34# dbithigh_0[7]/addsub1_0/a_83_34# 2 5 -74 -94
+n dbithigh_0[7]/reg1_0/Q GND dbithigh_0[7]/addsub1_0/a_100_34# 2 5 -57 -94
+n dbithigh_0[7]/addsub1_0/a_n80_34# dbithigh_0[7]/addsub1_0/a_100_34# dbithigh_0[7]/addsub1_0/a_106_34# 2 5 -51 -94
+n add_n dbithigh_0[7]/addsub1_0/a_106_34# dbithigh_0[7]/addsub1_0/a_83_34# 2 5 -45 -94
+n dbithigh_0[7]/addsub1_0/a_83_34# GND dbithigh_0[7]/mux1_0/D1 2 5 -26 -94
+p divisorin_0 Vdd dbithigh_0[7]/reg1_0/a_n5_n61# 2 8 -471 -59
+p clk dbithigh_0[7]/reg1_0/a_n5_n61# dbithigh_0[7]/reg1_0/a_12_n61# 2 8 -454 -59
+p dbithigh_0[7]/reg1_0/a_12_n61# Vdd dbithigh_0[7]/reg1_0/a_28_n61# 2 8 -438 -59
+p dbithigh_0[7]/reg1_0/a_28_n61# Vdd dbithigh_0[7]/reg1_0/a_45_n31# 2 8 -421 -59
+p reset_n dbithigh_0[7]/reg1_0/a_45_n31# Vdd 2 8 -411 -59
+p inverter1_4/Y dbithigh_0[7]/reg1_0/a_45_n31# dbithigh_0[7]/reg1_0/a_12_n61# 2 8 -395 -59
+p inverter1_4/Y dbithigh_0[7]/reg1_0/a_28_n61# dbithigh_0[7]/reg1_0/a_87_n61# 2 8 -379 -59
+p dbithigh_0[7]/reg1_0/a_87_n61# Vdd dbithigh_0[7]/reg1_0/a_103_n31# 2 8 -363 -59
+p reset_n dbithigh_0[7]/reg1_0/a_103_n31# Vdd 2 8 -353 -59
+p dbithigh_0[7]/reg1_0/a_103_n31# Vdd dbithigh_0[7]/reg1_0/a_129_n31# 2 8 -337 -59
+p clk dbithigh_0[7]/reg1_0/a_129_n31# dbithigh_0[7]/reg1_0/a_87_n61# 2 8 -332 -59
+p dbithigh_0[7]/reg1_0/a_103_n31# Vdd dbithigh_0[7]/reg1_0/Q 2 8 -316 -59
+n divisorin_0 GND dbithigh_0[7]/reg1_0/a_n5_n61# 2 4 -471 -89
+n inverter1_4/Y dbithigh_0[7]/reg1_0/a_n5_n61# dbithigh_0[7]/reg1_0/a_12_n61# 2 4 -454 -89
+n dbithigh_0[7]/reg1_0/a_12_n61# GND dbithigh_0[7]/reg1_0/a_28_n61# 2 4 -438 -89
+n dbithigh_0[7]/reg1_0/a_28_n61# GND dbithigh_0[7]/reg1_0/a_45_n61# 2 4 -421 -89
+n reset_n dbithigh_0[7]/reg1_0/a_45_n61# dbithigh_0[7]/reg1_0/a_45_n31# 2 4 -411 -89
+n clk dbithigh_0[7]/reg1_0/a_45_n31# dbithigh_0[7]/reg1_0/a_12_n61# 2 4 -395 -89
+n clk dbithigh_0[7]/reg1_0/a_28_n61# dbithigh_0[7]/reg1_0/a_87_n61# 2 4 -379 -89
+n dbithigh_0[7]/reg1_0/a_87_n61# GND dbithigh_0[7]/reg1_0/a_103_n61# 2 4 -363 -89
+n reset_n dbithigh_0[7]/reg1_0/a_103_n61# dbithigh_0[7]/reg1_0/a_103_n31# 2 4 -353 -89
+n dbithigh_0[7]/reg1_0/a_103_n31# GND dbithigh_0[7]/reg1_0/a_129_n61# 2 4 -337 -89
+n inverter1_4/Y dbithigh_0[7]/reg1_0/a_129_n61# dbithigh_0[7]/reg1_0/a_87_n61# 2 4 -332 -89
+n dbithigh_0[7]/reg1_0/a_103_n31# GND dbithigh_0[7]/reg1_0/Q 2 4 -316 -89
+p dbitlow_0[0]/reg1_0/D Vdd dbitlow_0[0]/reg1_0/a_n5_n61# 2 8 300 70
 p clk dbitlow_0[0]/reg1_0/a_n5_n61# dbitlow_0[0]/reg1_0/a_12_n61# 2 8 317 70
 p dbitlow_0[0]/reg1_0/a_12_n61# Vdd dbitlow_0[0]/reg1_0/a_28_n61# 2 8 333 70
 p dbitlow_0[0]/reg1_0/a_28_n61# Vdd dbitlow_0[0]/reg1_0/a_45_n31# 2 8 350 70
 p reset_n dbitlow_0[0]/reg1_0/a_45_n31# Vdd 2 8 360 70
-p inverter1_3/Y dbitlow_0[0]/reg1_0/a_45_n31# dbitlow_0[0]/reg1_0/a_12_n61# 2 8 376 70
-p inverter1_3/Y dbitlow_0[0]/reg1_0/a_28_n61# dbitlow_0[0]/reg1_0/a_87_n61# 2 8 392 70
+p inverter1_4/Y dbitlow_0[0]/reg1_0/a_45_n31# dbitlow_0[0]/reg1_0/a_12_n61# 2 8 376 70
+p inverter1_4/Y dbitlow_0[0]/reg1_0/a_28_n61# dbitlow_0[0]/reg1_0/a_87_n61# 2 8 392 70
 p dbitlow_0[0]/reg1_0/a_87_n61# Vdd dbitlow_0[0]/reg1_0/a_103_n31# 2 8 408 70
 p reset_n dbitlow_0[0]/reg1_0/a_103_n31# Vdd 2 8 418 70
 p dbitlow_0[0]/reg1_0/a_103_n31# Vdd dbitlow_0[0]/reg1_0/a_129_n31# 2 8 434 70
 p clk dbitlow_0[0]/reg1_0/a_129_n31# dbitlow_0[0]/reg1_0/a_87_n61# 2 8 439 70
 p dbitlow_0[0]/reg1_0/a_103_n31# Vdd quotient_7 2 8 455 70
-n outbit GND dbitlow_0[0]/reg1_0/a_n5_n61# 2 4 300 40
-n inverter1_3/Y dbitlow_0[0]/reg1_0/a_n5_n61# dbitlow_0[0]/reg1_0/a_12_n61# 2 4 317 40
+n dbitlow_0[0]/reg1_0/D GND dbitlow_0[0]/reg1_0/a_n5_n61# 2 4 300 40
+n inverter1_4/Y dbitlow_0[0]/reg1_0/a_n5_n61# dbitlow_0[0]/reg1_0/a_12_n61# 2 4 317 40
 n dbitlow_0[0]/reg1_0/a_12_n61# GND dbitlow_0[0]/reg1_0/a_28_n61# 2 4 333 40
 n dbitlow_0[0]/reg1_0/a_28_n61# GND dbitlow_0[0]/reg1_0/a_45_n61# 2 4 350 40
 n reset_n dbitlow_0[0]/reg1_0/a_45_n61# dbitlow_0[0]/reg1_0/a_45_n31# 2 4 360 40
@@ -21,16 +837,14 @@ n clk dbitlow_0[0]/reg1_0/a_28_n61# dbitlow_0[0]/reg1_0/a_87_n61# 2 4 392 40
 n dbitlow_0[0]/reg1_0/a_87_n61# GND dbitlow_0[0]/reg1_0/a_103_n61# 2 4 408 40
 n reset_n dbitlow_0[0]/reg1_0/a_103_n61# dbitlow_0[0]/reg1_0/a_103_n31# 2 4 418 40
 n dbitlow_0[0]/reg1_0/a_103_n31# GND dbitlow_0[0]/reg1_0/a_129_n61# 2 4 434 40
-n inverter1_3/Y dbitlow_0[0]/reg1_0/a_129_n61# dbitlow_0[0]/reg1_0/a_87_n61# 2 4 439 40
+n inverter1_4/Y dbitlow_0[0]/reg1_0/a_129_n61# dbitlow_0[0]/reg1_0/a_87_n61# 2 4 439 40
 n dbitlow_0[0]/reg1_0/a_103_n31# GND quotient_7 2 4 455 40
-p shift dbitlow_0[0]/mux1_0/Y dbitlow_0[0]/shift1_0/a_6_11# 2 8 204 65
-p inverter1_2/Y dbitlow_0[0]/inbit dbitlow_0[0]/shift1_0/a_6_11# 2 8 220 65
 p dbitlow_0[0]/shift1_0/a_6_11# Vdd dbitlow_0[0]/shift1_0/a_40_11# 2 8 238 65
-p dbitlow_0[0]/shift1_0/a_40_11# Vdd outbit 2 8 254 65
-n inverter1_2/Y dbitlow_0[0]/mux1_0/Y dbitlow_0[0]/shift1_0/a_6_11# 2 4 204 43
+p dbitlow_0[0]/shift1_0/a_40_11# Vdd dbitlow_0[0]/reg1_0/D 2 8 254 65
+n inverter1_2/Y dbitlow_0[0]/outbit dbitlow_0[0]/shift1_0/a_6_11# 2 4 204 43
 n shift dbitlow_0[0]/inbit dbitlow_0[0]/shift1_0/a_6_11# 2 4 220 43
 n dbitlow_0[0]/shift1_0/a_6_11# GND dbitlow_0[0]/shift1_0/a_40_11# 2 4 238 43
-n dbitlow_0[0]/shift1_0/a_40_11# GND outbit 2 4 254 43
+n dbitlow_0[0]/shift1_0/a_40_11# GND dbitlow_0[0]/reg1_0/D 2 4 254 43
 p S0 dividendin_7 dbitlow_0[0]/mux1_0/a_n47_36# 2 8 34 70
 p inverter1_0/Y quotient_7 dbitlow_0[0]/mux1_0/a_n47_36# 2 8 50 70
 p dbitlow_0[0]/mux1_0/a_n47_36# Vdd dbitlow_0[0]/mux1_0/a_n15_36# 2 8 66 70
@@ -41,24 +855,24 @@ p quotient_7 Vdd dbitlow_0[0]/mux1_0/a_3_36# 2 8 84 70
 n quotient_7 GND dbitlow_0[0]/mux1_0/a_3_36# 2 4 84 43
 p S1 dbitlow_0[0]/mux1_0/a_n15_36# dbitlow_0[0]/mux1_0/a_22_36# 2 8 103 70
 p inverter1_1/Y dbitlow_0[0]/mux1_0/a_3_36# dbitlow_0[0]/mux1_0/a_22_36# 2 8 119 70
-p dbitlow_0[0]/mux1_0/a_22_36# Vdd dbitlow_0[0]/mux1_0/Y 2 8 135 70
+p dbitlow_0[0]/mux1_0/a_22_36# Vdd dbitlow_0[0]/outbit 2 8 135 70
 n inverter1_1/Y dbitlow_0[0]/mux1_0/a_n15_36# dbitlow_0[0]/mux1_0/a_22_36# 2 4 103 43
 n S1 dbitlow_0[0]/mux1_0/a_3_36# dbitlow_0[0]/mux1_0/a_22_36# 2 4 119 43
-n dbitlow_0[0]/mux1_0/a_22_36# GND dbitlow_0[0]/mux1_0/Y 2 4 135 43
-p dbitlow_0[0]/inbit Vdd dbitlow_0[1]/reg1_0/a_n5_n61# 2 8 300 183
+n dbitlow_0[0]/mux1_0/a_22_36# GND dbitlow_0[0]/outbit 2 4 135 43
+p dbitlow_0[1]/reg1_0/D Vdd dbitlow_0[1]/reg1_0/a_n5_n61# 2 8 300 183
 p clk dbitlow_0[1]/reg1_0/a_n5_n61# dbitlow_0[1]/reg1_0/a_12_n61# 2 8 317 183
 p dbitlow_0[1]/reg1_0/a_12_n61# Vdd dbitlow_0[1]/reg1_0/a_28_n61# 2 8 333 183
 p dbitlow_0[1]/reg1_0/a_28_n61# Vdd dbitlow_0[1]/reg1_0/a_45_n31# 2 8 350 183
 p reset_n dbitlow_0[1]/reg1_0/a_45_n31# Vdd 2 8 360 183
-p inverter1_3/Y dbitlow_0[1]/reg1_0/a_45_n31# dbitlow_0[1]/reg1_0/a_12_n61# 2 8 376 183
-p inverter1_3/Y dbitlow_0[1]/reg1_0/a_28_n61# dbitlow_0[1]/reg1_0/a_87_n61# 2 8 392 183
+p inverter1_4/Y dbitlow_0[1]/reg1_0/a_45_n31# dbitlow_0[1]/reg1_0/a_12_n61# 2 8 376 183
+p inverter1_4/Y dbitlow_0[1]/reg1_0/a_28_n61# dbitlow_0[1]/reg1_0/a_87_n61# 2 8 392 183
 p dbitlow_0[1]/reg1_0/a_87_n61# Vdd dbitlow_0[1]/reg1_0/a_103_n31# 2 8 408 183
 p reset_n dbitlow_0[1]/reg1_0/a_103_n31# Vdd 2 8 418 183
 p dbitlow_0[1]/reg1_0/a_103_n31# Vdd dbitlow_0[1]/reg1_0/a_129_n31# 2 8 434 183
 p clk dbitlow_0[1]/reg1_0/a_129_n31# dbitlow_0[1]/reg1_0/a_87_n61# 2 8 439 183
 p dbitlow_0[1]/reg1_0/a_103_n31# Vdd quotient_6 2 8 455 183
-n dbitlow_0[0]/inbit GND dbitlow_0[1]/reg1_0/a_n5_n61# 2 4 300 153
-n inverter1_3/Y dbitlow_0[1]/reg1_0/a_n5_n61# dbitlow_0[1]/reg1_0/a_12_n61# 2 4 317 153
+n dbitlow_0[1]/reg1_0/D GND dbitlow_0[1]/reg1_0/a_n5_n61# 2 4 300 153
+n inverter1_4/Y dbitlow_0[1]/reg1_0/a_n5_n61# dbitlow_0[1]/reg1_0/a_12_n61# 2 4 317 153
 n dbitlow_0[1]/reg1_0/a_12_n61# GND dbitlow_0[1]/reg1_0/a_28_n61# 2 4 333 153
 n dbitlow_0[1]/reg1_0/a_28_n61# GND dbitlow_0[1]/reg1_0/a_45_n61# 2 4 350 153
 n reset_n dbitlow_0[1]/reg1_0/a_45_n61# dbitlow_0[1]/reg1_0/a_45_n31# 2 4 360 153
@@ -67,16 +881,14 @@ n clk dbitlow_0[1]/reg1_0/a_28_n61# dbitlow_0[1]/reg1_0/a_87_n61# 2 4 392 153
 n dbitlow_0[1]/reg1_0/a_87_n61# GND dbitlow_0[1]/reg1_0/a_103_n61# 2 4 408 153
 n reset_n dbitlow_0[1]/reg1_0/a_103_n61# dbitlow_0[1]/reg1_0/a_103_n31# 2 4 418 153
 n dbitlow_0[1]/reg1_0/a_103_n31# GND dbitlow_0[1]/reg1_0/a_129_n61# 2 4 434 153
-n inverter1_3/Y dbitlow_0[1]/reg1_0/a_129_n61# dbitlow_0[1]/reg1_0/a_87_n61# 2 4 439 153
+n inverter1_4/Y dbitlow_0[1]/reg1_0/a_129_n61# dbitlow_0[1]/reg1_0/a_87_n61# 2 4 439 153
 n dbitlow_0[1]/reg1_0/a_103_n31# GND quotient_6 2 4 455 153
-p shift dbitlow_0[1]/mux1_0/Y dbitlow_0[1]/shift1_0/a_6_11# 2 8 204 178
-p inverter1_2/Y dbitlow_0[1]/inbit dbitlow_0[1]/shift1_0/a_6_11# 2 8 220 178
 p dbitlow_0[1]/shift1_0/a_6_11# Vdd dbitlow_0[1]/shift1_0/a_40_11# 2 8 238 178
-p dbitlow_0[1]/shift1_0/a_40_11# Vdd dbitlow_0[0]/inbit 2 8 254 178
-n inverter1_2/Y dbitlow_0[1]/mux1_0/Y dbitlow_0[1]/shift1_0/a_6_11# 2 4 204 156
+p dbitlow_0[1]/shift1_0/a_40_11# Vdd dbitlow_0[1]/reg1_0/D 2 8 254 178
+n inverter1_2/Y dbitlow_0[0]/inbit dbitlow_0[1]/shift1_0/a_6_11# 2 4 204 156
 n shift dbitlow_0[1]/inbit dbitlow_0[1]/shift1_0/a_6_11# 2 4 220 156
 n dbitlow_0[1]/shift1_0/a_6_11# GND dbitlow_0[1]/shift1_0/a_40_11# 2 4 238 156
-n dbitlow_0[1]/shift1_0/a_40_11# GND dbitlow_0[0]/inbit 2 4 254 156
+n dbitlow_0[1]/shift1_0/a_40_11# GND dbitlow_0[1]/reg1_0/D 2 4 254 156
 p S0 dividendin_6 dbitlow_0[1]/mux1_0/a_n47_36# 2 8 34 183
 p inverter1_0/Y quotient_6 dbitlow_0[1]/mux1_0/a_n47_36# 2 8 50 183
 p dbitlow_0[1]/mux1_0/a_n47_36# Vdd dbitlow_0[1]/mux1_0/a_n15_36# 2 8 66 183
@@ -87,24 +899,24 @@ p quotient_6 Vdd dbitlow_0[1]/mux1_0/a_3_36# 2 8 84 183
 n quotient_6 GND dbitlow_0[1]/mux1_0/a_3_36# 2 4 84 156
 p S1 dbitlow_0[1]/mux1_0/a_n15_36# dbitlow_0[1]/mux1_0/a_22_36# 2 8 103 183
 p inverter1_1/Y dbitlow_0[1]/mux1_0/a_3_36# dbitlow_0[1]/mux1_0/a_22_36# 2 8 119 183
-p dbitlow_0[1]/mux1_0/a_22_36# Vdd dbitlow_0[1]/mux1_0/Y 2 8 135 183
+p dbitlow_0[1]/mux1_0/a_22_36# Vdd dbitlow_0[0]/inbit 2 8 135 183
 n inverter1_1/Y dbitlow_0[1]/mux1_0/a_n15_36# dbitlow_0[1]/mux1_0/a_22_36# 2 4 103 156
 n S1 dbitlow_0[1]/mux1_0/a_3_36# dbitlow_0[1]/mux1_0/a_22_36# 2 4 119 156
-n dbitlow_0[1]/mux1_0/a_22_36# GND dbitlow_0[1]/mux1_0/Y 2 4 135 156
-p dbitlow_0[1]/inbit Vdd dbitlow_0[2]/reg1_0/a_n5_n61# 2 8 300 296
+n dbitlow_0[1]/mux1_0/a_22_36# GND dbitlow_0[0]/inbit 2 4 135 156
+p dbitlow_0[2]/reg1_0/D Vdd dbitlow_0[2]/reg1_0/a_n5_n61# 2 8 300 296
 p clk dbitlow_0[2]/reg1_0/a_n5_n61# dbitlow_0[2]/reg1_0/a_12_n61# 2 8 317 296
 p dbitlow_0[2]/reg1_0/a_12_n61# Vdd dbitlow_0[2]/reg1_0/a_28_n61# 2 8 333 296
 p dbitlow_0[2]/reg1_0/a_28_n61# Vdd dbitlow_0[2]/reg1_0/a_45_n31# 2 8 350 296
 p reset_n dbitlow_0[2]/reg1_0/a_45_n31# Vdd 2 8 360 296
-p inverter1_3/Y dbitlow_0[2]/reg1_0/a_45_n31# dbitlow_0[2]/reg1_0/a_12_n61# 2 8 376 296
-p inverter1_3/Y dbitlow_0[2]/reg1_0/a_28_n61# dbitlow_0[2]/reg1_0/a_87_n61# 2 8 392 296
+p inverter1_4/Y dbitlow_0[2]/reg1_0/a_45_n31# dbitlow_0[2]/reg1_0/a_12_n61# 2 8 376 296
+p inverter1_4/Y dbitlow_0[2]/reg1_0/a_28_n61# dbitlow_0[2]/reg1_0/a_87_n61# 2 8 392 296
 p dbitlow_0[2]/reg1_0/a_87_n61# Vdd dbitlow_0[2]/reg1_0/a_103_n31# 2 8 408 296
 p reset_n dbitlow_0[2]/reg1_0/a_103_n31# Vdd 2 8 418 296
 p dbitlow_0[2]/reg1_0/a_103_n31# Vdd dbitlow_0[2]/reg1_0/a_129_n31# 2 8 434 296
 p clk dbitlow_0[2]/reg1_0/a_129_n31# dbitlow_0[2]/reg1_0/a_87_n61# 2 8 439 296
 p dbitlow_0[2]/reg1_0/a_103_n31# Vdd quotient_5 2 8 455 296
-n dbitlow_0[1]/inbit GND dbitlow_0[2]/reg1_0/a_n5_n61# 2 4 300 266
-n inverter1_3/Y dbitlow_0[2]/reg1_0/a_n5_n61# dbitlow_0[2]/reg1_0/a_12_n61# 2 4 317 266
+n dbitlow_0[2]/reg1_0/D GND dbitlow_0[2]/reg1_0/a_n5_n61# 2 4 300 266
+n inverter1_4/Y dbitlow_0[2]/reg1_0/a_n5_n61# dbitlow_0[2]/reg1_0/a_12_n61# 2 4 317 266
 n dbitlow_0[2]/reg1_0/a_12_n61# GND dbitlow_0[2]/reg1_0/a_28_n61# 2 4 333 266
 n dbitlow_0[2]/reg1_0/a_28_n61# GND dbitlow_0[2]/reg1_0/a_45_n61# 2 4 350 266
 n reset_n dbitlow_0[2]/reg1_0/a_45_n61# dbitlow_0[2]/reg1_0/a_45_n31# 2 4 360 266
@@ -113,16 +925,14 @@ n clk dbitlow_0[2]/reg1_0/a_28_n61# dbitlow_0[2]/reg1_0/a_87_n61# 2 4 392 266
 n dbitlow_0[2]/reg1_0/a_87_n61# GND dbitlow_0[2]/reg1_0/a_103_n61# 2 4 408 266
 n reset_n dbitlow_0[2]/reg1_0/a_103_n61# dbitlow_0[2]/reg1_0/a_103_n31# 2 4 418 266
 n dbitlow_0[2]/reg1_0/a_103_n31# GND dbitlow_0[2]/reg1_0/a_129_n61# 2 4 434 266
-n inverter1_3/Y dbitlow_0[2]/reg1_0/a_129_n61# dbitlow_0[2]/reg1_0/a_87_n61# 2 4 439 266
+n inverter1_4/Y dbitlow_0[2]/reg1_0/a_129_n61# dbitlow_0[2]/reg1_0/a_87_n61# 2 4 439 266
 n dbitlow_0[2]/reg1_0/a_103_n31# GND quotient_5 2 4 455 266
-p shift dbitlow_0[2]/mux1_0/Y dbitlow_0[2]/shift1_0/a_6_11# 2 8 204 291
-p inverter1_2/Y dbitlow_0[2]/inbit dbitlow_0[2]/shift1_0/a_6_11# 2 8 220 291
 p dbitlow_0[2]/shift1_0/a_6_11# Vdd dbitlow_0[2]/shift1_0/a_40_11# 2 8 238 291
-p dbitlow_0[2]/shift1_0/a_40_11# Vdd dbitlow_0[1]/inbit 2 8 254 291
-n inverter1_2/Y dbitlow_0[2]/mux1_0/Y dbitlow_0[2]/shift1_0/a_6_11# 2 4 204 269
+p dbitlow_0[2]/shift1_0/a_40_11# Vdd dbitlow_0[2]/reg1_0/D 2 8 254 291
+n inverter1_2/Y dbitlow_0[1]/inbit dbitlow_0[2]/shift1_0/a_6_11# 2 4 204 269
 n shift dbitlow_0[2]/inbit dbitlow_0[2]/shift1_0/a_6_11# 2 4 220 269
 n dbitlow_0[2]/shift1_0/a_6_11# GND dbitlow_0[2]/shift1_0/a_40_11# 2 4 238 269
-n dbitlow_0[2]/shift1_0/a_40_11# GND dbitlow_0[1]/inbit 2 4 254 269
+n dbitlow_0[2]/shift1_0/a_40_11# GND dbitlow_0[2]/reg1_0/D 2 4 254 269
 p S0 dividendin_5 dbitlow_0[2]/mux1_0/a_n47_36# 2 8 34 296
 p inverter1_0/Y quotient_5 dbitlow_0[2]/mux1_0/a_n47_36# 2 8 50 296
 p dbitlow_0[2]/mux1_0/a_n47_36# Vdd dbitlow_0[2]/mux1_0/a_n15_36# 2 8 66 296
@@ -133,24 +943,24 @@ p quotient_5 Vdd dbitlow_0[2]/mux1_0/a_3_36# 2 8 84 296
 n quotient_5 GND dbitlow_0[2]/mux1_0/a_3_36# 2 4 84 269
 p S1 dbitlow_0[2]/mux1_0/a_n15_36# dbitlow_0[2]/mux1_0/a_22_36# 2 8 103 296
 p inverter1_1/Y dbitlow_0[2]/mux1_0/a_3_36# dbitlow_0[2]/mux1_0/a_22_36# 2 8 119 296
-p dbitlow_0[2]/mux1_0/a_22_36# Vdd dbitlow_0[2]/mux1_0/Y 2 8 135 296
+p dbitlow_0[2]/mux1_0/a_22_36# Vdd dbitlow_0[1]/inbit 2 8 135 296
 n inverter1_1/Y dbitlow_0[2]/mux1_0/a_n15_36# dbitlow_0[2]/mux1_0/a_22_36# 2 4 103 269
 n S1 dbitlow_0[2]/mux1_0/a_3_36# dbitlow_0[2]/mux1_0/a_22_36# 2 4 119 269
-n dbitlow_0[2]/mux1_0/a_22_36# GND dbitlow_0[2]/mux1_0/Y 2 4 135 269
-p dbitlow_0[2]/inbit Vdd dbitlow_0[3]/reg1_0/a_n5_n61# 2 8 300 409
+n dbitlow_0[2]/mux1_0/a_22_36# GND dbitlow_0[1]/inbit 2 4 135 269
+p dbitlow_0[3]/reg1_0/D Vdd dbitlow_0[3]/reg1_0/a_n5_n61# 2 8 300 409
 p clk dbitlow_0[3]/reg1_0/a_n5_n61# dbitlow_0[3]/reg1_0/a_12_n61# 2 8 317 409
 p dbitlow_0[3]/reg1_0/a_12_n61# Vdd dbitlow_0[3]/reg1_0/a_28_n61# 2 8 333 409
 p dbitlow_0[3]/reg1_0/a_28_n61# Vdd dbitlow_0[3]/reg1_0/a_45_n31# 2 8 350 409
 p reset_n dbitlow_0[3]/reg1_0/a_45_n31# Vdd 2 8 360 409
-p inverter1_3/Y dbitlow_0[3]/reg1_0/a_45_n31# dbitlow_0[3]/reg1_0/a_12_n61# 2 8 376 409
-p inverter1_3/Y dbitlow_0[3]/reg1_0/a_28_n61# dbitlow_0[3]/reg1_0/a_87_n61# 2 8 392 409
+p inverter1_4/Y dbitlow_0[3]/reg1_0/a_45_n31# dbitlow_0[3]/reg1_0/a_12_n61# 2 8 376 409
+p inverter1_4/Y dbitlow_0[3]/reg1_0/a_28_n61# dbitlow_0[3]/reg1_0/a_87_n61# 2 8 392 409
 p dbitlow_0[3]/reg1_0/a_87_n61# Vdd dbitlow_0[3]/reg1_0/a_103_n31# 2 8 408 409
 p reset_n dbitlow_0[3]/reg1_0/a_103_n31# Vdd 2 8 418 409
 p dbitlow_0[3]/reg1_0/a_103_n31# Vdd dbitlow_0[3]/reg1_0/a_129_n31# 2 8 434 409
 p clk dbitlow_0[3]/reg1_0/a_129_n31# dbitlow_0[3]/reg1_0/a_87_n61# 2 8 439 409
 p dbitlow_0[3]/reg1_0/a_103_n31# Vdd quotient_4 2 8 455 409
-n dbitlow_0[2]/inbit GND dbitlow_0[3]/reg1_0/a_n5_n61# 2 4 300 379
-n inverter1_3/Y dbitlow_0[3]/reg1_0/a_n5_n61# dbitlow_0[3]/reg1_0/a_12_n61# 2 4 317 379
+n dbitlow_0[3]/reg1_0/D GND dbitlow_0[3]/reg1_0/a_n5_n61# 2 4 300 379
+n inverter1_4/Y dbitlow_0[3]/reg1_0/a_n5_n61# dbitlow_0[3]/reg1_0/a_12_n61# 2 4 317 379
 n dbitlow_0[3]/reg1_0/a_12_n61# GND dbitlow_0[3]/reg1_0/a_28_n61# 2 4 333 379
 n dbitlow_0[3]/reg1_0/a_28_n61# GND dbitlow_0[3]/reg1_0/a_45_n61# 2 4 350 379
 n reset_n dbitlow_0[3]/reg1_0/a_45_n61# dbitlow_0[3]/reg1_0/a_45_n31# 2 4 360 379
@@ -159,16 +969,14 @@ n clk dbitlow_0[3]/reg1_0/a_28_n61# dbitlow_0[3]/reg1_0/a_87_n61# 2 4 392 379
 n dbitlow_0[3]/reg1_0/a_87_n61# GND dbitlow_0[3]/reg1_0/a_103_n61# 2 4 408 379
 n reset_n dbitlow_0[3]/reg1_0/a_103_n61# dbitlow_0[3]/reg1_0/a_103_n31# 2 4 418 379
 n dbitlow_0[3]/reg1_0/a_103_n31# GND dbitlow_0[3]/reg1_0/a_129_n61# 2 4 434 379
-n inverter1_3/Y dbitlow_0[3]/reg1_0/a_129_n61# dbitlow_0[3]/reg1_0/a_87_n61# 2 4 439 379
+n inverter1_4/Y dbitlow_0[3]/reg1_0/a_129_n61# dbitlow_0[3]/reg1_0/a_87_n61# 2 4 439 379
 n dbitlow_0[3]/reg1_0/a_103_n31# GND quotient_4 2 4 455 379
-p shift dbitlow_0[3]/mux1_0/Y dbitlow_0[3]/shift1_0/a_6_11# 2 8 204 404
-p inverter1_2/Y dbitlow_0[3]/inbit dbitlow_0[3]/shift1_0/a_6_11# 2 8 220 404
 p dbitlow_0[3]/shift1_0/a_6_11# Vdd dbitlow_0[3]/shift1_0/a_40_11# 2 8 238 404
-p dbitlow_0[3]/shift1_0/a_40_11# Vdd dbitlow_0[2]/inbit 2 8 254 404
-n inverter1_2/Y dbitlow_0[3]/mux1_0/Y dbitlow_0[3]/shift1_0/a_6_11# 2 4 204 382
+p dbitlow_0[3]/shift1_0/a_40_11# Vdd dbitlow_0[3]/reg1_0/D 2 8 254 404
+n inverter1_2/Y dbitlow_0[2]/inbit dbitlow_0[3]/shift1_0/a_6_11# 2 4 204 382
 n shift dbitlow_0[3]/inbit dbitlow_0[3]/shift1_0/a_6_11# 2 4 220 382
 n dbitlow_0[3]/shift1_0/a_6_11# GND dbitlow_0[3]/shift1_0/a_40_11# 2 4 238 382
-n dbitlow_0[3]/shift1_0/a_40_11# GND dbitlow_0[2]/inbit 2 4 254 382
+n dbitlow_0[3]/shift1_0/a_40_11# GND dbitlow_0[3]/reg1_0/D 2 4 254 382
 p S0 dividendin_4 dbitlow_0[3]/mux1_0/a_n47_36# 2 8 34 409
 p inverter1_0/Y quotient_4 dbitlow_0[3]/mux1_0/a_n47_36# 2 8 50 409
 p dbitlow_0[3]/mux1_0/a_n47_36# Vdd dbitlow_0[3]/mux1_0/a_n15_36# 2 8 66 409
@@ -179,24 +987,24 @@ p quotient_4 Vdd dbitlow_0[3]/mux1_0/a_3_36# 2 8 84 409
 n quotient_4 GND dbitlow_0[3]/mux1_0/a_3_36# 2 4 84 382
 p S1 dbitlow_0[3]/mux1_0/a_n15_36# dbitlow_0[3]/mux1_0/a_22_36# 2 8 103 409
 p inverter1_1/Y dbitlow_0[3]/mux1_0/a_3_36# dbitlow_0[3]/mux1_0/a_22_36# 2 8 119 409
-p dbitlow_0[3]/mux1_0/a_22_36# Vdd dbitlow_0[3]/mux1_0/Y 2 8 135 409
+p dbitlow_0[3]/mux1_0/a_22_36# Vdd dbitlow_0[2]/inbit 2 8 135 409
 n inverter1_1/Y dbitlow_0[3]/mux1_0/a_n15_36# dbitlow_0[3]/mux1_0/a_22_36# 2 4 103 382
 n S1 dbitlow_0[3]/mux1_0/a_3_36# dbitlow_0[3]/mux1_0/a_22_36# 2 4 119 382
-n dbitlow_0[3]/mux1_0/a_22_36# GND dbitlow_0[3]/mux1_0/Y 2 4 135 382
-p dbitlow_0[3]/inbit Vdd dbitlow_0[4]/reg1_0/a_n5_n61# 2 8 300 522
+n dbitlow_0[3]/mux1_0/a_22_36# GND dbitlow_0[2]/inbit 2 4 135 382
+p dbitlow_0[4]/reg1_0/D Vdd dbitlow_0[4]/reg1_0/a_n5_n61# 2 8 300 522
 p clk dbitlow_0[4]/reg1_0/a_n5_n61# dbitlow_0[4]/reg1_0/a_12_n61# 2 8 317 522
 p dbitlow_0[4]/reg1_0/a_12_n61# Vdd dbitlow_0[4]/reg1_0/a_28_n61# 2 8 333 522
 p dbitlow_0[4]/reg1_0/a_28_n61# Vdd dbitlow_0[4]/reg1_0/a_45_n31# 2 8 350 522
 p reset_n dbitlow_0[4]/reg1_0/a_45_n31# Vdd 2 8 360 522
-p inverter1_3/Y dbitlow_0[4]/reg1_0/a_45_n31# dbitlow_0[4]/reg1_0/a_12_n61# 2 8 376 522
-p inverter1_3/Y dbitlow_0[4]/reg1_0/a_28_n61# dbitlow_0[4]/reg1_0/a_87_n61# 2 8 392 522
+p inverter1_4/Y dbitlow_0[4]/reg1_0/a_45_n31# dbitlow_0[4]/reg1_0/a_12_n61# 2 8 376 522
+p inverter1_4/Y dbitlow_0[4]/reg1_0/a_28_n61# dbitlow_0[4]/reg1_0/a_87_n61# 2 8 392 522
 p dbitlow_0[4]/reg1_0/a_87_n61# Vdd dbitlow_0[4]/reg1_0/a_103_n31# 2 8 408 522
 p reset_n dbitlow_0[4]/reg1_0/a_103_n31# Vdd 2 8 418 522
 p dbitlow_0[4]/reg1_0/a_103_n31# Vdd dbitlow_0[4]/reg1_0/a_129_n31# 2 8 434 522
 p clk dbitlow_0[4]/reg1_0/a_129_n31# dbitlow_0[4]/reg1_0/a_87_n61# 2 8 439 522
 p dbitlow_0[4]/reg1_0/a_103_n31# Vdd quotient_3 2 8 455 522
-n dbitlow_0[3]/inbit GND dbitlow_0[4]/reg1_0/a_n5_n61# 2 4 300 492
-n inverter1_3/Y dbitlow_0[4]/reg1_0/a_n5_n61# dbitlow_0[4]/reg1_0/a_12_n61# 2 4 317 492
+n dbitlow_0[4]/reg1_0/D GND dbitlow_0[4]/reg1_0/a_n5_n61# 2 4 300 492
+n inverter1_4/Y dbitlow_0[4]/reg1_0/a_n5_n61# dbitlow_0[4]/reg1_0/a_12_n61# 2 4 317 492
 n dbitlow_0[4]/reg1_0/a_12_n61# GND dbitlow_0[4]/reg1_0/a_28_n61# 2 4 333 492
 n dbitlow_0[4]/reg1_0/a_28_n61# GND dbitlow_0[4]/reg1_0/a_45_n61# 2 4 350 492
 n reset_n dbitlow_0[4]/reg1_0/a_45_n61# dbitlow_0[4]/reg1_0/a_45_n31# 2 4 360 492
@@ -205,16 +1013,14 @@ n clk dbitlow_0[4]/reg1_0/a_28_n61# dbitlow_0[4]/reg1_0/a_87_n61# 2 4 392 492
 n dbitlow_0[4]/reg1_0/a_87_n61# GND dbitlow_0[4]/reg1_0/a_103_n61# 2 4 408 492
 n reset_n dbitlow_0[4]/reg1_0/a_103_n61# dbitlow_0[4]/reg1_0/a_103_n31# 2 4 418 492
 n dbitlow_0[4]/reg1_0/a_103_n31# GND dbitlow_0[4]/reg1_0/a_129_n61# 2 4 434 492
-n inverter1_3/Y dbitlow_0[4]/reg1_0/a_129_n61# dbitlow_0[4]/reg1_0/a_87_n61# 2 4 439 492
+n inverter1_4/Y dbitlow_0[4]/reg1_0/a_129_n61# dbitlow_0[4]/reg1_0/a_87_n61# 2 4 439 492
 n dbitlow_0[4]/reg1_0/a_103_n31# GND quotient_3 2 4 455 492
-p shift dbitlow_0[4]/mux1_0/Y dbitlow_0[4]/shift1_0/a_6_11# 2 8 204 517
-p inverter1_2/Y dbitlow_0[4]/inbit dbitlow_0[4]/shift1_0/a_6_11# 2 8 220 517
 p dbitlow_0[4]/shift1_0/a_6_11# Vdd dbitlow_0[4]/shift1_0/a_40_11# 2 8 238 517
-p dbitlow_0[4]/shift1_0/a_40_11# Vdd dbitlow_0[3]/inbit 2 8 254 517
-n inverter1_2/Y dbitlow_0[4]/mux1_0/Y dbitlow_0[4]/shift1_0/a_6_11# 2 4 204 495
+p dbitlow_0[4]/shift1_0/a_40_11# Vdd dbitlow_0[4]/reg1_0/D 2 8 254 517
+n inverter1_2/Y dbitlow_0[3]/inbit dbitlow_0[4]/shift1_0/a_6_11# 2 4 204 495
 n shift dbitlow_0[4]/inbit dbitlow_0[4]/shift1_0/a_6_11# 2 4 220 495
 n dbitlow_0[4]/shift1_0/a_6_11# GND dbitlow_0[4]/shift1_0/a_40_11# 2 4 238 495
-n dbitlow_0[4]/shift1_0/a_40_11# GND dbitlow_0[3]/inbit 2 4 254 495
+n dbitlow_0[4]/shift1_0/a_40_11# GND dbitlow_0[4]/reg1_0/D 2 4 254 495
 p S0 dividendin_3 dbitlow_0[4]/mux1_0/a_n47_36# 2 8 34 522
 p inverter1_0/Y quotient_3 dbitlow_0[4]/mux1_0/a_n47_36# 2 8 50 522
 p dbitlow_0[4]/mux1_0/a_n47_36# Vdd dbitlow_0[4]/mux1_0/a_n15_36# 2 8 66 522
@@ -225,24 +1031,24 @@ p quotient_3 Vdd dbitlow_0[4]/mux1_0/a_3_36# 2 8 84 522
 n quotient_3 GND dbitlow_0[4]/mux1_0/a_3_36# 2 4 84 495
 p S1 dbitlow_0[4]/mux1_0/a_n15_36# dbitlow_0[4]/mux1_0/a_22_36# 2 8 103 522
 p inverter1_1/Y dbitlow_0[4]/mux1_0/a_3_36# dbitlow_0[4]/mux1_0/a_22_36# 2 8 119 522
-p dbitlow_0[4]/mux1_0/a_22_36# Vdd dbitlow_0[4]/mux1_0/Y 2 8 135 522
+p dbitlow_0[4]/mux1_0/a_22_36# Vdd dbitlow_0[3]/inbit 2 8 135 522
 n inverter1_1/Y dbitlow_0[4]/mux1_0/a_n15_36# dbitlow_0[4]/mux1_0/a_22_36# 2 4 103 495
 n S1 dbitlow_0[4]/mux1_0/a_3_36# dbitlow_0[4]/mux1_0/a_22_36# 2 4 119 495
-n dbitlow_0[4]/mux1_0/a_22_36# GND dbitlow_0[4]/mux1_0/Y 2 4 135 495
-p dbitlow_0[4]/inbit Vdd dbitlow_0[5]/reg1_0/a_n5_n61# 2 8 300 635
+n dbitlow_0[4]/mux1_0/a_22_36# GND dbitlow_0[3]/inbit 2 4 135 495
+p dbitlow_0[5]/reg1_0/D Vdd dbitlow_0[5]/reg1_0/a_n5_n61# 2 8 300 635
 p clk dbitlow_0[5]/reg1_0/a_n5_n61# dbitlow_0[5]/reg1_0/a_12_n61# 2 8 317 635
 p dbitlow_0[5]/reg1_0/a_12_n61# Vdd dbitlow_0[5]/reg1_0/a_28_n61# 2 8 333 635
 p dbitlow_0[5]/reg1_0/a_28_n61# Vdd dbitlow_0[5]/reg1_0/a_45_n31# 2 8 350 635
 p reset_n dbitlow_0[5]/reg1_0/a_45_n31# Vdd 2 8 360 635
-p inverter1_3/Y dbitlow_0[5]/reg1_0/a_45_n31# dbitlow_0[5]/reg1_0/a_12_n61# 2 8 376 635
-p inverter1_3/Y dbitlow_0[5]/reg1_0/a_28_n61# dbitlow_0[5]/reg1_0/a_87_n61# 2 8 392 635
+p inverter1_4/Y dbitlow_0[5]/reg1_0/a_45_n31# dbitlow_0[5]/reg1_0/a_12_n61# 2 8 376 635
+p inverter1_4/Y dbitlow_0[5]/reg1_0/a_28_n61# dbitlow_0[5]/reg1_0/a_87_n61# 2 8 392 635
 p dbitlow_0[5]/reg1_0/a_87_n61# Vdd dbitlow_0[5]/reg1_0/a_103_n31# 2 8 408 635
 p reset_n dbitlow_0[5]/reg1_0/a_103_n31# Vdd 2 8 418 635
 p dbitlow_0[5]/reg1_0/a_103_n31# Vdd dbitlow_0[5]/reg1_0/a_129_n31# 2 8 434 635
 p clk dbitlow_0[5]/reg1_0/a_129_n31# dbitlow_0[5]/reg1_0/a_87_n61# 2 8 439 635
 p dbitlow_0[5]/reg1_0/a_103_n31# Vdd quotient_2 2 8 455 635
-n dbitlow_0[4]/inbit GND dbitlow_0[5]/reg1_0/a_n5_n61# 2 4 300 605
-n inverter1_3/Y dbitlow_0[5]/reg1_0/a_n5_n61# dbitlow_0[5]/reg1_0/a_12_n61# 2 4 317 605
+n dbitlow_0[5]/reg1_0/D GND dbitlow_0[5]/reg1_0/a_n5_n61# 2 4 300 605
+n inverter1_4/Y dbitlow_0[5]/reg1_0/a_n5_n61# dbitlow_0[5]/reg1_0/a_12_n61# 2 4 317 605
 n dbitlow_0[5]/reg1_0/a_12_n61# GND dbitlow_0[5]/reg1_0/a_28_n61# 2 4 333 605
 n dbitlow_0[5]/reg1_0/a_28_n61# GND dbitlow_0[5]/reg1_0/a_45_n61# 2 4 350 605
 n reset_n dbitlow_0[5]/reg1_0/a_45_n61# dbitlow_0[5]/reg1_0/a_45_n31# 2 4 360 605
@@ -251,16 +1057,14 @@ n clk dbitlow_0[5]/reg1_0/a_28_n61# dbitlow_0[5]/reg1_0/a_87_n61# 2 4 392 605
 n dbitlow_0[5]/reg1_0/a_87_n61# GND dbitlow_0[5]/reg1_0/a_103_n61# 2 4 408 605
 n reset_n dbitlow_0[5]/reg1_0/a_103_n61# dbitlow_0[5]/reg1_0/a_103_n31# 2 4 418 605
 n dbitlow_0[5]/reg1_0/a_103_n31# GND dbitlow_0[5]/reg1_0/a_129_n61# 2 4 434 605
-n inverter1_3/Y dbitlow_0[5]/reg1_0/a_129_n61# dbitlow_0[5]/reg1_0/a_87_n61# 2 4 439 605
+n inverter1_4/Y dbitlow_0[5]/reg1_0/a_129_n61# dbitlow_0[5]/reg1_0/a_87_n61# 2 4 439 605
 n dbitlow_0[5]/reg1_0/a_103_n31# GND quotient_2 2 4 455 605
-p shift dbitlow_0[5]/mux1_0/Y dbitlow_0[5]/shift1_0/a_6_11# 2 8 204 630
-p inverter1_2/Y dbitlow_0[5]/inbit dbitlow_0[5]/shift1_0/a_6_11# 2 8 220 630
 p dbitlow_0[5]/shift1_0/a_6_11# Vdd dbitlow_0[5]/shift1_0/a_40_11# 2 8 238 630
-p dbitlow_0[5]/shift1_0/a_40_11# Vdd dbitlow_0[4]/inbit 2 8 254 630
-n inverter1_2/Y dbitlow_0[5]/mux1_0/Y dbitlow_0[5]/shift1_0/a_6_11# 2 4 204 608
+p dbitlow_0[5]/shift1_0/a_40_11# Vdd dbitlow_0[5]/reg1_0/D 2 8 254 630
+n inverter1_2/Y dbitlow_0[4]/inbit dbitlow_0[5]/shift1_0/a_6_11# 2 4 204 608
 n shift dbitlow_0[5]/inbit dbitlow_0[5]/shift1_0/a_6_11# 2 4 220 608
 n dbitlow_0[5]/shift1_0/a_6_11# GND dbitlow_0[5]/shift1_0/a_40_11# 2 4 238 608
-n dbitlow_0[5]/shift1_0/a_40_11# GND dbitlow_0[4]/inbit 2 4 254 608
+n dbitlow_0[5]/shift1_0/a_40_11# GND dbitlow_0[5]/reg1_0/D 2 4 254 608
 p S0 dividendin_2 dbitlow_0[5]/mux1_0/a_n47_36# 2 8 34 635
 p inverter1_0/Y quotient_2 dbitlow_0[5]/mux1_0/a_n47_36# 2 8 50 635
 p dbitlow_0[5]/mux1_0/a_n47_36# Vdd dbitlow_0[5]/mux1_0/a_n15_36# 2 8 66 635
@@ -271,24 +1075,24 @@ p quotient_2 Vdd dbitlow_0[5]/mux1_0/a_3_36# 2 8 84 635
 n quotient_2 GND dbitlow_0[5]/mux1_0/a_3_36# 2 4 84 608
 p S1 dbitlow_0[5]/mux1_0/a_n15_36# dbitlow_0[5]/mux1_0/a_22_36# 2 8 103 635
 p inverter1_1/Y dbitlow_0[5]/mux1_0/a_3_36# dbitlow_0[5]/mux1_0/a_22_36# 2 8 119 635
-p dbitlow_0[5]/mux1_0/a_22_36# Vdd dbitlow_0[5]/mux1_0/Y 2 8 135 635
+p dbitlow_0[5]/mux1_0/a_22_36# Vdd dbitlow_0[4]/inbit 2 8 135 635
 n inverter1_1/Y dbitlow_0[5]/mux1_0/a_n15_36# dbitlow_0[5]/mux1_0/a_22_36# 2 4 103 608
 n S1 dbitlow_0[5]/mux1_0/a_3_36# dbitlow_0[5]/mux1_0/a_22_36# 2 4 119 608
-n dbitlow_0[5]/mux1_0/a_22_36# GND dbitlow_0[5]/mux1_0/Y 2 4 135 608
-p dbitlow_0[5]/inbit Vdd dbitlow_0[6]/reg1_0/a_n5_n61# 2 8 300 748
+n dbitlow_0[5]/mux1_0/a_22_36# GND dbitlow_0[4]/inbit 2 4 135 608
+p dbitlow_0[6]/reg1_0/D Vdd dbitlow_0[6]/reg1_0/a_n5_n61# 2 8 300 748
 p clk dbitlow_0[6]/reg1_0/a_n5_n61# dbitlow_0[6]/reg1_0/a_12_n61# 2 8 317 748
 p dbitlow_0[6]/reg1_0/a_12_n61# Vdd dbitlow_0[6]/reg1_0/a_28_n61# 2 8 333 748
 p dbitlow_0[6]/reg1_0/a_28_n61# Vdd dbitlow_0[6]/reg1_0/a_45_n31# 2 8 350 748
 p reset_n dbitlow_0[6]/reg1_0/a_45_n31# Vdd 2 8 360 748
-p inverter1_3/Y dbitlow_0[6]/reg1_0/a_45_n31# dbitlow_0[6]/reg1_0/a_12_n61# 2 8 376 748
-p inverter1_3/Y dbitlow_0[6]/reg1_0/a_28_n61# dbitlow_0[6]/reg1_0/a_87_n61# 2 8 392 748
+p inverter1_4/Y dbitlow_0[6]/reg1_0/a_45_n31# dbitlow_0[6]/reg1_0/a_12_n61# 2 8 376 748
+p inverter1_4/Y dbitlow_0[6]/reg1_0/a_28_n61# dbitlow_0[6]/reg1_0/a_87_n61# 2 8 392 748
 p dbitlow_0[6]/reg1_0/a_87_n61# Vdd dbitlow_0[6]/reg1_0/a_103_n31# 2 8 408 748
 p reset_n dbitlow_0[6]/reg1_0/a_103_n31# Vdd 2 8 418 748
 p dbitlow_0[6]/reg1_0/a_103_n31# Vdd dbitlow_0[6]/reg1_0/a_129_n31# 2 8 434 748
 p clk dbitlow_0[6]/reg1_0/a_129_n31# dbitlow_0[6]/reg1_0/a_87_n61# 2 8 439 748
 p dbitlow_0[6]/reg1_0/a_103_n31# Vdd quotient_1 2 8 455 748
-n dbitlow_0[5]/inbit GND dbitlow_0[6]/reg1_0/a_n5_n61# 2 4 300 718
-n inverter1_3/Y dbitlow_0[6]/reg1_0/a_n5_n61# dbitlow_0[6]/reg1_0/a_12_n61# 2 4 317 718
+n dbitlow_0[6]/reg1_0/D GND dbitlow_0[6]/reg1_0/a_n5_n61# 2 4 300 718
+n inverter1_4/Y dbitlow_0[6]/reg1_0/a_n5_n61# dbitlow_0[6]/reg1_0/a_12_n61# 2 4 317 718
 n dbitlow_0[6]/reg1_0/a_12_n61# GND dbitlow_0[6]/reg1_0/a_28_n61# 2 4 333 718
 n dbitlow_0[6]/reg1_0/a_28_n61# GND dbitlow_0[6]/reg1_0/a_45_n61# 2 4 350 718
 n reset_n dbitlow_0[6]/reg1_0/a_45_n61# dbitlow_0[6]/reg1_0/a_45_n31# 2 4 360 718
@@ -297,16 +1101,14 @@ n clk dbitlow_0[6]/reg1_0/a_28_n61# dbitlow_0[6]/reg1_0/a_87_n61# 2 4 392 718
 n dbitlow_0[6]/reg1_0/a_87_n61# GND dbitlow_0[6]/reg1_0/a_103_n61# 2 4 408 718
 n reset_n dbitlow_0[6]/reg1_0/a_103_n61# dbitlow_0[6]/reg1_0/a_103_n31# 2 4 418 718
 n dbitlow_0[6]/reg1_0/a_103_n31# GND dbitlow_0[6]/reg1_0/a_129_n61# 2 4 434 718
-n inverter1_3/Y dbitlow_0[6]/reg1_0/a_129_n61# dbitlow_0[6]/reg1_0/a_87_n61# 2 4 439 718
+n inverter1_4/Y dbitlow_0[6]/reg1_0/a_129_n61# dbitlow_0[6]/reg1_0/a_87_n61# 2 4 439 718
 n dbitlow_0[6]/reg1_0/a_103_n31# GND quotient_1 2 4 455 718
-p shift dbitlow_0[6]/mux1_0/Y dbitlow_0[6]/shift1_0/a_6_11# 2 8 204 743
-p inverter1_2/Y dbitlow_0[6]/inbit dbitlow_0[6]/shift1_0/a_6_11# 2 8 220 743
 p dbitlow_0[6]/shift1_0/a_6_11# Vdd dbitlow_0[6]/shift1_0/a_40_11# 2 8 238 743
-p dbitlow_0[6]/shift1_0/a_40_11# Vdd dbitlow_0[5]/inbit 2 8 254 743
-n inverter1_2/Y dbitlow_0[6]/mux1_0/Y dbitlow_0[6]/shift1_0/a_6_11# 2 4 204 721
+p dbitlow_0[6]/shift1_0/a_40_11# Vdd dbitlow_0[6]/reg1_0/D 2 8 254 743
+n inverter1_2/Y dbitlow_0[5]/inbit dbitlow_0[6]/shift1_0/a_6_11# 2 4 204 721
 n shift dbitlow_0[6]/inbit dbitlow_0[6]/shift1_0/a_6_11# 2 4 220 721
 n dbitlow_0[6]/shift1_0/a_6_11# GND dbitlow_0[6]/shift1_0/a_40_11# 2 4 238 721
-n dbitlow_0[6]/shift1_0/a_40_11# GND dbitlow_0[5]/inbit 2 4 254 721
+n dbitlow_0[6]/shift1_0/a_40_11# GND dbitlow_0[6]/reg1_0/D 2 4 254 721
 p S0 dividendin_1 dbitlow_0[6]/mux1_0/a_n47_36# 2 8 34 748
 p inverter1_0/Y quotient_1 dbitlow_0[6]/mux1_0/a_n47_36# 2 8 50 748
 p dbitlow_0[6]/mux1_0/a_n47_36# Vdd dbitlow_0[6]/mux1_0/a_n15_36# 2 8 66 748
@@ -317,24 +1119,24 @@ p quotient_1 Vdd dbitlow_0[6]/mux1_0/a_3_36# 2 8 84 748
 n quotient_1 GND dbitlow_0[6]/mux1_0/a_3_36# 2 4 84 721
 p S1 dbitlow_0[6]/mux1_0/a_n15_36# dbitlow_0[6]/mux1_0/a_22_36# 2 8 103 748
 p inverter1_1/Y dbitlow_0[6]/mux1_0/a_3_36# dbitlow_0[6]/mux1_0/a_22_36# 2 8 119 748
-p dbitlow_0[6]/mux1_0/a_22_36# Vdd dbitlow_0[6]/mux1_0/Y 2 8 135 748
+p dbitlow_0[6]/mux1_0/a_22_36# Vdd dbitlow_0[5]/inbit 2 8 135 748
 n inverter1_1/Y dbitlow_0[6]/mux1_0/a_n15_36# dbitlow_0[6]/mux1_0/a_22_36# 2 4 103 721
 n S1 dbitlow_0[6]/mux1_0/a_3_36# dbitlow_0[6]/mux1_0/a_22_36# 2 4 119 721
-n dbitlow_0[6]/mux1_0/a_22_36# GND dbitlow_0[6]/mux1_0/Y 2 4 135 721
-p dbitlow_0[6]/inbit Vdd dbitlow_0[7]/reg1_0/a_n5_n61# 2 8 300 861
+n dbitlow_0[6]/mux1_0/a_22_36# GND dbitlow_0[5]/inbit 2 4 135 721
+p dbitlow_0[7]/reg1_0/D Vdd dbitlow_0[7]/reg1_0/a_n5_n61# 2 8 300 861
 p clk dbitlow_0[7]/reg1_0/a_n5_n61# dbitlow_0[7]/reg1_0/a_12_n61# 2 8 317 861
 p dbitlow_0[7]/reg1_0/a_12_n61# Vdd dbitlow_0[7]/reg1_0/a_28_n61# 2 8 333 861
 p dbitlow_0[7]/reg1_0/a_28_n61# Vdd dbitlow_0[7]/reg1_0/a_45_n31# 2 8 350 861
 p reset_n dbitlow_0[7]/reg1_0/a_45_n31# Vdd 2 8 360 861
-p inverter1_3/Y dbitlow_0[7]/reg1_0/a_45_n31# dbitlow_0[7]/reg1_0/a_12_n61# 2 8 376 861
-p inverter1_3/Y dbitlow_0[7]/reg1_0/a_28_n61# dbitlow_0[7]/reg1_0/a_87_n61# 2 8 392 861
+p inverter1_4/Y dbitlow_0[7]/reg1_0/a_45_n31# dbitlow_0[7]/reg1_0/a_12_n61# 2 8 376 861
+p inverter1_4/Y dbitlow_0[7]/reg1_0/a_28_n61# dbitlow_0[7]/reg1_0/a_87_n61# 2 8 392 861
 p dbitlow_0[7]/reg1_0/a_87_n61# Vdd dbitlow_0[7]/reg1_0/a_103_n31# 2 8 408 861
 p reset_n dbitlow_0[7]/reg1_0/a_103_n31# Vdd 2 8 418 861
 p dbitlow_0[7]/reg1_0/a_103_n31# Vdd dbitlow_0[7]/reg1_0/a_129_n31# 2 8 434 861
 p clk dbitlow_0[7]/reg1_0/a_129_n31# dbitlow_0[7]/reg1_0/a_87_n61# 2 8 439 861
 p dbitlow_0[7]/reg1_0/a_103_n31# Vdd quotient_0 2 8 455 861
-n dbitlow_0[6]/inbit GND dbitlow_0[7]/reg1_0/a_n5_n61# 2 4 300 831
-n inverter1_3/Y dbitlow_0[7]/reg1_0/a_n5_n61# dbitlow_0[7]/reg1_0/a_12_n61# 2 4 317 831
+n dbitlow_0[7]/reg1_0/D GND dbitlow_0[7]/reg1_0/a_n5_n61# 2 4 300 831
+n inverter1_4/Y dbitlow_0[7]/reg1_0/a_n5_n61# dbitlow_0[7]/reg1_0/a_12_n61# 2 4 317 831
 n dbitlow_0[7]/reg1_0/a_12_n61# GND dbitlow_0[7]/reg1_0/a_28_n61# 2 4 333 831
 n dbitlow_0[7]/reg1_0/a_28_n61# GND dbitlow_0[7]/reg1_0/a_45_n61# 2 4 350 831
 n reset_n dbitlow_0[7]/reg1_0/a_45_n61# dbitlow_0[7]/reg1_0/a_45_n31# 2 4 360 831
@@ -343,16 +1145,14 @@ n clk dbitlow_0[7]/reg1_0/a_28_n61# dbitlow_0[7]/reg1_0/a_87_n61# 2 4 392 831
 n dbitlow_0[7]/reg1_0/a_87_n61# GND dbitlow_0[7]/reg1_0/a_103_n61# 2 4 408 831
 n reset_n dbitlow_0[7]/reg1_0/a_103_n61# dbitlow_0[7]/reg1_0/a_103_n31# 2 4 418 831
 n dbitlow_0[7]/reg1_0/a_103_n31# GND dbitlow_0[7]/reg1_0/a_129_n61# 2 4 434 831
-n inverter1_3/Y dbitlow_0[7]/reg1_0/a_129_n61# dbitlow_0[7]/reg1_0/a_87_n61# 2 4 439 831
+n inverter1_4/Y dbitlow_0[7]/reg1_0/a_129_n61# dbitlow_0[7]/reg1_0/a_87_n61# 2 4 439 831
 n dbitlow_0[7]/reg1_0/a_103_n31# GND quotient_0 2 4 455 831
-p shift dbitlow_0[7]/mux1_0/Y dbitlow_0[7]/shift1_0/a_6_11# 2 8 204 856
-p inverter1_2/Y inbit dbitlow_0[7]/shift1_0/a_6_11# 2 8 220 856
 p dbitlow_0[7]/shift1_0/a_6_11# Vdd dbitlow_0[7]/shift1_0/a_40_11# 2 8 238 856
-p dbitlow_0[7]/shift1_0/a_40_11# Vdd dbitlow_0[6]/inbit 2 8 254 856
-n inverter1_2/Y dbitlow_0[7]/mux1_0/Y dbitlow_0[7]/shift1_0/a_6_11# 2 4 204 834
+p dbitlow_0[7]/shift1_0/a_40_11# Vdd dbitlow_0[7]/reg1_0/D 2 8 254 856
+n inverter1_2/Y dbitlow_0[6]/inbit dbitlow_0[7]/shift1_0/a_6_11# 2 4 204 834
 n shift inbit dbitlow_0[7]/shift1_0/a_6_11# 2 4 220 834
 n dbitlow_0[7]/shift1_0/a_6_11# GND dbitlow_0[7]/shift1_0/a_40_11# 2 4 238 834
-n dbitlow_0[7]/shift1_0/a_40_11# GND dbitlow_0[6]/inbit 2 4 254 834
+n dbitlow_0[7]/shift1_0/a_40_11# GND dbitlow_0[7]/reg1_0/D 2 4 254 834
 p S0 dividendin_0 dbitlow_0[7]/mux1_0/a_n47_36# 2 8 34 861
 p inverter1_0/Y quotient_0 dbitlow_0[7]/mux1_0/a_n47_36# 2 8 50 861
 p dbitlow_0[7]/mux1_0/a_n47_36# Vdd dbitlow_0[7]/mux1_0/a_n15_36# 2 8 66 861
@@ -363,400 +1163,1013 @@ p quotient_0 Vdd dbitlow_0[7]/mux1_0/a_3_36# 2 8 84 861
 n quotient_0 GND dbitlow_0[7]/mux1_0/a_3_36# 2 4 84 834
 p S1 dbitlow_0[7]/mux1_0/a_n15_36# dbitlow_0[7]/mux1_0/a_22_36# 2 8 103 861
 p inverter1_1/Y dbitlow_0[7]/mux1_0/a_3_36# dbitlow_0[7]/mux1_0/a_22_36# 2 8 119 861
-p dbitlow_0[7]/mux1_0/a_22_36# Vdd dbitlow_0[7]/mux1_0/Y 2 8 135 861
+p dbitlow_0[7]/mux1_0/a_22_36# Vdd dbitlow_0[6]/inbit 2 8 135 861
 n inverter1_1/Y dbitlow_0[7]/mux1_0/a_n15_36# dbitlow_0[7]/mux1_0/a_22_36# 2 4 103 834
 n S1 dbitlow_0[7]/mux1_0/a_3_36# dbitlow_0[7]/mux1_0/a_22_36# 2 4 119 834
-n dbitlow_0[7]/mux1_0/a_22_36# GND dbitlow_0[7]/mux1_0/Y 2 4 135 834
-p clk Vdd inverter1_3/Y 2 8 304 953
-n clk GND inverter1_3/Y 2 4 304 939
+n dbitlow_0[7]/mux1_0/a_22_36# GND dbitlow_0[6]/inbit 2 4 135 834
+p clk Vdd inverter1_4/Y 2 8 -467 62
+n clk GND inverter1_4/Y 2 4 -467 48
+p load Vdd and1_0/a_11_19# 2 8 -460 180
+p clk and1_0/a_11_19# Vdd 2 8 -452 180
+p and1_0/a_11_19# Vdd clk 2 8 -436 180
+n load GND and1_0/a_11_n6# 2 4 -460 155
+n clk and1_0/a_11_n6# and1_0/a_11_19# 2 4 -452 155
+n and1_0/a_11_19# GND clk 2 4 -436 155
+p clk Vdd inverter1_4/Y 2 8 304 953
+n clk GND inverter1_4/Y 2 4 304 939
 p shift Vdd inverter1_2/Y 2 8 208 953
 n shift GND inverter1_2/Y 2 4 208 939
 p S1 Vdd inverter1_1/Y 2 8 143 953
 n S1 GND inverter1_1/Y 2 4 143 939
 p S0 Vdd inverter1_0/Y 2 8 31 953
 n S0 GND inverter1_0/Y 2 4 31 939
-C dbitlow_0[4]/mux1_0/w_n54_28# S0 3.8
-C dbitlow_0[6]/mux1_0/w_n54_52# dbitlow_0[6]/mux1_0/a_n47_36# 7.3
-C dbitlow_0[7]/mux1_0/w_n54_52# dbitlow_0[7]/mux1_0/a_3_36# 4.0
-C dbitlow_0[1]/mux1_0/w_n54_28# inverter1_0/Y 8.6
-C dbitlow_0[1]/reg1_0/a_12_n61# Vdd 6.7
-C dbitlow_0[7]/reg1_0/a_87_n61# Vdd 7.0
-C dbitlow_0[3]/mux1_0/w_n54_28# dbitlow_0[3]/mux1_0/a_n15_36# 4.5
-C dbitlow_0[0]/mux1_0/w_n54_52# S1 4.8
-C dbitlow_0[0]/mux1_0/w_n54_52# Vdd 17.7
-C dbitlow_0[2]/reg1_0/a_12_n61# GND 12.1
-C GND shift 38.9
-C dbitlow_0[2]/mux1_0/w_n54_28# dbitlow_0[2]/mux1_0/a_22_36# 7.7
-C quotient_6 GND 4.4
-C dbitlow_0[3]/shift1_0/a_40_11# Vdd 7.5
-C dbitlow_0[4]/shift1_0/a_40_11# GND 4.2
-C dbitlow_0[0]/reg1_0/a_103_n31# GND 13.6
-C dbitlow_0[1]/reg1_0/a_103_n31# Vdd 12.1
-C dbitlow_0[2]/reg1_0/a_103_n31# GND 13.6
-C quotient_5 dbitlow_0[2]/mux1_0/w_n54_28# 7.9
-C dbitlow_0[6]/mux1_0/w_n54_52# inverter1_0/Y 9.3
-C dbitlow_0[6]/mux1_0/w_n54_28# inverter1_1/Y 7.9
-C dbitlow_0[2]/mux1_0/w_n54_28# S0 3.8
-C dbitlow_0[5]/mux1_0/w_n54_52# dbitlow_0[5]/mux1_0/a_n47_36# 7.3
-C dbitlow_0[5]/inbit Vdd 7.5
-C dbitlow_0[6]/mux1_0/w_n54_52# dbitlow_0[6]/mux1_0/a_3_36# 4.0
-C dbitlow_0[6]/inbit GND 8.2
-C dbitlow_0[5]/reg1_0/a_87_n61# Vdd 7.0
-C dbitlow_0[2]/mux1_0/w_n54_28# dbitlow_0[2]/mux1_0/a_n15_36# 4.5
-C dbitlow_0[6]/reg1_0/a_87_n61# GND 11.0
-C dbitlow_0[0]/reg1_0/a_12_n61# GND 12.1
-C dbitlow_0[1]/mux1_0/w_n54_28# dbitlow_0[1]/mux1_0/a_22_36# 7.7
-C inverter1_1/Y Vdd 8.2
-C inverter1_1/Y S1 4.7
-C dbitlow_0[1]/shift1_0/a_40_11# Vdd 7.5
-C dbitlow_0[2]/shift1_0/a_40_11# GND 4.2
-C dbitlow_0[7]/mux1_0/w_n54_52# S0 8.7
-C quotient_6 dbitlow_0[1]/mux1_0/w_n54_28# 7.9
-C dbitlow_0[4]/mux1_0/w_n54_52# inverter1_0/Y 9.3
-C dbitlow_0[4]/mux1_0/w_n54_28# inverter1_1/Y 7.9
-C dbitlow_0[0]/mux1_0/w_n54_28# S0 3.8
-C dbitlow_0[4]/mux1_0/w_n54_52# dbitlow_0[4]/mux1_0/a_n47_36# 7.3
-C dbitlow_0[3]/inbit Vdd 7.5
-C dbitlow_0[5]/mux1_0/w_n54_52# dbitlow_0[5]/mux1_0/a_3_36# 4.0
-C dbitlow_0[4]/inbit GND 8.2
-C clk GND 57.3
-C dbitlow_0[3]/reg1_0/a_87_n61# Vdd 7.0
-C dbitlow_0[1]/mux1_0/w_n54_28# dbitlow_0[1]/mux1_0/a_n15_36# 4.5
-C dbitlow_0[4]/reg1_0/a_87_n61# GND 11.0
-C dbitlow_0[0]/mux1_0/w_n54_28# dbitlow_0[0]/mux1_0/a_22_36# 7.7
-C dbitlow_0[6]/shift1_0/a_6_11# Vdd 9.2
-C dbitlow_0[7]/shift1_0/a_6_11# GND 5.2
-C dbitlow_0[0]/shift1_0/a_40_11# GND 4.2
-C dbitlow_0[5]/mux1_0/w_n54_52# S0 8.7
-C dbitlow_0[2]/mux1_0/w_n54_52# inverter1_0/Y 9.3
-C dbitlow_0[2]/mux1_0/w_n54_28# inverter1_1/Y 7.9
-C dbitlow_0[0]/reg1_0/a_45_n31# Vdd 3.1
-C dbitlow_0[3]/mux1_0/w_n54_52# dbitlow_0[3]/mux1_0/a_n47_36# 7.3
-C reset_n Vdd 70.3
-C dbitlow_0[1]/inbit Vdd 7.5
-C dbitlow_0[4]/mux1_0/w_n54_52# dbitlow_0[4]/mux1_0/a_3_36# 4.0
-C dbitlow_0[2]/inbit GND 8.2
-C dbitlow_0[1]/reg1_0/a_87_n61# Vdd 7.0
-C dbitlow_0[0]/mux1_0/w_n54_28# dbitlow_0[0]/mux1_0/a_n15_36# 4.5
-C S0 inverter1_0/Y 3.2
-C dbitlow_0[2]/reg1_0/a_87_n61# GND 11.0
-C dbitlow_0[4]/shift1_0/a_6_11# Vdd 9.2
-C dbitlow_0[6]/mux1_0/w_n54_28# S1 7.6
-C dbitlow_0[7]/mux1_0/w_n54_28# GND 19.2
-C dbitlow_0[5]/shift1_0/a_6_11# GND 5.2
-C dbitlow_0[0]/reg1_0/a_87_n61# Vdd 7.0
-C dbitlow_0[7]/mux1_0/w_n54_52# inverter1_1/Y 9.3
-C dbitlow_0[7]/reg1_0/a_n5_n61# Vdd 2.8
-C dbitlow_0[3]/mux1_0/w_n54_52# S0 8.7
-C dbitlow_0[7]/reg1_0/a_28_n61# Vdd 8.7
-C reset_n inverter1_3/Y 3.2
-C dbitlow_0[0]/mux1_0/w_n54_52# inverter1_0/Y 9.3
-C S1 Vdd 6.8
-C dbitlow_0[0]/mux1_0/w_n54_28# inverter1_1/Y 7.9
-C dbitlow_0[2]/mux1_0/w_n54_52# dbitlow_0[2]/mux1_0/a_n47_36# 7.3
-C dbitlow_0[3]/mux1_0/w_n54_52# dbitlow_0[3]/mux1_0/a_3_36# 4.0
-C dbitlow_0[0]/inbit GND 8.2
-C dbitlow_0[4]/mux1_0/w_n54_28# S1 7.6
-C dbitlow_0[2]/shift1_0/a_6_11# Vdd 9.2
-C dbitlow_0[5]/mux1_0/w_n54_28# GND 19.2
-C dbitlow_0[7]/reg1_0/a_45_n31# Vdd 3.1
-C dbitlow_0[3]/shift1_0/a_6_11# GND 5.2
-C dbitlow_0[5]/mux1_0/w_n54_52# inverter1_1/Y 9.3
-C dbitlow_0[5]/reg1_0/a_n5_n61# Vdd 2.8
-C inverter1_3/Y Vdd 53.9
-C dbitlow_0[6]/reg1_0/a_n5_n61# GND 5.1
-C dbitlow_0[1]/mux1_0/w_n54_52# S0 8.7
-C dbitlow_0[5]/reg1_0/a_28_n61# Vdd 8.7
-C dbitlow_0[6]/reg1_0/a_28_n61# GND 9.6
-C dbitlow_0[1]/mux1_0/w_n54_52# dbitlow_0[1]/mux1_0/a_n47_36# 7.3
-C dbitlow_0[2]/mux1_0/w_n54_52# dbitlow_0[2]/mux1_0/a_3_36# 4.0
-C dbitlow_0[7]/mux1_0/w_n54_28# dbitlow_0[7]/mux1_0/a_n47_36# 10.0
-C inverter1_2/Y Vdd 60.2
-C shift inverter1_2/w_2_35# 2.2
-C dbitlow_0[2]/mux1_0/w_n54_28# S1 7.6
-C dbitlow_0[0]/shift1_0/a_6_11# Vdd 9.2
-C dbitlow_0[5]/reg1_0/a_45_n31# Vdd 3.1
-C dbitlow_0[3]/mux1_0/w_n54_28# GND 19.2
-C dbitlow_0[1]/shift1_0/a_6_11# GND 5.2
-C dbitlow_0[6]/reg1_0/a_45_n31# GND 5.1
-C dbitlow_0[3]/mux1_0/w_n54_52# inverter1_1/Y 9.3
-C dbitlow_0[3]/reg1_0/a_n5_n61# Vdd 2.8
-C dbitlow_0[4]/reg1_0/a_n5_n61# GND 5.1
-C dbitlow_0[3]/reg1_0/a_28_n61# Vdd 8.7
-C dbitlow_0[4]/reg1_0/a_28_n61# GND 9.6
-C dbitlow_0[0]/mux1_0/w_n54_52# dbitlow_0[0]/mux1_0/a_n47_36# 7.3
-C dbitlow_0[1]/mux1_0/w_n54_52# dbitlow_0[1]/mux1_0/a_3_36# 4.0
-C dbitlow_0[6]/mux1_0/w_n54_28# dbitlow_0[6]/mux1_0/a_n47_36# 10.0
-C dbitlow_0[7]/mux1_0/w_n54_52# Vdd 17.7
-C dbitlow_0[7]/mux1_0/w_n54_52# S1 4.8
-C dbitlow_0[7]/mux1_0/w_n54_28# dbitlow_0[7]/mux1_0/a_3_36# 3.1
-C quotient_7 GND 4.4
-C dbitlow_0[0]/mux1_0/w_n54_28# S1 7.6
-C dbitlow_0[3]/reg1_0/a_45_n31# Vdd 3.1
-C dbitlow_0[1]/mux1_0/w_n54_28# GND 19.2
-C dbitlow_0[4]/reg1_0/a_45_n31# GND 5.1
-C inbit Vdd 2.3
-C dbitlow_0[1]/mux1_0/w_n54_52# inverter1_1/Y 9.3
+C dbithigh_0[5]/inbit Vdd 2.0
+C dbithigh_0[3]/reg1_1/D Vdd 5.4
 C dbitlow_0[1]/reg1_0/a_n5_n61# Vdd 2.8
-C dbitlow_0[2]/reg1_0/a_n5_n61# GND 5.1
-C dbitlow_0[0]/reg1_0/a_n5_n61# GND 5.1
-C dbitlow_0[1]/reg1_0/a_28_n61# Vdd 8.7
-C dbitlow_0[2]/reg1_0/a_28_n61# GND 9.6
-C dbitlow_0[6]/mux1_0/w_n54_28# inverter1_0/Y 8.6
-C dbitlow_0[0]/mux1_0/w_n54_52# dbitlow_0[0]/mux1_0/a_3_36# 4.0
-C dbitlow_0[5]/mux1_0/w_n54_28# dbitlow_0[5]/mux1_0/a_n47_36# 10.0
-C dbitlow_0[6]/reg1_0/a_12_n61# Vdd 6.7
-C dbitlow_0[5]/mux1_0/w_n54_52# Vdd 17.7
-C dbitlow_0[7]/reg1_0/a_12_n61# GND 12.1
-C dbitlow_0[6]/mux1_0/w_n54_28# dbitlow_0[6]/mux1_0/a_3_36# 3.1
-C dbitlow_0[5]/mux1_0/w_n54_52# S1 4.8
-C quotient_1 GND 4.4
-C dbitlow_0[0]/reg1_0/a_28_n61# GND 9.6
-C dbitlow_0[1]/reg1_0/a_45_n31# Vdd 3.1
-C dbitlow_0[2]/reg1_0/a_45_n31# GND 5.1
-C inverter1_0/Y Vdd 8.2
-C dbitlow_0[6]/reg1_0/a_103_n31# Vdd 12.1
-C dbitlow_0[7]/reg1_0/a_103_n31# GND 13.6
-C dbitlow_0[7]/mux1_0/w_n54_28# S0 3.8
-C dbitlow_0[4]/mux1_0/w_n54_28# inverter1_0/Y 8.6
-C dbitlow_0[7]/mux1_0/w_n54_52# dbitlow_0[7]/mux1_0/a_22_36# 9.4
-C dbitlow_0[4]/mux1_0/w_n54_28# dbitlow_0[4]/mux1_0/a_n47_36# 10.0
-C dbitlow_0[4]/reg1_0/a_12_n61# Vdd 6.7
-C dbitlow_0[5]/mux1_0/w_n54_28# dbitlow_0[5]/mux1_0/a_3_36# 3.1
-C dbitlow_0[5]/reg1_0/a_12_n61# GND 12.1
-C dbitlow_0[3]/mux1_0/w_n54_52# S1 4.8
-C dbitlow_0[3]/mux1_0/w_n54_52# Vdd 17.7
-C outbit Vdd 6.2
-C quotient_3 GND 4.4
-C dbitlow_0[6]/shift1_0/a_40_11# Vdd 7.5
-C dbitlow_0[7]/shift1_0/a_40_11# GND 4.2
-C quotient_0 dbitlow_0[7]/mux1_0/w_n54_52# 7.8
-C dbitlow_0[4]/reg1_0/a_103_n31# Vdd 12.1
-C dbitlow_0[5]/reg1_0/a_103_n31# GND 13.6
-C dbitlow_0[5]/mux1_0/w_n54_28# S0 3.8
+C dbithigh_0[6]/mux1_0/w_n54_52# dbithigh_0[6]/mux1_0/a_n15_36# 3.1
+C quotient_5 GND 4.4
+C dbithigh_0[7]/X GND 21.9
+C dbithigh_0[1]/reg1_1/a_103_n31# GND 13.6
+C add_n Vdd 211.2
+C dbithigh_0[4]/reg1_0/a_45_n31# GND 5.1
+C remainder_1 dbithigh_0[5]/mux1_0/w_n54_28# 2.4
+C dbithigh_0[1]/mux1_0/w_n54_28# S0 3.8
 C dbitlow_0[7]/mux1_0/w_n54_52# dbitlow_0[7]/mux1_0/a_n15_36# 3.1
-C dbitlow_0[2]/mux1_0/w_n54_28# inverter1_0/Y 8.6
+C dbitlow_0[5]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[3]/mux1_0/w_n54_28# dbithigh_0[3]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[1]/reg1_0/a_103_n31# GND 13.6
+C dbithigh_0[2]/reg1_1/a_n5_n61# Vdd 2.8
+C dbitlow_0[1]/inbit GND 2.5
+C dbitlow_0[6]/reg1_0/a_12_n61# Vdd 6.7
+C dbithigh_0[1]/addsub1_0/a_83_34# GND 9.2
 C dbitlow_0[6]/mux1_0/w_n54_52# dbitlow_0[6]/mux1_0/a_22_36# 9.4
 C dbitlow_0[3]/mux1_0/w_n54_28# dbitlow_0[3]/mux1_0/a_n47_36# 10.0
-C dbitlow_0[2]/reg1_0/a_12_n61# Vdd 6.7
-C shift Vdd 65.7
+C dbithigh_0[1]/mux1_0/w_n54_28# inverter1_1/Y 7.9
+C S0 dbitlow_0[7]/mux1_0/w_n54_52# 8.7
+C dbithigh_0[7]/mux1_0/w_n54_28# dbithigh_0[7]/mux1_0/D1 5.5
+C dbithigh_0[7]/reg1_1/a_87_n61# GND 11.0
 C dbitlow_0[4]/mux1_0/w_n54_28# dbitlow_0[4]/mux1_0/a_3_36# 3.1
-C dbitlow_0[3]/reg1_0/a_12_n61# GND 12.1
-C dbitlow_0[1]/mux1_0/w_n54_52# S1 4.8
-C dbitlow_0[1]/mux1_0/w_n54_52# Vdd 17.7
-C S0 inverter1_0/w_2_35# 2.2
-C quotient_5 GND 4.4
-C dbitlow_0[4]/shift1_0/a_40_11# Vdd 7.5
-C dbitlow_0[5]/shift1_0/a_40_11# GND 4.2
-C S0 GND 7.7
+C dbitlow_0[3]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[2]/X Vdd 21.9
+C dbithigh_0[4]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[7]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[1]/mux1_0/D1 GND 3.2
+C inverter1_1/Y dbitlow_0[7]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[6]/mux1_0/w_n54_28# dbithigh_0[6]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[5]/reg1_1/a_28_n61# Vdd 8.7
+C dbithigh_0[2]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[7]/addsub1_0/a_n102_34# GND 8.9
+C dbithigh_0[7]/addsub1_0/a_39_72# Vdd 4.7
+C dbithigh_0[4]/reg1_0/a_87_n61# GND 11.0
+C GND load 6.9
+C dbithigh_0[2]/reg1_1/a_87_n61# Vdd 7.0
+C dbithigh_0[4]/addsub1_0/a_n15_34# GND 15.5
+C dbithigh_0[7]/mux1_0/w_n54_28# GND 21.6
+C dbithigh_0[1]/reg1_0/a_12_n61# GND 12.1
+C dbithigh_0[7]/reg1_1/a_12_n61# Vdd 6.7
+C dbitlow_0[1]/shift1_0/a_40_11# Vdd 5.1
 C quotient_1 dbitlow_0[6]/mux1_0/w_n54_52# 7.8
-C dbitlow_0[0]/reg1_0/a_103_n31# Vdd 12.1
-C dbitlow_0[2]/reg1_0/a_103_n31# Vdd 12.1
-C dbitlow_0[3]/reg1_0/a_103_n31# GND 13.6
-C dbitlow_0[7]/mux1_0/w_n54_52# inverter1_0/Y 9.3
-C dbitlow_0[7]/mux1_0/w_n54_28# inverter1_1/Y 7.9
-C dbitlow_0[3]/mux1_0/w_n54_28# S0 3.8
-C dbitlow_0[6]/inbit Vdd 7.5
+C dbitlow_0[6]/reg1_0/D Vdd 5.4
+C dbithigh_0[2]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[6]/addsub1_0/a_39_34# GND 4.7
+C clk Vdd 179.5
+C dbithigh_0[2]/addsub1_0/a_n102_34# Vdd 2.1
+C dbithigh_0[3]/addsub1_0/a_n39_34# GND 2.9
+C remainder_0 GND 12.5
+C dbithigh_0[7]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[5]/reg1_1/a_103_n31# Vdd 12.1
+C dbitlow_0[3]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[1]/addsub1_0/a_n80_34# GND 25.8
 C dbitlow_0[6]/mux1_0/w_n54_52# dbitlow_0[6]/mux1_0/a_n15_36# 3.1
-C dbitlow_0[0]/mux1_0/w_n54_28# inverter1_0/Y 8.6
+C dbithigh_0[0]/shift1_0/a_6_11# GND 7.1
+C divisorin_2 GND 5.6
+C dbithigh_0[5]/reg1_0/a_103_n31# Vdd 12.1
+C dbitlow_0[4]/reg1_0/a_12_n61# Vdd 6.7
 C dbitlow_0[5]/mux1_0/w_n54_52# dbitlow_0[5]/mux1_0/a_22_36# 9.4
 C dbitlow_0[2]/mux1_0/w_n54_28# dbitlow_0[2]/mux1_0/a_n47_36# 10.0
-C dbitlow_0[6]/reg1_0/a_87_n61# Vdd 7.0
-C clk reset_n 3.2
-C dbitlow_0[0]/reg1_0/a_12_n61# Vdd 6.7
-C dbitlow_0[7]/reg1_0/a_87_n61# GND 11.0
-C dbitlow_0[3]/mux1_0/w_n54_28# dbitlow_0[3]/mux1_0/a_3_36# 3.1
-C dbitlow_0[1]/reg1_0/a_12_n61# GND 12.1
-C inverter1_2/Y shift 3.2
-C dbitlow_0[2]/shift1_0/a_40_11# Vdd 7.5
-C dbitlow_0[3]/shift1_0/a_40_11# GND 4.2
-C quotient_2 dbitlow_0[5]/mux1_0/w_n54_52# 7.8
-C dbitlow_0[1]/reg1_0/a_103_n31# GND 13.6
-C dbitlow_0[5]/mux1_0/w_n54_52# inverter1_0/Y 9.3
-C dbitlow_0[5]/mux1_0/w_n54_28# inverter1_1/Y 7.9
-C dbitlow_0[1]/mux1_0/w_n54_28# S0 3.8
-C dbitlow_0[4]/inbit Vdd 7.5
-C dbitlow_0[5]/mux1_0/w_n54_52# dbitlow_0[5]/mux1_0/a_n15_36# 3.1
-C dbitlow_0[5]/inbit GND 8.2
-C clk Vdd 54.5
-C dbitlow_0[4]/mux1_0/w_n54_52# dbitlow_0[4]/mux1_0/a_22_36# 9.4
-C dbitlow_0[1]/mux1_0/w_n54_28# dbitlow_0[1]/mux1_0/a_n47_36# 10.0
-C dbitlow_0[4]/reg1_0/a_87_n61# Vdd 7.0
-C dbitlow_0[5]/reg1_0/a_87_n61# GND 11.0
-C dbitlow_0[2]/mux1_0/w_n54_28# dbitlow_0[2]/mux1_0/a_3_36# 3.1
-C dbitlow_0[7]/shift1_0/a_6_11# Vdd 9.2
-C inverter1_1/Y GND 5.6
-C dbitlow_0[0]/shift1_0/a_40_11# Vdd 7.5
-C dbitlow_0[1]/shift1_0/a_40_11# GND 4.2
-C quotient_7 dbitlow_0[0]/mux1_0/w_n54_52# 7.8
-C quotient_3 dbitlow_0[4]/mux1_0/w_n54_52# 7.8
-C dbitlow_0[6]/mux1_0/w_n54_52# S0 8.7
-C dbitlow_0[3]/mux1_0/w_n54_52# inverter1_0/Y 9.3
-C dbitlow_0[3]/mux1_0/w_n54_28# inverter1_1/Y 7.9
-C clk inverter1_3/Y 16.6
-C dbitlow_0[4]/mux1_0/w_n54_52# dbitlow_0[4]/mux1_0/a_n15_36# 3.1
-C dbitlow_0[2]/inbit Vdd 7.5
-C dbitlow_0[3]/inbit GND 8.2
-C dbitlow_0[3]/mux1_0/w_n54_52# dbitlow_0[3]/mux1_0/a_22_36# 9.4
-C dbitlow_0[0]/mux1_0/w_n54_28# dbitlow_0[0]/mux1_0/a_n47_36# 10.0
-C dbitlow_0[2]/reg1_0/a_87_n61# Vdd 7.0
-C dbitlow_0[3]/reg1_0/a_87_n61# GND 11.0
-C dbitlow_0[1]/mux1_0/w_n54_28# dbitlow_0[1]/mux1_0/a_3_36# 3.1
-C dbitlow_0[7]/mux1_0/w_n54_28# S1 7.6
-C dbitlow_0[5]/shift1_0/a_6_11# Vdd 9.2
-C dbitlow_0[6]/shift1_0/a_6_11# GND 5.2
-C quotient_4 dbitlow_0[3]/mux1_0/w_n54_52# 7.8
-C inverter1_1/w_2_35# S1 2.2
-C dbitlow_0[4]/mux1_0/w_n54_52# S0 8.7
-C dbitlow_0[1]/mux1_0/w_n54_52# inverter1_0/Y 9.3
-C dbitlow_0[1]/mux1_0/w_n54_28# inverter1_1/Y 7.9
-C dbitlow_0[0]/reg1_0/a_45_n31# GND 5.1
-C dbitlow_0[3]/mux1_0/w_n54_52# dbitlow_0[3]/mux1_0/a_n15_36# 3.1
-C dbitlow_0[0]/inbit Vdd 7.5
-C reset_n GND 197.2
-C dbitlow_0[1]/inbit GND 8.2
-C dbitlow_0[2]/mux1_0/w_n54_52# dbitlow_0[2]/mux1_0/a_22_36# 9.4
-C dbitlow_0[0]/mux1_0/w_n54_28# dbitlow_0[0]/mux1_0/a_3_36# 3.1
-C dbitlow_0[1]/reg1_0/a_87_n61# GND 11.0
-C dbitlow_0[5]/mux1_0/w_n54_28# S1 7.6
-C dbitlow_0[3]/shift1_0/a_6_11# Vdd 9.2
-C dbitlow_0[6]/mux1_0/w_n54_28# GND 19.2
-C dbitlow_0[4]/shift1_0/a_6_11# GND 5.2
-C dbitlow_0[0]/reg1_0/a_87_n61# GND 11.0
-C quotient_5 dbitlow_0[2]/mux1_0/w_n54_52# 7.8
-C dbitlow_0[6]/mux1_0/w_n54_52# inverter1_1/Y 9.3
-C dbitlow_0[6]/reg1_0/a_n5_n61# Vdd 2.8
-C dbitlow_0[7]/reg1_0/a_n5_n61# GND 5.1
-C dbitlow_0[2]/mux1_0/w_n54_52# S0 8.7
-C dbitlow_0[6]/reg1_0/a_28_n61# Vdd 8.7
-C dbitlow_0[7]/reg1_0/a_28_n61# GND 9.6
-C GND Vdd 15.8
-C S1 GND 7.7
-C dbitlow_0[2]/mux1_0/w_n54_52# dbitlow_0[2]/mux1_0/a_n15_36# 3.1
-C dbitlow_0[1]/mux1_0/w_n54_52# dbitlow_0[1]/mux1_0/a_22_36# 9.4
-C dbitlow_0[7]/mux1_0/w_n54_28# dbitlow_0[7]/mux1_0/a_22_36# 7.7
-C dbitlow_0[3]/mux1_0/w_n54_28# S1 7.6
-C dbitlow_0[1]/shift1_0/a_6_11# Vdd 9.2
-C dbitlow_0[4]/mux1_0/w_n54_28# GND 19.2
-C dbitlow_0[6]/reg1_0/a_45_n31# Vdd 3.1
-C dbitlow_0[2]/shift1_0/a_6_11# GND 5.2
-C dbitlow_0[7]/reg1_0/a_45_n31# GND 5.1
-C quotient_6 dbitlow_0[1]/mux1_0/w_n54_52# 7.8
-C dbitlow_0[4]/mux1_0/w_n54_52# inverter1_1/Y 9.3
-C dbitlow_0[4]/reg1_0/a_n5_n61# Vdd 2.8
-C quotient_0 dbitlow_0[7]/mux1_0/w_n54_28# 7.9
-C dbitlow_0[5]/reg1_0/a_n5_n61# GND 5.1
-C dbitlow_0[0]/mux1_0/w_n54_52# S0 8.7
-C inverter1_3/Y GND 55.2
-C dbitlow_0[4]/reg1_0/a_28_n61# Vdd 8.7
-C dbitlow_0[5]/reg1_0/a_28_n61# GND 9.6
-C dbitlow_0[1]/mux1_0/w_n54_52# dbitlow_0[1]/mux1_0/a_n15_36# 3.1
-C dbitlow_0[7]/mux1_0/w_n54_28# dbitlow_0[7]/mux1_0/a_n15_36# 4.5
-C dbitlow_0[0]/mux1_0/w_n54_52# dbitlow_0[0]/mux1_0/a_22_36# 9.4
-C inverter1_2/Y GND 68.5
-C dbitlow_0[6]/mux1_0/w_n54_28# dbitlow_0[6]/mux1_0/a_22_36# 7.7
-C dbitlow_0[1]/mux1_0/w_n54_28# S1 7.6
-C dbitlow_0[4]/reg1_0/a_45_n31# Vdd 3.1
-C dbitlow_0[2]/mux1_0/w_n54_28# GND 19.2
-C dbitlow_0[0]/shift1_0/a_6_11# GND 5.2
-C dbitlow_0[5]/reg1_0/a_45_n31# GND 5.1
-C dbitlow_0[2]/mux1_0/w_n54_52# inverter1_1/Y 9.3
-C dbitlow_0[2]/reg1_0/a_n5_n61# Vdd 2.8
-C quotient_1 dbitlow_0[6]/mux1_0/w_n54_28# 7.9
-C dbitlow_0[3]/reg1_0/a_n5_n61# GND 5.1
-C dbitlow_0[0]/reg1_0/a_n5_n61# Vdd 2.8
-C dbitlow_0[2]/reg1_0/a_28_n61# Vdd 8.7
-C dbitlow_0[3]/reg1_0/a_28_n61# GND 9.6
-C dbitlow_0[7]/mux1_0/w_n54_28# inverter1_0/Y 8.6
-C dbitlow_0[0]/mux1_0/w_n54_52# dbitlow_0[0]/mux1_0/a_n15_36# 3.1
-C dbitlow_0[7]/reg1_0/a_12_n61# Vdd 6.7
-C dbitlow_0[6]/mux1_0/w_n54_28# dbitlow_0[6]/mux1_0/a_n15_36# 4.5
-C dbitlow_0[6]/mux1_0/w_n54_52# Vdd 17.7
-C dbitlow_0[6]/mux1_0/w_n54_52# S1 4.8
-C dbitlow_0[5]/mux1_0/w_n54_28# dbitlow_0[5]/mux1_0/a_22_36# 7.7
-C dbitlow_0[0]/reg1_0/a_28_n61# Vdd 8.7
-C quotient_0 GND 4.4
-C dbitlow_0[2]/reg1_0/a_45_n31# Vdd 3.1
-C dbitlow_0[0]/mux1_0/w_n54_28# GND 19.2
-C dbitlow_0[3]/reg1_0/a_45_n31# GND 5.1
-C inbit GND 2.2
-C dbitlow_0[7]/reg1_0/a_103_n31# Vdd 12.1
-C dbitlow_0[0]/mux1_0/w_n54_52# inverter1_1/Y 9.3
-C quotient_2 dbitlow_0[5]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[5]/addsub1_0/a_83_34# Vdd 11.7
+C dbithigh_0[4]/mux1_0/w_n54_52# S1 4.8
+C remainder_5 Vdd 12.0
+C S0 dbitlow_0[5]/mux1_0/w_n54_52# 8.7
+C dbithigh_0[5]/inbit GND 2.5
+C S1 Vdd 16.4
+C dbithigh_0[3]/reg1_1/D GND 6.3
+C dbithigh_0[2]/reg1_0/a_28_n61# Vdd 8.7
 C dbitlow_0[1]/reg1_0/a_n5_n61# GND 5.1
-C dbitlow_0[1]/reg1_0/a_28_n61# GND 9.6
-C dbitlow_0[5]/mux1_0/w_n54_28# inverter1_0/Y 8.6
-C dbitlow_0[5]/mux1_0/w_n54_28# dbitlow_0[5]/mux1_0/a_n15_36# 4.5
-C dbitlow_0[5]/reg1_0/a_12_n61# Vdd 6.7
+C dbitlow_0[3]/mux1_0/w_n54_28# dbitlow_0[3]/mux1_0/a_3_36# 3.1
+C add_n GND 62.7
+C dbitlow_0[0]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[3]/reg1_0/Q Vdd 21.4
+C dbitlow_0[0]/mux1_0/w_n54_52# dbitlow_0[0]/mux1_0/a_22_36# 9.4
+C dbithigh_0[5]/mux1_0/D1 Vdd 2.4
+C inverter1_1/Y dbitlow_0[5]/mux1_0/w_n54_52# 9.3
+C dbitlow_0[0]/outbit Vdd 2.6
+C dbitlow_0[6]/shift1_0/a_6_11# Vdd 4.5
+C dbithigh_0[2]/reg1_1/a_n5_n61# GND 5.1
 C dbitlow_0[6]/reg1_0/a_12_n61# GND 12.1
-C dbitlow_0[4]/mux1_0/w_n54_52# S1 4.8
-C dbitlow_0[4]/mux1_0/w_n54_52# Vdd 17.7
-C clk inverter1_3/w_2_35# 2.2
-C dbitlow_0[4]/mux1_0/w_n54_28# dbitlow_0[4]/mux1_0/a_22_36# 7.7
-C quotient_2 GND 4.4
-C dbitlow_0[1]/reg1_0/a_45_n31# GND 5.1
-C dbitlow_0[7]/shift1_0/a_40_11# Vdd 7.5
-C inverter1_0/Y GND 9.4
-C dbitlow_0[5]/reg1_0/a_103_n31# Vdd 12.1
-C dbitlow_0[6]/reg1_0/a_103_n31# GND 13.6
-C quotient_7 dbitlow_0[0]/mux1_0/w_n54_28# 7.9
-C quotient_3 dbitlow_0[4]/mux1_0/w_n54_28# 7.9
-C dbitlow_0[6]/mux1_0/w_n54_28# S0 3.8
-C dbitlow_0[7]/mux1_0/w_n54_52# dbitlow_0[7]/mux1_0/a_n47_36# 7.3
-C dbitlow_0[3]/mux1_0/w_n54_28# inverter1_0/Y 8.6
-C dbitlow_0[3]/reg1_0/a_12_n61# Vdd 6.7
-C dbitlow_0[4]/mux1_0/w_n54_28# dbitlow_0[4]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[0]/inbit Vdd 2.0
+C S1 dbitlow_0[7]/mux1_0/w_n54_28# 7.6
+C dbithigh_0[7]/mux1_0/w_n54_52# dbithigh_0[7]/mux1_0/a_3_36# 4.0
+C dbithigh_0[2]/X GND 21.9
+C dbithigh_0[5]/reg1_0/a_12_n61# Vdd 6.7
+C inverter1_4/Y clk 49.4
+C quotient_2 dbitlow_0[5]/mux1_0/w_n54_52# 7.8
+C dbitlow_0[4]/reg1_0/D Vdd 5.4
+C inverter1_2/Y shift 6.5
+C dbitlow_0[6]/reg1_0/a_103_n31# Vdd 12.1
+C dbithigh_0[4]/mux1_0/w_n54_28# S1 7.6
+C dbithigh_0[5]/reg1_1/a_28_n61# GND 9.6
+C dbithigh_0[5]/mux1_0/w_n54_52# S0 8.7
+C dbithigh_0[2]/reg1_1/a_87_n61# GND 11.0
+C dbitlow_0[0]/mux1_0/w_n54_28# dbitlow_0[0]/mux1_0/a_22_36# 7.7
+C dbithigh_0[5]/mux1_0/w_n54_52# dbithigh_0[5]/mux1_0/a_n47_36# 7.3
+C dbithigh_0[7]/reg1_1/a_12_n61# GND 12.1
+C dbitlow_0[1]/shift1_0/a_40_11# GND 5.9
+C dbitlow_0[5]/mux1_0/w_n54_52# dbitlow_0[5]/mux1_0/a_n15_36# 3.1
+C dbithigh_0[5]/addsub1_0/a_n80_34# Vdd 33.8
+C dbithigh_0[5]/mux1_0/w_n54_52# inverter1_1/Y 9.3
+C dbithigh_0[0]/mux1_0/w_n54_28# GND 21.6
+C dbitlow_0[6]/reg1_0/D GND 6.3
+C dbithigh_0[2]/reg1_0/a_n5_n61# GND 5.1
+C clk GND 181.0
+C dbitlow_0[7]/reg1_0/a_45_n31# Vdd 3.1
+C dbithigh_0[7]/mux1_0/w_n54_28# dbithigh_0[7]/mux1_0/a_3_36# 3.1
+C dbitlow_0[2]/reg1_0/a_12_n61# Vdd 6.7
+C dbithigh_0[2]/addsub1_0/a_n102_34# GND 8.9
+C dbitlow_0[4]/mux1_0/w_n54_52# dbitlow_0[4]/mux1_0/a_22_36# 9.4
+C dbithigh_0[2]/addsub1_0/a_39_72# Vdd 4.7
+C S0 dbitlow_0[3]/mux1_0/w_n54_52# 8.7
+C dbitlow_0[1]/mux1_0/w_n54_28# dbitlow_0[1]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[7]/reg1_1/D Vdd 5.4
+C dbitlow_0[2]/mux1_0/w_n54_28# dbitlow_0[2]/mux1_0/a_3_36# 3.1
+C dbithigh_0[4]/reg1_1/a_45_n31# Vdd 3.1
+C dbitlow_0[0]/mux1_0/w_n54_52# dbitlow_0[0]/mux1_0/a_n15_36# 3.1
+C dbithigh_0[5]/reg1_1/a_103_n31# GND 13.6
+C dbithigh_0[2]/mux1_0/w_n54_28# GND 21.6
+C dbithigh_0[2]/reg1_1/a_12_n61# Vdd 6.7
+C dbithigh_0[5]/mux1_0/w_n54_28# S0 3.8
+C dbithigh_0[7]/remainder dbithigh_0[7]/mux1_0/w_n54_28# 2.4
+C dbithigh_0[4]/shift1_0/a_6_11# Vdd 4.5
+C inverter1_1/Y dbitlow_0[3]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[1]/addsub1_0/a_39_34# GND 4.7
+C dbithigh_0[1]/mux1_0/w_n54_52# dbithigh_0[1]/mux1_0/a_22_36# 9.4
+C dbithigh_0[1]/shift1_0/a_6_11# Vdd 4.5
+C dbitlow_0[4]/shift1_0/a_6_11# Vdd 4.5
+C dbithigh_0[5]/mux1_0/w_n54_28# dbithigh_0[5]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[5]/reg1_0/a_103_n31# GND 13.6
+C dbithigh_0[6]/reg1_1/a_n5_n61# Vdd 2.8
 C dbitlow_0[4]/reg1_0/a_12_n61# GND 12.1
-C dbitlow_0[2]/mux1_0/w_n54_52# S1 4.8
-C dbitlow_0[2]/mux1_0/w_n54_52# Vdd 17.7
-C outbit GND 7.1
-C dbitlow_0[3]/mux1_0/w_n54_28# dbitlow_0[3]/mux1_0/a_22_36# 7.7
-C quotient_4 GND 4.4
-C dbitlow_0[5]/shift1_0/a_40_11# Vdd 7.5
-C S0 Vdd 6.8
-C dbitlow_0[6]/shift1_0/a_40_11# GND 4.2
-C dbitlow_0[3]/reg1_0/a_103_n31# Vdd 12.1
+C dbithigh_0[0]/reg1_1/D Vdd 5.4
+C S1 dbitlow_0[5]/mux1_0/w_n54_28# 7.6
+C dbithigh_0[4]/mux1_0/w_n54_52# inverter1_0/Y 9.3
+C dbithigh_0[5]/addsub1_0/a_83_34# GND 9.2
+C remainder_5 GND 12.5
+C inverter1_0/Y Vdd 17.6
+C dbithigh_0[5]/mux1_0/w_n54_28# inverter1_1/Y 7.9
+C S1 GND 12.6
+C dbithigh_0[2]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[6]/X Vdd 21.9
+C quotient_3 dbitlow_0[4]/mux1_0/w_n54_52# 7.8
+C dbitlow_0[2]/reg1_0/D Vdd 5.4
+C dbithigh_0[0]/mux1_0/w_n54_28# dbithigh_0[0]/mux1_0/a_22_36# 7.7
+C dbithigh_0[3]/reg1_0/a_45_n31# Vdd 3.1
+C dbitlow_0[4]/reg1_0/a_103_n31# Vdd 12.1
+C dbitlow_0[0]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[3]/addsub1_0/a_n39_72# Vdd 2.9
+C dbithigh_0[3]/reg1_0/Q GND 27.9
+C dbithigh_0[5]/mux1_0/D1 GND 3.2
+C dbitlow_0[0]/mux1_0/w_n54_28# dbitlow_0[0]/mux1_0/a_n15_36# 4.5
+C dbitlow_0[0]/outbit GND 3.1
+C dbithigh_0[6]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[0]/reg1_0/a_103_n31# Vdd 12.1
+C dbitlow_0[6]/shift1_0/a_6_11# GND 7.1
+C inverter1_0/Y dbitlow_0[7]/mux1_0/w_n54_28# 8.6
+C dbithigh_0[0]/addsub1_0/a_83_34# Vdd 11.7
+C dbithigh_0[0]/inbit GND 2.5
+C dbithigh_0[6]/reg1_1/a_87_n61# Vdd 7.0
+C dbithigh_0[1]/mux1_0/w_n54_28# dbithigh_0[1]/mux1_0/a_22_36# 7.7
+C dbitlow_0[7]/reg1_0/a_28_n61# Vdd 8.7
+C dbitlow_0[7]/reg1_0/a_87_n61# Vdd 7.0
+C dbithigh_0[5]/reg1_0/a_12_n61# GND 12.1
+C dbitlow_0[4]/mux1_0/w_n54_52# dbitlow_0[4]/mux1_0/a_n15_36# 3.1
+C dbitlow_0[4]/reg1_0/D GND 6.3
+C dbithigh_0[3]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[4]/mux1_0/w_n54_28# inverter1_0/Y 8.6
+C dbitlow_0[6]/reg1_0/a_103_n31# GND 13.6
+C dbithigh_0[6]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[2]/mux1_0/w_n54_52# dbithigh_0[2]/mux1_0/D1 6.5
+C dbitlow_0[5]/reg1_0/a_45_n31# Vdd 3.1
+C sign Vdd 12.1
+C dbitlow_0[3]/mux1_0/w_n54_52# dbitlow_0[3]/mux1_0/a_22_36# 9.4
+C dbithigh_0[6]/addsub1_0/a_n102_34# Vdd 2.1
+C S0 dbitlow_0[1]/mux1_0/w_n54_52# 8.7
+C dbithigh_0[7]/addsub1_0/a_n39_34# GND 2.9
+C dbithigh_0[3]/reg1_0/a_87_n61# Vdd 7.0
+C dbitlow_0[1]/mux1_0/w_n54_28# dbitlow_0[1]/mux1_0/a_3_36# 3.1
+C dbithigh_0[3]/addsub1_0/a_n15_34# Vdd 18.0
+C dbithigh_0[1]/mux1_0/w_n54_52# dbithigh_0[1]/mux1_0/a_n15_36# 3.1
+C dbithigh_0[0]/reg1_0/a_12_n61# Vdd 6.7
+C inverter1_1/Y dbitlow_0[1]/mux1_0/w_n54_52# 9.3
+C reset_n Vdd 215.8
+C dbithigh_0[5]/addsub1_0/a_n80_34# GND 25.8
+C dbitlow_0[2]/shift1_0/a_6_11# Vdd 4.5
+C dbitlow_0[7]/reg1_0/a_45_n31# GND 5.1
+C dbitlow_0[2]/reg1_0/a_12_n61# GND 12.1
+C S1 dbitlow_0[3]/mux1_0/w_n54_28# 7.6
+C dbithigh_0[0]/mux1_0/w_n54_28# dbithigh_0[0]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[0]/mux1_0/w_n54_52# S1 4.8
+C remainder_1 Vdd 12.0
+C S1 dbitlow_0[0]/mux1_0/w_n54_52# 4.8
+C dbithigh_0[7]/reg1_1/D GND 6.3
+C dbithigh_0[6]/reg1_0/a_28_n61# Vdd 8.7
+C dbithigh_0[4]/reg1_1/a_45_n31# GND 5.1
+C dbithigh_0[2]/mux1_0/w_n54_28# dbithigh_0[2]/mux1_0/D1 5.5
+C quotient_4 dbitlow_0[3]/mux1_0/w_n54_52# 7.8
+C dbitlow_0[2]/reg1_0/a_103_n31# Vdd 12.1
+C dbithigh_0[2]/reg1_1/a_12_n61# GND 12.1
+C dbithigh_0[0]/addsub1_0/a_n80_34# Vdd 33.8
+C dbithigh_0[7]/reg1_0/Q Vdd 21.4
+C dbithigh_0[4]/shift1_0/a_6_11# GND 7.1
+C divisorin_3 Vdd 4.6
+C dbithigh_0[1]/mux1_0/w_n54_28# dbithigh_0[1]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[1]/shift1_0/a_6_11# GND 7.1
+C dbitlow_0[6]/mux1_0/w_n54_28# GND 19.2
+C dbitlow_0[4]/shift1_0/a_6_11# GND 7.1
+C dbithigh_0[6]/reg1_1/a_n5_n61# GND 5.1
+C inverter1_0/Y dbitlow_0[5]/mux1_0/w_n54_28# 8.6
+C dbithigh_0[0]/reg1_1/D GND 6.3
+C dbithigh_0[4]/inbit Vdd 2.0
+C dbithigh_0[0]/reg1_1/a_103_n31# Vdd 12.1
+C dbithigh_0[2]/reg1_1/D Vdd 5.4
+C inverter1_0/Y GND 21.3
+C dbitlow_0[5]/reg1_0/a_28_n61# Vdd 8.7
+C dbitlow_0[5]/reg1_0/a_87_n61# Vdd 7.0
+C dbitlow_0[3]/mux1_0/w_n54_52# dbitlow_0[3]/mux1_0/a_n15_36# 3.1
+C dbithigh_0[6]/X GND 21.9
+C dbitlow_0[2]/reg1_0/D GND 6.3
+C dbithigh_0[3]/reg1_0/a_45_n31# GND 5.1
 C dbitlow_0[4]/reg1_0/a_103_n31# GND 13.6
+C dbitlow_0[3]/reg1_0/a_45_n31# Vdd 3.1
+C S1 dbitlow_0[0]/mux1_0/w_n54_28# 7.6
+C dbitlow_0[2]/mux1_0/w_n54_52# dbitlow_0[2]/mux1_0/a_22_36# 9.4
+C dbithigh_0[0]/reg1_0/a_103_n31# GND 13.6
+C dbithigh_0[1]/reg1_1/a_n5_n61# Vdd 2.8
+C dbithigh_0[0]/addsub1_0/a_83_34# GND 9.2
+C dbithigh_0[6]/reg1_1/a_87_n61# GND 11.0
+C dbithigh_0[7]/mux1_0/w_n54_52# dbithigh_0[7]/mux1_0/a_n47_36# 7.3
+C inverter1_4/Y reset_n 9.7
+C dbitlow_0[7]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[1]/X Vdd 21.9
+C dbitlow_0[7]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[3]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[0]/reg1_1/a_12_n61# Vdd 6.7
+C dbithigh_0[6]/reg1_0/a_n5_n61# GND 5.1
+C dbitlow_0[5]/reg1_0/a_45_n31# GND 5.1
+C sign GND 12.9
+C dbithigh_0[4]/reg1_1/a_28_n61# Vdd 8.7
+C S1 dbitlow_0[1]/mux1_0/w_n54_28# 7.6
+C dbithigh_0[1]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[6]/addsub1_0/a_n102_34# GND 8.9
+C dbithigh_0[6]/addsub1_0/a_39_72# Vdd 4.7
+C dbithigh_0[3]/reg1_0/a_87_n61# GND 11.0
+C dbitlow_0[0]/reg1_0/a_45_n31# Vdd 3.1
+C dbithigh_0[1]/reg1_1/a_87_n61# Vdd 7.0
+C quotient_5 dbitlow_0[2]/mux1_0/w_n54_52# 7.8
+C dbithigh_0[3]/addsub1_0/a_n15_34# GND 15.5
+C dbithigh_0[6]/mux1_0/w_n54_28# GND 21.6
+C dbithigh_0[6]/reg1_1/a_12_n61# Vdd 6.7
+C dbithigh_0[0]/reg1_0/a_12_n61# GND 12.1
+C reset_n GND 596.5
+C dbitlow_0[0]/shift1_0/a_6_11# Vdd 4.5
+C dbithigh_0[5]/addsub1_0/a_39_34# GND 4.7
+C dbithigh_0[1]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[3]/mux1_0/w_n54_52# dbithigh_0[3]/mux1_0/a_22_36# 9.4
+C dbitlow_0[4]/mux1_0/w_n54_28# GND 19.2
+C dbitlow_0[2]/shift1_0/a_6_11# GND 7.1
+C dbithigh_0[7]/mux1_0/w_n54_28# dbithigh_0[7]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[1]/addsub1_0/a_n102_34# Vdd 2.1
+C inverter1_0/Y dbitlow_0[3]/mux1_0/w_n54_28# 8.6
+C dbithigh_0[0]/mux1_0/w_n54_52# inverter1_0/Y 9.3
+C dbithigh_0[2]/addsub1_0/a_n39_34# GND 2.9
+C dividendin_6 Vdd 5.5
+C inverter1_0/Y dbitlow_0[0]/mux1_0/w_n54_52# 9.3
+C remainder_1 GND 12.5
+C dbitlow_0[3]/reg1_0/a_28_n61# Vdd 8.7
+C dbitlow_0[3]/reg1_0/a_87_n61# Vdd 7.0
+C dbithigh_0[6]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[2]/mux1_0/w_n54_52# dbithigh_0[2]/mux1_0/a_3_36# 4.0
+C dbitlow_0[2]/mux1_0/w_n54_52# dbitlow_0[2]/mux1_0/a_n15_36# 3.1
+C dbithigh_0[4]/reg1_1/a_103_n31# Vdd 12.1
+C dbithigh_0[7]/reg1_0/a_45_n31# Vdd 3.1
+C dbitlow_0[2]/reg1_0/a_103_n31# GND 13.6
+C dbitlow_0[1]/reg1_0/a_45_n31# Vdd 3.1
+C dbithigh_0[0]/addsub1_0/a_n80_34# GND 25.8
+C dbitlow_0[1]/mux1_0/w_n54_52# dbitlow_0[1]/mux1_0/a_22_36# 9.4
+C dbithigh_0[7]/reg1_0/Q GND 27.9
+C dbithigh_0[7]/addsub1_0/a_n39_72# Vdd 2.9
+C divisorin_3 GND 5.6
+C dbithigh_0[4]/reg1_0/a_103_n31# Vdd 12.1
+C dbitlow_0[7]/mux1_0/w_n54_52# Vdd 17.7
+C dbitlow_0[7]/mux1_0/w_n54_28# dbitlow_0[7]/mux1_0/a_22_36# 7.7
+C dbithigh_0[4]/addsub1_0/a_83_34# Vdd 11.7
+C dbithigh_0[4]/inbit GND 2.5
+C dbithigh_0[3]/mux1_0/w_n54_52# S1 4.8
+C dbithigh_0[0]/reg1_1/a_103_n31# GND 13.6
+C dbithigh_0[2]/reg1_1/D GND 6.3
+C dbithigh_0[1]/reg1_0/a_28_n61# Vdd 8.7
+C S1 dbitlow_0[6]/mux1_0/w_n54_52# 4.8
+C dbitlow_0[5]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[3]/mux1_0/w_n54_28# dbithigh_0[3]/mux1_0/a_22_36# 7.7
+C dbitlow_0[5]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[7]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[0]/mux1_0/w_n54_52# sign 6.5
+C inverter1_0/Y dbitlow_0[0]/mux1_0/w_n54_28# 8.6
+C dbithigh_0[4]/mux1_0/w_n54_52# dbithigh_0[4]/mux1_0/D1 6.5
+C dbithigh_0[2]/reg1_0/Q Vdd 21.4
+C dbitlow_0[3]/reg1_0/a_45_n31# GND 5.1
+C dbithigh_0[4]/mux1_0/D1 Vdd 2.4
+C dbithigh_0[2]/mux1_0/w_n54_28# dbithigh_0[2]/mux1_0/a_3_36# 3.1
+C dbithigh_0[1]/reg1_1/a_n5_n61# GND 5.1
+C dbithigh_0[7]/reg1_0/a_87_n61# Vdd 7.0
+C quotient_6 dbitlow_0[1]/mux1_0/w_n54_52# 7.8
+C dbitlow_0[6]/inbit Vdd 2.0
+C dbithigh_0[3]/mux1_0/w_n54_52# dbithigh_0[3]/mux1_0/a_n15_36# 3.1
+C dbithigh_0[7]/addsub1_0/a_n15_34# Vdd 18.0
+C dbithigh_0[4]/reg1_0/a_12_n61# Vdd 6.7
+C dbithigh_0[1]/X GND 21.9
+C dbithigh_0[0]/shift1_0/a_40_11# Vdd 5.1
+C quotient_0 dbitlow_0[7]/mux1_0/w_n54_28# 7.9
+C remainder_4 dbithigh_0[2]/mux1_0/w_n54_28# 2.4
+C dbitlow_0[2]/mux1_0/w_n54_28# GND 19.2
+C dbithigh_0[3]/mux1_0/w_n54_28# S1 7.6
+C dbithigh_0[0]/reg1_1/a_12_n61# GND 12.1
+C inverter1_0/Y dbitlow_0[1]/mux1_0/w_n54_28# 8.6
+C dbithigh_0[4]/reg1_1/a_28_n61# GND 9.6
+C dbithigh_0[4]/mux1_0/w_n54_52# S0 8.7
+C dbitlow_0[1]/reg1_0/a_28_n61# Vdd 8.7
+C S0 Vdd 16.4
+C dbitlow_0[1]/reg1_0/a_87_n61# Vdd 7.0
+C dbitlow_0[0]/reg1_0/a_45_n31# GND 5.1
+C dbithigh_0[4]/mux1_0/w_n54_28# dbithigh_0[4]/mux1_0/D1 5.5
+C dbithigh_0[1]/reg1_1/a_87_n61# GND 11.0
+C dbitlow_0[1]/mux1_0/w_n54_52# dbitlow_0[1]/mux1_0/a_n15_36# 3.1
+C dbithigh_0[6]/reg1_1/a_12_n61# GND 12.1
+C dbitlow_0[7]/mux1_0/w_n54_28# dbitlow_0[7]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[4]/addsub1_0/a_n80_34# Vdd 33.8
+C dbithigh_0[4]/mux1_0/w_n54_52# inverter1_1/Y 9.3
+C inverter1_1/Y Vdd 17.6
+C dbitlow_0[0]/shift1_0/a_6_11# GND 7.1
+C dbithigh_0[1]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[3]/mux1_0/w_n54_28# dbithigh_0[3]/mux1_0/a_n15_36# 4.5
+C dbitlow_0[6]/mux1_0/w_n54_28# dbitlow_0[6]/mux1_0/a_22_36# 7.7
+C dbitlow_0[5]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[1]/addsub1_0/a_n102_34# GND 8.9
+C dbithigh_0[1]/addsub1_0/a_39_72# Vdd 4.7
+C S0 dbitlow_0[7]/mux1_0/w_n54_28# 3.8
+C dbithigh_0[0]/mux1_0/w_n54_52# dbithigh_0[0]/mux1_0/a_n47_36# 7.3
+C S1 dbitlow_0[4]/mux1_0/w_n54_52# 4.8
+C dbitlow_0[3]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[6]/reg1_1/D Vdd 5.4
+C dbithigh_0[3]/reg1_1/a_45_n31# Vdd 3.1
+C dbitlow_0[3]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[4]/reg1_1/a_103_n31# GND 13.6
+C dbithigh_0[1]/mux1_0/w_n54_28# GND 21.6
+C dbithigh_0[1]/reg1_1/a_12_n61# Vdd 6.7
+C dbithigh_0[7]/reg1_0/a_45_n31# GND 5.1
+C dbithigh_0[4]/mux1_0/w_n54_28# S0 3.8
+C dbitlow_0[1]/reg1_0/a_45_n31# GND 5.1
+C dbithigh_0[3]/shift1_0/a_6_11# Vdd 4.5
+C inverter1_1/Y dbitlow_0[7]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[0]/addsub1_0/a_39_34# GND 4.7
+C dbithigh_0[4]/reg1_0/a_103_n31# GND 13.6
+C dbithigh_0[5]/reg1_1/a_n5_n61# Vdd 2.8
+C dbithigh_0[3]/mux1_0/w_n54_52# inverter1_0/Y 9.3
+C dbitlow_0[4]/inbit Vdd 2.0
+C dbithigh_0[4]/addsub1_0/a_83_34# GND 9.2
+C dbithigh_0[4]/mux1_0/w_n54_28# inverter1_1/Y 7.9
+C inverter1_0/Y dbitlow_0[6]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[1]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[5]/X Vdd 21.9
+C quotient_1 dbitlow_0[6]/mux1_0/w_n54_28# 7.9
+C dbitlow_0[6]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[2]/reg1_0/a_45_n31# Vdd 3.1
+C quotient_0 GND 4.4
+C dbithigh_0[7]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[2]/reg1_0/Q GND 27.9
+C dbithigh_0[4]/mux1_0/D1 GND 3.2
+C dbithigh_0[2]/addsub1_0/a_n39_72# Vdd 2.9
+C dbitlow_0[0]/reg1_0/a_28_n61# Vdd 8.7
+C dbithigh_0[5]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[7]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[5]/reg1_1/a_87_n61# Vdd 7.0
+C dbitlow_0[6]/inbit GND 2.5
+C dbithigh_0[7]/addsub1_0/a_n15_34# GND 15.5
+C dbithigh_0[4]/reg1_0/a_12_n61# GND 12.1
+C dbitlow_0[6]/mux1_0/w_n54_28# dbitlow_0[6]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[0]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[2]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[5]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[3]/mux1_0/w_n54_28# inverter1_0/Y 8.6
+C dbithigh_0[5]/mux1_0/w_n54_52# dbithigh_0[5]/mux1_0/a_22_36# 9.4
+C dbitlow_0[5]/mux1_0/w_n54_28# dbitlow_0[5]/mux1_0/a_22_36# 7.7
+C dbitlow_0[3]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[5]/addsub1_0/a_n102_34# Vdd 2.1
+C S0 dbitlow_0[5]/mux1_0/w_n54_28# 3.8
+C dbithigh_0[2]/reg1_0/a_87_n61# Vdd 7.0
+C S1 dbitlow_0[2]/mux1_0/w_n54_52# 4.8
+C dbitlow_0[1]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[6]/addsub1_0/a_n39_34# GND 2.9
+C S0 GND 15.8
+C dbitlow_0[1]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[0]/mux1_0/w_n54_52# dbithigh_0[0]/mux1_0/a_3_36# 4.0
+C dbithigh_0[4]/mux1_0/w_n54_52# dbithigh_0[4]/mux1_0/a_3_36# 4.0
+C dbithigh_0[2]/addsub1_0/a_n15_34# Vdd 18.0
+C dbitlow_0[0]/reg1_0/a_103_n31# Vdd 12.1
+C inverter1_1/Y dbitlow_0[5]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[4]/addsub1_0/a_n80_34# GND 25.8
+C inverter1_1/Y GND 10.4
+C dbitlow_0[6]/shift1_0/a_40_11# Vdd 5.1
+C inbit Vdd 2.6
+C dbitlow_0[2]/inbit Vdd 2.0
+C dbithigh_0[7]/mux1_0/w_n54_52# S1 4.8
+C remainder_2 Vdd 12.0
+C inverter1_0/Y dbitlow_0[4]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[6]/reg1_1/D GND 6.3
+C dbithigh_0[5]/reg1_0/a_28_n61# Vdd 8.7
+C dbithigh_0[3]/reg1_1/a_45_n31# GND 5.1
+C dbithigh_0[5]/mux1_0/w_n54_28# dbithigh_0[5]/mux1_0/a_22_36# 7.7
+C dbithigh_0[2]/mux1_0/w_n54_52# dbithigh_0[2]/mux1_0/a_n47_36# 7.3
+C quotient_2 dbitlow_0[5]/mux1_0/w_n54_28# 7.9
+C dbitlow_0[4]/reg1_0/a_n5_n61# Vdd 2.8
+C quotient_2 GND 4.4
+C dbithigh_0[1]/reg1_1/a_12_n61# GND 12.1
+C dbithigh_0[6]/reg1_0/Q Vdd 21.4
+C dbithigh_0[6]/mux1_0/w_n54_52# dbithigh_0[6]/mux1_0/D1 6.5
+C dbithigh_0[3]/shift1_0/a_6_11# GND 7.1
+C divisorin_4 Vdd 4.6
+C dbithigh_0[4]/mux1_0/w_n54_28# dbithigh_0[4]/mux1_0/a_3_36# 3.1
+C dbithigh_0[5]/reg1_1/a_n5_n61# GND 5.1
+C dbithigh_0[3]/inbit Vdd 2.0
+C dbitlow_0[4]/inbit GND 2.5
+C dbithigh_0[1]/reg1_1/D Vdd 5.4
+C dbithigh_0[5]/mux1_0/w_n54_52# dbithigh_0[5]/mux1_0/a_n15_36# 3.1
+C dbitlow_0[5]/mux1_0/w_n54_28# dbitlow_0[5]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[5]/X GND 21.9
+C dbitlow_0[6]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[2]/reg1_0/a_45_n31# GND 5.1
+C remainder_2 dbithigh_0[4]/mux1_0/w_n54_28# 2.4
+C dbithigh_0[7]/mux1_0/w_n54_28# S1 7.6
+C dbitlow_0[4]/mux1_0/w_n54_28# dbitlow_0[4]/mux1_0/a_22_36# 7.7
+C dbitlow_0[1]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[2]/mux1_0/w_n54_28# dbithigh_0[2]/mux1_0/a_n47_36# 10.0
+C S0 dbitlow_0[3]/mux1_0/w_n54_28# 3.8
+C dbitlow_0[0]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[0]/mux1_0/w_n54_52# S0 8.7
+C S0 dbitlow_0[0]/mux1_0/w_n54_52# 8.7
+C dbithigh_0[5]/reg1_1/a_87_n61# GND 11.0
+C dbithigh_0[6]/mux1_0/w_n54_28# dbithigh_0[6]/mux1_0/D1 5.5
+C dbithigh_0[0]/X Vdd 2.4
+C inverter1_1/Y dbitlow_0[3]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[0]/mux1_0/w_n54_52# inverter1_1/Y 9.3
+C dbithigh_0[2]/shift1_0/a_40_11# GND 5.9
+C inverter1_1/Y dbitlow_0[0]/mux1_0/w_n54_52# 9.3
+C dbitlow_0[4]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[5]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[5]/mux1_0/w_n54_28# dbithigh_0[5]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[3]/reg1_1/a_28_n61# Vdd 8.7
+C dbitlow_0[0]/inbit Vdd 2.0
+C dbithigh_0[5]/addsub1_0/a_n102_34# GND 8.9
+C dbithigh_0[5]/addsub1_0/a_39_72# Vdd 4.7
+C inverter1_0/Y dbitlow_0[2]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[2]/reg1_0/a_87_n61# GND 11.0
+C quotient_3 dbitlow_0[4]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[7]/reg1_1/a_45_n31# Vdd 3.1
+C dbitlow_0[2]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[2]/addsub1_0/a_n15_34# GND 15.5
+C quotient_4 GND 4.4
+C dbitlow_0[0]/reg1_0/a_103_n31# GND 13.6
+C dbithigh_0[5]/mux1_0/w_n54_28# GND 21.6
+C dbithigh_0[5]/reg1_1/a_12_n61# Vdd 6.7
+C S0 dbitlow_0[0]/mux1_0/w_n54_28# 3.8
+C dbithigh_0[7]/shift1_0/a_6_11# Vdd 4.5
+C dbithigh_0[0]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[4]/addsub1_0/a_39_34# GND 4.7
+C dbitlow_0[7]/mux1_0/w_n54_52# dbitlow_0[7]/mux1_0/a_n47_36# 7.3
+C dbitlow_0[6]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[0]/addsub1_0/a_n102_34# Vdd 2.1
+C dbitlow_0[2]/inbit GND 2.5
+C inverter1_0/Y dbithigh_0[7]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[1]/addsub1_0/a_n39_34# GND 2.9
+C dbitlow_0[7]/reg1_0/a_12_n61# Vdd 6.7
+C remainder_2 GND 12.5
+C inverter1_1/Y dbitlow_0[0]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[5]/reg1_0/a_28_n61# GND 9.6
+C dbitlow_0[4]/mux1_0/w_n54_28# dbitlow_0[4]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[3]/reg1_1/a_103_n31# Vdd 12.1
+C dbitlow_0[4]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[6]/reg1_0/a_45_n31# Vdd 3.1
+C dbitlow_0[3]/mux1_0/w_n54_28# dbitlow_0[3]/mux1_0/a_22_36# 7.7
+C dbithigh_0[6]/addsub1_0/a_n39_72# Vdd 2.9
+C dbithigh_0[6]/reg1_0/Q GND 27.9
+C S0 dbitlow_0[1]/mux1_0/w_n54_28# 3.8
+C divisorin_4 GND 5.6
+C dbithigh_0[3]/reg1_0/a_103_n31# Vdd 12.1
+C dbithigh_0[3]/addsub1_0/a_83_34# Vdd 11.7
+C dbithigh_0[2]/mux1_0/w_n54_52# S1 4.8
+C dbithigh_0[3]/inbit GND 2.5
+C dbithigh_0[1]/reg1_1/D GND 6.3
+C dbithigh_0[0]/reg1_0/a_28_n61# Vdd 8.7
+C remainder_6 Vdd 12.0
+C inverter1_1/Y dbitlow_0[1]/mux1_0/w_n54_28# 7.9
+C dbitlow_0[2]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[6]/shift1_0/a_40_11# Vdd 5.1
+C inverter1_0/Y dbithigh_0[7]/mux1_0/w_n54_28# 8.6
+C dbitlow_0[7]/reg1_0/D Vdd 5.4
+C dbithigh_0[3]/mux1_0/D1 Vdd 2.4
+C dbithigh_0[1]/reg1_0/Q Vdd 21.4
+C dbithigh_0[7]/mux1_0/w_n54_52# dbithigh_0[7]/mux1_0/a_22_36# 9.4
+C dbithigh_0[0]/mux1_0/w_n54_28# S1 7.6
+C dbithigh_0[6]/reg1_0/a_87_n61# Vdd 7.0
 C quotient_4 dbitlow_0[3]/mux1_0/w_n54_28# 7.9
-R inverter1_0/w_2_35# 2715
-R inverter1_1/w_2_35# 2715
-C shift GND 196.4
-R shift 7681
-R inverter1_2/w_2_35# 2715
-C inverter1_3/Y GND 395.1
-R inverter1_3/Y 10438
-C Vdd GND 596.4
-R Vdd 309060
-C GND GND 584.0
-R GND 36010
-R inverter1_3/w_2_35# 2715
+C quotient_6 GND 4.4
+C dbithigh_0[6]/addsub1_0/a_n15_34# Vdd 18.0
+C dbithigh_0[6]/mux1_0/w_n54_52# dbithigh_0[6]/mux1_0/a_3_36# 4.0
+C dbithigh_0[3]/reg1_0/a_12_n61# Vdd 6.7
+C dbithigh_0[0]/X GND 7.6
+C dbitlow_0[6]/mux1_0/w_n54_52# dbitlow_0[6]/mux1_0/a_n47_36# 7.3
+C dbithigh_0[2]/mux1_0/w_n54_28# S1 7.6
+C dbitlow_0[4]/shift1_0/a_40_11# GND 5.9
+C dbitlow_0[7]/mux1_0/w_n54_52# dbitlow_0[7]/mux1_0/a_3_36# 4.0
+C dbithigh_0[3]/reg1_1/a_28_n61# GND 9.6
+C dbithigh_0[0]/reg1_1/a_n5_n61# Vdd 2.8
+C dbitlow_0[0]/inbit GND 2.5
+C dbitlow_0[5]/reg1_0/a_12_n61# Vdd 6.7
+C dbithigh_0[3]/mux1_0/w_n54_52# S0 8.7
+C S0 dbitlow_0[6]/mux1_0/w_n54_52# 8.7
+C dbitlow_0[3]/mux1_0/w_n54_28# dbitlow_0[3]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[7]/reg1_1/a_45_n31# GND 5.1
+C dbitlow_0[2]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[7]/mux1_0/w_n54_28# dbithigh_0[7]/mux1_0/a_22_36# 7.7
+C dbithigh_0[4]/mux1_0/w_n54_52# dbithigh_0[4]/mux1_0/a_n47_36# 7.3
+C dbithigh_0[5]/reg1_1/a_12_n61# GND 12.1
+C dbitlow_0[2]/mux1_0/w_n54_28# dbitlow_0[2]/mux1_0/a_22_36# 7.7
+C dbithigh_0[3]/addsub1_0/a_n80_34# Vdd 33.8
+C dbithigh_0[3]/mux1_0/w_n54_52# inverter1_1/Y 9.3
+C dbithigh_0[7]/shift1_0/a_6_11# GND 7.1
+C dbithigh_0[0]/reg1_0/a_n5_n61# GND 5.1
+C inverter1_1/Y dbitlow_0[6]/mux1_0/w_n54_52# 9.3
+C divisorin_0 Vdd 4.6
+C dbithigh_0[6]/mux1_0/w_n54_28# dbithigh_0[6]/mux1_0/a_3_36# 3.1
+C dbithigh_0[0]/addsub1_0/a_n102_34# GND 8.9
+C dbithigh_0[0]/addsub1_0/a_39_72# Vdd 4.7
+C dbitlow_0[7]/shift1_0/a_6_11# Vdd 4.5
+C dbitlow_0[7]/reg1_0/a_12_n61# GND 12.1
+C dbithigh_0[5]/reg1_1/D Vdd 5.4
+C dbithigh_0[2]/reg1_1/a_45_n31# Vdd 3.1
+C dbithigh_0[7]/mux1_0/w_n54_52# dbithigh_0[7]/mux1_0/a_n15_36# 3.1
+C dbithigh_0[3]/reg1_1/a_103_n31# GND 13.6
+C dbithigh_0[0]/reg1_1/a_28_n61# Vdd 8.7
+C dbithigh_0[6]/reg1_0/a_45_n31# GND 5.1
+C dbitlow_0[5]/reg1_0/D Vdd 5.4
+C dbithigh_0[3]/mux1_0/w_n54_28# S0 3.8
+C remainder_0 dbithigh_0[6]/mux1_0/w_n54_28# 2.4
+C dbithigh_0[2]/shift1_0/a_6_11# Vdd 4.5
+C dbitlow_0[7]/reg1_0/a_103_n31# Vdd 12.1
+C dbithigh_0[4]/mux1_0/w_n54_28# dbithigh_0[4]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[3]/reg1_0/a_103_n31# GND 13.6
+C dbithigh_0[4]/reg1_1/a_n5_n61# Vdd 2.8
+C quotient_5 dbitlow_0[2]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[2]/mux1_0/w_n54_52# inverter1_0/Y 9.3
+C dbithigh_0[3]/addsub1_0/a_83_34# GND 9.2
+C dbithigh_0[3]/mux1_0/w_n54_28# inverter1_1/Y 7.9
+C dbithigh_0[0]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[4]/X Vdd 21.9
+C remainder_6 GND 12.5
+C dbithigh_0[1]/reg1_0/a_45_n31# Vdd 3.1
+C dbitlow_0[5]/mux1_0/w_n54_52# dbitlow_0[5]/mux1_0/a_n47_36# 7.3
+C dbitlow_0[2]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[6]/shift1_0/a_40_11# GND 5.9
+C dbitlow_0[7]/reg1_0/D GND 6.3
+C dbitlow_0[6]/mux1_0/w_n54_52# dbitlow_0[6]/mux1_0/a_3_36# 4.0
+C dbithigh_0[3]/mux1_0/D1 GND 3.2
+C dbithigh_0[1]/addsub1_0/a_n39_72# Vdd 2.9
+C dbithigh_0[1]/reg1_0/Q GND 27.9
+C dbithigh_0[0]/mux1_0/w_n54_28# inverter1_0/Y 8.6
+C dbithigh_0[7]/mux1_0/w_n54_28# dbithigh_0[7]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[7]/reg1_1/a_28_n61# Vdd 8.7
+C dbithigh_0[4]/mux1_0/w_n54_52# Vdd 17.7
+C dbitlow_0[3]/reg1_0/a_12_n61# Vdd 6.7
+C S0 dbitlow_0[4]/mux1_0/w_n54_52# 8.7
+C dbithigh_0[6]/reg1_0/a_87_n61# GND 11.0
+C dbitlow_0[2]/mux1_0/w_n54_28# dbitlow_0[2]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[4]/reg1_1/a_87_n61# Vdd 7.0
+C dbithigh_0[6]/addsub1_0/a_n15_34# GND 15.5
+C dbithigh_0[3]/reg1_0/a_12_n61# GND 12.1
+C dbitlow_0[1]/mux1_0/w_n54_28# dbitlow_0[1]/mux1_0/a_22_36# 7.7
+C dbithigh_0[1]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[2]/mux1_0/w_n54_28# inverter1_0/Y 8.6
+C dbithigh_0[4]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[1]/mux1_0/w_n54_52# dbithigh_0[1]/mux1_0/D1 6.5
+C inverter1_1/Y dbitlow_0[4]/mux1_0/w_n54_52# 9.3
+C dbitlow_0[5]/shift1_0/a_6_11# Vdd 4.5
+C dbithigh_0[4]/addsub1_0/a_n102_34# Vdd 2.1
+C dbithigh_0[0]/reg1_1/a_n5_n61# GND 5.1
+C dbithigh_0[1]/reg1_0/a_87_n61# Vdd 7.0
+C dbitlow_0[5]/reg1_0/a_12_n61# GND 12.1
+C dbithigh_0[5]/addsub1_0/a_n39_34# GND 2.9
+C S1 dbitlow_0[6]/mux1_0/w_n54_28# 7.6
+C quotient_7 GND 4.4
+C dbithigh_0[1]/addsub1_0/a_n15_34# Vdd 18.0
+C dbithigh_0[7]/reg1_1/a_103_n31# Vdd 12.1
+C dbithigh_0[0]/mux1_0/w_n54_28# sign 5.5
+C dbitlow_0[3]/reg1_0/D Vdd 5.4
+C dbitlow_0[5]/reg1_0/a_103_n31# Vdd 12.1
+C dbithigh_0[3]/addsub1_0/a_n80_34# GND 25.8
+C divisorin_0 GND 5.6
+C dbithigh_0[7]/reg1_0/a_103_n31# Vdd 12.1
+C quotient_6 dbitlow_0[1]/mux1_0/w_n54_28# 7.9
+C dbitlow_0[7]/shift1_0/a_6_11# GND 7.1
+C dbithigh_0[7]/addsub1_0/a_83_34# Vdd 11.7
+C remainder_3 Vdd 12.0
+C dbithigh_0[6]/mux1_0/w_n54_52# S1 4.8
+C dbithigh_0[5]/reg1_1/D GND 6.3
+C dbithigh_0[4]/reg1_0/a_28_n61# Vdd 8.7
+C dbithigh_0[2]/reg1_1/a_45_n31# GND 5.1
+C dbithigh_0[1]/mux1_0/w_n54_28# dbithigh_0[1]/mux1_0/D1 5.5
+C and1_0/a_11_19# Vdd 7.2
+C dbitlow_0[4]/mux1_0/w_n54_52# dbitlow_0[4]/mux1_0/a_n47_36# 7.3
+C reset_n clk 9.7
+C dbithigh_0[0]/reg1_1/a_28_n61# GND 9.6
+C dbitlow_0[5]/reg1_0/D GND 6.3
+C inverter1_4/Y Vdd 164.2
+C dbitlow_0[5]/mux1_0/w_n54_52# dbitlow_0[5]/mux1_0/a_3_36# 4.0
+C dbithigh_0[5]/reg1_0/Q Vdd 21.4
+C dbithigh_0[2]/shift1_0/a_6_11# GND 7.1
+C dbitlow_0[7]/reg1_0/a_103_n31# GND 13.6
+C dbithigh_0[7]/mux1_0/D1 Vdd 2.4
+C dbitlow_0[6]/reg1_0/a_45_n31# Vdd 3.1
+C divisorin_5 Vdd 4.6
+C dbitlow_0[1]/reg1_0/a_12_n61# Vdd 6.7
+C dbithigh_0[4]/reg1_1/a_n5_n61# GND 5.1
+C S0 dbitlow_0[2]/mux1_0/w_n54_52# 8.7
+C dbitlow_0[1]/mux1_0/w_n54_28# dbitlow_0[1]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[2]/inbit Vdd 2.0
+C dbitlow_0[0]/mux1_0/w_n54_52# dbitlow_0[0]/mux1_0/a_3_36# 4.0
+C dbithigh_0[4]/X GND 21.9
+C dbithigh_0[7]/reg1_0/a_12_n61# Vdd 6.7
+C dbithigh_0[1]/reg1_0/a_45_n31# GND 5.1
+C inverter1_1/Y dbitlow_0[2]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[6]/mux1_0/w_n54_28# S1 7.6
+C dbitlow_0[3]/shift1_0/a_6_11# Vdd 4.5
+C dbithigh_0[7]/reg1_1/a_28_n61# GND 9.6
+C Vdd GND 32.0
+C dbithigh_0[0]/mux1_0/w_n54_28# dbithigh_0[0]/mux1_0/a_n47_36# 10.0
+C dbitlow_0[3]/reg1_0/a_12_n61# GND 12.1
+C S1 dbitlow_0[4]/mux1_0/w_n54_28# 7.6
+C S0 dbithigh_0[7]/mux1_0/w_n54_52# 8.7
+C quotient_7 dbitlow_0[0]/mux1_0/w_n54_52# 7.8
+C dbithigh_0[4]/reg1_1/a_87_n61# GND 11.0
+C dbithigh_0[6]/mux1_0/w_n54_52# dbithigh_0[6]/mux1_0/a_n47_36# 7.3
+C dbitlow_0[1]/reg1_0/D Vdd 5.4
+C dbitlow_0[3]/reg1_0/a_103_n31# Vdd 12.1
+C dbithigh_0[7]/addsub1_0/a_n80_34# Vdd 33.8
+C dbithigh_0[1]/shift1_0/a_40_11# GND 5.9
+C inverter1_1/Y dbithigh_0[7]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[4]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[2]/reg1_1/a_28_n61# Vdd 8.7
+C dbitlow_0[0]/mux1_0/w_n54_28# dbitlow_0[0]/mux1_0/a_3_36# 3.1
+C dbitlow_0[7]/mux1_0/w_n54_28# GND 19.2
+C dbitlow_0[5]/shift1_0/a_6_11# GND 7.1
+C dbithigh_0[4]/addsub1_0/a_n102_34# GND 8.9
+C dbithigh_0[4]/addsub1_0/a_39_72# Vdd 4.7
+C inverter1_0/Y dbitlow_0[6]/mux1_0/w_n54_28# 8.6
+C dbithigh_0[1]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[6]/reg1_1/a_45_n31# Vdd 3.1
+C dbitlow_0[6]/reg1_0/a_28_n61# Vdd 8.7
+C dbitlow_0[6]/reg1_0/a_87_n61# Vdd 7.0
+C dbithigh_0[1]/addsub1_0/a_n15_34# GND 15.5
+C dbitlow_0[3]/mux1_0/w_n54_52# dbitlow_0[3]/mux1_0/a_n47_36# 7.3
+C dbithigh_0[7]/reg1_1/a_103_n31# GND 13.6
+C dbithigh_0[4]/mux1_0/w_n54_28# GND 21.6
+C dbithigh_0[4]/reg1_1/a_12_n61# Vdd 6.7
+C dbitlow_0[3]/reg1_0/D GND 6.3
+C dbitlow_0[4]/mux1_0/w_n54_52# dbitlow_0[4]/mux1_0/a_3_36# 4.0
+C S0 dbithigh_0[7]/mux1_0/w_n54_28# 3.8
+C dbitlow_0[5]/reg1_0/a_103_n31# GND 13.6
+C quotient_7 dbitlow_0[0]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[6]/shift1_0/a_6_11# Vdd 4.5
+C dbitlow_0[4]/reg1_0/a_45_n31# Vdd 3.1
+C dbithigh_0[3]/addsub1_0/a_39_34# GND 4.7
+C dbithigh_0[2]/mux1_0/w_n54_52# dbithigh_0[2]/mux1_0/a_22_36# 9.4
+C dbithigh_0[6]/mux1_0/w_n54_28# dbithigh_0[6]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[7]/reg1_0/a_103_n31# GND 13.6
+C dbitlow_0[0]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[6]/mux1_0/w_n54_52# inverter1_0/Y 9.3
+C dbithigh_0[0]/addsub1_0/a_n39_34# GND 2.9
+C dbithigh_0[7]/addsub1_0/a_83_34# GND 9.2
+C remainder_3 GND 12.5
+C inverter1_1/Y dbithigh_0[7]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[4]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[1]/mux1_0/w_n54_52# dbithigh_0[1]/mux1_0/a_3_36# 4.0
+C dbithigh_0[2]/reg1_1/a_103_n31# Vdd 12.1
+C and1_0/a_11_19# GND 5.3
+C dbithigh_0[5]/reg1_0/a_45_n31# Vdd 3.1
+C inverter1_4/Y GND 165.7
+C dbitlow_0[1]/shift1_0/a_6_11# Vdd 4.5
+C dbithigh_0[5]/reg1_0/Q GND 27.9
+C dbithigh_0[7]/mux1_0/D1 GND 3.2
+C dbithigh_0[5]/addsub1_0/a_n39_72# Vdd 2.9
+C dbithigh_0[0]/mux1_0/w_n54_52# Vdd 17.7
+C dbitlow_0[6]/reg1_0/a_45_n31# GND 5.1
+C dbitlow_0[1]/reg1_0/a_103_n31# Vdd 12.1
+C divisorin_5 GND 5.6
+C dbitlow_0[0]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[2]/reg1_0/a_103_n31# Vdd 12.1
+C S1 dbitlow_0[2]/mux1_0/w_n54_28# 7.6
+C dbitlow_0[1]/reg1_0/a_12_n61# GND 12.1
+C dbithigh_0[0]/mux1_0/w_n54_28# dbithigh_0[0]/mux1_0/a_3_36# 3.1
+C dbithigh_0[2]/addsub1_0/a_83_34# Vdd 11.7
+C dbithigh_0[2]/inbit GND 2.5
+C dbithigh_0[1]/mux1_0/w_n54_52# S1 4.8
+C dbitlow_0[0]/reg1_0/a_87_n61# Vdd 7.0
+C dbithigh_0[2]/mux1_0/w_n54_28# dbithigh_0[2]/mux1_0/a_22_36# 7.7
+C dbithigh_0[7]/reg1_0/a_12_n61# GND 12.1
+C dbithigh_0[5]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[6]/mux1_0/w_n54_28# inverter1_0/Y 8.6
+C dbithigh_0[3]/mux1_0/w_n54_52# dbithigh_0[3]/mux1_0/D1 6.5
+C dbithigh_0[0]/reg1_0/Q Vdd 21.4
+C dbithigh_0[2]/mux1_0/D1 Vdd 2.4
+C dbitlow_0[5]/mux1_0/w_n54_28# GND 19.2
+C dbitlow_0[3]/shift1_0/a_6_11# GND 7.1
+C dbithigh_0[1]/mux1_0/w_n54_28# dbithigh_0[1]/mux1_0/a_3_36# 3.1
+C inverter1_0/Y dbitlow_0[4]/mux1_0/w_n54_28# 8.6
+C dbithigh_0[5]/reg1_0/a_87_n61# Vdd 7.0
+C dbitlow_0[4]/reg1_0/a_28_n61# Vdd 8.7
+C dbitlow_0[4]/reg1_0/a_87_n61# Vdd 7.0
+C dbithigh_0[2]/mux1_0/w_n54_52# dbithigh_0[2]/mux1_0/a_n15_36# 3.1
+C dbitlow_0[2]/mux1_0/w_n54_52# dbitlow_0[2]/mux1_0/a_n47_36# 7.3
+C dbithigh_0[5]/addsub1_0/a_n15_34# Vdd 18.0
+C dbithigh_0[2]/reg1_0/a_12_n61# Vdd 6.7
+C dbitlow_0[3]/mux1_0/w_n54_52# dbitlow_0[3]/mux1_0/a_3_36# 4.0
+C dbitlow_0[1]/reg1_0/D GND 6.3
+C dbitlow_0[3]/reg1_0/a_103_n31# GND 13.6
+C dbitlow_0[2]/reg1_0/a_45_n31# Vdd 3.1
+C remainder_5 dbithigh_0[1]/mux1_0/w_n54_28# 2.4
+C dbithigh_0[7]/addsub1_0/a_n80_34# GND 25.8
+C dbithigh_0[1]/mux1_0/w_n54_28# S1 7.6
+C dbithigh_0[2]/reg1_1/a_28_n61# GND 9.6
+C dbithigh_0[2]/mux1_0/w_n54_52# S0 8.7
+C dbithigh_0[7]/remainder Vdd 11.5
+C dbithigh_0[6]/reg1_1/a_45_n31# GND 5.1
+C dbithigh_0[3]/mux1_0/w_n54_28# dbithigh_0[3]/mux1_0/D1 5.5
+C dbitlow_0[6]/reg1_0/a_28_n61# GND 9.6
+C S1 dbitlow_0[7]/mux1_0/w_n54_52# 4.8
+C dbitlow_0[6]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[4]/reg1_1/a_12_n61# GND 12.1
+C dbithigh_0[2]/addsub1_0/a_n80_34# Vdd 33.8
+C dbithigh_0[6]/shift1_0/a_6_11# GND 7.1
+C dbithigh_0[2]/mux1_0/w_n54_52# inverter1_1/Y 9.3
+C dbitlow_0[4]/reg1_0/a_45_n31# GND 5.1
+C dbithigh_0[0]/mux1_0/w_n54_28# S0 3.8
+C divisorin_1 Vdd 4.6
+C dbithigh_0[2]/mux1_0/w_n54_28# dbithigh_0[2]/mux1_0/a_n15_36# 4.5
+C dbitlow_0[0]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[6]/inbit Vdd 2.0
+C dbithigh_0[4]/reg1_1/D Vdd 5.4
+C dbithigh_0[1]/reg1_1/a_45_n31# Vdd 3.1
+C dbithigh_0[0]/mux1_0/w_n54_28# inverter1_1/Y 7.9
+C dbithigh_0[2]/reg1_1/a_103_n31# GND 13.6
+C dbithigh_0[5]/reg1_0/a_45_n31# GND 5.1
+C dbithigh_0[2]/mux1_0/w_n54_28# S0 3.8
+C dbitlow_0[3]/mux1_0/w_n54_28# GND 19.2
+C dbitlow_0[1]/shift1_0/a_6_11# GND 7.1
+C dbitlow_0[1]/reg1_0/a_103_n31# GND 13.6
+C inverter1_0/Y dbitlow_0[2]/mux1_0/w_n54_28# 8.6
+C dbithigh_0[2]/reg1_0/a_103_n31# GND 13.6
+C dbithigh_0[3]/reg1_1/a_n5_n61# Vdd 2.8
+C dbithigh_0[1]/mux1_0/w_n54_52# inverter1_0/Y 9.3
+C dbitlow_0[2]/reg1_0/a_28_n61# Vdd 8.7
+C dbithigh_0[2]/addsub1_0/a_83_34# GND 9.2
+C dbitlow_0[2]/reg1_0/a_87_n61# Vdd 7.0
+C dbitlow_0[1]/mux1_0/w_n54_52# dbitlow_0[1]/mux1_0/a_n47_36# 7.3
+C dbitlow_0[0]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[2]/mux1_0/w_n54_28# inverter1_1/Y 7.9
+C dbitlow_0[0]/mux1_0/w_n54_52# dbitlow_0[0]/mux1_0/a_n47_36# 7.3
+C dbitlow_0[2]/mux1_0/w_n54_52# dbitlow_0[2]/mux1_0/a_3_36# 4.0
+C dbithigh_0[3]/X Vdd 21.9
+C dbithigh_0[0]/reg1_0/a_45_n31# Vdd 3.1
+C dbitlow_0[7]/mux1_0/w_n54_28# dbitlow_0[7]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[5]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[0]/reg1_0/Q GND 27.9
+C dbithigh_0[2]/mux1_0/D1 GND 3.2
+C dbithigh_0[0]/addsub1_0/a_n39_72# Vdd 2.9
+C dbithigh_0[6]/reg1_1/a_28_n61# Vdd 8.7
+C dbithigh_0[3]/mux1_0/w_n54_52# Vdd 17.7
+C inverter1_1/Y S1 9.4
+C dbitlow_0[6]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[5]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[3]/reg1_1/a_87_n61# Vdd 7.0
+C S1 dbitlow_0[5]/mux1_0/w_n54_52# 4.8
+C dbitlow_0[4]/reg1_0/a_28_n61# GND 9.6
+C dbitlow_0[4]/reg1_0/a_87_n61# GND 11.0
+C dbithigh_0[5]/addsub1_0/a_n15_34# GND 15.5
+C inverter1_2/Y Vdd 108.9
+C dbitlow_0[0]/mux1_0/w_n54_28# GND 19.2
+C dbitlow_0[0]/reg1_0/a_12_n61# Vdd 6.7
+C dbithigh_0[2]/reg1_0/a_12_n61# GND 12.1
+C dbithigh_0[1]/mux1_0/w_n54_28# inverter1_0/Y 8.6
+C dbithigh_0[0]/mux1_0/w_n54_52# dbithigh_0[0]/mux1_0/a_22_36# 9.4
+C dbitlow_0[2]/reg1_0/a_45_n31# GND 5.1
+C dbithigh_0[3]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[7]/addsub1_0/a_39_34# GND 4.7
+C dbithigh_0[4]/mux1_0/w_n54_52# dbithigh_0[4]/mux1_0/a_22_36# 9.4
+C dbitlow_0[0]/mux1_0/w_n54_28# dbitlow_0[0]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[3]/addsub1_0/a_n102_34# Vdd 2.1
+C dbithigh_0[4]/addsub1_0/a_n39_34# GND 2.9
+C dbithigh_0[0]/reg1_0/a_87_n61# Vdd 7.0
+C dbithigh_0[7]/remainder GND 11.9
+C dbitlow_0[5]/inbit Vdd 2.0
+C dbithigh_0[0]/addsub1_0/a_n15_34# Vdd 18.0
+C inverter1_0/Y dbitlow_0[7]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[3]/mux1_0/w_n54_52# dbithigh_0[3]/mux1_0/a_3_36# 4.0
+C dbithigh_0[6]/reg1_1/a_103_n31# Vdd 12.1
+C dbitlow_0[7]/reg1_0/a_n5_n61# Vdd 2.8
+C dbitlow_0[1]/mux1_0/w_n54_28# GND 19.2
+C dbithigh_0[2]/addsub1_0/a_n80_34# GND 25.8
+C divisorin_1 GND 5.6
+C dbithigh_0[6]/reg1_0/a_103_n31# Vdd 12.1
+C dbithigh_0[6]/addsub1_0/a_83_34# Vdd 11.7
+C dbithigh_0[6]/inbit GND 2.5
+C dbithigh_0[5]/mux1_0/w_n54_52# S1 4.8
+C remainder_4 Vdd 12.0
+C dbithigh_0[4]/reg1_1/D GND 6.3
+C dbithigh_0[3]/reg1_0/a_28_n61# Vdd 8.7
+C dbithigh_0[1]/reg1_1/a_45_n31# GND 5.1
+C dbitlow_0[1]/mux1_0/w_n54_52# dbitlow_0[1]/mux1_0/a_3_36# 4.0
+C dbithigh_0[4]/mux1_0/w_n54_28# dbithigh_0[4]/mux1_0/a_22_36# 7.7
+C dbithigh_0[1]/mux1_0/w_n54_52# dbithigh_0[1]/mux1_0/a_n47_36# 7.3
+C dbitlow_0[6]/mux1_0/w_n54_28# dbitlow_0[6]/mux1_0/a_n47_36# 10.0
+C dbitlow_0[7]/mux1_0/w_n54_28# dbitlow_0[7]/mux1_0/a_3_36# 3.1
+C dbithigh_0[4]/reg1_0/Q Vdd 21.4
+C dbithigh_0[6]/mux1_0/D1 Vdd 2.4
+C dbithigh_0[5]/mux1_0/w_n54_52# dbithigh_0[5]/mux1_0/D1 6.5
+C dbithigh_0[0]/reg1_1/a_45_n31# Vdd 3.1
+C divisorin_6 Vdd 4.6
+C dbithigh_0[3]/mux1_0/w_n54_28# dbithigh_0[3]/mux1_0/a_3_36# 3.1
+C dbitlow_0[4]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[3]/reg1_1/a_n5_n61# GND 5.1
+C S0 dbitlow_0[6]/mux1_0/w_n54_28# 3.8
+C dbithigh_0[1]/inbit Vdd 2.0
+C S1 dbitlow_0[3]/mux1_0/w_n54_52# 4.8
+C dbitlow_0[2]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[0]/mux1_0/w_n54_52# dbithigh_0[0]/mux1_0/a_n15_36# 3.1
+C dbitlow_0[2]/reg1_0/a_87_n61# GND 11.0
+C Vdd shift 111.6
+C dbithigh_0[4]/mux1_0/w_n54_52# dbithigh_0[4]/mux1_0/a_n15_36# 3.1
+C S0 inverter1_0/Y 6.5
+C dbithigh_0[6]/reg1_0/a_12_n61# Vdd 6.7
+C dbithigh_0[3]/X GND 21.9
+C dbithigh_0[0]/reg1_0/a_45_n31# GND 5.1
+C inverter1_1/Y dbitlow_0[6]/mux1_0/w_n54_28# 7.9
+C remainder_3 dbithigh_0[3]/mux1_0/w_n54_28# 2.4
+C dbithigh_0[5]/mux1_0/w_n54_28# S1 7.6
+C dbitlow_0[7]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[6]/reg1_1/a_28_n61# GND 9.6
+C dbithigh_0[1]/mux1_0/w_n54_28# dbithigh_0[1]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[6]/mux1_0/w_n54_52# S0 8.7
+C dbitlow_0[3]/inbit Vdd 2.0
+C inverter1_0/Y dbitlow_0[5]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[3]/reg1_1/a_87_n61# GND 11.0
+C dbithigh_0[5]/mux1_0/w_n54_28# dbithigh_0[5]/mux1_0/D1 5.5
+C dbithigh_0[0]/reg1_1/a_87_n61# Vdd 7.0
+C inverter1_2/Y GND 60.0
+C dbitlow_0[5]/reg1_0/a_n5_n61# Vdd 2.8
+C quotient_1 GND 4.4
+C dbitlow_0[0]/reg1_0/a_12_n61# GND 12.1
+C dbithigh_0[6]/addsub1_0/a_n80_34# Vdd 33.8
+C dbithigh_0[6]/mux1_0/w_n54_52# inverter1_1/Y 9.3
+C dbithigh_0[3]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[4]/mux1_0/w_n54_28# dbithigh_0[4]/mux1_0/a_n15_36# 4.5
+C dbithigh_0[1]/reg1_1/a_28_n61# Vdd 8.7
+C dbithigh_0[3]/addsub1_0/a_n102_34# GND 8.9
+C dbithigh_0[3]/addsub1_0/a_39_72# Vdd 4.7
+C dbithigh_0[0]/reg1_0/a_87_n61# GND 11.0
+C dbitlow_0[0]/reg1_0/D Vdd 5.4
+C dbithigh_0[5]/reg1_1/a_45_n31# Vdd 3.1
+C dbitlow_0[5]/inbit GND 2.5
+C dbithigh_0[0]/addsub1_0/a_n15_34# GND 15.5
+C dbitlow_0[5]/mux1_0/w_n54_28# dbitlow_0[5]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[6]/reg1_1/a_103_n31# GND 13.6
+C dbithigh_0[3]/mux1_0/w_n54_28# GND 21.6
+C dbithigh_0[3]/reg1_1/a_12_n61# Vdd 6.7
+C dbitlow_0[7]/reg1_0/a_n5_n61# GND 5.1
+C dbitlow_0[6]/mux1_0/w_n54_28# dbitlow_0[6]/mux1_0/a_3_36# 3.1
+C dbithigh_0[6]/mux1_0/w_n54_28# S0 3.8
+C dbithigh_0[5]/shift1_0/a_6_11# Vdd 4.5
+C dbithigh_0[2]/addsub1_0/a_39_34# GND 4.7
+C dbitlow_0[2]/mux1_0/w_n54_52# Vdd 17.7
+C dbithigh_0[6]/reg1_0/a_103_n31# GND 13.6
+C S0 dbitlow_0[4]/mux1_0/w_n54_28# 3.8
+C dbithigh_0[7]/reg1_1/a_n5_n61# Vdd 2.8
+C S1 dbitlow_0[1]/mux1_0/w_n54_52# 4.8
+C dbithigh_0[5]/mux1_0/w_n54_52# inverter1_0/Y 9.3
+C dbithigh_0[6]/addsub1_0/a_83_34# GND 9.2
+C remainder_4 GND 12.5
+C dbithigh_0[6]/mux1_0/w_n54_28# inverter1_1/Y 7.9
+C dbithigh_0[3]/reg1_0/a_28_n61# GND 9.6
+C dbithigh_0[7]/X Vdd 21.9
+C dbithigh_0[1]/reg1_1/a_103_n31# Vdd 12.1
+C dbithigh_0[4]/reg1_0/a_45_n31# Vdd 3.1
+C inverter1_1/Y dbitlow_0[4]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[4]/reg1_0/Q GND 27.9
+C dbitlow_0[5]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[6]/mux1_0/D1 GND 3.2
+C dbithigh_0[4]/addsub1_0/a_n39_72# Vdd 2.9
+C dbithigh_0[0]/reg1_1/a_45_n31# GND 5.1
+C dbithigh_0[7]/mux1_0/w_n54_52# Vdd 17.7
+C divisorin_6 GND 5.6
+C dbithigh_0[1]/reg1_0/a_103_n31# Vdd 12.1
+C dbitlow_0[1]/inbit Vdd 2.0
+C inverter1_0/Y dbitlow_0[3]/mux1_0/w_n54_52# 9.3
+C dbithigh_0[1]/addsub1_0/a_83_34# Vdd 11.7
+C dbithigh_0[1]/inbit GND 2.5
+C dbithigh_0[7]/reg1_1/a_87_n61# Vdd 7.0
+C shift GND 62.2
+C dbitlow_0[3]/reg1_0/a_n5_n61# Vdd 2.8
+C quotient_3 GND 4.4
+C dbithigh_0[6]/reg1_0/a_12_n61# GND 12.1
+C dbithigh_0[4]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[7]/reg1_0/a_n5_n61# Vdd 2.8
+C dbithigh_0[5]/mux1_0/w_n54_28# inverter1_0/Y 8.6
+C dbithigh_0[6]/mux1_0/w_n54_52# dbithigh_0[6]/mux1_0/a_22_36# 9.4
+C dbithigh_0[1]/mux1_0/D1 Vdd 2.4
+C dbitlow_0[7]/shift1_0/a_40_11# GND 5.9
+C dbithigh_0[7]/addsub1_0/a_n102_34# Vdd 2.1
+C dbithigh_0[4]/reg1_0/a_87_n61# Vdd 7.0
+C remainder_6 dbithigh_0[0]/mux1_0/w_n54_28# 2.4
+C dbitlow_0[3]/inbit GND 2.5
+C Vdd load 10.3
+C dbitlow_0[7]/mux1_0/w_n54_52# dbitlow_0[7]/mux1_0/a_22_36# 9.4
+C dbitlow_0[4]/mux1_0/w_n54_28# dbitlow_0[4]/mux1_0/a_n47_36# 10.0
+C dbithigh_0[5]/mux1_0/w_n54_52# dbithigh_0[5]/mux1_0/a_3_36# 4.0
+C dbithigh_0[4]/addsub1_0/a_n15_34# Vdd 18.0
+C dbithigh_0[0]/reg1_1/a_87_n61# GND 11.0
+C dbithigh_0[1]/reg1_0/a_12_n61# Vdd 6.7
+C dbitlow_0[5]/mux1_0/w_n54_28# dbitlow_0[5]/mux1_0/a_3_36# 3.1
+C dbitlow_0[5]/reg1_0/a_n5_n61# GND 5.1
+C dbithigh_0[6]/addsub1_0/a_n80_34# GND 25.8
+C S0 dbitlow_0[2]/mux1_0/w_n54_28# 3.8
+C dbithigh_0[1]/reg1_1/a_28_n61# GND 9.6
+C dbithigh_0[1]/mux1_0/w_n54_52# S0 8.7
+C remainder_0 Vdd 12.0
+C dbitlow_0[0]/reg1_0/D GND 6.3
+C dbithigh_0[7]/reg1_0/a_28_n61# Vdd 8.7
+C dbithigh_0[6]/mux1_0/w_n54_28# dbithigh_0[6]/mux1_0/a_22_36# 7.7
+C dbithigh_0[5]/reg1_1/a_45_n31# GND 5.1
+C dbithigh_0[3]/mux1_0/w_n54_52# dbithigh_0[3]/mux1_0/a_n47_36# 7.3
+C inverter1_1/Y dbitlow_0[2]/mux1_0/w_n54_28# 7.9
+C dbithigh_0[3]/reg1_1/a_12_n61# GND 12.1
+C dbitlow_0[3]/shift1_0/a_40_11# Vdd 5.1
+C dbithigh_0[1]/addsub1_0/a_n80_34# Vdd 33.8
+C dbithigh_0[1]/mux1_0/w_n54_52# inverter1_1/Y 9.3
+C quotient_0 dbitlow_0[7]/mux1_0/w_n54_52# 7.8
+C dbithigh_0[7]/mux1_0/w_n54_52# dbithigh_0[7]/mux1_0/D1 6.5
+C dbithigh_0[5]/shift1_0/a_6_11# GND 7.1
+C dbithigh_0[0]/shift1_0/a_6_11# Vdd 4.5
+C divisorin_2 Vdd 4.6
+C dbithigh_0[5]/mux1_0/w_n54_28# dbithigh_0[5]/mux1_0/a_3_36# 3.1
+C dbithigh_0[7]/reg1_1/a_n5_n61# GND 5.1
+C inverter1_0/Y dbitlow_0[1]/mux1_0/w_n54_52# 9.3
+C shift GND 398.5
+R shift 10107
+C GND GND 1488.5
+R GND 128258
+C Vdd GND 1484.7
+R Vdd 1055627
+R and1_0/a_11_n6# 40
+C clk GND 1198.2
+R clk 32596
+R and1_0/a_11_19# 530
+C load GND 126.6
+R load 718
 R dbitlow_0[7]/mux1_0/a_22_36# 1106
-C S1 GND 102.2
-R S1 7194
 R dbitlow_0[7]/mux1_0/a_3_36# 527
 R dbitlow_0[7]/mux1_0/a_n15_36# 527
-R dividendin_0 130
+C dividendin_0 GND 29.4
+R dividendin_0 134
 R dbitlow_0[7]/mux1_0/a_n47_36# 1106
-C inverter1_0/Y GND 228.9
-R inverter1_0/Y 16125
-C inverter1_1/Y GND 152.9
-R inverter1_1/Y 12497
-C S0 GND 89.8
-R S0 7668
 R dbitlow_0[7]/mux1_0/w_n54_52# 10580
-C inbit GND 21.3
-R inbit 132
-C dbitlow_0[7]/mux1_0/Y GND 2.8
-R dbitlow_0[7]/mux1_0/Y 527
-R dbitlow_0[7]/shift1_0/a_40_11# 536
-R dbitlow_0[7]/shift1_0/a_6_11# 941
-C inverter1_2/Y GND 253.4
-R inverter1_2/Y 11269
+C inbit GND 19.7
+R inbit 36
+C dbitlow_0[6]/inbit GND 18.6
+R dbitlow_0[6]/inbit 354
+R dbitlow_0[7]/shift1_0/a_40_11# 535
+R dbitlow_0[7]/shift1_0/a_6_11# 564
 R dbitlow_0[7]/reg1_0/a_129_n61# 36
 R dbitlow_0[7]/reg1_0/a_103_n61# 53
 R dbitlow_0[7]/reg1_0/a_45_n61# 53
 C quotient_0 GND 50.5
-R quotient_0 953
+R quotient_0 952
 R dbitlow_0[7]/reg1_0/a_129_n31# 159
 R dbitlow_0[7]/reg1_0/a_45_n31# 512
 R dbitlow_0[7]/reg1_0/a_n5_n61# 527
@@ -764,27 +2177,24 @@ R dbitlow_0[7]/reg1_0/a_103_n31# 954
 R dbitlow_0[7]/reg1_0/a_87_n61# 939
 R dbitlow_0[7]/reg1_0/a_28_n61# 932
 R dbitlow_0[7]/reg1_0/a_12_n61# 940
-C dbitlow_0[6]/inbit GND 24.7
-R dbitlow_0[6]/inbit 942
-C reset_n GND 248.4
-R reset_n 16209
-C clk GND 355.2
-R clk 10661
+C dbitlow_0[7]/reg1_0/D GND 2.0
+R dbitlow_0[7]/reg1_0/D 534
 R dbitlow_0[6]/mux1_0/a_22_36# 1106
 R dbitlow_0[6]/mux1_0/a_3_36# 527
 R dbitlow_0[6]/mux1_0/a_n15_36# 527
-R dividendin_1 130
+C dividendin_1 GND 29.4
+R dividendin_1 134
 R dbitlow_0[6]/mux1_0/a_n47_36# 1106
 R dbitlow_0[6]/mux1_0/w_n54_52# 10580
-C dbitlow_0[6]/mux1_0/Y GND 2.8
-R dbitlow_0[6]/mux1_0/Y 527
-R dbitlow_0[6]/shift1_0/a_40_11# 536
-R dbitlow_0[6]/shift1_0/a_6_11# 941
+C dbitlow_0[5]/inbit GND 18.6
+R dbitlow_0[5]/inbit 354
+R dbitlow_0[6]/shift1_0/a_40_11# 535
+R dbitlow_0[6]/shift1_0/a_6_11# 564
 R dbitlow_0[6]/reg1_0/a_129_n61# 36
 R dbitlow_0[6]/reg1_0/a_103_n61# 53
 R dbitlow_0[6]/reg1_0/a_45_n61# 53
 C quotient_1 GND 50.5
-R quotient_1 953
+R quotient_1 952
 R dbitlow_0[6]/reg1_0/a_129_n31# 159
 R dbitlow_0[6]/reg1_0/a_45_n31# 512
 R dbitlow_0[6]/reg1_0/a_n5_n61# 527
@@ -792,23 +2202,24 @@ R dbitlow_0[6]/reg1_0/a_103_n31# 954
 R dbitlow_0[6]/reg1_0/a_87_n61# 939
 R dbitlow_0[6]/reg1_0/a_28_n61# 932
 R dbitlow_0[6]/reg1_0/a_12_n61# 940
-C dbitlow_0[5]/inbit GND 24.7
-R dbitlow_0[5]/inbit 942
+C dbitlow_0[6]/reg1_0/D GND 2.0
+R dbitlow_0[6]/reg1_0/D 534
 R dbitlow_0[5]/mux1_0/a_22_36# 1106
 R dbitlow_0[5]/mux1_0/a_3_36# 527
 R dbitlow_0[5]/mux1_0/a_n15_36# 527
-R dividendin_2 130
+C dividendin_2 GND 29.4
+R dividendin_2 134
 R dbitlow_0[5]/mux1_0/a_n47_36# 1106
 R dbitlow_0[5]/mux1_0/w_n54_52# 10580
-C dbitlow_0[5]/mux1_0/Y GND 2.8
-R dbitlow_0[5]/mux1_0/Y 527
-R dbitlow_0[5]/shift1_0/a_40_11# 536
-R dbitlow_0[5]/shift1_0/a_6_11# 941
+C dbitlow_0[4]/inbit GND 18.6
+R dbitlow_0[4]/inbit 354
+R dbitlow_0[5]/shift1_0/a_40_11# 535
+R dbitlow_0[5]/shift1_0/a_6_11# 564
 R dbitlow_0[5]/reg1_0/a_129_n61# 36
 R dbitlow_0[5]/reg1_0/a_103_n61# 53
 R dbitlow_0[5]/reg1_0/a_45_n61# 53
 C quotient_2 GND 50.5
-R quotient_2 953
+R quotient_2 952
 R dbitlow_0[5]/reg1_0/a_129_n31# 159
 R dbitlow_0[5]/reg1_0/a_45_n31# 512
 R dbitlow_0[5]/reg1_0/a_n5_n61# 527
@@ -816,23 +2227,24 @@ R dbitlow_0[5]/reg1_0/a_103_n31# 954
 R dbitlow_0[5]/reg1_0/a_87_n61# 939
 R dbitlow_0[5]/reg1_0/a_28_n61# 932
 R dbitlow_0[5]/reg1_0/a_12_n61# 940
-C dbitlow_0[4]/inbit GND 24.7
-R dbitlow_0[4]/inbit 942
+C dbitlow_0[5]/reg1_0/D GND 2.0
+R dbitlow_0[5]/reg1_0/D 534
 R dbitlow_0[4]/mux1_0/a_22_36# 1106
 R dbitlow_0[4]/mux1_0/a_3_36# 527
 R dbitlow_0[4]/mux1_0/a_n15_36# 527
-R dividendin_3 130
+C dividendin_3 GND 29.4
+R dividendin_3 134
 R dbitlow_0[4]/mux1_0/a_n47_36# 1106
 R dbitlow_0[4]/mux1_0/w_n54_52# 10580
-C dbitlow_0[4]/mux1_0/Y GND 2.8
-R dbitlow_0[4]/mux1_0/Y 527
-R dbitlow_0[4]/shift1_0/a_40_11# 536
-R dbitlow_0[4]/shift1_0/a_6_11# 941
+C dbitlow_0[3]/inbit GND 18.6
+R dbitlow_0[3]/inbit 354
+R dbitlow_0[4]/shift1_0/a_40_11# 535
+R dbitlow_0[4]/shift1_0/a_6_11# 564
 R dbitlow_0[4]/reg1_0/a_129_n61# 36
 R dbitlow_0[4]/reg1_0/a_103_n61# 53
 R dbitlow_0[4]/reg1_0/a_45_n61# 53
 C quotient_3 GND 50.5
-R quotient_3 953
+R quotient_3 952
 R dbitlow_0[4]/reg1_0/a_129_n31# 159
 R dbitlow_0[4]/reg1_0/a_45_n31# 512
 R dbitlow_0[4]/reg1_0/a_n5_n61# 527
@@ -840,23 +2252,24 @@ R dbitlow_0[4]/reg1_0/a_103_n31# 954
 R dbitlow_0[4]/reg1_0/a_87_n61# 939
 R dbitlow_0[4]/reg1_0/a_28_n61# 932
 R dbitlow_0[4]/reg1_0/a_12_n61# 940
-C dbitlow_0[3]/inbit GND 24.7
-R dbitlow_0[3]/inbit 942
+C dbitlow_0[4]/reg1_0/D GND 2.0
+R dbitlow_0[4]/reg1_0/D 534
 R dbitlow_0[3]/mux1_0/a_22_36# 1106
 R dbitlow_0[3]/mux1_0/a_3_36# 527
 R dbitlow_0[3]/mux1_0/a_n15_36# 527
-R dividendin_4 130
+C dividendin_4 GND 29.4
+R dividendin_4 134
 R dbitlow_0[3]/mux1_0/a_n47_36# 1106
 R dbitlow_0[3]/mux1_0/w_n54_52# 10580
-C dbitlow_0[3]/mux1_0/Y GND 2.8
-R dbitlow_0[3]/mux1_0/Y 527
-R dbitlow_0[3]/shift1_0/a_40_11# 536
-R dbitlow_0[3]/shift1_0/a_6_11# 941
+C dbitlow_0[2]/inbit GND 18.6
+R dbitlow_0[2]/inbit 354
+R dbitlow_0[3]/shift1_0/a_40_11# 535
+R dbitlow_0[3]/shift1_0/a_6_11# 564
 R dbitlow_0[3]/reg1_0/a_129_n61# 36
 R dbitlow_0[3]/reg1_0/a_103_n61# 53
 R dbitlow_0[3]/reg1_0/a_45_n61# 53
 C quotient_4 GND 50.5
-R quotient_4 953
+R quotient_4 952
 R dbitlow_0[3]/reg1_0/a_129_n31# 159
 R dbitlow_0[3]/reg1_0/a_45_n31# 512
 R dbitlow_0[3]/reg1_0/a_n5_n61# 527
@@ -864,23 +2277,24 @@ R dbitlow_0[3]/reg1_0/a_103_n31# 954
 R dbitlow_0[3]/reg1_0/a_87_n61# 939
 R dbitlow_0[3]/reg1_0/a_28_n61# 932
 R dbitlow_0[3]/reg1_0/a_12_n61# 940
-C dbitlow_0[2]/inbit GND 24.7
-R dbitlow_0[2]/inbit 942
+C dbitlow_0[3]/reg1_0/D GND 2.0
+R dbitlow_0[3]/reg1_0/D 534
 R dbitlow_0[2]/mux1_0/a_22_36# 1106
 R dbitlow_0[2]/mux1_0/a_3_36# 527
 R dbitlow_0[2]/mux1_0/a_n15_36# 527
-R dividendin_5 130
+C dividendin_5 GND 29.4
+R dividendin_5 134
 R dbitlow_0[2]/mux1_0/a_n47_36# 1106
 R dbitlow_0[2]/mux1_0/w_n54_52# 10580
-C dbitlow_0[2]/mux1_0/Y GND 2.8
-R dbitlow_0[2]/mux1_0/Y 527
-R dbitlow_0[2]/shift1_0/a_40_11# 536
-R dbitlow_0[2]/shift1_0/a_6_11# 941
+C dbitlow_0[1]/inbit GND 18.6
+R dbitlow_0[1]/inbit 354
+R dbitlow_0[2]/shift1_0/a_40_11# 535
+R dbitlow_0[2]/shift1_0/a_6_11# 564
 R dbitlow_0[2]/reg1_0/a_129_n61# 36
 R dbitlow_0[2]/reg1_0/a_103_n61# 53
 R dbitlow_0[2]/reg1_0/a_45_n61# 53
 C quotient_5 GND 50.5
-R quotient_5 953
+R quotient_5 952
 R dbitlow_0[2]/reg1_0/a_129_n31# 159
 R dbitlow_0[2]/reg1_0/a_45_n31# 512
 R dbitlow_0[2]/reg1_0/a_n5_n61# 527
@@ -888,23 +2302,24 @@ R dbitlow_0[2]/reg1_0/a_103_n31# 954
 R dbitlow_0[2]/reg1_0/a_87_n61# 939
 R dbitlow_0[2]/reg1_0/a_28_n61# 932
 R dbitlow_0[2]/reg1_0/a_12_n61# 940
-C dbitlow_0[1]/inbit GND 24.7
-R dbitlow_0[1]/inbit 942
+C dbitlow_0[2]/reg1_0/D GND 2.0
+R dbitlow_0[2]/reg1_0/D 534
 R dbitlow_0[1]/mux1_0/a_22_36# 1106
 R dbitlow_0[1]/mux1_0/a_3_36# 527
 R dbitlow_0[1]/mux1_0/a_n15_36# 527
-R dividendin_6 130
+C dividendin_6 GND 34.7
+R dividendin_6 135
 R dbitlow_0[1]/mux1_0/a_n47_36# 1106
 R dbitlow_0[1]/mux1_0/w_n54_52# 10580
-C dbitlow_0[1]/mux1_0/Y GND 2.8
-R dbitlow_0[1]/mux1_0/Y 527
-R dbitlow_0[1]/shift1_0/a_40_11# 536
-R dbitlow_0[1]/shift1_0/a_6_11# 941
+C dbitlow_0[0]/inbit GND 18.6
+R dbitlow_0[0]/inbit 354
+R dbitlow_0[1]/shift1_0/a_40_11# 535
+R dbitlow_0[1]/shift1_0/a_6_11# 564
 R dbitlow_0[1]/reg1_0/a_129_n61# 36
 R dbitlow_0[1]/reg1_0/a_103_n61# 53
 R dbitlow_0[1]/reg1_0/a_45_n61# 53
 C quotient_6 GND 50.5
-R quotient_6 953
+R quotient_6 952
 R dbitlow_0[1]/reg1_0/a_129_n31# 159
 R dbitlow_0[1]/reg1_0/a_45_n31# 512
 R dbitlow_0[1]/reg1_0/a_n5_n61# 527
@@ -912,23 +2327,22 @@ R dbitlow_0[1]/reg1_0/a_103_n31# 954
 R dbitlow_0[1]/reg1_0/a_87_n61# 939
 R dbitlow_0[1]/reg1_0/a_28_n61# 932
 R dbitlow_0[1]/reg1_0/a_12_n61# 940
-C dbitlow_0[0]/inbit GND 24.7
-R dbitlow_0[0]/inbit 942
+C dbitlow_0[1]/reg1_0/D GND 2.0
+R dbitlow_0[1]/reg1_0/D 534
 R dbitlow_0[0]/mux1_0/a_22_36# 1106
 R dbitlow_0[0]/mux1_0/a_3_36# 527
 R dbitlow_0[0]/mux1_0/a_n15_36# 527
-R dividendin_7 130
+C dividendin_7 GND 29.6
+R dividendin_7 134
 R dbitlow_0[0]/mux1_0/a_n47_36# 1106
 R dbitlow_0[0]/mux1_0/w_n54_52# 10580
-C dbitlow_0[0]/mux1_0/Y GND 2.8
-R dbitlow_0[0]/mux1_0/Y 527
-R dbitlow_0[0]/shift1_0/a_40_11# 536
-R dbitlow_0[0]/shift1_0/a_6_11# 941
+R dbitlow_0[0]/shift1_0/a_40_11# 535
+R dbitlow_0[0]/shift1_0/a_6_11# 564
 R dbitlow_0[0]/reg1_0/a_129_n61# 36
 R dbitlow_0[0]/reg1_0/a_103_n61# 53
 R dbitlow_0[0]/reg1_0/a_45_n61# 53
 C quotient_7 GND 50.5
-R quotient_7 953
+R quotient_7 952
 R dbitlow_0[0]/reg1_0/a_129_n31# 159
 R dbitlow_0[0]/reg1_0/a_45_n31# 512
 R dbitlow_0[0]/reg1_0/a_n5_n61# 527
@@ -936,5 +2350,462 @@ R dbitlow_0[0]/reg1_0/a_103_n31# 954
 R dbitlow_0[0]/reg1_0/a_87_n61# 939
 R dbitlow_0[0]/reg1_0/a_28_n61# 932
 R dbitlow_0[0]/reg1_0/a_12_n61# 940
-C outbit GND 17.2
-R outbit 537
+C dbitlow_0[0]/reg1_0/D GND 2.0
+R dbitlow_0[0]/reg1_0/D 534
+R dbithigh_0[7]/reg1_0/a_129_n61# 36
+R dbithigh_0[7]/reg1_0/a_103_n61# 53
+R dbithigh_0[7]/reg1_0/a_45_n61# 53
+R dbithigh_0[7]/reg1_0/a_129_n31# 159
+R dbithigh_0[7]/reg1_0/a_45_n31# 512
+R dbithigh_0[7]/reg1_0/a_n5_n61# 527
+R dbithigh_0[7]/reg1_0/a_103_n31# 954
+R dbithigh_0[7]/reg1_0/a_87_n61# 939
+R dbithigh_0[7]/reg1_0/a_28_n61# 932
+R dbithigh_0[7]/reg1_0/a_12_n61# 940
+R divisorin_0 405
+R dbithigh_0[7]/addsub1_0/a_106_34# 33
+R dbithigh_0[7]/addsub1_0/a_100_34# 33
+R dbithigh_0[7]/addsub1_0/a_39_34# 272
+R dbithigh_0[7]/addsub1_0/a_1_34# 44
+R dbithigh_0[7]/addsub1_0/a_n39_34# 157
+R dbithigh_0[7]/addsub1_0/a_106_72# 149
+R dbithigh_0[7]/addsub1_0/a_100_72# 149
+R dbithigh_0[7]/addsub1_0/a_39_72# 621
+C dbithigh_0[7]/X GND 27.7
+R dbithigh_0[7]/X 2558
+R dbithigh_0[7]/addsub1_0/a_1_72# 199
+R dbithigh_0[7]/addsub1_0/a_n39_72# 393
+R dbithigh_0[7]/addsub1_0/a_n102_34# 383
+R dbithigh_0[7]/addsub1_0/a_83_34# 991
+R dbithigh_0[7]/addsub1_0/a_n15_34# 1497
+C dbithigh_0[7]/reg1_0/Q GND 33.8
+R dbithigh_0[7]/reg1_0/Q 3391
+C add_n GND 338.5
+R add_n 17351
+C dbithigh_0[7]/addsub1_0/a_n80_34# GND 22.6
+R dbithigh_0[7]/addsub1_0/a_n80_34# 3854
+R dbithigh_0[7]/mux1_0/a_22_36# 1106
+C S1 GND 190.4
+R S1 14076
+R dbithigh_0[7]/mux1_0/a_3_36# 527
+C dbithigh_0[7]/mux1_0/D1 GND 9.7
+R dbithigh_0[7]/mux1_0/D1 551
+R dbithigh_0[7]/mux1_0/a_n15_36# 527
+R dbithigh_0[7]/mux1_0/a_n47_36# 1106
+C inverter1_0/Y GND 451.3
+R inverter1_0/Y 32169
+C inverter1_1/Y GND 300.9
+R inverter1_1/Y 24912
+C S0 GND 167.4
+R S0 15025
+R dbithigh_0[7]/mux1_0/w_n54_52# 10580
+C dbitlow_0[0]/outbit GND 20.9
+R dbitlow_0[0]/outbit 354
+C dbithigh_0[6]/inbit GND 18.6
+R dbithigh_0[6]/inbit 354
+R dbithigh_0[7]/shift1_0/a_40_11# 535
+R dbithigh_0[7]/shift1_0/a_6_11# 564
+C inverter1_2/Y GND 360.7
+R inverter1_2/Y 9872
+R dbithigh_0[7]/reg1_1/a_129_n61# 36
+R dbithigh_0[7]/reg1_1/a_103_n61# 53
+R dbithigh_0[7]/reg1_1/a_45_n61# 53
+C dbithigh_0[7]/remainder GND 65.6
+R dbithigh_0[7]/remainder 1393
+R dbithigh_0[7]/reg1_1/a_129_n31# 159
+R dbithigh_0[7]/reg1_1/a_45_n31# 512
+R dbithigh_0[7]/reg1_1/a_n5_n61# 527
+R dbithigh_0[7]/reg1_1/a_103_n31# 954
+R dbithigh_0[7]/reg1_1/a_87_n61# 939
+R dbithigh_0[7]/reg1_1/a_28_n61# 932
+R dbithigh_0[7]/reg1_1/a_12_n61# 940
+C dbithigh_0[7]/reg1_1/D GND 2.0
+R dbithigh_0[7]/reg1_1/D 534
+C reset_n GND 863.5
+R reset_n 48739
+C inverter1_4/Y GND 1179.9
+R inverter1_4/Y 31555
+R dbithigh_0[6]/reg1_0/a_129_n61# 36
+R dbithigh_0[6]/reg1_0/a_103_n61# 53
+R dbithigh_0[6]/reg1_0/a_45_n61# 53
+R dbithigh_0[6]/reg1_0/a_129_n31# 159
+R dbithigh_0[6]/reg1_0/a_45_n31# 512
+R dbithigh_0[6]/reg1_0/a_n5_n61# 527
+R dbithigh_0[6]/reg1_0/a_103_n31# 954
+R dbithigh_0[6]/reg1_0/a_87_n61# 939
+R dbithigh_0[6]/reg1_0/a_28_n61# 932
+R dbithigh_0[6]/reg1_0/a_12_n61# 940
+R divisorin_1 405
+R dbithigh_0[6]/addsub1_0/a_106_34# 33
+R dbithigh_0[6]/addsub1_0/a_100_34# 33
+R dbithigh_0[6]/addsub1_0/a_39_34# 272
+R dbithigh_0[6]/addsub1_0/a_1_34# 44
+R dbithigh_0[6]/addsub1_0/a_n39_34# 157
+R dbithigh_0[6]/addsub1_0/a_106_72# 149
+R dbithigh_0[6]/addsub1_0/a_100_72# 149
+R dbithigh_0[6]/addsub1_0/a_39_72# 621
+C dbithigh_0[6]/X GND 27.7
+R dbithigh_0[6]/X 2558
+R dbithigh_0[6]/addsub1_0/a_1_72# 199
+R dbithigh_0[6]/addsub1_0/a_n39_72# 393
+R dbithigh_0[6]/addsub1_0/a_n102_34# 383
+R dbithigh_0[6]/addsub1_0/a_83_34# 991
+R dbithigh_0[6]/addsub1_0/a_n15_34# 1497
+C dbithigh_0[6]/reg1_0/Q GND 33.8
+R dbithigh_0[6]/reg1_0/Q 3391
+C dbithigh_0[6]/addsub1_0/a_n80_34# GND 22.6
+R dbithigh_0[6]/addsub1_0/a_n80_34# 3854
+R dbithigh_0[6]/mux1_0/a_22_36# 1106
+R dbithigh_0[6]/mux1_0/a_3_36# 527
+C dbithigh_0[6]/mux1_0/D1 GND 9.7
+R dbithigh_0[6]/mux1_0/D1 551
+R dbithigh_0[6]/mux1_0/a_n15_36# 527
+R dbithigh_0[6]/mux1_0/a_n47_36# 1106
+R dbithigh_0[6]/mux1_0/w_n54_52# 10580
+C dbithigh_0[5]/inbit GND 18.6
+R dbithigh_0[5]/inbit 354
+R dbithigh_0[6]/shift1_0/a_40_11# 535
+R dbithigh_0[6]/shift1_0/a_6_11# 564
+R dbithigh_0[6]/reg1_1/a_129_n61# 36
+R dbithigh_0[6]/reg1_1/a_103_n61# 53
+R dbithigh_0[6]/reg1_1/a_45_n61# 53
+C remainder_0 GND 66.1
+R remainder_0 1394
+R dbithigh_0[6]/reg1_1/a_129_n31# 159
+R dbithigh_0[6]/reg1_1/a_45_n31# 512
+R dbithigh_0[6]/reg1_1/a_n5_n61# 527
+R dbithigh_0[6]/reg1_1/a_103_n31# 954
+R dbithigh_0[6]/reg1_1/a_87_n61# 939
+R dbithigh_0[6]/reg1_1/a_28_n61# 932
+R dbithigh_0[6]/reg1_1/a_12_n61# 940
+C dbithigh_0[6]/reg1_1/D GND 2.0
+R dbithigh_0[6]/reg1_1/D 534
+R dbithigh_0[5]/reg1_0/a_129_n61# 36
+R dbithigh_0[5]/reg1_0/a_103_n61# 53
+R dbithigh_0[5]/reg1_0/a_45_n61# 53
+R dbithigh_0[5]/reg1_0/a_129_n31# 159
+R dbithigh_0[5]/reg1_0/a_45_n31# 512
+R dbithigh_0[5]/reg1_0/a_n5_n61# 527
+R dbithigh_0[5]/reg1_0/a_103_n31# 954
+R dbithigh_0[5]/reg1_0/a_87_n61# 939
+R dbithigh_0[5]/reg1_0/a_28_n61# 932
+R dbithigh_0[5]/reg1_0/a_12_n61# 940
+R divisorin_2 405
+R dbithigh_0[5]/addsub1_0/a_106_34# 33
+R dbithigh_0[5]/addsub1_0/a_100_34# 33
+R dbithigh_0[5]/addsub1_0/a_39_34# 272
+R dbithigh_0[5]/addsub1_0/a_1_34# 44
+R dbithigh_0[5]/addsub1_0/a_n39_34# 157
+R dbithigh_0[5]/addsub1_0/a_106_72# 149
+R dbithigh_0[5]/addsub1_0/a_100_72# 149
+R dbithigh_0[5]/addsub1_0/a_39_72# 621
+C dbithigh_0[5]/X GND 27.7
+R dbithigh_0[5]/X 2558
+R dbithigh_0[5]/addsub1_0/a_1_72# 199
+R dbithigh_0[5]/addsub1_0/a_n39_72# 393
+R dbithigh_0[5]/addsub1_0/a_n102_34# 383
+R dbithigh_0[5]/addsub1_0/a_83_34# 991
+R dbithigh_0[5]/addsub1_0/a_n15_34# 1497
+C dbithigh_0[5]/reg1_0/Q GND 33.8
+R dbithigh_0[5]/reg1_0/Q 3391
+C dbithigh_0[5]/addsub1_0/a_n80_34# GND 22.6
+R dbithigh_0[5]/addsub1_0/a_n80_34# 3854
+R dbithigh_0[5]/mux1_0/a_22_36# 1106
+R dbithigh_0[5]/mux1_0/a_3_36# 527
+C dbithigh_0[5]/mux1_0/D1 GND 9.7
+R dbithigh_0[5]/mux1_0/D1 551
+R dbithigh_0[5]/mux1_0/a_n15_36# 527
+R dbithigh_0[5]/mux1_0/a_n47_36# 1106
+R dbithigh_0[5]/mux1_0/w_n54_52# 10580
+C dbithigh_0[4]/inbit GND 18.6
+R dbithigh_0[4]/inbit 354
+R dbithigh_0[5]/shift1_0/a_40_11# 535
+R dbithigh_0[5]/shift1_0/a_6_11# 564
+R dbithigh_0[5]/reg1_1/a_129_n61# 36
+R dbithigh_0[5]/reg1_1/a_103_n61# 53
+R dbithigh_0[5]/reg1_1/a_45_n61# 53
+C remainder_1 GND 66.1
+R remainder_1 1394
+R dbithigh_0[5]/reg1_1/a_129_n31# 159
+R dbithigh_0[5]/reg1_1/a_45_n31# 512
+R dbithigh_0[5]/reg1_1/a_n5_n61# 527
+R dbithigh_0[5]/reg1_1/a_103_n31# 954
+R dbithigh_0[5]/reg1_1/a_87_n61# 939
+R dbithigh_0[5]/reg1_1/a_28_n61# 932
+R dbithigh_0[5]/reg1_1/a_12_n61# 940
+C dbithigh_0[5]/reg1_1/D GND 2.0
+R dbithigh_0[5]/reg1_1/D 534
+R dbithigh_0[4]/reg1_0/a_129_n61# 36
+R dbithigh_0[4]/reg1_0/a_103_n61# 53
+R dbithigh_0[4]/reg1_0/a_45_n61# 53
+R dbithigh_0[4]/reg1_0/a_129_n31# 159
+R dbithigh_0[4]/reg1_0/a_45_n31# 512
+R dbithigh_0[4]/reg1_0/a_n5_n61# 527
+R dbithigh_0[4]/reg1_0/a_103_n31# 954
+R dbithigh_0[4]/reg1_0/a_87_n61# 939
+R dbithigh_0[4]/reg1_0/a_28_n61# 932
+R dbithigh_0[4]/reg1_0/a_12_n61# 940
+R divisorin_3 405
+R dbithigh_0[4]/addsub1_0/a_106_34# 33
+R dbithigh_0[4]/addsub1_0/a_100_34# 33
+R dbithigh_0[4]/addsub1_0/a_39_34# 272
+R dbithigh_0[4]/addsub1_0/a_1_34# 44
+R dbithigh_0[4]/addsub1_0/a_n39_34# 157
+R dbithigh_0[4]/addsub1_0/a_106_72# 149
+R dbithigh_0[4]/addsub1_0/a_100_72# 149
+R dbithigh_0[4]/addsub1_0/a_39_72# 621
+C dbithigh_0[4]/X GND 27.7
+R dbithigh_0[4]/X 2558
+R dbithigh_0[4]/addsub1_0/a_1_72# 199
+R dbithigh_0[4]/addsub1_0/a_n39_72# 393
+R dbithigh_0[4]/addsub1_0/a_n102_34# 383
+R dbithigh_0[4]/addsub1_0/a_83_34# 991
+R dbithigh_0[4]/addsub1_0/a_n15_34# 1497
+C dbithigh_0[4]/reg1_0/Q GND 33.8
+R dbithigh_0[4]/reg1_0/Q 3391
+C dbithigh_0[4]/addsub1_0/a_n80_34# GND 22.6
+R dbithigh_0[4]/addsub1_0/a_n80_34# 3854
+R dbithigh_0[4]/mux1_0/a_22_36# 1106
+R dbithigh_0[4]/mux1_0/a_3_36# 527
+C dbithigh_0[4]/mux1_0/D1 GND 9.7
+R dbithigh_0[4]/mux1_0/D1 551
+R dbithigh_0[4]/mux1_0/a_n15_36# 527
+R dbithigh_0[4]/mux1_0/a_n47_36# 1106
+R dbithigh_0[4]/mux1_0/w_n54_52# 10580
+C dbithigh_0[3]/inbit GND 18.6
+R dbithigh_0[3]/inbit 354
+R dbithigh_0[4]/shift1_0/a_40_11# 535
+R dbithigh_0[4]/shift1_0/a_6_11# 564
+R dbithigh_0[4]/reg1_1/a_129_n61# 36
+R dbithigh_0[4]/reg1_1/a_103_n61# 53
+R dbithigh_0[4]/reg1_1/a_45_n61# 53
+C remainder_2 GND 66.1
+R remainder_2 1394
+R dbithigh_0[4]/reg1_1/a_129_n31# 159
+R dbithigh_0[4]/reg1_1/a_45_n31# 512
+R dbithigh_0[4]/reg1_1/a_n5_n61# 527
+R dbithigh_0[4]/reg1_1/a_103_n31# 954
+R dbithigh_0[4]/reg1_1/a_87_n61# 939
+R dbithigh_0[4]/reg1_1/a_28_n61# 932
+R dbithigh_0[4]/reg1_1/a_12_n61# 940
+C dbithigh_0[4]/reg1_1/D GND 2.0
+R dbithigh_0[4]/reg1_1/D 534
+R dbithigh_0[3]/reg1_0/a_129_n61# 36
+R dbithigh_0[3]/reg1_0/a_103_n61# 53
+R dbithigh_0[3]/reg1_0/a_45_n61# 53
+R dbithigh_0[3]/reg1_0/a_129_n31# 159
+R dbithigh_0[3]/reg1_0/a_45_n31# 512
+R dbithigh_0[3]/reg1_0/a_n5_n61# 527
+R dbithigh_0[3]/reg1_0/a_103_n31# 954
+R dbithigh_0[3]/reg1_0/a_87_n61# 939
+R dbithigh_0[3]/reg1_0/a_28_n61# 932
+R dbithigh_0[3]/reg1_0/a_12_n61# 940
+R divisorin_4 405
+R dbithigh_0[3]/addsub1_0/a_106_34# 33
+R dbithigh_0[3]/addsub1_0/a_100_34# 33
+R dbithigh_0[3]/addsub1_0/a_39_34# 272
+R dbithigh_0[3]/addsub1_0/a_1_34# 44
+R dbithigh_0[3]/addsub1_0/a_n39_34# 157
+R dbithigh_0[3]/addsub1_0/a_106_72# 149
+R dbithigh_0[3]/addsub1_0/a_100_72# 149
+R dbithigh_0[3]/addsub1_0/a_39_72# 621
+C dbithigh_0[3]/X GND 27.7
+R dbithigh_0[3]/X 2558
+R dbithigh_0[3]/addsub1_0/a_1_72# 199
+R dbithigh_0[3]/addsub1_0/a_n39_72# 393
+R dbithigh_0[3]/addsub1_0/a_n102_34# 383
+R dbithigh_0[3]/addsub1_0/a_83_34# 991
+R dbithigh_0[3]/addsub1_0/a_n15_34# 1497
+C dbithigh_0[3]/reg1_0/Q GND 33.8
+R dbithigh_0[3]/reg1_0/Q 3391
+C dbithigh_0[3]/addsub1_0/a_n80_34# GND 22.6
+R dbithigh_0[3]/addsub1_0/a_n80_34# 3854
+R dbithigh_0[3]/mux1_0/a_22_36# 1106
+R dbithigh_0[3]/mux1_0/a_3_36# 527
+C dbithigh_0[3]/mux1_0/D1 GND 9.7
+R dbithigh_0[3]/mux1_0/D1 551
+R dbithigh_0[3]/mux1_0/a_n15_36# 527
+R dbithigh_0[3]/mux1_0/a_n47_36# 1106
+R dbithigh_0[3]/mux1_0/w_n54_52# 10580
+C dbithigh_0[2]/inbit GND 18.6
+R dbithigh_0[2]/inbit 354
+R dbithigh_0[3]/shift1_0/a_40_11# 535
+R dbithigh_0[3]/shift1_0/a_6_11# 564
+R dbithigh_0[3]/reg1_1/a_129_n61# 36
+R dbithigh_0[3]/reg1_1/a_103_n61# 53
+R dbithigh_0[3]/reg1_1/a_45_n61# 53
+C remainder_3 GND 66.1
+R remainder_3 1394
+R dbithigh_0[3]/reg1_1/a_129_n31# 159
+R dbithigh_0[3]/reg1_1/a_45_n31# 512
+R dbithigh_0[3]/reg1_1/a_n5_n61# 527
+R dbithigh_0[3]/reg1_1/a_103_n31# 954
+R dbithigh_0[3]/reg1_1/a_87_n61# 939
+R dbithigh_0[3]/reg1_1/a_28_n61# 932
+R dbithigh_0[3]/reg1_1/a_12_n61# 940
+C dbithigh_0[3]/reg1_1/D GND 2.0
+R dbithigh_0[3]/reg1_1/D 534
+R dbithigh_0[2]/reg1_0/a_129_n61# 36
+R dbithigh_0[2]/reg1_0/a_103_n61# 53
+R dbithigh_0[2]/reg1_0/a_45_n61# 53
+R dbithigh_0[2]/reg1_0/a_129_n31# 159
+R dbithigh_0[2]/reg1_0/a_45_n31# 512
+R dbithigh_0[2]/reg1_0/a_n5_n61# 527
+R dbithigh_0[2]/reg1_0/a_103_n31# 954
+R dbithigh_0[2]/reg1_0/a_87_n61# 939
+R dbithigh_0[2]/reg1_0/a_28_n61# 932
+R dbithigh_0[2]/reg1_0/a_12_n61# 940
+R divisorin_5 405
+R dbithigh_0[2]/addsub1_0/a_106_34# 33
+R dbithigh_0[2]/addsub1_0/a_100_34# 33
+R dbithigh_0[2]/addsub1_0/a_39_34# 272
+R dbithigh_0[2]/addsub1_0/a_1_34# 44
+R dbithigh_0[2]/addsub1_0/a_n39_34# 157
+R dbithigh_0[2]/addsub1_0/a_106_72# 149
+R dbithigh_0[2]/addsub1_0/a_100_72# 149
+R dbithigh_0[2]/addsub1_0/a_39_72# 621
+C dbithigh_0[2]/X GND 27.7
+R dbithigh_0[2]/X 2558
+R dbithigh_0[2]/addsub1_0/a_1_72# 199
+R dbithigh_0[2]/addsub1_0/a_n39_72# 393
+R dbithigh_0[2]/addsub1_0/a_n102_34# 383
+R dbithigh_0[2]/addsub1_0/a_83_34# 991
+R dbithigh_0[2]/addsub1_0/a_n15_34# 1497
+C dbithigh_0[2]/reg1_0/Q GND 33.8
+R dbithigh_0[2]/reg1_0/Q 3391
+C dbithigh_0[2]/addsub1_0/a_n80_34# GND 22.6
+R dbithigh_0[2]/addsub1_0/a_n80_34# 3854
+R dbithigh_0[2]/mux1_0/a_22_36# 1106
+R dbithigh_0[2]/mux1_0/a_3_36# 527
+C dbithigh_0[2]/mux1_0/D1 GND 9.7
+R dbithigh_0[2]/mux1_0/D1 551
+R dbithigh_0[2]/mux1_0/a_n15_36# 527
+R dbithigh_0[2]/mux1_0/a_n47_36# 1106
+R dbithigh_0[2]/mux1_0/w_n54_52# 10580
+C dbithigh_0[1]/inbit GND 18.6
+R dbithigh_0[1]/inbit 354
+R dbithigh_0[2]/shift1_0/a_40_11# 535
+R dbithigh_0[2]/shift1_0/a_6_11# 564
+R dbithigh_0[2]/reg1_1/a_129_n61# 36
+R dbithigh_0[2]/reg1_1/a_103_n61# 53
+R dbithigh_0[2]/reg1_1/a_45_n61# 53
+C remainder_4 GND 66.1
+R remainder_4 1394
+R dbithigh_0[2]/reg1_1/a_129_n31# 159
+R dbithigh_0[2]/reg1_1/a_45_n31# 512
+R dbithigh_0[2]/reg1_1/a_n5_n61# 527
+R dbithigh_0[2]/reg1_1/a_103_n31# 954
+R dbithigh_0[2]/reg1_1/a_87_n61# 939
+R dbithigh_0[2]/reg1_1/a_28_n61# 932
+R dbithigh_0[2]/reg1_1/a_12_n61# 940
+C dbithigh_0[2]/reg1_1/D GND 2.0
+R dbithigh_0[2]/reg1_1/D 534
+R dbithigh_0[1]/reg1_0/a_129_n61# 36
+R dbithigh_0[1]/reg1_0/a_103_n61# 53
+R dbithigh_0[1]/reg1_0/a_45_n61# 53
+R dbithigh_0[1]/reg1_0/a_129_n31# 159
+R dbithigh_0[1]/reg1_0/a_45_n31# 512
+R dbithigh_0[1]/reg1_0/a_n5_n61# 527
+R dbithigh_0[1]/reg1_0/a_103_n31# 954
+R dbithigh_0[1]/reg1_0/a_87_n61# 939
+R dbithigh_0[1]/reg1_0/a_28_n61# 932
+R dbithigh_0[1]/reg1_0/a_12_n61# 940
+R divisorin_6 405
+R dbithigh_0[1]/addsub1_0/a_106_34# 33
+R dbithigh_0[1]/addsub1_0/a_100_34# 33
+R dbithigh_0[1]/addsub1_0/a_39_34# 272
+R dbithigh_0[1]/addsub1_0/a_1_34# 44
+R dbithigh_0[1]/addsub1_0/a_n39_34# 157
+R dbithigh_0[1]/addsub1_0/a_106_72# 149
+R dbithigh_0[1]/addsub1_0/a_100_72# 149
+R dbithigh_0[1]/addsub1_0/a_39_72# 621
+C dbithigh_0[1]/X GND 27.7
+R dbithigh_0[1]/X 2558
+R dbithigh_0[1]/addsub1_0/a_1_72# 199
+R dbithigh_0[1]/addsub1_0/a_n39_72# 393
+R dbithigh_0[1]/addsub1_0/a_n102_34# 383
+R dbithigh_0[1]/addsub1_0/a_83_34# 991
+R dbithigh_0[1]/addsub1_0/a_n15_34# 1497
+C dbithigh_0[1]/reg1_0/Q GND 33.8
+R dbithigh_0[1]/reg1_0/Q 3391
+C dbithigh_0[1]/addsub1_0/a_n80_34# GND 22.6
+R dbithigh_0[1]/addsub1_0/a_n80_34# 3854
+R dbithigh_0[1]/mux1_0/a_22_36# 1106
+R dbithigh_0[1]/mux1_0/a_3_36# 527
+C dbithigh_0[1]/mux1_0/D1 GND 9.7
+R dbithigh_0[1]/mux1_0/D1 551
+R dbithigh_0[1]/mux1_0/a_n15_36# 527
+R dbithigh_0[1]/mux1_0/a_n47_36# 1106
+R dbithigh_0[1]/mux1_0/w_n54_52# 10580
+C dbithigh_0[0]/inbit GND 18.6
+R dbithigh_0[0]/inbit 354
+R dbithigh_0[1]/shift1_0/a_40_11# 535
+R dbithigh_0[1]/shift1_0/a_6_11# 564
+R dbithigh_0[1]/reg1_1/a_129_n61# 36
+R dbithigh_0[1]/reg1_1/a_103_n61# 53
+R dbithigh_0[1]/reg1_1/a_45_n61# 53
+C remainder_5 GND 66.1
+R remainder_5 1394
+R dbithigh_0[1]/reg1_1/a_129_n31# 159
+R dbithigh_0[1]/reg1_1/a_45_n31# 512
+R dbithigh_0[1]/reg1_1/a_n5_n61# 527
+R dbithigh_0[1]/reg1_1/a_103_n31# 954
+R dbithigh_0[1]/reg1_1/a_87_n61# 939
+R dbithigh_0[1]/reg1_1/a_28_n61# 932
+R dbithigh_0[1]/reg1_1/a_12_n61# 940
+C dbithigh_0[1]/reg1_1/D GND 2.0
+R dbithigh_0[1]/reg1_1/D 534
+R dbithigh_0[0]/reg1_0/a_129_n61# 36
+R dbithigh_0[0]/reg1_0/a_103_n61# 53
+R dbithigh_0[0]/reg1_0/a_45_n61# 53
+R dbithigh_0[0]/reg1_0/a_129_n31# 159
+R dbithigh_0[0]/reg1_0/a_45_n31# 512
+R dbithigh_0[0]/reg1_0/a_n5_n61# 527
+R dbithigh_0[0]/reg1_0/a_103_n31# 954
+R dbithigh_0[0]/reg1_0/a_87_n61# 939
+R dbithigh_0[0]/reg1_0/a_28_n61# 932
+R dbithigh_0[0]/reg1_0/a_12_n61# 940
+R dbithigh_0[0]/addsub1_0/a_106_34# 33
+R dbithigh_0[0]/addsub1_0/a_100_34# 33
+R dbithigh_0[0]/addsub1_0/a_39_34# 272
+R dbithigh_0[0]/addsub1_0/a_1_34# 44
+R dbithigh_0[0]/addsub1_0/a_n39_34# 157
+R dbithigh_0[0]/addsub1_0/a_106_72# 149
+R dbithigh_0[0]/addsub1_0/a_100_72# 149
+R dbithigh_0[0]/addsub1_0/a_39_72# 621
+C dbithigh_0[0]/X GND 8.0
+R dbithigh_0[0]/X 134
+R dbithigh_0[0]/addsub1_0/a_1_72# 199
+R dbithigh_0[0]/addsub1_0/a_n39_72# 393
+R dbithigh_0[0]/addsub1_0/a_n102_34# 383
+R dbithigh_0[0]/addsub1_0/a_83_34# 991
+R dbithigh_0[0]/addsub1_0/a_n15_34# 1497
+C dbithigh_0[0]/reg1_0/Q GND 33.8
+R dbithigh_0[0]/reg1_0/Q 3391
+C dbithigh_0[0]/addsub1_0/a_n80_34# GND 22.6
+R dbithigh_0[0]/addsub1_0/a_n80_34# 3854
+R dbithigh_0[0]/mux1_0/a_22_36# 1106
+R dbithigh_0[0]/mux1_0/a_3_36# 527
+C sign GND 278.6
+R sign 583
+R dbithigh_0[0]/mux1_0/a_n15_36# 527
+R dbithigh_0[0]/mux1_0/a_n47_36# 1106
+R dbithigh_0[0]/mux1_0/w_n54_52# 10580
+C dbithigh_0[0]/outbit GND 10.2
+R dbithigh_0[0]/outbit 243
+R dbithigh_0[0]/shift1_0/a_40_11# 535
+R dbithigh_0[0]/shift1_0/a_6_11# 564
+R dbithigh_0[0]/reg1_1/a_129_n61# 36
+R dbithigh_0[0]/reg1_1/a_103_n61# 53
+R dbithigh_0[0]/reg1_1/a_45_n61# 53
+C remainder_6 GND 66.1
+R remainder_6 1394
+R dbithigh_0[0]/reg1_1/a_129_n31# 159
+R dbithigh_0[0]/reg1_1/a_45_n31# 512
+R dbithigh_0[0]/reg1_1/a_n5_n61# 527
+R dbithigh_0[0]/reg1_1/a_103_n31# 954
+R dbithigh_0[0]/reg1_1/a_87_n61# 939
+R dbithigh_0[0]/reg1_1/a_28_n61# 932
+R dbithigh_0[0]/reg1_1/a_12_n61# 940
+C dbithigh_0[0]/reg1_1/D GND 2.0
+R dbithigh_0[0]/reg1_1/D 534

@@ -2,78 +2,68 @@ stepsize 1000
 
 | Set up vectors
 
-vector divisorin divisorin_{6:0}
+
+vector sel S0 S1
 vector dividendin dividendin_{7:0}
-vector remainder remainder_{6:0}
 vector quotient quotient_{7:0}
+vector divisorin divisorin_{6:0}
+vector remainder remainder_{6:0}
 
-vector sel sel_{1:0}
-
-| An initial clock pulse to get things going
-| as in the specification (verilog) test bench
-
-l load
-l add_n
-set sel 00
-l shift
-l inbit
+analyzer quotient remainder sign divisorin dividendin add_n load S0 S1 inbit shift clk reset_n
+w quotient remainder sign divisorin dividendin add_n load S0 S1 inbit shift clk reset_n
 
 s
 h clk
 s
 l clk
-s
-
-| Start the process by asserting reset_n and waiting one clock cycle
-
 l reset_n
-s
-h clk
-s
-l clk
-s
-
-h reset_n
+set dividendin 00000000
 set divisorin 0000000
-set dividendin 00000001
-
-
-s
-w quotient remainder
-w load add_n sel shift inbit clk load
-h clk
-s
-l clk
-s
-set sel 01
-s
-h clk
-s
-l clk
-set sel 10
-s
-h clk
-s
-l clk
-s
-set sel 01
-s
-h clk
-s
-l clk
-s
+set sel 00
+l add_n
+h load
 l inbit
+l shift
+s
+
+| test register and mux
+h clk
+s
+set dividendin 10101010
+set divisorin 0000010
+l clk
+h reset_n
+s
+h clk
+s
+set sel 01
+l clk
+s
+h clk
+s
+l clk
+s
+h clk
+s
+set dividendin 10101010
+l clk
+s
+h clk
+s
+| test shifter
+l clk
+s
+h inbit
+h clk
 h shift
 s
-h clk
-s
 l clk
 s
-s
+l shift
 h clk
 s
+set sel 00
 l clk
-s
 s
 h clk
 s
@@ -82,20 +72,3 @@ s
 
 
 
-
-h load
-s
-h clk
-s
-l clk
-s
-set sel 10
-s
-h clk
-s
-l clk
-s
-h clk
-s
-l clk
-exit

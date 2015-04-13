@@ -1,4 +1,4 @@
-timestamp 1428895890
+timestamp 1428909550
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
@@ -8,30 +8,56 @@ use ../cells/inverter1 inverter1_0 1 0 24 0 1 913
 use ../cells/inverter1 inverter1_1 1 0 136 0 1 913
 use ../cells/inverter1 inverter1_2 1 0 201 0 1 913
 use ../cells/inverter1 inverter1_3 1 0 297 0 1 913
+use ../cells/and1 and1_0 1 0 -469 0 1 161
+use ../cells/inverter1 inverter1_4 1 0 -474 0 1 22
 use dbitlow dbitlow_0[0:0:486][0:7:113] 1 0 19 0 1 36
+use dbithigh dbithigh_0[0:0:984][0:7:113] 1 0 -907 0 1 -970
+node "remainder_6" 0 456 486 -866 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "remainder_5" 0 456 486 -753 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "divisorin_6" 0 456 -514 -749 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "remainder_4" 0 456 486 -640 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "divisorin_5" 0 456 -514 -636 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "remainder_3" 0 456 486 -527 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "divisorin_4" 0 456 -514 -523 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "remainder_2" 0 456 486 -414 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "divisorin_3" 0 456 -514 -410 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "remainder_1" 0 456 486 -301 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "divisorin_2" 0 456 -514 -297 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "remainder_0" 0 456 486 -188 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "divisorin_1" 0 456 -514 -184 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "divisorin_0" 0 456 -514 -71 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
 node "quotient_7" 0 456 486 54 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
-node "dividendin_7" 0 456 -16 65 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "dividendin_7" 4 28158 -514 65 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1542 1034 0 0
 node "quotient_6" 0 456 486 167 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
-node "dividendin_6" 0 456 -16 178 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
 node "quotient_5" 0 456 486 280 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
-node "dividendin_5" 0 456 -16 291 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "dividendin_5" 4 27987 -514 291 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1542 1034 0 0
 node "quotient_4" 0 456 486 393 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
-node "dividendin_4" 0 456 -16 404 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "dividendin_4" 4 27987 -514 404 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1542 1034 0 0
 node "quotient_3" 0 456 486 506 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
-node "dividendin_3" 0 456 -16 517 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "dividendin_3" 4 27987 -514 517 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1542 1034 0 0
 node "quotient_2" 0 456 486 619 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
-node "dividendin_2" 0 456 -16 630 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "dividendin_2" 4 27987 -514 630 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1542 1034 0 0
 node "quotient_1" 0 456 486 732 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
-node "dividendin_1" 0 456 -16 743 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "dividendin_1" 4 27987 -514 743 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1542 1034 0 0
 node "quotient_0" 0 456 486 845 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
-node "dividendin_0" 0 456 -16 856 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0
+node "dividendin_0" 4 27987 -514 856 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1542 1034 0 0
 node "m2_199_918#" 1 6536 199 918 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 368 192 0 0
 node "m2_146_918#" 0 3040 146 918 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 196 106 0 0
 node "m2_43_918#" 1 6156 43 918 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 348 182 0 0
 node "m2_199_978#" 1 6764 199 978 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 368 192 0 0
 node "m2_146_978#" 0 3268 146 978 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 196 106 0 0
 node "m2_43_978#" 1 6384 43 978 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 348 182 0 0
-node "outbit" 0 2256 192 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_n7_n862#" 0 752 -7 -862 v 0 0 0 0 0 0 0 0 0 0 0 0 16 16 16 16 0 0
+node "m1_471_n16#" 0 2256 471 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_288_n16#" 0 2256 288 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_281_n16#" 0 2256 281 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_192_n16#" 0 2256 192 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_185_n16#" 0 2256 185 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_178_n16#" 0 2256 178 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_155_n16#" 0 2256 155 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_148_n16#" 0 2256 148 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_22_n16#" 0 2256 22 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
+node "m1_15_n16#" 0 2256 15 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 48 38 0 0 0 0
 node "reset_n" 1 11562 471 904 m1 0 0 0 0 0 0 0 0 0 0 0 0 246 170 0 0 0 0
 node "m1_281_904#" 1 9153 281 904 v 0 0 0 0 0 0 0 0 0 0 0 0 162 118 138 102 0 0
 node "clk" 1 11750 287 947 v 0 0 0 0 0 0 0 0 0 0 0 0 250 172 16 16 0 0
@@ -42,68 +68,184 @@ node "m1_22_904#" 1 8385 22 904 v 0 0 0 0 0 0 0 0 0 0 0 0 159 116 96 74 0 0
 node "shift" 2 12320 178 904 m1 0 0 0 0 0 0 0 0 0 0 0 0 250 172 55 42 0 0
 node "S1" 2 13602 126 946 v 0 0 0 0 0 0 0 0 0 0 0 0 270 190 96 74 0 0
 node "S0" 1 11750 14 946 v 0 0 0 0 0 0 0 0 0 0 0 0 250 172 16 16 0 0
-node "Vdd" 31 431244 -4 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 8016 4024 3400 1852 0 0
+node "sign" 16 141282 -7 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 3006 2010 0 0 0 0
+node "add_n" 19 159406 -271 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 3086 2068 788 530 0 0
+node "reset_n" 16 141282 -300 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 3006 2010 0 0 0 0
+node "m1_n490_n16#" 2 13101 -490 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 246 174 138 102 0 0
+node "m1_n484_55#" 4 30677 -484 55 v 0 0 0 0 0 0 0 0 0 0 0 0 586 400 229 168 0 0
+node "load" 13 114680 -480 174 v 0 0 0 0 0 0 0 0 0 0 0 0 2440 1632 16 16 0 0
+node "clk" 14 116264 -487 166 v 0 0 0 0 0 0 0 0 0 0 0 0 2464 1648 40 32 0 0
+node "dividendin_6" 5 33275 -494 178 v 0 0 0 0 0 0 0 0 0 0 0 0 121 90 1585 1072 0 0
+node "Vdd" 87 1.14011e+06 -502 -924 m1 0 0 0 0 0 0 0 0 0 0 0 0 15280 7656 23832 12196 0 0
 equiv "Vdd" "Vdd"
 equiv "Vdd" "Vdd"
 equiv "Vdd" "Vdd"
-node "GND" 31 431016 -12 -16 m1 0 0 0 0 0 0 0 0 0 0 0 0 8016 4024 3400 1852 0 0
+equiv "Vdd" "Vdd"
+node "GND" 88 1.14011e+06 -510 -924 m1 0 0 0 0 0 0 0 0 0 0 0 0 15280 7656 23872 12228 0 0
 equiv "GND" "GND"
 equiv "GND" "GND"
 equiv "GND" "GND"
-cap "GND" "dividendin_5" 540
-cap "Vdd" "dividendin_1" 540
-cap "Vdd" "quotient_4" 540
-cap "quotient_0" "GND" 540
-cap "m2_43_918#" "S1" 540
-cap "m1_22_904#" "m2_43_918#" 540
-cap "quotient_1" "GND" 540
-cap "clk" "m2_199_978#" 540
-cap "Vdd" "dividendin_7" 540
-cap "GND" "quotient_3" 540
-cap "GND" "m1_281_904#" 540
-cap "S0" "GND" 540
-cap "inbit" "shift" 405
-cap "Vdd" "dividendin_0" 540
-cap "Vdd" "dividendin_4" 540
-cap "m2_146_918#" "m1_155_904#" 540
-cap "GND" "dividendin_2" 540
-cap "Vdd" "dividendin_3" 540
-cap "m2_146_918#" "shift" 540
-cap "quotient_7" "Vdd" 540
-cap "GND" "dividendin_6" 540
-cap "dividendin_1" "GND" 540
-cap "Vdd" "outbit" 540
-cap "shift" "m2_146_978#" 540
-cap "m1_185_904#" "m2_199_918#" 540
-cap "GND" "quotient_4" 540
-cap "Vdd" "reset_n" 540
-cap "GND" "dividendin_7" 540
-cap "Vdd" "quotient_6" 540
-cap "Vdd" "quotient_5" 540
-cap "Vdd" "GND" 15840
-cap "Vdd" "quotient_2" 540
-cap "dividendin_0" "GND" 540
-cap "GND" "dividendin_4" 540
-cap "m2_43_978#" "S1" 540
-cap "Vdd" "dividendin_5" 540
+equiv "GND" "GND"
+cap "remainder_4" "GND" 540
 cap "GND" "dividendin_3" 540
-cap "m2_146_918#" "inbit" 540
-cap "quotient_7" "GND" 540
-cap "outbit" "GND" 540
-cap "inbit" "m2_146_978#" 540
-cap "Vdd" "quotient_0" 540
-cap "quotient_1" "Vdd" 540
-cap "Vdd" "quotient_3" 540
+cap "reset_n" "dividendin_3" 405
+cap "m2_43_918#" "S1" 540
+cap "inbit" "m2_146_918#" 540
+cap "m1_288_n16#" "GND" 540
+cap "remainder_4" "Vdd" 540
 cap "reset_n" "GND" 540
-cap "clk" "m1_281_904#" 405
-cap "m2_199_918#" "clk" 540
-cap "Vdd" "S0" 540
-cap "GND" "quotient_6" 540
+cap "Vdd" "dividendin_3" 540
+cap "m1_192_n16#" "GND" 540
+cap "shift" "inbit" 405
+cap "divisorin_6" "GND" 540
+cap "GND" "clk" 3780
+cap "m1_288_n16#" "Vdd" 540
+cap "m1_22_904#" "m2_43_918#" 540
+cap "m2_146_978#" "inbit" 540
+cap "reset_n" "Vdd" 540
+cap "m1_471_n16#" "GND" 540
+cap "add_n" "dividendin_0" 405
+cap "m1_192_n16#" "Vdd" 540
+cap "add_n" "dividendin_7" 405
+cap "divisorin_6" "Vdd" 540
+cap "dividendin_6" "clk" 405
+cap "m1_281_n16#" "GND" 540
+cap "clk" "Vdd" 4320
+cap "remainder_5" "GND" 540
+cap "GND" "m1_n484_55#" 1620
+cap "add_n" "dividendin_5" 405
+cap "m1_471_n16#" "Vdd" 540
+cap "dividendin_4" "clk" 405
+cap "m1_n490_n16#" "GND" 1080
+cap "sign" "dividendin_0" 405
+cap "m1_281_n16#" "Vdd" 540
+cap "sign" "dividendin_7" 405
+cap "load" "dividendin_0" 405
+cap "remainder_5" "Vdd" 540
+cap "GND" "dividendin_0" 540
+cap "m1_n484_55#" "Vdd" 1080
+cap "GND" "dividendin_7" 540
+cap "reset_n" "dividendin_0" 405
+cap "remainder_6" "GND" 540
+cap "reset_n" "dividendin_7" 405
+cap "sign" "dividendin_5" 405
+cap "load" "dividendin_5" 405
+cap "m1_n490_n16#" "Vdd" 540
+cap "GND" "dividendin_5" 540
+cap "reset_n" "dividendin_5" 405
+cap "dividendin_0" "Vdd" 540
+cap "clk" "dividendin_2" 405
+cap "dividendin_1" "clk" 405
+cap "dividendin_7" "Vdd" 540
+cap "remainder_6" "Vdd" 540
+cap "add_n" "GND" 5940
+cap "GND" "quotient_7" 540
+cap "Vdd" "dividendin_5" 540
+cap "GND" "remainder_2" 540
 cap "GND" "quotient_5" 540
-cap "GND" "quotient_2" 540
+cap "dividendin_6" "add_n" 405
+cap "GND" "S0" 540
+cap "add_n" "Vdd" 5940
+cap "GND" "remainder_0" 540
+cap "GND" "m1_178_n16#" 540
+cap "quotient_7" "Vdd" 540
+cap "m1_185_904#" "m2_199_918#" 540
+cap "GND" "sign" 5400
+cap "GND" "divisorin_0" 540
+cap "Vdd" "remainder_2" 540
+cap "load" "GND" 3780
+cap "GND" "m1_148_n16#" 540
+cap "Vdd" "quotient_5" 540
+cap "GND" "divisorin_4" 540
+cap "add_n" "dividendin_4" 405
+cap "reset_n" "GND" 5400
+cap "S0" "Vdd" 540
+cap "GND" "quotient_6" 540
+cap "Vdd" "remainder_0" 540
+cap "m1_178_n16#" "Vdd" 540
+cap "quotient_3" "GND" 540
+cap "dividendin_6" "sign" 405
+cap "GND" "m1_15_n16#" 540
+cap "dividendin_6" "load" 405
+cap "clk" "dividendin_3" 405
+cap "sign" "Vdd" 5400
+cap "GND" "divisorin_2" 540
+cap "divisorin_0" "Vdd" 540
+cap "GND" "m1_185_n16#" 540
+cap "load" "Vdd" 4320
+cap "m1_148_n16#" "Vdd" 540
+cap "dividendin_6" "GND" 540
+cap "m2_43_978#" "S1" 540
+cap "dividendin_6" "reset_n" 405
+cap "GND" "Vdd" 27900
+cap "GND" "divisorin_1" 540
+cap "Vdd" "divisorin_4" 540
+cap "reset_n" "Vdd" 5400
+cap "GND" "m1_155_n16#" 540
+cap "m1_281_904#" "clk" 405
+cap "Vdd" "quotient_6" 540
+cap "dividendin_4" "sign" 405
+cap "GND" "remainder_3" 540
+cap "quotient_3" "Vdd" 540
+cap "dividendin_4" "load" 405
+cap "add_n" "dividendin_1" 405
+cap "add_n" "dividendin_2" 405
+cap "m1_15_n16#" "Vdd" 540
+cap "shift" "m2_146_918#" 540
+cap "Vdd" "divisorin_2" 540
+cap "m1_185_n16#" "Vdd" 540
+cap "dividendin_4" "GND" 540
+cap "dividendin_6" "Vdd" 540
+cap "quotient_0" "GND" 540
+cap "GND" "m1_22_n16#" 540
+cap "dividendin_4" "reset_n" 405
+cap "GND" "remainder_1" 540
+cap "divisorin_1" "Vdd" 540
+cap "m1_155_n16#" "Vdd" 540
+cap "Vdd" "remainder_3" 540
+cap "GND" "divisorin_5" 540
+cap "dividendin_4" "Vdd" 540
+cap "sign" "dividendin_2" 405
+cap "dividendin_1" "sign" 405
+cap "shift" "m2_146_978#" 540
+cap "quotient_0" "Vdd" 540
+cap "dividendin_1" "load" 405
+cap "m1_22_n16#" "Vdd" 540
+cap "load" "dividendin_2" 405
+cap "Vdd" "remainder_1" 540
+cap "quotient_4" "GND" 540
+cap "dividendin_1" "GND" 540
+cap "GND" "dividendin_2" 540
+cap "dividendin_1" "reset_n" 405
+cap "reset_n" "dividendin_2" 405
+cap "GND" "divisorin_3" 540
 cap "m1_185_904#" "inbit" 405
+cap "Vdd" "divisorin_5" 540
+cap "clk" "m2_199_918#" 540
+cap "quotient_4" "Vdd" 540
+cap "add_n" "dividendin_3" 405
 cap "Vdd" "dividendin_2" 540
-cap "Vdd" "dividendin_6" 540
+cap "dividendin_1" "Vdd" 540
+cap "clk" "dividendin_0" 405
+cap "Vdd" "divisorin_3" 540
+cap "quotient_1" "GND" 540
+cap "GND" "quotient_2" 540
+cap "clk" "dividendin_5" 405
+cap "m1_155_904#" "m2_146_918#" 540
+cap "clk" "m2_199_978#" 540
+cap "m1_n490_n16#" "m1_n484_55#" 405
+cap "sign" "dividendin_3" 405
+cap "m1_281_904#" "GND" 540
+cap "Vdd" "quotient_2" 540
+cap "quotient_1" "Vdd" 540
+cap "load" "dividendin_3" 405
+cap "dividendin_7" "m1_n484_55#" 405
+cap "inverter1_4/Vdd" "dividendin_7" 720
+cap "inverter1_4/Y" "dividendin_7" 606
+cap "and1_0/B" "and1_0/GND" 152
+cap "and1_0/A" "and1_0/Vdd" 152
+cap "and1_0/A" "dividendin_6" 405
+cap "dividendin_6" "and1_0/Vdd" 4995
 merge "inverter1_3/Vdd" "inverter1_2/Vdd" -2280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 -108 0 0
 merge "inverter1_2/Vdd" "m2_199_978#"
 merge "m2_199_978#" "inverter1_1/Vdd"
@@ -115,14 +257,23 @@ merge "dbitlow_0[5]/Vdd" "dbitlow_0[4]/Vdd"
 merge "dbitlow_0[4]/Vdd" "dbitlow_0[3]/Vdd"
 merge "dbitlow_0[3]/Vdd" "dbitlow_0[2]/Vdd"
 merge "dbitlow_0[2]/Vdd" "dbitlow_0[1]/Vdd"
-merge "dbitlow_0[1]/Vdd" "dbitlow_0[0]/Vdd"
-merge "dbitlow_0[0]/Vdd" "Vdd"
+merge "dbitlow_0[1]/Vdd" "and1_0/Vdd"
+merge "and1_0/Vdd" "dbitlow_0[0]/Vdd"
+merge "dbitlow_0[0]/Vdd" "inverter1_4/Vdd"
+merge "inverter1_4/Vdd" "dbithigh_0[7]/Vdd"
+merge "dbithigh_0[7]/Vdd" "dbithigh_0[6]/Vdd"
+merge "dbithigh_0[6]/Vdd" "dbithigh_0[5]/Vdd"
+merge "dbithigh_0[5]/Vdd" "dbithigh_0[4]/Vdd"
+merge "dbithigh_0[4]/Vdd" "dbithigh_0[3]/Vdd"
+merge "dbithigh_0[3]/Vdd" "dbithigh_0[2]/Vdd"
+merge "dbithigh_0[2]/Vdd" "dbithigh_0[1]/Vdd"
+merge "dbithigh_0[1]/Vdd" "dbithigh_0[0]/Vdd"
+merge "dbithigh_0[0]/Vdd" "Vdd"
 merge "Vdd" "m2_43_978#"
 merge "m2_43_978#" "m2_146_978#"
-merge "inverter1_2/A" "dbitlow_0[7]/shift" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -6 0 0
-merge "dbitlow_0[7]/shift" "shift"
-merge "dbitlow_0[5]/dividendin" "dividendin_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "inverter1_3/GND" "inverter1_2/GND" -2280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 -108 0 0
+merge "dbithigh_0[0]/addsub1_0/Z" "dbithigh_0[0]/addsub1_0/m1_148_8#" -621 0 0 0 0 0 0 0 0 0 0 0 0 -12 -14 -12 -14 0 0
+merge "dbithigh_0[0]/addsub1_0/m1_148_8#" "m1_n7_n862#"
+merge "inverter1_3/GND" "inverter1_2/GND" -3643 0 0 0 0 0 0 0 0 0 0 0 0 -29 -88 -120 -108 0 0
 merge "inverter1_2/GND" "m2_199_918#"
 merge "m2_199_918#" "inverter1_1/GND"
 merge "inverter1_1/GND" "inverter1_0/GND"
@@ -133,49 +284,120 @@ merge "dbitlow_0[5]/GND" "dbitlow_0[4]/GND"
 merge "dbitlow_0[4]/GND" "dbitlow_0[3]/GND"
 merge "dbitlow_0[3]/GND" "dbitlow_0[2]/GND"
 merge "dbitlow_0[2]/GND" "dbitlow_0[1]/GND"
-merge "dbitlow_0[1]/GND" "dbitlow_0[0]/GND"
-merge "dbitlow_0[0]/GND" "GND"
+merge "dbitlow_0[1]/GND" "and1_0/GND"
+merge "and1_0/GND" "dbitlow_0[0]/GND"
+merge "dbitlow_0[0]/GND" "inverter1_4/GND"
+merge "inverter1_4/GND" "dbithigh_0[7]/GND"
+merge "dbithigh_0[7]/GND" "dbithigh_0[6]/GND"
+merge "dbithigh_0[6]/GND" "dbithigh_0[5]/GND"
+merge "dbithigh_0[5]/GND" "dbithigh_0[4]/GND"
+merge "dbithigh_0[4]/GND" "dbithigh_0[3]/GND"
+merge "dbithigh_0[3]/GND" "dbithigh_0[2]/GND"
+merge "dbithigh_0[2]/GND" "dbithigh_0[1]/GND"
+merge "dbithigh_0[1]/GND" "dbithigh_0[0]/GND"
+merge "dbithigh_0[0]/GND" "dbithigh_0[0]/divisorin"
+merge "dbithigh_0[0]/divisorin" "GND"
 merge "GND" "m2_43_918#"
 merge "m2_43_918#" "m2_146_918#"
+merge "dbithigh_0[7]/S0_n" "dbitlow_0[0]/S0_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "dbitlow_0[0]/S0_n" "m1_22_n16#"
+merge "inverter1_2/A" "dbitlow_0[7]/shift" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -6 0 0
+merge "dbitlow_0[7]/shift" "shift"
+merge "dbitlow_0[5]/dividendin" "dividendin_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbithigh_0[1]/divisorin" "divisorin_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbithigh_0[0]/remainder" "remainder_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbithigh_0[7]/inbit" "dbitlow_0[0]/outbit" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "dbitlow_0[0]/outbit" "m1_192_n16#"
+merge "dbithigh_0[7]/C" "dbithigh_0[7]/add_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "dbithigh_0[7]/add_n" "add_n"
+merge "dbithigh_0[2]/divisorin" "divisorin_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbithigh_0[7]/shift" "dbitlow_0[0]/shift" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "dbitlow_0[0]/shift" "m1_178_n16#"
 merge "dbitlow_0[7]/S0_n" "inverter1_0/Y" -57 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -3 -8 0 0
 merge "inverter1_0/Y" "m1_22_904#"
+merge "dbithigh_0[1]/remainder" "remainder_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "and1_0/Y" "dbithigh_0[7]/clk" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 -6 0 0
+merge "dbithigh_0[7]/clk" "inverter1_4/A"
+merge "inverter1_4/A" "m1_n484_55#"
+merge "m1_n484_55#" "dbitlow_0[0]/clk"
+merge "dbitlow_0[0]/clk" "m1_288_n16#"
+merge "dbithigh_0[6]/remainder" "remainder_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
 merge "dbitlow_0[4]/dividendin" "dividendin_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[0]/outbit" "outbit" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
-merge "dbitlow_0[7]/clk" "inverter1_3/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -6 0 0
-merge "inverter1_3/A" "clk"
-merge "dbitlow_0[7]/S1" "inverter1_1/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -6 0 0
+merge "dbithigh_0[3]/divisorin" "divisorin_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbithigh_0[5]/remainder" "remainder_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbitlow_0[7]/clk" "inverter1_3/A" -386 0 0 0 0 0 0 0 0 0 0 0 0 -7 -21 -3 -14 0 0
+merge "inverter1_3/A" "and1_0/B"
+merge "and1_0/B" "clk"
+merge "dbithigh_0[2]/remainder" "remainder_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbithigh_0[4]/remainder" "remainder_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbithigh_0[7]/clk_n" "inverter1_4/Y" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "inverter1_4/Y" "m1_n490_n16#"
+merge "m1_n490_n16#" "dbitlow_0[0]/clk_n"
+merge "dbitlow_0[0]/clk_n" "m1_281_n16#"
+merge "dbitlow_0[7]/S1" "inverter1_1/A" -329 0 0 0 0 0 0 0 0 0 0 0 0 -7 -21 0 -6 0 0
 merge "inverter1_1/A" "S1"
-merge "dbitlow_0[7]/shift_n" "inverter1_2/Y" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -6 0 0
-merge "inverter1_2/Y" "m1_185_904#"
+merge "dbithigh_0[7]/S1" "dbitlow_0[0]/S1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "dbitlow_0[0]/S1" "m1_148_n16#"
+merge "dbithigh_0[3]/remainder" "remainder_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbithigh_0[7]/m1_900_159#" "sign" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[4]/divisorin" "divisorin_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbithigh_0[7]/shift_n" "dbitlow_0[0]/shift_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "dbitlow_0[0]/shift_n" "m1_185_n16#"
+merge "dbithigh_0[7]/S1_n" "dbitlow_0[0]/S1_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "dbitlow_0[0]/S1_n" "m1_155_n16#"
+merge "inverter1_2/Y" "dbitlow_0[7]/shift_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -6 0 0
+merge "dbitlow_0[7]/shift_n" "m1_185_904#"
+merge "dbitlow_0[7]/S0" "inverter1_0/A" -329 0 0 0 0 0 0 0 0 0 0 0 0 -7 -21 0 -6 0 0
+merge "inverter1_0/A" "S0"
+merge "dbithigh_0[7]/S0" "dbitlow_0[0]/S0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
+merge "dbitlow_0[0]/S0" "m1_15_n16#"
+merge "dbitlow_0[3]/dividendin" "dividendin_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
 merge "dbitlow_0[7]/S1_n" "inverter1_1/Y" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -6 0 0
 merge "inverter1_1/Y" "m1_155_904#"
-merge "dbitlow_0[7]/S0" "inverter1_0/A" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -6 0 0
-merge "inverter1_0/A" "S0"
-merge "dbitlow_0[3]/dividendin" "dividendin_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbithigh_0[5]/divisorin" "divisorin_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
 merge "inverter1_3/Y" "dbitlow_0[7]/clk_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -6 0 0
 merge "dbitlow_0[7]/clk_n" "m1_281_904#"
+merge "and1_0/A" "load" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[7]/reset_n" "dbithigh_0[7]/reset_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -18 0 0 0 0
+merge "dbithigh_0[7]/reset_n" "reset_n"
+merge "reset_n" "dbitlow_0[0]/reset_n"
+merge "dbitlow_0[0]/reset_n" "m1_471_n16#"
+merge "dbithigh_0[6]/divisorin" "divisorin_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
 merge "dbitlow_0[7]/dividendin" "dividendin_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
 merge "dbitlow_0[6]/dividendin" "dividendin_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[7]/reset_n" "reset_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
-merge "dbitlow_0[7]/inbit" "inbit" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "dbitlow_0[2]/dividendin" "dividendin_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbithigh_0[7]/divisorin" "divisorin_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[7]/inbit" "inbit" -329 0 0 0 0 0 0 0 0 0 0 0 0 -7 -21 0 0 0 0
 merge "dbitlow_0[1]/dividendin" "dividendin_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
 merge "dbitlow_0[0]/dividendin" "dividendin_7" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[7]/quotient" "quotient_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[6]/quotient" "quotient_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[5]/quotient" "quotient_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[4]/quotient" "quotient_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[3]/quotient" "quotient_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[1]/quotient" "quotient_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[0]/quotient" "quotient_7" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
-merge "dbitlow_0[2]/quotient" "quotient_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "dbitlow_0[7]/quotient" "quotient_0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbitlow_0[6]/quotient" "quotient_1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbitlow_0[5]/quotient" "quotient_2" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbitlow_0[4]/quotient" "quotient_3" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbitlow_0[3]/quotient" "quotient_4" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbitlow_0[0]/quotient" "quotient_7" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbitlow_0[1]/quotient" "quotient_6" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbitlow_0[2]/quotient" "quotient_5" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
+merge "dbithigh_0[1:7]/S1_n" "dbithigh_0[0:6]/S1_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "dbitlow_0[1:7]/shift" "dbitlow_0[0:6]/shift" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/outbit" "dbithigh_0[0:6]/inbit" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "dbitlow_0[1:7]/S0_n" "dbitlow_0[0:6]/S0_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/reset_n" "dbithigh_0[0:6]/reset_n" -282 0 0 0 0 0 0 0 0 0 0 0 0 -6 -22 0 0 0 0
 merge "dbitlow_0[1:7]/clk_n" "dbitlow_0[0:6]/clk_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "dbitlow_0[1:7]/S0" "dbitlow_0[0:6]/S0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "dbitlow_0[1:7]/S1" "dbitlow_0[0:6]/S1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/X" "dbithigh_0[0:6]/C" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/add_n" "dbithigh_0[0:6]/add_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/shift" "dbithigh_0[0:6]/shift" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/shift_n" "dbithigh_0[0:6]/shift_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "dbitlow_0[1:7]/outbit" "dbitlow_0[0:6]/inbit" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/S0_n" "dbithigh_0[0:6]/S0_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "dbitlow_0[1:7]/S1_n" "dbitlow_0[0:6]/S1_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/S1" "dbithigh_0[0:6]/S1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/S0" "dbithigh_0[0:6]/S0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/clk" "dbithigh_0[0:6]/clk" -282 0 0 0 0 0 0 0 0 0 0 0 0 -6 -22 0 0 0 0
 merge "dbitlow_0[1:7]/clk" "dbitlow_0[0:6]/clk" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "dbitlow_0[1:7]/reset_n" "dbitlow_0[0:6]/reset_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
+merge "dbithigh_0[1:7]/clk_n" "dbithigh_0[0:6]/clk_n" -282 0 0 0 0 0 0 0 0 0 0 0 0 -6 -22 0 0 0 0
+merge "dbithigh_0[1:7]/m1_900_50#" "dbithigh_0[0:6]/m1_900_159#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "dbitlow_0[1:7]/shift_n" "dbitlow_0[0:6]/shift_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0

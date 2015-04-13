@@ -18,26 +18,26 @@ node "GND" 749 5136 -1 3 pw 40 36 48 48 0 0 0 0 0 0 0 0 376 196 180 106 0 0
 equiv "GND" "GND"
 node "Vdd" 6746 5888 -1 24 nw 32 32 80 52 0 0 0 0 0 0 0 0 424 220 180 106 1550 174
 equiv "Vdd" "Vdd"
-cap "GND" "shift_n" 3638
 cap "shift" "inbit" 405
 cap "a_40_11#" "Vdd" 5078
-cap "GND" "a_40_11#" 5860
-cap "B" "Vdd" 1269
-cap "B" "GND" 1269
-cap "inbit" "Vdd" 2033
-cap "inbit" "GND" 1269
-cap "shift" "A" 405
-cap "a_6_11#" "inbit" 405
-cap "inbit" "shift_n" 519
 cap "A" "GND" 1245
+cap "a_40_11#" "GND" 5860
+cap "shift" "a_6_11#" 114
+cap "shift_n" "Vdd" 6730
+cap "GND" "shift_n" 3638
+cap "Vdd" "inbit" 2033
+cap "GND" "inbit" 1269
 cap "A" "shift_n" 405
+cap "a_6_11#" "Vdd" 4503
+cap "GND" "a_6_11#" 7116
+cap "shift_n" "inbit" 519
 cap "shift" "Vdd" 6730
 cap "shift" "GND" 3638
-cap "shift" "a_6_11#" 114
+cap "B" "Vdd" 1269
+cap "GND" "B" 1269
+cap "shift" "A" 405
+cap "a_6_11#" "inbit" 405
 cap "shift" "shift_n" 405
-cap "a_6_11#" "Vdd" 4503
-cap "a_6_11#" "GND" 7116
-cap "shift_n" "Vdd" 6730
 device mosfet nfet 54 11 55 12 2 4 "GND" "a_40_11#" 4 0 "GND" 4 0 "B" 4 0
 device mosfet nfet 38 11 39 12 2 4 "GND" "a_6_11#" 4 0 "GND" 4 0 "a_40_11#" 4 0
 device mosfet nfet 20 11 21 12 2 4 "GND" "shift" 4 0 "inbit" 4 0 "a_6_11#" 4 0

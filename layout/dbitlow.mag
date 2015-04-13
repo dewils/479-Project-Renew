@@ -1,6 +1,6 @@
 magic
 tech scmos
-timestamp 1428883144
+timestamp 1428907381
 << metal1 >>
 rect -4 73 -1 77
 rect 3 73 6 77
@@ -29,9 +29,9 @@ rect 151 51 155 55
 rect 254 51 258 55
 rect 459 51 467 55
 rect -19 29 -15 32
-rect 151 15 155 24
 rect 254 18 258 25
 rect 463 18 467 21
+rect 151 12 155 18
 rect -19 -9 -15 -5
 rect 151 -9 155 -5
 rect 254 -9 258 -5
@@ -46,7 +46,7 @@ timestamp 1428877062
 transform 1 0 64 0 1 -29
 box -79 2 87 102
 use ../cells/shift1  shift1_0
-timestamp 1428878261
+timestamp 1428902219
 transform 1 0 181 0 1 -4
 box -26 -23 73 77
 use ../cells/reg1  reg1_0

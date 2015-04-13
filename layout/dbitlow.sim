@@ -1,5 +1,5 @@
 | units: 100 tech: scmos format: MIT
-p outbit Vdd reg1_0/a_n5_n61# 2 8 281 34
+p reg1_0/D Vdd reg1_0/a_n5_n61# 2 8 281 34
 p clk reg1_0/a_n5_n61# reg1_0/a_12_n61# 2 8 298 34
 p reg1_0/a_12_n61# Vdd reg1_0/a_28_n61# 2 8 314 34
 p reg1_0/a_28_n61# Vdd reg1_0/a_45_n31# 2 8 331 34
@@ -11,7 +11,7 @@ p reset_n reg1_0/a_103_n31# Vdd 2 8 399 34
 p reg1_0/a_103_n31# Vdd reg1_0/a_129_n31# 2 8 415 34
 p clk reg1_0/a_129_n31# reg1_0/a_87_n61# 2 8 420 34
 p reg1_0/a_103_n31# Vdd quotient 2 8 436 34
-n outbit GND reg1_0/a_n5_n61# 2 4 281 4
+n reg1_0/D GND reg1_0/a_n5_n61# 2 4 281 4
 n clk_n reg1_0/a_n5_n61# reg1_0/a_12_n61# 2 4 298 4
 n reg1_0/a_12_n61# GND reg1_0/a_28_n61# 2 4 314 4
 n reg1_0/a_28_n61# GND reg1_0/a_45_n61# 2 4 331 4
@@ -23,14 +23,12 @@ n reset_n reg1_0/a_103_n61# reg1_0/a_103_n31# 2 4 399 4
 n reg1_0/a_103_n31# GND reg1_0/a_129_n61# 2 4 415 4
 n clk_n reg1_0/a_129_n61# reg1_0/a_87_n61# 2 4 420 4
 n reg1_0/a_103_n31# GND quotient 2 4 436 4
-p shift mux1_0/Y shift1_0/a_6_11# 2 8 185 29
-p shift_n inbit shift1_0/a_6_11# 2 8 201 29
 p shift1_0/a_6_11# Vdd shift1_0/a_40_11# 2 8 219 29
-p shift1_0/a_40_11# Vdd outbit 2 8 235 29
-n shift_n mux1_0/Y shift1_0/a_6_11# 2 4 185 7
+p shift1_0/a_40_11# Vdd reg1_0/D 2 8 235 29
+n shift_n outbit shift1_0/a_6_11# 2 4 185 7
 n shift inbit shift1_0/a_6_11# 2 4 201 7
 n shift1_0/a_6_11# GND shift1_0/a_40_11# 2 4 219 7
-n shift1_0/a_40_11# GND outbit 2 4 235 7
+n shift1_0/a_40_11# GND reg1_0/D 2 4 235 7
 p S0 dividendin mux1_0/a_n47_36# 2 8 15 34
 p S0_n quotient mux1_0/a_n47_36# 2 8 31 34
 p mux1_0/a_n47_36# Vdd mux1_0/a_n15_36# 2 8 47 34
@@ -41,60 +39,61 @@ p quotient Vdd mux1_0/a_3_36# 2 8 65 34
 n quotient GND mux1_0/a_3_36# 2 4 65 7
 p S1 mux1_0/a_n15_36# mux1_0/a_22_36# 2 8 84 34
 p S1_n mux1_0/a_3_36# mux1_0/a_22_36# 2 8 100 34
-p mux1_0/a_22_36# Vdd mux1_0/Y 2 8 116 34
+p mux1_0/a_22_36# Vdd outbit 2 8 116 34
 n S1_n mux1_0/a_n15_36# mux1_0/a_22_36# 2 4 84 7
 n S1 mux1_0/a_3_36# mux1_0/a_22_36# 2 4 100 7
-n mux1_0/a_22_36# GND mux1_0/Y 2 4 116 7
+n mux1_0/a_22_36# GND outbit 2 4 116 7
+C GND clk_n 6.7
+C GND quotient 3.9
+C Vdd reg1_0/a_n5_n61# 2.8
+C GND reg1_0/a_n5_n61# 5.1
+C Vdd reg1_0/a_28_n61# 8.7
+C mux1_0/w_n54_52# mux1_0/a_n47_36# 7.3
+C GND reg1_0/a_28_n61# 9.6
+C mux1_0/w_n54_52# mux1_0/a_3_36# 4.0
+C Vdd shift 6.7
+C GND shift 3.6
+C mux1_0/w_n54_52# S0 8.7
+C Vdd mux1_0/w_n54_52# 17.7
+C mux1_0/w_n54_52# S1_n 9.3
+C Vdd reset_n 8.7
+C Vdd inbit 2.0
+C GND reset_n 24.6
 C quotient mux1_0/w_n54_52# 7.8
 C Vdd reg1_0/a_45_n31# 3.1
 C GND reg1_0/a_45_n31# 5.1
-C mux1_0/w_n54_28# mux1_0/a_n47_36# 10.0
 C Vdd reg1_0/a_87_n61# 7.0
+C mux1_0/w_n54_28# mux1_0/a_n47_36# 10.0
 C GND reg1_0/a_87_n61# 11.0
-C mux1_0/w_n54_28# mux1_0/a_3_36# 3.1
-C mux1_0/w_n54_52# S1 4.8
 C Vdd clk 6.7
+C mux1_0/w_n54_52# S1 4.8
+C mux1_0/w_n54_28# mux1_0/a_3_36# 3.1
 C GND clk 6.7
-C Vdd shift1_0/a_6_11# 9.2
-C GND shift1_0/a_6_11# 5.2
+C Vdd shift1_0/a_6_11# 4.5
+C GND shift1_0/a_6_11# 7.1
 C mux1_0/w_n54_28# S0 3.8
 C mux1_0/w_n54_52# mux1_0/a_22_36# 9.4
 C GND mux1_0/w_n54_28# 19.2
 C clk clk_n 2.0
 C mux1_0/w_n54_52# mux1_0/a_n15_36# 3.1
+C Vdd reg1_0/D 5.4
 C mux1_0/w_n54_28# S1_n 7.9
 C mux1_0/w_n54_52# S0_n 9.3
-C Vdd outbit 5.6
-C GND outbit 6.6
+C GND reg1_0/D 6.3
 C quotient mux1_0/w_n54_28# 7.9
 C Vdd reg1_0/a_103_n31# 12.1
 C GND reg1_0/a_103_n31# 13.6
 C Vdd reg1_0/a_12_n61# 6.7
 C GND reg1_0/a_12_n61# 12.1
 C mux1_0/w_n54_28# S1 7.6
-C Vdd shift1_0/a_40_11# 7.5
-C GND shift1_0/a_40_11# 4.2
-C Vdd shift 8.2
-C GND shift 4.4
+C Vdd shift1_0/a_40_11# 5.1
+C GND shift1_0/a_40_11# 5.9
+C Vdd shift_n 6.7
+C GND shift_n 3.6
 C mux1_0/w_n54_28# mux1_0/a_22_36# 7.7
 C mux1_0/w_n54_28# mux1_0/a_n15_36# 4.5
 C mux1_0/w_n54_28# S0_n 8.6
 C Vdd clk_n 6.7
-C GND clk_n 6.7
-C GND quotient 3.9
-C Vdd reg1_0/a_n5_n61# 2.8
-C GND reg1_0/a_n5_n61# 5.1
-C mux1_0/w_n54_52# mux1_0/a_n47_36# 7.3
-C Vdd reg1_0/a_28_n61# 8.7
-C GND reg1_0/a_28_n61# 9.6
-C mux1_0/w_n54_52# mux1_0/a_3_36# 4.0
-C Vdd shift_n 7.5
-C GND shift_n 8.4
-C mux1_0/w_n54_52# S0 8.7
-C Vdd mux1_0/w_n54_52# 17.7
-C mux1_0/w_n54_52# S1_n 9.3
-C Vdd reset_n 8.7
-C GND reset_n 24.6
 R mux1_0/a_22_36# 1106
 C S1 GND 10.9
 R S1 812
@@ -109,16 +108,16 @@ R S1_n 1504
 C S0 GND 9.5
 R S0 871
 R mux1_0/w_n54_52# 10580
-C inbit GND 9.7
-R inbit 131
-C mux1_0/Y GND 2.8
-R mux1_0/Y 527
-R shift1_0/a_40_11# 536
-R shift1_0/a_6_11# 941
-C shift_n GND 30.5
-R shift_n 1350
-C shift GND 22.8
-R shift 873
+C inbit GND 8.5
+R inbit 35
+C outbit GND 10.2
+R outbit 243
+R shift1_0/a_40_11# 535
+R shift1_0/a_6_11# 564
+C shift GND 23.9
+R shift 563
+C shift_n GND 21.8
+R shift_n 563
 R reg1_0/a_129_n61# 36
 R reg1_0/a_103_n61# 53
 R reg1_0/a_45_n61# 53
@@ -131,8 +130,8 @@ R reg1_0/a_103_n31# 954
 R reg1_0/a_87_n61# 939
 R reg1_0/a_28_n61# 932
 R reg1_0/a_12_n61# 940
-C outbit GND 15.0
-R outbit 536
+C reg1_0/D GND 2.0
+R reg1_0/D 534
 C reset_n GND 29.6
 R reset_n 1984
 C clk_n GND 48.2
@@ -142,4 +141,4 @@ R clk 1245
 C GND GND 15.4
 R GND 4171
 C Vdd GND 15.7
-R Vdd 33693
+R Vdd 33804

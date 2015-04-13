@@ -1,4 +1,4 @@
-timestamp 1428891752
+timestamp 1428907381
 version 7.5
 tech scmos
 style lambda=1.0(scna20_orb)
@@ -16,8 +16,8 @@ node "m2_1077_77#" 0 304 1077 77 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
 node "m2_907_77#" 0 304 907 77 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
 node "m2_614_77#" 0 304 614 77 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
 node "GND" 0 304 409 77 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 0 0
+node "m2_1077_98#" 0 456 1077 98 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24 20 0 0
 node "m2_1180_104#" 0 532 1180 104 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28 22 0 0
-node "m2_1077_101#" 0 684 1077 101 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36 26 0 0
 node "m2_614_104#" 0 228 614 104 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0
 node "m2_907_108#" 0 228 907 108 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0
 node "divisorin" 0 228 409 108 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0
@@ -61,13 +61,13 @@ node "add_n" 0 564 636 159 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
 node "reset_n" 0 564 607 159 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
 node "clk" 0 564 424 159 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
 node "clk_n" 0 564 417 159 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
-cap "remainder" "reset_n" 405
-cap "remainder" "clk" 405
-cap "GND" "remainder" 540
-cap "remainder" "shift_n" 405
-cap "outbit" "remainder" 405
-cap "shift" "remainder" 405
 cap "clk_n" "remainder" 405
+cap "shift_n" "remainder" 405
+cap "clk" "remainder" 405
+cap "outbit" "remainder" 405
+cap "reset_n" "remainder" 405
+cap "GND" "remainder" 540
+cap "shift" "remainder" 405
 cap "mux1_0/w_n54_28#" "mux1_0/GND" 752
 merge "shift1_0/shift_n" "shift_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
 merge "mux1_0/S1_n" "S1_n" -11844 0 0 0 0 0 0 0 0 0 0 0 0 -252 -186 0 0 0 0
@@ -82,9 +82,11 @@ merge "m2_907_62#" "remainder"
 merge "addsub1_0/X" "X" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "addsub1_0/C" "C" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0 0 0
 merge "reg1_1/D" "shift1_0/B" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
-merge "shift1_0/B" "outbit"
-merge "outbit" "m2_1180_104#"
+merge "shift1_0/B" "m2_1180_104#"
 merge "reg1_0/D" "divisorin" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 0
+merge "shift1_0/A" "outbit" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 0 -12 0 0
+merge "outbit" "mux1_0/Y"
+merge "mux1_0/Y" "m2_1077_98#"
 merge "reg1_1/Vdd" "shift1_0/Vdd" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 0 0
 merge "shift1_0/Vdd" "mux1_0/Vdd"
 merge "mux1_0/Vdd" "addsub1_0/Vdd"
@@ -94,8 +96,6 @@ merge "Vdd" "m2_614_137#"
 merge "m2_614_137#" "m2_907_137#"
 merge "m2_907_137#" "m2_1077_137#"
 merge "m2_1077_137#" "m2_1180_137#"
-merge "shift1_0/A" "mux1_0/Y" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0
-merge "mux1_0/Y" "m2_1077_101#"
 merge "mux1_0/S0_n" "S0_n" -11844 0 0 0 0 0 0 0 0 0 0 0 0 -252 -186 0 0 0 0
 merge "reg1_1/reset_n" "reg1_0/reset_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 0 0 0 0
 merge "reg1_0/reset_n" "reset_n"
