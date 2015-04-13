@@ -1,0 +1,87 @@
+| units: 100 tech: scmos format: MIT
+p shift1_0[0]/a_6_11# Vdd shift1_0[0]/a_40_11# 2 8 63 56
+p shift1_0[0]/a_40_11# Vdd B_3 2 8 79 56
+n inverter1_0/Y A_3 shift1_0[0]/a_6_11# 2 4 29 34
+n shift A_2 shift1_0[0]/a_6_11# 2 4 45 34
+n shift1_0[0]/a_6_11# GND shift1_0[0]/a_40_11# 2 4 63 34
+n shift1_0[0]/a_40_11# GND B_3 2 4 79 34
+p shift1_0[1]/a_6_11# Vdd shift1_0[1]/a_40_11# 2 8 63 156
+p shift1_0[1]/a_40_11# Vdd B_2 2 8 79 156
+n inverter1_0/Y A_2 shift1_0[1]/a_6_11# 2 4 29 134
+n shift A_1 shift1_0[1]/a_6_11# 2 4 45 134
+n shift1_0[1]/a_6_11# GND shift1_0[1]/a_40_11# 2 4 63 134
+n shift1_0[1]/a_40_11# GND B_2 2 4 79 134
+p shift1_0[2]/a_6_11# Vdd shift1_0[2]/a_40_11# 2 8 63 256
+p shift1_0[2]/a_40_11# Vdd B_1 2 8 79 256
+n inverter1_0/Y A_1 shift1_0[2]/a_6_11# 2 4 29 234
+n shift A_0 shift1_0[2]/a_6_11# 2 4 45 234
+n shift1_0[2]/a_6_11# GND shift1_0[2]/a_40_11# 2 4 63 234
+n shift1_0[2]/a_40_11# GND B_1 2 4 79 234
+p shift1_0[3]/a_6_11# Vdd shift1_0[3]/a_40_11# 2 8 63 356
+p shift1_0[3]/a_40_11# Vdd B_0 2 8 79 356
+n inverter1_0/Y A_0 shift1_0[3]/a_6_11# 2 4 29 334
+n shift inbit shift1_0[3]/a_6_11# 2 4 45 334
+n shift1_0[3]/a_6_11# GND shift1_0[3]/a_40_11# 2 4 63 334
+n shift1_0[3]/a_40_11# GND B_0 2 4 79 334
+p shift Vdd inverter1_0/Y 2 8 35 446
+n shift GND inverter1_0/Y 2 4 35 432
+C shift1_0[3]/a_40_11# GND 5.9
+C shift inverter1_0/w_2_35# 2.2
+C inverter1_0/Y GND 15.8
+C shift1_0[0]/a_6_11# Vdd 4.5
+C shift1_0[2]/a_6_11# GND 7.1
+C shift1_0[3]/a_40_11# Vdd 5.1
+C inverter1_0/Y Vdd 26.9
+C shift1_0[2]/a_6_11# Vdd 4.5
+C shift1_0[0]/a_40_11# GND 5.9
+C A_2 GND 3.1
+C shift GND 18.0
+C shift1_0[0]/a_40_11# Vdd 5.1
+C A_2 Vdd 2.6
+C shift1_0[2]/a_40_11# GND 5.9
+C A_0 GND 3.1
+C shift Vdd 27.5
+C shift1_0[1]/a_6_11# GND 7.1
+C shift1_0[2]/a_40_11# Vdd 5.1
+C A_0 Vdd 2.6
+C shift1_0[1]/a_6_11# Vdd 4.5
+C inbit Vdd 2.6
+C shift1_0[3]/a_6_11# GND 7.1
+C shift1_0[3]/a_6_11# Vdd 4.5
+C GND Vdd 7.2
+C shift1_0[1]/a_40_11# GND 5.9
+C A_1 GND 3.1
+C shift1_0[0]/a_6_11# GND 7.1
+C shift1_0[1]/a_40_11# Vdd 5.1
+C A_1 Vdd 2.6
+C Vdd GND 218.1
+R Vdd 46862
+C GND GND 212.7
+R GND 3915
+R inverter1_0/w_2_35# 2715
+C inbit GND 19.0
+R inbit 36
+C A_0 GND 15.6
+R A_0 161
+R B_0 129
+R shift1_0[3]/a_40_11# 535
+R shift1_0[3]/a_6_11# 564
+C shift GND 102.0
+R shift 2761
+C inverter1_0/Y GND 89.0
+R inverter1_0/Y 2529
+C A_1 GND 15.6
+R A_1 161
+R B_1 129
+R shift1_0[2]/a_40_11# 535
+R shift1_0[2]/a_6_11# 564
+C A_2 GND 15.6
+R A_2 161
+R B_2 129
+R shift1_0[1]/a_40_11# 535
+R shift1_0[1]/a_6_11# 564
+C A_3 GND 7.8
+R A_3 35
+R B_3 129
+R shift1_0[0]/a_40_11# 535
+R shift1_0[0]/a_6_11# 564

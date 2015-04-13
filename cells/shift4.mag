@@ -1,0 +1,110 @@
+magic
+tech scmos
+timestamp 1428903043
+<< metal1 >>
+rect -13 415 -9 479
+rect -13 322 -9 411
+rect -13 222 -9 318
+rect -13 122 -9 218
+rect -13 22 -9 118
+rect -13 -4 -9 18
+rect -5 475 -1 479
+rect -5 382 -1 471
+rect 3 443 6 479
+rect 3 400 6 439
+rect 10 400 13 401
+rect 17 400 20 479
+rect 47 406 50 439
+rect 98 415 102 479
+rect -5 282 -1 378
+rect -5 182 -1 278
+rect -5 82 -1 178
+rect -5 -4 -1 78
+rect 98 322 102 411
+rect 98 222 102 318
+rect 98 122 102 218
+rect 98 22 102 118
+rect 98 -4 102 18
+rect 106 475 110 479
+rect 106 382 110 471
+rect 106 282 110 378
+rect 106 182 110 278
+rect 106 82 110 178
+rect 106 -4 110 78
+<< metal2 >>
+rect -1 471 23 475
+rect 39 471 106 475
+rect 7 440 22 443
+rect -9 411 22 415
+rect 47 411 98 415
+rect 14 402 46 405
+rect 98 378 106 382
+rect 98 345 114 348
+rect -17 339 -1 342
+rect -9 318 -1 322
+rect 98 278 106 282
+rect 98 245 114 248
+rect -17 239 -1 242
+rect -9 218 -1 222
+rect 98 178 106 182
+rect 98 145 114 148
+rect -17 139 -1 142
+rect -9 118 -1 122
+rect 98 78 106 82
+rect 98 45 114 48
+rect -17 39 -1 42
+rect -9 18 -1 22
+<< m2contact >>
+rect -13 411 -9 415
+rect -13 318 -9 322
+rect -13 218 -9 222
+rect -13 118 -9 122
+rect -13 18 -9 22
+rect -5 471 -1 475
+rect 3 439 7 443
+rect 10 401 14 405
+rect 47 439 51 443
+rect 46 402 50 406
+rect 98 411 102 415
+rect -5 378 -1 382
+rect -5 278 -1 282
+rect -5 178 -1 182
+rect -5 78 -1 82
+rect 98 318 102 322
+rect 98 218 102 222
+rect 98 118 102 122
+rect 98 18 102 22
+rect 106 471 110 475
+rect 106 378 110 382
+rect 106 278 110 282
+rect 106 178 110 182
+rect 106 78 110 82
+use inverter1  inverter1_0
+timestamp 1428875432
+transform 1 0 28 0 1 406
+box -6 5 19 69
+use shift1  shift1_0
+array 0 0 99 0 3 100
+timestamp 1428902219
+transform 1 0 25 0 1 23
+box -26 -23 73 77
+<< labels >>
+rlabel metal1 -13 415 -9 479 1 GND
+rlabel metal1 -5 475 -1 479 1 Vdd
+rlabel metal1 106 475 110 479 1 Vdd
+rlabel metal1 98 415 102 479 1 GND
+rlabel metal1 3 443 6 479 1 shift
+rlabel metal1 17 400 20 479 1 inbit
+rlabel metal1 -13 -4 -9 18 5 GND
+rlabel metal1 -5 -4 -1 78 5 Vdd
+rlabel metal1 98 -4 102 18 5 GND
+rlabel metal1 106 -4 110 78 5 Vdd
+rlabel metal2 -17 39 -1 42 7 A_3
+rlabel metal2 98 45 114 48 3 B_3
+rlabel metal2 -17 139 -1 142 7 A_2
+rlabel metal2 98 145 114 148 3 B_2
+rlabel metal2 -17 239 -1 242 7 A_1
+rlabel metal2 98 245 114 248 3 B_1
+rlabel metal2 -17 339 -1 342 7 A_0
+rlabel metal2 98 345 114 348 3 B_0
+<< end >>

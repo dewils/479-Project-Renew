@@ -12,8 +12,8 @@ node "GND" 93 4040 2 18 pw 20 18 16 16 0 0 0 0 0 0 0 0 132 74 100 58 0 0
 equiv "GND" "GND"
 node "w_2_35#" 2715 0 2 35 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 156 50
 cap "Y" "w_2_35#" 705
-cap "A" "w_2_35#" 2236
 cap "GND" "Y" 705
+cap "w_2_35#" "A" 2236
 cap "GND" "A" 2872
 device mosfet nfet 7 26 8 27 2 4 "GND" "A" 4 0 "GND" 4 0 "Y" 4 0
 device mosfet pfet 7 40 8 41 2 8 "w_2_35#" "A" 4 0 "Vdd" 8 0 "Y" 8 0
