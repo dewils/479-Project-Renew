@@ -7,19 +7,20 @@ n shift_n A a_6_11# 2 4 4 11
 n shift inbit a_6_11# 2 4 20 11
 n a_6_11# GND a_40_11# 2 4 38 11
 n a_40_11# GND B 2 4 54 11
-C Vdd a_6_11# 9.2
-C GND a_6_11# 5.2
-C Vdd a_40_11# 7.5
 C GND a_40_11# 4.2
 C Vdd shift_n 7.5
+C Vdd inbit 2.4
 C GND shift_n 8.4
-C Vdd shift 8.2
-C GND shift 4.4
-C B GND 12.5
-R B 131
-C inbit GND 9.2
+C Vdd shift 9.4
+C GND shift 3.2
+C Vdd a_6_11# 7.9
+C GND a_6_11# 6.3
+C Vdd a_40_11# 7.5
+R B 129
+C inbit GND 7.3
 R inbit 130
-R A 129
+C A GND 7.3
+R A 130
 R a_40_11# 536
 R a_6_11# 941
 C shift_n GND 28.6

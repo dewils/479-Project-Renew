@@ -1,7 +1,7 @@
 stepsize 1000
-analyzer B outbit A shift inbit
+analyzer B A shift inbit
 vector op shift_n shift
-w  B outbit inbit A shift
+w  B inbit A shift
 l A
 l inbit
 set op 10
