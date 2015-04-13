@@ -39,13 +39,13 @@ node "S1_n" 0 564 136 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
 node "S1" 0 564 129 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
 node "S0_n" 0 564 3 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
 node "S0" 0 564 -4 73 m1 0 0 0 0 0 0 0 0 0 0 0 0 12 14 0 0 0 0
+cap "outbit" "quotient" 405
 cap "quotient" "GND" 540
+cap "clk" "quotient" 405
+cap "shift" "quotient" 405
+cap "shift_n" "quotient" 405
 cap "reset_n" "quotient" 405
-cap "quotient" "shift" 405
-cap "quotient" "clk_n" 405
-cap "quotient" "shift_n" 405
-cap "quotient" "outbit" 405
-cap "quotient" "clk" 405
+cap "clk_n" "quotient" 405
 merge "shift1_0/shift_n" "shift_n" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12 0 0 0 0
 merge "mux1_0/S1_n" "S1_n" -11844 0 0 0 0 0 0 0 0 0 0 0 0 -252 -186 0 0 0 0
 merge "mux1_0/S0" "S0" -11844 0 0 0 0 0 0 0 0 0 0 0 0 -252 -186 0 0 0 0
