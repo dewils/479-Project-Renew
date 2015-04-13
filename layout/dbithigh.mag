@@ -1,56 +1,128 @@
 magic
 tech scmos
-timestamp 1428736540
+timestamp 1428889340
 << metal1 >>
-rect 633 81 636 86
-rect 459 67 463 71
-rect 453 43 456 47
-rect 577 43 580 47
-rect 818 44 821 82
+rect 417 159 420 163
+rect 424 159 427 163
+rect 607 159 610 163
+rect 636 159 639 163
+rect 893 159 896 163
+rect 900 159 903 163
+rect 922 159 925 163
+rect 929 159 932 163
+rect 1055 159 1058 163
+rect 1062 159 1065 163
+rect 1085 159 1088 163
+rect 1092 159 1095 163
+rect 1099 159 1102 163
+rect 1188 159 1191 163
+rect 1195 159 1198 163
+rect 1378 159 1381 163
+rect 417 50 420 59
+rect 424 50 427 59
+rect 607 50 610 59
+rect 622 50 625 69
+rect 636 50 639 59
+rect 893 50 896 59
+rect 900 50 903 59
+rect 907 50 910 107
+rect 936 89 940 93
+rect 922 50 925 59
+rect 929 50 932 59
+rect 1055 50 1058 59
+rect 1062 50 1065 59
+rect 1077 50 1080 100
+rect 1085 50 1088 59
+rect 1092 50 1095 59
+rect 1099 50 1102 59
+rect 1188 50 1191 59
+rect 1195 50 1198 59
+rect 1378 50 1381 59
+rect 1385 58 1388 104
 << metal2 >>
-rect 180 115 184 119
-rect 438 115 442 119
-rect 633 115 637 119
-rect 817 115 826 119
-rect 438 86 442 89
-rect 180 82 184 85
-rect 817 82 818 85
-rect 822 82 826 85
-rect 577 78 581 81
-rect 180 55 184 59
-rect 438 55 442 59
-rect 577 55 581 59
-rect 633 55 637 59
-rect 817 55 826 59
-rect 436 42 440 44
-rect 436 39 453 42
-rect 581 40 817 43
+rect 409 137 413 141
+rect 614 137 618 141
+rect 907 137 911 141
+rect 1077 137 1081 141
+rect 1180 137 1184 141
+rect 1385 137 1393 141
+rect 409 108 413 111
+rect 614 104 618 107
+rect 1077 104 1081 110
+rect 1180 104 1184 111
+rect 1389 104 1393 107
+rect 409 77 413 81
+rect 614 77 618 81
+rect 907 77 911 81
+rect 1077 77 1081 81
+rect 1180 77 1184 81
+rect 1385 77 1393 81
+rect 907 62 919 65
+rect 1077 57 1080 65
+rect 1077 54 1384 57
 << m2contact >>
-rect 633 86 637 90
-rect 818 82 822 86
-rect 633 77 637 81
-rect 577 47 581 51
-rect 453 39 457 43
-rect 577 39 581 43
-rect 817 40 821 44
+rect 907 107 911 111
+rect 1385 104 1389 108
+rect 1077 100 1081 104
+rect 1384 54 1388 58
 use ../cells/reg1  reg1_0
-timestamp 1428700440
-transform 1 0 16 0 1 129
-box -16 -92 164 8
+timestamp 1428832769
+transform 1 0 443 0 1 151
+box -30 -92 171 8
 use ../cells/addsub1  addsub1_0
-timestamp 1428736404
-transform 1 0 297 0 1 29
-box -113 8 141 108
+timestamp 1428864319
+transform 1 0 752 0 1 51
+box -134 8 155 108
 use ../cells/mux1  mux1_0
-timestamp 1428701072
-transform 1 0 513 0 1 35
-box -71 2 64 102
+timestamp 1428877062
+transform 1 0 990 0 1 57
+box -79 2 87 102
 use ../cells/shift1  shift1_0
-timestamp 1428701418
-transform 1 0 593 0 1 60
-box -12 -23 40 77
+timestamp 1428878261
+transform 1 0 1107 0 1 82
+box -26 -23 73 77
 use ../cells/reg1  reg1_1
-timestamp 1428700440
-transform 1 0 653 0 1 129
-box -16 -92 164 8
+timestamp 1428832769
+transform 1 0 1214 0 1 151
+box -30 -92 171 8
+<< labels >>
+rlabel metal1 417 159 420 163 1 clk_n
+rlabel metal1 424 159 427 163 1 clk
+rlabel metal2 409 137 413 141 7 Vdd
+rlabel metal2 409 108 413 111 7 divisorin
+rlabel metal2 409 77 413 81 7 GND
+rlabel metal1 417 50 420 59 5 clk_n
+rlabel metal1 424 50 427 59 5 clk
+rlabel metal1 607 159 610 163 1 reset_n
+rlabel metal1 607 50 610 59 5 reset_n
+rlabel metal1 636 159 639 163 1 add_n
+rlabel metal1 636 50 639 59 5 add_n
+rlabel metal1 893 159 896 163 1 C
+rlabel metal1 893 50 896 59 5 X
+rlabel metal1 922 159 925 163 1 S0
+rlabel metal1 929 159 932 163 1 S0_n
+rlabel metal1 922 50 925 59 5 S0
+rlabel metal1 929 50 932 59 5 S0_n
+rlabel metal1 1055 159 1058 163 1 S1
+rlabel metal1 1062 159 1065 163 1 S1_n
+rlabel metal1 1055 50 1058 59 5 S1
+rlabel metal1 1062 50 1065 59 5 S1_n
+rlabel metal1 1085 159 1088 163 1 shift
+rlabel metal1 1092 159 1095 163 1 shift_n
+rlabel metal1 1099 159 1102 163 1 inbit
+rlabel metal1 1085 50 1088 59 5 shift
+rlabel metal1 1092 50 1095 59 5 shift_n
+rlabel metal1 1099 50 1102 59 5 outbit
+rlabel metal1 1188 159 1191 163 1 clk_n
+rlabel metal1 1195 159 1198 163 1 clk
+rlabel metal1 1188 50 1191 59 5 clk_n
+rlabel metal1 1195 50 1198 59 5 clk
+rlabel metal1 1378 159 1381 163 1 reset_n
+rlabel metal1 1378 50 1381 59 5 reset_n
+rlabel metal2 1385 137 1393 141 3 Vdd
+rlabel metal2 1389 104 1393 107 3 remainder
+rlabel metal2 1385 77 1393 81 3 GND
+rlabel metal1 1077 50 1080 100 5 mux_out
+rlabel metal1 907 50 910 107 5 add_out
+rlabel metal1 622 50 625 69 5 reg1_out
 << end >>
